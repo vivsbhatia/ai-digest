@@ -149,49 +149,120 @@
 <script>
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
-  {
-    date: "2026-07-01",
-    label: "Wed, Jul 1, 2026",
-    gathered: "gathered 8:00 ET",
-    lede: "Quiet-ish news day, loud structural story. The headline isn't one model — it's that <b>the whole industry has converged on \"agents as the new software layer,\"</b> and the money (capex, funding, and now Gartner's forecasts) is repricing around it.",
-    items: [
-      { tags:["Agents","Enterprise"],
-        title:"OpenAI launches “Frontier,” a platform to build and run enterprise agents",
-        why:"This is OpenAI moving up-stack from model API to the agent orchestration + management layer — the same territory as your supply-chain automation work. The platform wars (OpenAI vs. Microsoft Agent 365 vs. NVIDIA's toolkit) decide your lock-in and switching costs.",
-        sources:[{label:"openai.com",url:"https://openai.com/index/introducing-openai-frontier/"}],
-        date:"late June 2026 (exact date not pinned)" },
-      { tags:["Frontier models","Cost"],
-        title:"Microsoft ships 7 in-house “MAI” models, led by MAI-Thinking-1",
-        why:"Microsoft is deliberately cutting its OpenAI dependency and competing on cost-per-token for reasoning. Cheaper frontier-grade reasoning is what makes always-on agents economical at scale — the unit economics you care about, not the leaderboard.",
-        sources:[{label:"cnbc.com",url:"https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html"}],
-        date:"June 2, 2026" },
-      { tags:["Market signal","Investing"],
-        title:"Gartner: agent software spend hits ~$206B in 2026, up 139% YoY",
-        why:"An analyst house putting a $206.5B number (from $86.4B in 2025) on agent software is the signal boards act on — it legitimizes budget and reprices the picks-and-shovels layer. Information, not advice: watch where spend concentrates, not any single ticker.",
-        sources:[{label:"gartner.com",url:"https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025"}],
-        date:"figures cited June 2026" },
-      { tags:["Funding","AI-infra"],
-        title:"Baseten raises $1.5B Series F at up to $13B — June's biggest US round",
-        why:"The largest US round of the month went to inference infrastructure, not a model lab. That's the tell of where value accrues in your AI-infra thesis: as agents proliferate, money follows whoever makes running them fast and cheap.",
-        sources:[{label:"crunchbase",url:"https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/"}],
-        date:"announced June 22, 2026" },
-      { tags:["Energy-for-AI","Investing"],
-        title:"Hyperscaler capex tracks toward ~$690–700B in 2026 — with power moving on-site",
-        why:"Your energy-for-AI thesis in one line. Amazon (~$200B) and Google (~$175–185B) lead a ~75% capex jump, and Microsoft's new Pecos, TX campus funds dedicated on-site energy while Williams commits $5.1B to gas-fired power at datacenter sites. The bottleneck is shifting from chips to megawatts.",
-        sources:[{label:"futurum",url:"https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"},{label:"microsoft",url:"https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/"}],
-        date:"June 2026" },
-      { tags:["Supply chain","Reality check"],
-        title:"Supply-chain AI: double-digit gains are real, but trust is the gate",
-        why:"Directly your lane. Agentic systems are cutting decision latency \"from days to seconds\" with double-digit efficiency gains — yet only 10% of leaders trust AI for critical decisions without human review, and 54% prefer suggest-then-approve. The 2026 edge is the human-in-the-loop workflow that earns trust.",
-        sources:[{label:"inboundlogistics",url:"https://www.inboundlogistics.com/articles/ai-in-supply-chain-management-how-useful-will-it-be-in-2026/"}],
-        date:"June 2026" }
+{
+    "date": "2026-07-01",
+    "label": "Wed, Jul 1, 2026",
+    "gathered": "gathered 9:00 ET",
+    "lede": "Not a quiet day: the Data Center Power Coalition launched today to tackle AI's power bottleneck, OpenAI's GPT-5.6 tiering shows how cost-conscious frontier models are getting, and C.H. Robinson's latest release is a real case study of agents <b>running</b> (not just assisting) a supply chain. Also worth noting: Colorado's flagship AI law was quietly gutted and delayed before it ever took effect — a good check on how fast AI policy headlines can go stale.",
+    "items": [
+      {
+        "tags": [
+          "Supply chain",
+          "Agents"
+        ],
+        "title": "C.H. Robinson's Lean AI Engineer assesses a full supply chain in 30 minutes, not 4 weeks",
+        "why": "Production-grade proof that agentic AI can run live logistics decisions, not just draft recommendations. It pairs with the existing Lean AI Planner, which already manages 92% of C.H. Robinson's global 4PL shipment volume through hundreds of interconnected agents — a solid reference architecture for the supply-chain automation you track.",
+        "sources": [
+          {
+            "label": "C.H. Robinson",
+            "url": "https://www.chrobinson.com/en-us/about-us/newsroom/press-releases/2026/ch-robinson-lean-ai-engineer-launch/"
+          },
+          {
+            "label": "FreightWaves",
+            "url": "https://www.freightwaves.com/news/c-h-robinsons-next-ai-step-adding-engineer-to-the-planner"
+          }
+        ],
+        "date": "June 3, 2026"
+      },
+      {
+        "tags": [
+          "Energy-for-AI",
+          "AI-infra"
+        ],
+        "title": "Data Center Power Coalition launches with 12 founding partners to standardize AI power planning",
+        "why": "Confirms your energy-for-AI thesis in real time: the constraint has moved from chips and capital to megawatts and interconnection timelines. A shared \"power playbook\" aims to shorten the multi-year queues gating new data-center capacity — worth tracking who else signs on.",
+        "sources": [
+          {
+            "label": "Data Center Knowledge",
+            "url": "https://www.datacenterknowledge.com/energy-power-supply/data-center-power-coalition-launches-to-tackle-ai-s-biggest-bottleneck"
+          }
+        ],
+        "date": "July 1, 2026"
+      },
+      {
+        "tags": [
+          "Frontier models",
+          "Cost"
+        ],
+        "title": "OpenAI previews a three-tier GPT-5.6 family — Sol, Terra, Luna — built for long-horizon agent work",
+        "why": "Sol targets frontier reasoning for agentic tasks, while Terra and Luna trade capability for cost — the tiering that decides whether always-on agents are economical at scale. Access is currently gated to limited preview partners, reportedly at the direction of the US government, which is itself worth watching.",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/previewing-gpt-5-6-sol/"
+          },
+          {
+            "label": "VentureBeat",
+            "url": "https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov"
+          }
+        ],
+        "date": "June 26, 2026"
+      },
+      {
+        "tags": [
+          "Funding",
+          "AI-infra"
+        ],
+        "title": "Qualcomm nears ~$3.9B deal for AI-software startup Modular",
+        "why": "A chipmaker buying an inference-software stack, rather than raising its own model lab, is another data point for the picks-and-shovels thesis: value is migrating to whoever makes models run fast and cheap on non-Nvidia hardware. Deal expected to close in H2 2026 — watch the terms and Nvidia's competitive response.",
+        "sources": [
+          {
+            "label": "CNBC",
+            "url": "https://www.cnbc.com/2026/06/24/qualcomm-ai-chip-modular-software.html"
+          }
+        ],
+        "date": "reported June 24, 2026"
+      },
+      {
+        "tags": [
+          "Policy",
+          "Reality check"
+        ],
+        "title": "Colorado's landmark \"high-risk AI\" law gutted and delayed to 2027 before it ever took effect",
+        "why": "The law was set to become the first comprehensive US high-risk-AI statute on June 30, 2026. Instead, Governor Polis signed SB 189 on May 14, stripping the algorithmic-discrimination duty of care and impact-assessment requirements and pushing a much narrower version to January 1, 2027. A reminder not to build a compliance roadmap around a single headline.",
+        "sources": [
+          {
+            "label": "Norton Rose Fulbright",
+            "url": "https://www.nortonrosefulbright.com/en-us/knowledge/publications/18733d31/colorado-enacts-revised-ai-law"
+          }
+        ],
+        "date": "signed May 14, 2026 (original effective date was June 30, 2026)"
+      },
+      {
+        "tags": [
+          "Agents",
+          "Enterprise",
+          "Market signal"
+        ],
+        "title": "NVIDIA opens its Agent Toolkit as Adobe, SAP, ServiceNow, Salesforce and others build on it",
+        "why": "The adopter list for NVIDIA's open-source toolkit for self-evolving enterprise agents reads like a who's-who of the agent-orchestration land grab, alongside OpenAI and Microsoft. This layer — not any single model — will decide lock-in and switching costs for the agent tooling you're evaluating.",
+        "sources": [
+          {
+            "label": "NVIDIA Newsroom",
+            "url": "https://nvidianews.nvidia.com/news/ai-agents"
+          }
+        ],
+        "date": "2026"
+      }
     ],
-    tryBox:{ h:"Steal the “hybrid orchestration” pattern for cost",
-      body:"NVIDIA's AI-Q Blueprint uses <b>frontier models for orchestration + small open models for the actual research/retrieval</b>, claiming &gt;50% lower query cost at similar accuracy. Even outside their stack, it's the right architecture for a supply-chain agent: reserve the expensive model for planning, route the bulk work to cheap models. A concrete experiment for one workflow this week.",
-      src:'<a href="https://nvidianews.nvidia.com/news/ai-agents">NVIDIA Agent Toolkit / AI-Q</a> · announced Mar 2026, adoption growing through June' },
-    radar:[
-      "<b>Policy — pre-release model access.</b> A June 2 US executive order reportedly asks the most capable labs to give the government a look up to <b>30 days before</b> public release. If it sticks, it slows frontier-release cadence and adds compliance overhead. <em>Confirmed order; scope/enforcement still developing.</em>",
-      "<b>Rumor — flag, don't trust.</b> A single dev blog claims Anthropic's \"Claude Fable 5\" was released June 9 then suspended June 12 by an export-control directive. <b>Unverified, single low-quality source</b> — treat as speculation until it shows up somewhere credible."
+    "tryBox": {
+      "h": "Prototype with NVIDIA's open-source Agent Toolkit",
+      "body": "NVIDIA just open-sourced the software behind its self-evolving enterprise agents, and Adobe, SAP, ServiceNow and others are already building on it. Concrete, low-cost experiment for this week: pull the toolkit and prototype one narrow supply-chain or ops workflow as an agent, rather than waiting for a vendor platform to mature.",
+      "src": "<a href=\"https://nvidianews.nvidia.com/news/ai-agents\">NVIDIA Agent Toolkit</a> · announced 2026"
+    },
+    "radar": [
+      "<b>Qualcomm–Modular deal.</b> The ~$3.9B acquisition is expected to close in H2 2026 — watch how Nvidia responds competitively in the inference-software layer.",
+      "<b>EU AI Act transparency rules.</b> Labeling/marking requirements for AI-generated content are set to take effect in August 2026 — relevant if any portfolio companies operate in the EU."
     ]
   }
 ];
@@ -300,4 +371,3 @@ render();
 </body>
 </html>
 
-<!-- deploy check 2026-07-01T16:07Z -->
