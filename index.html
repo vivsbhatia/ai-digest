@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>AI Digest — filtered for the things that compound</title>
+<!-- Add-to-Home-Screen (iPhone/iPad): opens fullscreen like a native app -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="AI Digest">
+<meta name="theme-color" content="#0d1117">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%230d1117'/%3E%3Ctext x='90' y='118' font-size='96' text-anchor='middle' fill='%235b9dff' font-family='Arial' font-weight='bold'%3EAI%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel2:#1c2230; --ink:#e6edf3;
+    --muted:#9aa7b4; --line:#2a3340; --accent:#5b9dff; --accent2:#7ee0c0;
+    --warn:#ffcf70; --chip:#233042; --chipink:#c7d3e0; --shadow:rgba(0,0,0,.35);
+  }
+  html[data-theme="light"]{
+    --bg:#f6f8fb; --panel:#ffffff; --panel2:#f0f4f9; --ink:#111823;
+    --muted:#5b6774; --line:#e2e8f0; --accent:#1f6feb; --accent2:#0a8f6c;
+    --warn:#b06f00; --chip:#eef2f7; --chipink:#33404f; --shadow:rgba(20,40,80,.08);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;transition:background .25s,color .25s}
+  .wrap{max-width:860px;margin:0 auto;
+    padding:calc(34px + env(safe-area-inset-top)) 20px calc(72px + env(safe-area-inset-bottom))}
+  .controls{padding-top:calc(16px + env(safe-area-inset-top))}
+
+  header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;
+    border-bottom:1px solid var(--line);padding-bottom:20px}
+  .kicker{letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--accent);font-weight:800}
+  h1{font-size:30px;line-height:1.12;margin:8px 0 4px;font-weight:800;letter-spacing:-.01em}
+  .sub{color:var(--muted);font-size:13.5px}
+  .toggle{flex:none;cursor:pointer;border:1px solid var(--line);background:var(--panel);
+    color:var(--ink);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600;
+    display:flex;align-items:center;gap:7px;box-shadow:0 1px 3px var(--shadow)}
+  .toggle:hover{border-color:var(--accent)}
+
+  .controls{position:sticky;top:0;z-index:5;background:var(--bg);
+    padding:16px 0 12px;margin-top:2px}
+  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .search{flex:1;min-width:220px;display:flex;align-items:center;gap:8px;
+    background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:9px 13px;
+    box-shadow:0 1px 3px var(--shadow)}
+  .search input{flex:1;border:0;background:transparent;color:var(--ink);font-size:15px;outline:none}
+  .search svg{flex:none;opacity:.6}
+  .daysel{background:var(--panel);border:1px solid var(--line);color:var(--ink);
+    border-radius:11px;padding:9px 12px;font-size:14px;font-weight:600;cursor:pointer;
+    box-shadow:0 1px 3px var(--shadow)}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}
+  .chip{cursor:pointer;font-size:12px;font-weight:700;letter-spacing:.02em;
+    color:var(--chipink);background:var(--chip);border:1px solid var(--line);
+    padding:6px 12px;border-radius:999px;transition:.15s;user-select:none}
+  .chip:hover{border-color:var(--accent)}
+  .chip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+  html[data-theme="light"] .chip.active{color:#fff}
+
+  .lede{color:var(--muted);font-size:15px;margin:14px 0 4px;padding:15px 17px;background:var(--panel);
+    border:1px solid var(--line);border-radius:13px;box-shadow:0 1px 4px var(--shadow)}
+  .lede b{color:var(--ink)}
+  .count{font-size:12.5px;color:var(--muted);margin:16px 2px 2px}
+
+  .item{background:var(--panel);border:1px solid var(--line);border-radius:15px;
+    padding:19px 22px;margin:15px 0;position:relative;overflow:hidden;
+    box-shadow:0 2px 10px var(--shadow);transition:transform .12s,border-color .12s}
+  .item:hover{transform:translateY(-1px);border-color:var(--accent)}
+  .item:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent)}
+  .item .tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:9px}
+  .tag{font-size:10.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+    color:var(--accent2);background:var(--chip);border:1px solid var(--line);
+    padding:3px 9px;border-radius:999px}
+  .item h2{font-size:18.5px;margin:2px 0 8px;line-height:1.3}
+  .why{margin:9px 0 4px}
+  .why b{color:var(--accent2)}
+  .src{font-size:12.5px;color:var(--muted);margin-top:12px;border-top:1px dashed var(--line);padding-top:9px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+
+  .section-label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+    font-weight:800;margin:32px 0 6px}
+  .box{background:var(--panel2);border:1px solid var(--line);border-radius:15px;
+    padding:17px 22px;margin:10px 0;box-shadow:0 1px 6px var(--shadow)}
+  .box h3{margin:0 0 6px;font-size:16.5px}
+  .box.radar h3{color:var(--warn)}
+  .box.try h3{color:var(--accent2)}
+  ul{margin:8px 0 0;padding-left:18px}
+  li{margin:6px 0}
+  .empty{text-align:center;color:var(--muted);padding:40px 10px;font-size:15px}
+
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+  .btn{cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink);
+    border-radius:10px;padding:9px 14px;font-size:13.5px;font-weight:600;box-shadow:0 1px 3px var(--shadow)}
+  .btn:hover{border-color:var(--accent)}
+
+  footer{margin-top:34px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:12.5px}
+  a{color:var(--accent)}
+  @media print{
+    .controls,.toggle,.actions{display:none}
+    body{background:#fff;color:#111}.item,.box,.lede{background:#fff;box-shadow:none;border-color:#ddd}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="kicker">AI Digest · curated for Vivek</div>
+      <h1 id="hTitle">What actually mattered in AI</h1>
+      <div class="sub" id="hSub"></div>
+    </div>
+    <button class="toggle" id="themeBtn" title="Toggle light/dark">🌙 <span>Dark</span></button>
+  </header>
+
+  <div class="controls">
+    <div class="row">
+      <div class="search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="search" type="text" placeholder="Search headlines and why-it-matters…" autocomplete="off">
+      </div>
+      <select class="daysel" id="daySel"></select>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+
+  <p class="lede" id="lede"></p>
+  <div class="count" id="count"></div>
+  <div id="feed"></div>
+
+  <div id="extras">
+    <div class="section-label">One thing worth trying</div>
+    <div class="box try" id="tryBox"></div>
+    <div class="section-label">On the radar</div>
+    <div class="box radar" id="radarBox"></div>
+  </div>
+
+  <div class="actions">
+    <button class="btn" id="printBtn">🖨 Print / Save as PDF</button>
+    <button class="btn" id="copyBtn">🔗 Copy shareable text</button>
+  </div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+/* ---- DATA: add a new object to the top of this array each day ---- */
+const DIGESTS = [
+  {
+    date: "2026-07-01",
+    label: "Wed, Jul 1, 2026",
+    gathered: "gathered 8:00 ET",
+    lede: "Quiet-ish news day, loud structural story. The headline isn't one model — it's that <b>the whole industry has converged on \"agents as the new software layer,\"</b> and the money (capex, funding, and now Gartner's forecasts) is repricing around it.",
+    items: [
+      { tags:["Agents","Enterprise"],
+        title:"OpenAI launches “Frontier,” a platform to build and run enterprise agents",
+        why:"This is OpenAI moving up-stack from model API to the agent orchestration + management layer — the same territory as your supply-chain automation work. The platform wars (OpenAI vs. Microsoft Agent 365 vs. NVIDIA's toolkit) decide your lock-in and switching costs.",
+        sources:[{label:"openai.com",url:"https://openai.com/index/introducing-openai-frontier/"}],
+        date:"late June 2026 (exact date not pinned)" },
+      { tags:["Frontier models","Cost"],
+        title:"Microsoft ships 7 in-house “MAI” models, led by MAI-Thinking-1",
+        why:"Microsoft is deliberately cutting its OpenAI dependency and competing on cost-per-token for reasoning. Cheaper frontier-grade reasoning is what makes always-on agents economical at scale — the unit economics you care about, not the leaderboard.",
+        sources:[{label:"cnbc.com",url:"https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html"}],
+        date:"June 2, 2026" },
+      { tags:["Market signal","Investing"],
+        title:"Gartner: agent software spend hits ~$206B in 2026, up 139% YoY",
+        why:"An analyst house putting a $206.5B number (from $86.4B in 2025) on agent software is the signal boards act on — it legitimizes budget and reprices the picks-and-shovels layer. Information, not advice: watch where spend concentrates, not any single ticker.",
+        sources:[{label:"gartner.com",url:"https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025"}],
+        date:"figures cited June 2026" },
+      { tags:["Funding","AI-infra"],
+        title:"Baseten raises $1.5B Series F at up to $13B — June's biggest US round",
+        why:"The largest US round of the month went to inference infrastructure, not a model lab. That's the tell of where value accrues in your AI-infra thesis: as agents proliferate, money follows whoever makes running them fast and cheap.",
+        sources:[{label:"crunchbase",url:"https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/"}],
+        date:"announced June 22, 2026" },
+      { tags:["Energy-for-AI","Investing"],
+        title:"Hyperscaler capex tracks toward ~$690–700B in 2026 — with power moving on-site",
+        why:"Your energy-for-AI thesis in one line. Amazon (~$200B) and Google (~$175–185B) lead a ~75% capex jump, and Microsoft's new Pecos, TX campus funds dedicated on-site energy while Williams commits $5.1B to gas-fired power at datacenter sites. The bottleneck is shifting from chips to megawatts.",
+        sources:[{label:"futurum",url:"https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"},{label:"microsoft",url:"https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/"}],
+        date:"June 2026" },
+      { tags:["Supply chain","Reality check"],
+        title:"Supply-chain AI: double-digit gains are real, but trust is the gate",
+        why:"Directly your lane. Agentic systems are cutting decision latency \"from days to seconds\" with double-digit efficiency gains — yet only 10% of leaders trust AI for critical decisions without human review, and 54% prefer suggest-then-approve. The 2026 edge is the human-in-the-loop workflow that earns trust.",
+        sources:[{label:"inboundlogistics",url:"https://www.inboundlogistics.com/articles/ai-in-supply-chain-management-how-useful-will-it-be-in-2026/"}],
+        date:"June 2026" }
+    ],
+    tryBox:{ h:"Steal the “hybrid orchestration” pattern for cost",
+      body:"NVIDIA's AI-Q Blueprint uses <b>frontier models for orchestration + small open models for the actual research/retrieval</b>, claiming &gt;50% lower query cost at similar accuracy. Even outside their stack, it's the right architecture for a supply-chain agent: reserve the expensive model for planning, route the bulk work to cheap models. A concrete experiment for one workflow this week.",
+      src:'<a href="https://nvidianews.nvidia.com/news/ai-agents">NVIDIA Agent Toolkit / AI-Q</a> · announced Mar 2026, adoption growing through June' },
+    radar:[
+      "<b>Policy — pre-release model access.</b> A June 2 US executive order reportedly asks the most capable labs to give the government a look up to <b>30 days before</b> public release. If it sticks, it slows frontier-release cadence and adds compliance overhead. <em>Confirmed order; scope/enforcement still developing.</em>",
+      "<b>Rumor — flag, don't trust.</b> A single dev blog claims Anthropic's \"Claude Fable 5\" was released June 9 then suspended June 12 by an export-control directive. <b>Unverified, single low-quality source</b> — treat as speculation until it shows up somewhere credible."
+    ]
+  }
+];
+
+/* ---- APP ---- */
+const $ = s => document.querySelector(s);
+let state = { dayIndex:0, query:"", tag:"All" };
+
+function allTags(day){
+  const set = new Set();
+  day.items.forEach(it => it.tags.forEach(t => set.add(t)));
+  return ["All", ...set];
+}
+
+function render(){
+  const day = DIGESTS[state.dayIndex];
+  $("#hSub").innerHTML = day.label + " · " + day.gathered + " · filtered to agents, supply chain &amp; AI-infra investing";
+  $("#lede").innerHTML = day.lede;
+
+  // chips
+  const chips = $("#chips"); chips.innerHTML = "";
+  allTags(day).forEach(t=>{
+    const c = document.createElement("span");
+    c.className = "chip" + (state.tag===t ? " active":"");
+    c.textContent = t;
+    c.onclick = ()=>{ state.tag = t; render(); };
+    chips.appendChild(c);
+  });
+
+  // filter
+  const q = state.query.trim().toLowerCase();
+  const items = day.items.filter(it=>{
+    const tagOk = state.tag==="All" || it.tags.includes(state.tag);
+    const text = (it.title + " " + it.why + " " + it.tags.join(" ")).toLowerCase();
+    const qOk = !q || text.includes(q);
+    return tagOk && qOk;
+  });
+
+  $("#count").textContent = items.length + " of " + day.items.length + " items" +
+    (state.tag!=="All" ? " · " + state.tag : "") + (q ? ' · “'+state.query+'”' : "");
+
+  const feed = $("#feed"); feed.innerHTML = "";
+  if(!items.length){
+    feed.innerHTML = '<div class="empty">No items match. Try clearing the filter or search.</div>';
+  }
+  items.forEach(it=>{
+    const el = document.createElement("div");
+    el.className = "item";
+    const tags = it.tags.map(t=>'<span class="tag">'+t+'</span>').join("");
+    const srcs = it.sources.map(s=>'<a href="'+s.url+'" target="_blank" rel="noopener">'+s.label+'</a>').join(" · ");
+    el.innerHTML =
+      '<div class="tags">'+tags+'</div>'+
+      '<h2>'+it.title+'</h2>'+
+      '<p class="why"><b>Why it matters to you:</b> '+it.why+'</p>'+
+      '<p class="src">Source: '+srcs+' · '+it.date+'</p>';
+    feed.appendChild(el);
+  });
+
+  // extras only when unfiltered
+  const showExtras = state.tag==="All" && !q;
+  $("#extras").style.display = showExtras ? "block":"none";
+  if(showExtras){
+    $("#tryBox").innerHTML = '<h3>'+day.tryBox.h+'</h3><p>'+day.tryBox.body+'</p><p class="src">'+day.tryBox.src+'</p>';
+    $("#radarBox").innerHTML = '<h3>Things building</h3><ul>'+day.radar.map(r=>'<li>'+r+'</li>').join("")+'</ul>';
+  }
+
+  $("#foot").innerHTML = "Digest for "+day.label+". Items filtered against your profile (agents, supply chain, AI-infra &amp; energy investing). "+
+    "Dates and sources verified where possible; unpinned dates and single-source claims flagged inline. "+
+    "Investing tie-ins are information for your own research, not personalized buy/sell advice.";
+}
+
+// day selector
+(function(){
+  const sel = $("#daySel");
+  DIGESTS.forEach((d,i)=>{ const o=document.createElement("option"); o.value=i; o.textContent=d.label; sel.appendChild(o); });
+  sel.onchange = e=>{ state.dayIndex = +e.target.value; state.tag="All"; state.query=""; $("#search").value=""; render(); };
+})();
+
+$("#search").addEventListener("input", e=>{ state.query = e.target.value; render(); });
+
+// theme
+function setTheme(t){
+  document.documentElement.setAttribute("data-theme", t);
+  $("#themeBtn").innerHTML = t==="light" ? "☀️ <span>Light</span>" : "🌙 <span>Dark</span>";
+  try{ localStorage.setItem("aidigest-theme", t); }catch(e){}
+}
+$("#themeBtn").onclick = ()=>{
+  const cur = document.documentElement.getAttribute("data-theme")==="light" ? "light":"dark";
+  setTheme(cur==="light" ? "dark":"light");
+};
+(function(){ let t="dark"; try{ t = localStorage.getItem("aidigest-theme")||"dark"; }catch(e){} setTheme(t); })();
+
+// actions
+$("#printBtn").onclick = ()=>window.print();
+$("#copyBtn").onclick = ()=>{
+  const day = DIGESTS[state.dayIndex];
+  let txt = "AI Digest — "+day.label+"\n\n";
+  day.items.forEach(it=>{ txt += "• "+it.title+"\n  Why: "+it.why.replace(/<[^>]+>/g,"")+"\n  ("+it.sources.map(s=>s.url).join(", ")+")\n\n"; });
+  navigator.clipboard.writeText(txt).then(()=>{
+    const b=$("#copyBtn"); const o=b.textContent; b.textContent="✓ Copied!"; setTimeout(()=>b.textContent=o,1500);
+  });
+};
+
+render();
+</script>
+</body>
+</html>
