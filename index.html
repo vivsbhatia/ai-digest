@@ -150,10 +150,134 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
 {
+    "date": "2026-07-02",
+    "label": "Thu, Jul 2, 2026",
+    "gathered": "gathered 9:00 ET",
+    "lede": "The through-line today is money chasing megawatts and chips, not model IQ: National Grid just bought into a Texas gas plant to power a Microsoft data center, SpaceX's Colossus 2 started billing a customer $150M/month for Nvidia access, and OpenAI showed its own chip as a hedge against that same Nvidia dependency. Gartner's numbers back up the agent thesis with real budget data, and Brussels quietly bought AI labs another 15 months before high-risk-AI rules bite.",
+    "items": [
+      {
+        "tags": [
+          "Energy-for-AI",
+          "AI-infra"
+        ],
+        "title": "National Grid pays $1.75B for 35% of Joulent to bankroll a 2.67GW gas plant feeding a Microsoft data center",
+        "why": "This is the energy-for-AI thesis turning into a specific, priced transaction: a utility taking an equity stake in merchant power generation because the interconnection queue is the real bottleneck, not chip supply. Project Kilby (West Texas, Chevron joint venture, GE Vernova turbines) targets first power by 2028 \u2014 a concrete timeline to benchmark other power-for-AI deals against.",
+        "sources": [
+          {
+            "label": "PR Newswire",
+            "url": "https://www.prnewswire.com/news-releases/national-grid-ventures-to-invest-1-75bn-to-accelerate-power-solutions-for-us-data-centers-and-ai-302815750.html"
+          },
+          {
+            "label": "Data Center Knowledge",
+            "url": "https://www.datacenterknowledge.com/energy-power-supply/national-grid-agrees-to-1-75b-investment-in-joulent-to-expand-ai-power-infrastructure"
+          }
+        ],
+        "date": "announced June 30, 2026"
+      },
+      {
+        "tags": [
+          "AI-infra",
+          "Market signal"
+        ],
+        "title": "Reflection AI starts paying SpaceX $150M/month for Nvidia GB300 access at Colossus 2",
+        "why": "The deal (up to $6.3B through 2029, 90-day exit clause after month three) began billing July 1 and makes SpaceX's Memphis site one of the largest third-party compute platforms anywhere, alongside Anthropic, Google and Cursor as tenants. Useful data point on real-world GPU rental pricing and how compute-rich, capital-light players like SpaceX are becoming AI-infra landlords.",
+        "sources": [
+          {
+            "label": "CNBC",
+            "url": "https://www.cnbc.com/2026/06/22/spacex-ai-colossus-data-center-reflection.html"
+          },
+          {
+            "label": "TechCrunch",
+            "url": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/"
+          }
+        ],
+        "date": "deal began July 1, 2026; signed June 22, 2026"
+      },
+      {
+        "tags": [
+          "AI-infra",
+          "Cost"
+        ],
+        "title": "OpenAI and Broadcom unveil \"Jalape\u00f1o,\" OpenAI's first custom inference chip",
+        "why": "Broadcom's CEO cites early tests showing roughly 50% lower cost and better cost-per-watt than standard GPUs for inference. Even directional, that's the clearest signal yet that the picks-and-shovels trade is bifurcating into training silicon (still Nvidia) versus inference silicon (increasingly custom) \u2014 relevant to how you frame AI-infra plays beyond Nvidia itself.",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/"
+          },
+          {
+            "label": "TechCrunch",
+            "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/"
+          }
+        ],
+        "date": "announced June 24, 2026"
+      },
+      {
+        "tags": [
+          "Agents",
+          "Market signal",
+          "Enterprise"
+        ],
+        "title": "Gartner: purpose-built AI agent software spend jumps 139% to $206.5B in 2026",
+        "why": "That's nearly triple the growth rate of overall AI spend (+47%), and Gartner has it stepping up again to $376.3B in 2027. This is the budget-line evidence behind the agent thesis \u2014 worth weighing against Gartner's own separate warning that 40%+ of agentic AI projects get canceled before delivering value, so the spend and the success rate are two different charts.",
+        "sources": [
+          {
+            "label": "Gartner",
+            "url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026"
+          }
+        ],
+        "date": "forecast published 2026"
+      },
+      {
+        "tags": [
+          "Supply chain",
+          "Agents"
+        ],
+        "title": "Agentic AI adoption in supply chain: multi-agent systems up 327% in four months, per industry surveys",
+        "why": "Gartner separately projects 60% of supply-chain disruptions will be resolved without human involvement by 2031. Directionally consistent with what you've already seen from C.H. Robinson's Lean AI Engineer/Planner \u2014 the shift is from single chatbots assisting planners to multi-agent systems making live routing and exception calls.",
+        "sources": [
+          {
+            "label": "Supply Chain Management Review",
+            "url": "https://www.scmr.com/article/2026-the-age-of-the-ai-supply-chain"
+          },
+          {
+            "label": "ABI Research",
+            "url": "https://www.abiresearch.com/blog/supply-chain-disruptions-2026-how-to-build-resilience-with-ai-and-automation"
+          }
+        ],
+        "date": "2026 industry reporting"
+      },
+      {
+        "tags": [
+          "Policy",
+          "Reality check"
+        ],
+        "title": "EU set to defer high-risk AI Act obligations to December 2027, widen SME carve-outs",
+        "why": "The Omnibus amendments (formal adoption expected in the Official Journal this month, ahead of the August 2, 2026 deadline) push the high-risk compliance date back roughly 16 months and extend simplified rules to companies with up to 750 employees and \u20ac150M revenue. Same pattern as Colorado's law last week: AI regulation headlines keep front-running the actual binding dates.",
+        "sources": [
+          {
+            "label": "Latham & Watkins",
+            "url": "https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines"
+          }
+        ],
+        "date": "provisional agreement reported June 2026"
+      }
+    ],
+    "tryBox": {
+      "h": "Kick the tires on Groq's inference cloud",
+      "body": "Groq just closed $650M to scale its LPU-based inference cloud, and the whole Jalape\u00f1o/Modular/Groq pattern this month says cheap, fast inference is where the real competition has moved. If you're pricing out always-on agent workloads, worth a quick benchmark of Groq's API against your current provider on latency and $/token for a narrow task.",
+      "src": "funding reported June/July 2026"
+    },
+    "radar": [
+      "<b>OpenAI and Anthropic's confidential IPO filings.</b> Both filed within a week of each other \u2014 the market, not private investors, will set the valuation number for the first time. Watch for public S-1 details in the coming weeks.",
+      "<b>UN AI for Good Global Commission.</b> First meeting set for July 8 in Geneva, following a UN scientific panel warning that AI development is outpacing government oversight."
+    ]
+  },
+  {
     "date": "2026-07-01",
     "label": "Wed, Jul 1, 2026",
     "gathered": "gathered 9:00 ET",
-    "lede": "Not a quiet day: the Data Center Power Coalition launched today to tackle AI's power bottleneck, OpenAI's GPT-5.6 tiering shows how cost-conscious frontier models are getting, and C.H. Robinson's latest release is a real case study of agents <b>running</b> (not just assisting) a supply chain. Also worth noting: Colorado's flagship AI law was quietly gutted and delayed before it ever took effect — a good check on how fast AI policy headlines can go stale.",
+    "lede": "Not a quiet day: the Data Center Power Coalition launched today to tackle AI's power bottleneck, OpenAI's GPT-5.6 tiering shows how cost-conscious frontier models are getting, and C.H. Robinson's latest release is a real case study of agents <b>running</b> (not just assisting) a supply chain. Also worth noting: Colorado's flagship AI law was quietly gutted and delayed before it ever took effect \u2014 a good check on how fast AI policy headlines can go stale.",
     "items": [
       {
         "tags": [
@@ -161,7 +285,7 @@ const DIGESTS = [
           "Agents"
         ],
         "title": "C.H. Robinson's Lean AI Engineer assesses a full supply chain in 30 minutes, not 4 weeks",
-        "why": "Production-grade proof that agentic AI can run live logistics decisions, not just draft recommendations. It pairs with the existing Lean AI Planner, which already manages 92% of C.H. Robinson's global 4PL shipment volume through hundreds of interconnected agents — a solid reference architecture for the supply-chain automation you track.",
+        "why": "Production-grade proof that agentic AI can run live logistics decisions, not just draft recommendations. It pairs with the existing Lean AI Planner, which already manages 92% of C.H. Robinson's global 4PL shipment volume through hundreds of interconnected agents \u2014 a solid reference architecture for the supply-chain automation you track.",
         "sources": [
           {
             "label": "C.H. Robinson",
@@ -180,7 +304,7 @@ const DIGESTS = [
           "AI-infra"
         ],
         "title": "Data Center Power Coalition launches with 12 founding partners to standardize AI power planning",
-        "why": "Confirms your energy-for-AI thesis in real time: the constraint has moved from chips and capital to megawatts and interconnection timelines. A shared \"power playbook\" aims to shorten the multi-year queues gating new data-center capacity — worth tracking who else signs on.",
+        "why": "Confirms your energy-for-AI thesis in real time: the constraint has moved from chips and capital to megawatts and interconnection timelines. A shared \"power playbook\" aims to shorten the multi-year queues gating new data-center capacity \u2014 worth tracking who else signs on.",
         "sources": [
           {
             "label": "Data Center Knowledge",
@@ -194,8 +318,8 @@ const DIGESTS = [
           "Frontier models",
           "Cost"
         ],
-        "title": "OpenAI previews a three-tier GPT-5.6 family — Sol, Terra, Luna — built for long-horizon agent work",
-        "why": "Sol targets frontier reasoning for agentic tasks, while Terra and Luna trade capability for cost — the tiering that decides whether always-on agents are economical at scale. Access is currently gated to limited preview partners, reportedly at the direction of the US government, which is itself worth watching.",
+        "title": "OpenAI previews a three-tier GPT-5.6 family \u2014 Sol, Terra, Luna \u2014 built for long-horizon agent work",
+        "why": "Sol targets frontier reasoning for agentic tasks, while Terra and Luna trade capability for cost \u2014 the tiering that decides whether always-on agents are economical at scale. Access is currently gated to limited preview partners, reportedly at the direction of the US government, which is itself worth watching.",
         "sources": [
           {
             "label": "OpenAI",
@@ -214,7 +338,7 @@ const DIGESTS = [
           "AI-infra"
         ],
         "title": "Qualcomm nears ~$3.9B deal for AI-software startup Modular",
-        "why": "A chipmaker buying an inference-software stack, rather than raising its own model lab, is another data point for the picks-and-shovels thesis: value is migrating to whoever makes models run fast and cheap on non-Nvidia hardware. Deal expected to close in H2 2026 — watch the terms and Nvidia's competitive response.",
+        "why": "A chipmaker buying an inference-software stack, rather than raising its own model lab, is another data point for the picks-and-shovels thesis: value is migrating to whoever makes models run fast and cheap on non-Nvidia hardware. Deal expected to close in H2 2026 \u2014 watch the terms and Nvidia's competitive response.",
         "sources": [
           {
             "label": "CNBC",
@@ -245,7 +369,7 @@ const DIGESTS = [
           "Market signal"
         ],
         "title": "NVIDIA opens its Agent Toolkit as Adobe, SAP, ServiceNow, Salesforce and others build on it",
-        "why": "The adopter list for NVIDIA's open-source toolkit for self-evolving enterprise agents reads like a who's-who of the agent-orchestration land grab, alongside OpenAI and Microsoft. This layer — not any single model — will decide lock-in and switching costs for the agent tooling you're evaluating.",
+        "why": "The adopter list for NVIDIA's open-source toolkit for self-evolving enterprise agents reads like a who's-who of the agent-orchestration land grab, alongside OpenAI and Microsoft. This layer \u2014 not any single model \u2014 will decide lock-in and switching costs for the agent tooling you're evaluating.",
         "sources": [
           {
             "label": "NVIDIA Newsroom",
@@ -258,11 +382,11 @@ const DIGESTS = [
     "tryBox": {
       "h": "Prototype with NVIDIA's open-source Agent Toolkit",
       "body": "NVIDIA just open-sourced the software behind its self-evolving enterprise agents, and Adobe, SAP, ServiceNow and others are already building on it. Concrete, low-cost experiment for this week: pull the toolkit and prototype one narrow supply-chain or ops workflow as an agent, rather than waiting for a vendor platform to mature.",
-      "src": "<a href=\"https://nvidianews.nvidia.com/news/ai-agents\">NVIDIA Agent Toolkit</a> · announced 2026"
+      "src": "<a href=\"https://nvidianews.nvidia.com/news/ai-agents\">NVIDIA Agent Toolkit</a> \u00b7 announced 2026"
     },
     "radar": [
-      "<b>Qualcomm–Modular deal.</b> The ~$3.9B acquisition is expected to close in H2 2026 — watch how Nvidia responds competitively in the inference-software layer.",
-      "<b>EU AI Act transparency rules.</b> Labeling/marking requirements for AI-generated content are set to take effect in August 2026 — relevant if any portfolio companies operate in the EU."
+      "<b>Qualcomm\u2013Modular deal.</b> The ~$3.9B acquisition is expected to close in H2 2026 \u2014 watch how Nvidia responds competitively in the inference-software layer.",
+      "<b>EU AI Act transparency rules.</b> Labeling/marking requirements for AI-generated content are set to take effect in August 2026 \u2014 relevant if any portfolio companies operate in the EU."
     ]
   }
 ];
