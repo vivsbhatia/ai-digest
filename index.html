@@ -151,6 +151,113 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
   {
+    "date": "2026-07-05",
+    "label": "Sun, Jul 5, 2026",
+    "gathered": "gathered 7:00 local",
+    "lede": "A lighter Sunday news flow, but the through-line holds: the enterprise-agent land grab is now an infrastructure-spend story, not just a model story. Oracle shipped four new agentic apps aimed squarely at supply-chain planners, Microsoft put $2.5B and 6,000 people behind an in-house deployment arm to close the gap between agent pilots and production, and Meta is reportedly exploring selling its excess AI compute for cash — the same capital-recycling playbook SpaceX is running. On the policy side, the FTC opened a comment window on AI-output-accuracy rules that closes July 31, worth a note but not yet binding on anything.",
+    "items": [
+      {
+        "tags": [
+          "Supply chain",
+          "Agents",
+          "Enterprise"
+        ],
+        "title": "Oracle ships four new Fusion Agentic Applications targeting inventory, supplier qualification and production readiness",
+        "why": "The Inventory Planning Command Center autonomously proposes and simulates fixes for stockouts (expedite, transfer, adjust policy) inside Oracle's existing Fusion security guardrails, alongside a Supplier Qualification Workspace, Production Readiness Workspace and Kanban Administration Workspace. This is exactly the pattern to watch for your supply-chain automation thesis: agents moving from dashboards to bounded autonomous action inside an incumbent ERP, not a standalone startup.",
+        "sources": [
+          {
+            "label": "Oracle",
+            "url": "https://www.oracle.com/news/announcement/oracle-adds-new-fusion-agentic-applications-to-help-customers-improve-supply-chain-performance-2026-06-29/"
+          },
+          {
+            "label": "PR Newswire",
+            "url": "https://www.prnewswire.com/news-releases/oracle-adds-new-fusion-agentic-applications-to-help-customers-improve-supply-chain-performance-302812443.html"
+          }
+        ],
+        "date": "announced June 29, 2026"
+      },
+      {
+        "tags": [
+          "Agents",
+          "Enterprise",
+          "AI-infra"
+        ],
+        "title": "Microsoft launches Frontier Company, a $2.5B unit of 6,000 engineers built to actually deploy enterprise AI",
+        "why": "Rather than just sell tools, Microsoft is putting its own people and capital behind closing the gap between agent pilots and production deployments — an implicit admission that most enterprise agent rollouts are stalling on integration and change management, not model capability. If you're evaluating vendors selling into this wave, the existence of a hyperscaler-run 'we'll do it for you' arm is a competitive signal worth pricing in.",
+        "sources": [
+          {
+            "label": "TechCrunch",
+            "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/"
+          },
+          {
+            "label": "Microsoft",
+            "url": "https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/"
+          }
+        ],
+        "date": "announced July 2, 2026"
+      },
+      {
+        "tags": [
+          "AI-infra",
+          "Market signal",
+          "Investing"
+        ],
+        "title": "Meta reportedly exploring a cloud business to sell its excess AI compute for cash, mirroring SpaceX's Colossus playbook",
+        "why": "If a hyperscaler with ~$145B in planned 2026 AI capex is looking to monetize spare capacity, that's a tell that even well-funded buyers are managing utilization risk on their compute bet, not just chasing more of it. Relevant to how you think about compute-as-a-service names (SpaceX-style) versus pure-play hyperscalers in the AI-infra trade — treat this as a reported exploration, not a confirmed launch.",
+        "sources": [
+          {
+            "label": "TechCrunch",
+            "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/"
+          }
+        ],
+        "date": "reported July 1, 2026"
+      },
+      {
+        "tags": [
+          "AI-infra",
+          "Energy-for-AI",
+          "Investing"
+        ],
+        "title": "Goldman Sachs models AI capex scaling from roughly $765B this year toward $1.6T annually by 2031, with power as the binding constraint",
+        "why": "Hyperscale AI data-center capacity is projected to grow from about 11.5GW in 2026 to 43.6GW by 2031 — a useful long-horizon anchor for the energy-for-AI thesis, independent of any single quarter's capex headline. The consistent message across trackers this month: capital is no longer the gating factor, grid interconnection and generation are.",
+        "sources": [
+          {
+            "label": "Goldman Sachs",
+            "url": "https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out"
+          },
+          {
+            "label": "BloombergNEF",
+            "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
+          }
+        ],
+        "date": "2026 modeling, reported through early July"
+      },
+      {
+        "tags": [
+          "Policy"
+        ],
+        "title": "FTC opens 30-day public comment window on a policy statement addressing AI-output accuracy and 'ideological manipulation'",
+        "why": "The proposed statement targets AI companies that steer model outputs toward undisclosed objectives in ways that could count as deceptive under FTC Act Section 5 — comments close July 31, 2026, and the commission vote to proceed was 2-0. Nothing binding yet, but it's a new front (accuracy/deception, not just safety or copyright) worth tracking if any portfolio or vendor exposure touches consumer-facing AI outputs.",
+        "sources": [
+          {
+            "label": "FTC",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-seeks-public-comment-policy-statement-addressing-ai-accuracy"
+          }
+        ],
+        "date": "opened July 1, 2026; comments due July 31, 2026"
+      }
+    ],
+    "tryBox": {
+      "h": "Skim Oracle's Inventory Planning Command Center demo before your next vendor call",
+      "body": "If you're evaluating supply-chain or ERP-agent vendors this quarter, Oracle's new Command Center is a useful reference point for what 'bounded autonomous action inside existing guardrails' looks like in production — a concrete bar to hold pitch decks against.",
+      "src": "<a href=\"https://www.oracle.com/news/announcement/oracle-adds-new-fusion-agentic-applications-to-help-customers-improve-supply-chain-performance-2026-06-29/\">Oracle announcement</a> · June 29, 2026"
+    },
+    "radar": [
+      "<b>Microsoft Frontier Company's first case studies.</b> Watch for which enterprise verticals get engaged first — that's a tell for where hyperscalers see the highest agent-deployment friction.",
+      "<b>FTC's July 31 comment deadline.</b> Worth a calendar note; the resulting policy statement could shape how consumer-facing AI products present model outputs."
+    ]
+  },
+  {
     "date": "2026-07-03",
     "label": "Fri, Jul 3, 2026",
     "gathered": "gathered 7:00 local",
