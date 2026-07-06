@@ -151,6 +151,124 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
   {
+    "date": "2026-07-06",
+    "label": "Mon, Jul 6, 2026",
+    "gathered": "gathered 7:00 local",
+    "lede": "Monday's flow is less about a single splashy launch and more about three threads compounding at once: enterprise agent spend is now a hard budget line (Gartner pegs 2026 agent software spend at $206.5B, up 139% year over year), the AI-infra buildout keeps outrunning the power grid rather than the capital markets, and the Fable 5/Mythos 5 export-control saga that closed last week is emerging as the reference case for single-vendor concentration risk in production agent stacks. Supply-chain agentic AI and two more capital-flow data points round out the rest.",
+    "items": [
+      {
+        "tags": [
+          "Agents",
+          "Enterprise",
+          "Investing"
+        ],
+        "title": "Gartner: AI agent software spend to reach $206.5B in 2026, up 139% YoY, with $234B of enterprise SaaS spend now 'at risk' through 2030",
+        "why": "Agent spend is the fastest-growing line in enterprise software by a wide margin, and Gartner frames roughly 20% of SaaS spend by 2030 as exposed to 'agentic arbitrage.' Useful as a sizing anchor for the agent-tooling thesis, and a flag for any incumbent SaaS names you hold or watch where seat-based pricing is the business model.",
+        "sources": [
+          {
+            "label": "Gartner",
+            "url": "https://www.gartner.com/en/newsroom/press-releases/2026-07-01-gartner-says-us-dollars-234-billion-in-enterprise-application-software-spend-is-at-risk-from-agentic-artificial-intelligence"
+          }
+        ],
+        "date": "published July 1, 2026"
+      },
+      {
+        "tags": [
+          "AI-infra",
+          "Energy-for-AI",
+          "Investing"
+        ],
+        "title": "Hyperscaler AI capex tracking near $660–750B for 2026, but 30–50% of planned data-center capacity is now slipping to 2028 on grid-interconnection bottlenecks",
+        "why": "The consistent signal across trackers this month: capital is no longer the constraint, power and interconnection queues are. That pushes component and construction demand that was supposed to peak in 2026 out into 2027–28, which matters for how you time exposure to the energy-for-AI and data-center supply chain rather than just the hyperscaler capex headline.",
+        "sources": [
+          {
+            "label": "BloombergNEF",
+            "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
+          },
+          {
+            "label": "Fortune",
+            "url": "https://fortune.com/2026/06/29/ai-spending-boom-accelerates-big-tech-trillion-infrastructure-qualcomm-cfo/"
+          }
+        ],
+        "date": "reported through early July 2026"
+      },
+      {
+        "tags": [
+          "Funding",
+          "AI-infra",
+          "Market signal"
+        ],
+        "title": "Neocloud Together AI raises $800M Series C at an $8.3B valuation, led by Aramco Ventures with Nvidia participating",
+        "why": "Strategic energy money (Aramco Ventures) backing an inference-cloud neocloud, alongside Nvidia, is a direct data point on where energy-for-AI capital is flowing outside the big five hyperscalers — a name worth keeping on the radar for the AI-infra theme.",
+        "sources": [
+          {
+            "label": "TechCrunch",
+            "url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/"
+          }
+        ],
+        "date": "announced July 1, 2026"
+      },
+      {
+        "tags": [
+          "Funding",
+          "Market signal"
+        ],
+        "title": "MGX closes a $49B AI investment fund, above its $45B target, cementing it as one of the largest dedicated AI-deal pools globally",
+        "why": "Another large sovereign-adjacent capital pool aimed squarely at AI deals confirms how much dry powder is still chasing AI-infra and compute assets. Context for gauging whether current AI-infra valuations are being driven by fundamentals or by a wall of capital still looking for a home.",
+        "sources": [
+          {
+            "label": "Bloomberg Law",
+            "url": "https://news.bloomberglaw.com/mergers-and-acquisitions/mgx-raises-49-billion-for-one-of-the-biggest-ever-ai-funds"
+          }
+        ],
+        "date": "reported early July 2026"
+      },
+      {
+        "tags": [
+          "Supply chain",
+          "Agents"
+        ],
+        "title": "Gartner (via BCG): 60% of supply-chain disruptions expected to be resolved without human involvement by 2031 as agentic AI shifts from prediction to action",
+        "why": "This is the concrete confirmation of the supply-chain automation thesis: the shift is from predictive dashboards to agents that actually execute the fix (reroute, reorder, renegotiate) inside guardrails. Worth using as a benchmark question in any supply-chain-tech vendor conversation — ask specifically what action the agent is allowed to take, not just what it predicts.",
+        "sources": [
+          {
+            "label": "BCG",
+            "url": "https://www.bcg.com/publications/2026/how-ai-agents-are-transforming-supply-chains"
+          }
+        ],
+        "date": "2026 research, reported this week"
+      },
+      {
+        "tags": [
+          "Policy",
+          "Reality check"
+        ],
+        "title": "The Fable 5/Mythos 5 export-control saga closes — US lifts a 19-day shutdown, but the episode is now the reference case for single-vendor AI concentration risk",
+        "why": "Commerce ordered Anthropic to cut off all foreign-national access to Fable 5 and Mythos 5 on national-security grounds on June 12, then reversed course June 30. For anyone running production agent workflows on a single frontier-model provider, this is the concrete precedent that policy — not just outages — can zero out access overnight; worth a real contingency-plan check regardless of which lab you standardize on.",
+        "sources": [
+          {
+            "label": "CNBC",
+            "url": "https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html"
+          },
+          {
+            "label": "Anthropic",
+            "url": "https://www.anthropic.com/news/fable-mythos-access"
+          }
+        ],
+        "date": "resolved June 30, 2026"
+      }
+    ],
+    "tryBox": {
+      "h": "Try Alteryx's Agent Studio + MCP Server (now in preview)",
+      "body": "Announced at Inspire 2026 and now in preview, Agent Studio converts your existing Alteryx workflows and business logic directly into autonomous agents without going through central IT, and the MCP Server exposes those workflows as tools callable from Claude or other LLMs. If you want a low-cost way to test agentizing one narrow ops or supply-chain workflow yourself, this is a concrete entry point.",
+      "src": "<a href=\"https://enterprisedna.co/resources/news/alteryx-agent-studio-inspire-2026-analytics-ai-agents/\">Enterprise DNA</a> · Inspire 2026, preview since June 2026"
+    },
+    "radar": [
+      "<b>Where Microsoft Frontier Company lands its first customers.</b> Still the tell for which verticals have the most agent-deployment friction.",
+      "<b>Whether other labs face export-control-style directives.</b> The Fable 5/Mythos 5 precedent means this is now a repeatable policy lever, not a one-off."
+    ]
+  },
+  {
     "date": "2026-07-05",
     "label": "Sun, Jul 5, 2026",
     "gathered": "gathered 7:00 local",
