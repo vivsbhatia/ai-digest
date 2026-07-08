@@ -151,6 +151,123 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
   {
+    "date": "2026-07-08",
+    "label": "Wed, Jul 8, 2026",
+    "gathered": "gathered 7:00 local",
+    "lede": "Wednesday's throughline is capital: two separate multibillion-dollar signals landed on the AI-infra/energy side (Crusoe's reported $3B raise at a tripled $30B valuation, plus fresh accounting of the ~$690B hyperscaler capex wave), while Anthropic's secondary-market valuation pulling ahead of OpenAI's gives a market-level read on how investors are pricing the model-layer race. On the agents side, Oracle pushed deeper into supply-chain-specific agentic tooling and Microsoft put real headcount behind enterprise AI deployment services — both point to the same trend: the agent story is moving from platform demos to vertical, funded execution.",
+    "items": [
+      {
+        "tags": [
+          "Investing",
+          "Market signal",
+          "Funding"
+        ],
+        "title": "Anthropic's secondary-market valuation pulls ahead of OpenAI's — hovering near $1T versus OpenAI's ~$880B — following Anthropic's $965B Series H close in late May",
+        "why": "A market-level proxy for how private investors are currently pricing the two leading labs relative to each other; useful context (not a signal to act on) if you're tracking AI-infra/model-layer valuations as part of your investing thesis. Secondary marks are thin and volatile, so treat this as directional, not definitive.",
+        "sources": [
+          {
+            "label": "Morningstar",
+            "url": "https://www.morningstar.com/stocks/anthropic-bests-openai-valuation-race-hitting-965b"
+          },
+          {
+            "label": "CNBC",
+            "url": "https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html"
+          }
+        ],
+        "date": "Series H closed late May 2026; secondary marks reported through early July 2026"
+      },
+      {
+        "tags": [
+          "AI-infra",
+          "Energy-for-AI",
+          "Funding"
+        ],
+        "title": "Crusoe reportedly in talks to raise ~$3B at roughly a $30B valuation — nearly triple its $10B mark from eight months ago — to expand its power-to-data-center AI infrastructure build",
+        "why": "Crusoe's model (own the power generation, then build the data center on top of it) is a distinct bet within energy-for-AI investing versus pure-play utilities or REITs; the valuation triple in under a year is a concrete data point on how fast private capital is re-rating this niche. Still an in-talks report, not a closed round — flagged as unconfirmed until announced.",
+        "sources": [
+          {
+            "label": "SiliconANGLE",
+            "url": "https://siliconangle.com/2026/07/03/ai-data-center-builder-crusoe-reportedly-raising-3b-30b-valuation/"
+          },
+          {
+            "label": "TechFundingNews",
+            "url": "https://techfundingnews.com/crusoe-to-triple-valuation-to-30b-as-ai-infrastructure-race-heats-up-report/"
+          }
+        ],
+        "date": "reported July 3-6, 2026"
+      },
+      {
+        "tags": [
+          "Supply chain",
+          "Agents",
+          "Enterprise"
+        ],
+        "title": "Oracle adds four new Fusion Agentic Applications for supply chain — Inventory Planning Command Center, Supplier Qualification Workspace, Production Readiness Workspace, Kanban Administrative Workspace — plus an Agentic Applications Builder in AI Agent Studio",
+        "why": "A large enterprise incumbent shipping supply-chain-specific agent products (not just a generic agent platform) is a signal worth tracking for where vertical agentic tooling is landing first; the Agent Studio builder also lowers the bar for custom agents inside existing Fusion SCM deployments, which is the kind of build-vs-buy data point that matters for supply-chain automation plays.",
+        "sources": [
+          {
+            "label": "Oracle",
+            "url": "https://www.oracle.com/news/announcement/oracle-adds-new-fusion-agentic-applications-to-help-customers-improve-supply-chain-performance-2026-06-29/"
+          },
+          {
+            "label": "PR Newswire",
+            "url": "https://www.prnewswire.com/news-releases/oracle-adds-new-fusion-agentic-applications-to-help-customers-improve-supply-chain-performance-302812443.html"
+          }
+        ],
+        "date": "announced June 29, 2026"
+      },
+      {
+        "tags": [
+          "Agents",
+          "Enterprise",
+          "Market signal"
+        ],
+        "title": "Microsoft launches Microsoft Frontier Company, a $2.5B, 6,000-person consulting arm dedicated to helping enterprises plan and deploy AI agents",
+        "why": "A platform vendor standing up its own dedicated services org to close the deployment gap is a tell that agent rollouts are still bottlenecked on integration and change management, not model capability — relevant if you're evaluating agent-tooling vendors or the services layer around them as an investing theme.",
+        "sources": [
+          {
+            "label": "TechCrunch",
+            "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/"
+          },
+          {
+            "label": "HPCwire",
+            "url": "https://www.hpcwire.com/bigdatawire/2026/07/06/microsoft-launches-new-2-5b-ai-initiative-with-6000-experts-to-help-enterprises-deploy-a/"
+          }
+        ],
+        "date": "announced July 2, 2026"
+      },
+      {
+        "tags": [
+          "AI-infra",
+          "Energy-for-AI",
+          "Market signal"
+        ],
+        "title": "Hyperscaler capex tracking confirms ~$660-690B committed for 2026 across Microsoft, Alphabet, Amazon, Meta, Oracle and the Stargate consortium, with 74 new data center facilities breaking ground across 28 US states this year",
+        "why": "The scale and geographic spread of the buildout is the backdrop for every energy-for-AI and AI-infra thesis right now — power availability (not capital) is increasingly the binding constraint, which is the same story underneath the Crusoe raise above.",
+        "sources": [
+          {
+            "label": "ValueAdd VC AI CapEx Tracker",
+            "url": "https://valueaddvc.com/ai-buildout-tracker"
+          },
+          {
+            "label": "Futurum Group",
+            "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
+          }
+        ],
+        "date": "capex tracking through July 2026"
+      }
+    ],
+    "tryBox": {
+      "h": "Try Gemini 3.5 Flash for an agentic/coding workflow",
+      "body": "Google's Gemini 3.5 Flash (launched at I/O in May, now more broadly available) is positioned as the strongest agentic and coding model in Google's lineup — 1M-token context and roughly 4x faster inference than comparable frontier models. If you're running multi-step tool-use tasks on a pricier default model, worth a side-by-side test this week.",
+      "src": "<a href=\"https://blog.google\">Google I/O coverage</a> · launched May 19, 2026, GA rolling out through July"
+    },
+    "radar": [
+      "<b>Whether Crusoe's $3B round actually closes at the reported $30B mark.</b> Still an in-talks report — worth confirming once (if) it's officially announced.",
+      "<b>Whether other ERP/SCM incumbents (SAP, Blue Yonder, Infor) answer Oracle's supply-chain agent push</b> with their own vertical agentic products, or cede that ground to point solutions."
+    ]
+  },
+  {
     "date": "2026-07-07",
     "label": "Tue, Jul 7, 2026",
     "gathered": "gathered 7:00 local",
@@ -178,7 +295,7 @@ const DIGESTS = [
           "Investing"
         ],
         "title": "National Grid Ventures invests $1.75B for a 35% stake in Joulent, backing a 2.67 GW co-located power facility (Project Kilby) under a 20-year PPA with a Microsoft data center",
-        "why": "A regulated utility taking an equity stake in an 'across-the-meter' power developer \u2014 generation wired straight to the server rack, bypassing the public grid \u2014 is a concrete signal of where energy-for-AI capital is actually structuring itself right now, distinct from the hyperscaler-capex headline number. Chevron is the 50/50 partner on the generation side, so this also ties fossil-fuel majors directly into AI-infra economics.",
+        "why": "A regulated utility taking an equity stake in an 'across-the-meter' power developer — generation wired straight to the server rack, bypassing the public grid — is a concrete signal of where energy-for-AI capital is actually structuring itself right now, distinct from the hyperscaler-capex headline number. Chevron is the 50/50 partner on the generation side, so this also ties fossil-fuel majors directly into AI-infra economics.",
         "sources": [
           {
             "label": "PR Newswire",
@@ -222,7 +339,7 @@ const DIGESTS = [
           "Reality check"
         ],
         "title": "AvePoint's 2026 State of AI report: 88.4% of organizations report at least one AI-agent-related security incident in the past year, even as ~47% of employees now use agents weekly or daily",
-        "why": "The clearest reality check yet on the enterprise-agent thesis: adoption (and the Gartner $206.5B spend number from earlier this week) is real, but governance and visibility tooling is lagging badly behind \u2014 data leakage and manipulation by untrusted inputs are the top failure modes. A concrete question to bring to any agent-tooling vendor conversation: what's their answer to this specific survey.",
+        "why": "The clearest reality check yet on the enterprise-agent thesis: adoption (and the Gartner $206.5B spend number from earlier this week) is real, but governance and visibility tooling is lagging badly behind — data leakage and manipulation by untrusted inputs are the top failure modes. A concrete question to bring to any agent-tooling vendor conversation: what's their answer to this specific survey.",
         "sources": [
           {
             "label": "GlobeNewswire",
@@ -241,8 +358,8 @@ const DIGESTS = [
           "Agents",
           "Reality check"
         ],
-        "title": "Warehouse robotics crosses from pilot to production scale: Locus reports 350+ live sites, Amazon runs 750,000+ robots fleet-wide, and median AMR deployment size has grown from 15 to 35 robots per facility since 2024 \u2014 but only 34% of VP/Director-level execs say they're fully satisfied with the results",
-        "why": "The scale numbers confirm the supply-chain automation thesis is past proof-of-concept, but the DHL satisfaction stat is the useful counterweight \u2014 deployment volume is outrunning realized value for a lot of buyers, which is exactly the gap agentic orchestration layers (vs. just more robots) are trying to close.",
+        "title": "Warehouse robotics crosses from pilot to production scale: Locus reports 350+ live sites, Amazon runs 750,000+ robots fleet-wide, and median AMR deployment size has grown from 15 to 35 robots per facility since 2024 — but only 34% of VP/Director-level execs say they're fully satisfied with the results",
+        "why": "The scale numbers confirm the supply-chain automation thesis is past proof-of-concept, but the DHL satisfaction stat is the useful counterweight — deployment volume is outrunning realized value for a lot of buyers, which is exactly the gap agentic orchestration layers (vs. just more robots) are trying to close.",
         "sources": [
           {
             "label": "TraxTech",
@@ -258,8 +375,8 @@ const DIGESTS = [
     ],
     "tryBox": {
       "h": "Try benchmarking one agent workflow on Claude Sonnet 5",
-      "body": "Sonnet 5 is now positioned specifically as the cheap, always-on option for agentic work (tool use, browsing, multi-step plans) at a fraction of frontier-model pricing. If you're running anything on a pricier model by default \u2014 research summarization, supply-chain monitoring, whatever \u2014 this is a low-effort week to swap it in and see if quality holds, especially with Fable 5's per-token cost jumping today.",
-      "src": "<a href=\"https://www.anthropic.com/news/claude-sonnet-5\">Anthropic</a> \u00b7 launched June 30, 2026"
+      "body": "Sonnet 5 is now positioned specifically as the cheap, always-on option for agentic work (tool use, browsing, multi-step plans) at a fraction of frontier-model pricing. If you're running anything on a pricier model by default — research summarization, supply-chain monitoring, whatever — this is a low-effort week to swap it in and see if quality holds, especially with Fable 5's per-token cost jumping today.",
+      "src": "<a href=\"https://www.anthropic.com/news/claude-sonnet-5\">Anthropic</a> · launched June 30, 2026"
     },
     "radar": [
       "<b>Whether other utilities copy National Grid/Joulent's behind-the-meter co-location structure.</b> If this becomes the standard template, it reshapes how energy-for-AI capital gets deployed outside traditional grid-interconnection queues.",
@@ -294,8 +411,8 @@ const DIGESTS = [
           "Energy-for-AI",
           "Investing"
         ],
-        "title": "Hyperscaler AI capex tracking near $660\u2013750B for 2026, but 30\u201350% of planned data-center capacity is now slipping to 2028 on grid-interconnection bottlenecks",
-        "why": "The consistent signal across trackers this month: capital is no longer the constraint, power and interconnection queues are. That pushes component and construction demand that was supposed to peak in 2026 out into 2027\u201328, which matters for how you time exposure to the energy-for-AI and data-center supply chain rather than just the hyperscaler capex headline.",
+        "title": "Hyperscaler AI capex tracking near $660–750B for 2026, but 30–50% of planned data-center capacity is now slipping to 2028 on grid-interconnection bottlenecks",
+        "why": "The consistent signal across trackers this month: capital is no longer the constraint, power and interconnection queues are. That pushes component and construction demand that was supposed to peak in 2026 out into 2027–28, which matters for how you time exposure to the energy-for-AI and data-center supply chain rather than just the hyperscaler capex headline.",
         "sources": [
           {
             "label": "BloombergNEF",
@@ -315,7 +432,7 @@ const DIGESTS = [
           "Market signal"
         ],
         "title": "Neocloud Together AI raises $800M Series C at an $8.3B valuation, led by Aramco Ventures with Nvidia participating",
-        "why": "Strategic energy money (Aramco Ventures) backing an inference-cloud neocloud, alongside Nvidia, is a direct data point on where energy-for-AI capital is flowing outside the big five hyperscalers \u2014 a name worth keeping on the radar for the AI-infra theme.",
+        "why": "Strategic energy money (Aramco Ventures) backing an inference-cloud neocloud, alongside Nvidia, is a direct data point on where energy-for-AI capital is flowing outside the big five hyperscalers — a name worth keeping on the radar for the AI-infra theme.",
         "sources": [
           {
             "label": "TechCrunch",
@@ -345,7 +462,7 @@ const DIGESTS = [
           "Agents"
         ],
         "title": "Gartner (via BCG): 60% of supply-chain disruptions expected to be resolved without human involvement by 2031 as agentic AI shifts from prediction to action",
-        "why": "This is the concrete confirmation of the supply-chain automation thesis: the shift is from predictive dashboards to agents that actually execute the fix (reroute, reorder, renegotiate) inside guardrails. Worth using as a benchmark question in any supply-chain-tech vendor conversation \u2014 ask specifically what action the agent is allowed to take, not just what it predicts.",
+        "why": "This is the concrete confirmation of the supply-chain automation thesis: the shift is from predictive dashboards to agents that actually execute the fix (reroute, reorder, renegotiate) inside guardrails. Worth using as a benchmark question in any supply-chain-tech vendor conversation — ask specifically what action the agent is allowed to take, not just what it predicts.",
         "sources": [
           {
             "label": "BCG",
@@ -359,8 +476,8 @@ const DIGESTS = [
           "Policy",
           "Reality check"
         ],
-        "title": "The Fable 5/Mythos 5 export-control saga closes \u2014 US lifts a 19-day shutdown, but the episode is now the reference case for single-vendor AI concentration risk",
-        "why": "Commerce ordered Anthropic to cut off all foreign-national access to Fable 5 and Mythos 5 on national-security grounds on June 12, then reversed course June 30. For anyone running production agent workflows on a single frontier-model provider, this is the concrete precedent that policy \u2014 not just outages \u2014 can zero out access overnight; worth a real contingency-plan check regardless of which lab you standardize on.",
+        "title": "The Fable 5/Mythos 5 export-control saga closes — US lifts a 19-day shutdown, but the episode is now the reference case for single-vendor AI concentration risk",
+        "why": "Commerce ordered Anthropic to cut off all foreign-national access to Fable 5 and Mythos 5 on national-security grounds on June 12, then reversed course June 30. For anyone running production agent workflows on a single frontier-model provider, this is the concrete precedent that policy — not just outages — can zero out access overnight; worth a real contingency-plan check regardless of which lab you standardize on.",
         "sources": [
           {
             "label": "CNBC",
@@ -377,7 +494,7 @@ const DIGESTS = [
     "tryBox": {
       "h": "Try Alteryx's Agent Studio + MCP Server (now in preview)",
       "body": "Announced at Inspire 2026 and now in preview, Agent Studio converts your existing Alteryx workflows and business logic directly into autonomous agents without going through central IT, and the MCP Server exposes those workflows as tools callable from Claude or other LLMs. If you want a low-cost way to test agentizing one narrow ops or supply-chain workflow yourself, this is a concrete entry point.",
-      "src": "<a href=\"https://enterprisedna.co/resources/news/alteryx-agent-studio-inspire-2026-analytics-ai-agents/\">Enterprise DNA</a> \u00b7 Inspire 2026, preview since June 2026"
+      "src": "<a href=\"https://enterprisedna.co/resources/news/alteryx-agent-studio-inspire-2026-analytics-ai-agents/\">Enterprise DNA</a> · Inspire 2026, preview since June 2026"
     },
     "radar": [
       "<b>Where Microsoft Frontier Company lands its first customers.</b> Still the tell for which verticals have the most agent-deployment friction.",
@@ -388,7 +505,7 @@ const DIGESTS = [
     "date": "2026-07-05",
     "label": "Sun, Jul 5, 2026",
     "gathered": "gathered 7:00 local",
-    "lede": "A lighter Sunday news flow, but the through-line holds: the enterprise-agent land grab is now an infrastructure-spend story, not just a model story. Oracle shipped four new agentic apps aimed squarely at supply-chain planners, Microsoft put $2.5B and 6,000 people behind an in-house deployment arm to close the gap between agent pilots and production, and Meta is reportedly exploring selling its excess AI compute for cash \u2014 the same capital-recycling playbook SpaceX is running. On the policy side, the FTC opened a comment window on AI-output-accuracy rules that closes July 31, worth a note but not yet binding on anything.",
+    "lede": "A lighter Sunday news flow, but the through-line holds: the enterprise-agent land grab is now an infrastructure-spend story, not just a model story. Oracle shipped four new agentic apps aimed squarely at supply-chain planners, Microsoft put $2.5B and 6,000 people behind an in-house deployment arm to close the gap between agent pilots and production, and Meta is reportedly exploring selling its excess AI compute for cash — the same capital-recycling playbook SpaceX is running. On the policy side, the FTC opened a comment window on AI-output-accuracy rules that closes July 31, worth a note but not yet binding on anything.",
     "items": [
       {
         "tags": [
@@ -417,7 +534,7 @@ const DIGESTS = [
           "AI-infra"
         ],
         "title": "Microsoft launches Frontier Company, a $2.5B unit of 6,000 engineers built to actually deploy enterprise AI",
-        "why": "Rather than just sell tools, Microsoft is putting its own people and capital behind closing the gap between agent pilots and production deployments \u2014 an implicit admission that most enterprise agent rollouts are stalling on integration and change management, not model capability. If you're evaluating vendors selling into this wave, the existence of a hyperscaler-run 'we'll do it for you' arm is a competitive signal worth pricing in.",
+        "why": "Rather than just sell tools, Microsoft is putting its own people and capital behind closing the gap between agent pilots and production deployments — an implicit admission that most enterprise agent rollouts are stalling on integration and change management, not model capability. If you're evaluating vendors selling into this wave, the existence of a hyperscaler-run 'we'll do it for you' arm is a competitive signal worth pricing in.",
         "sources": [
           {
             "label": "TechCrunch",
@@ -437,7 +554,7 @@ const DIGESTS = [
           "Investing"
         ],
         "title": "Meta reportedly exploring a cloud business to sell its excess AI compute for cash, mirroring SpaceX's Colossus playbook",
-        "why": "If a hyperscaler with ~$145B in planned 2026 AI capex is looking to monetize spare capacity, that's a tell that even well-funded buyers are managing utilization risk on their compute bet, not just chasing more of it. Relevant to how you think about compute-as-a-service names (SpaceX-style) versus pure-play hyperscalers in the AI-infra trade \u2014 treat this as a reported exploration, not a confirmed launch.",
+        "why": "If a hyperscaler with ~$145B in planned 2026 AI capex is looking to monetize spare capacity, that's a tell that even well-funded buyers are managing utilization risk on their compute bet, not just chasing more of it. Relevant to how you think about compute-as-a-service names (SpaceX-style) versus pure-play hyperscalers in the AI-infra trade — treat this as a reported exploration, not a confirmed launch.",
         "sources": [
           {
             "label": "TechCrunch",
@@ -453,7 +570,7 @@ const DIGESTS = [
           "Investing"
         ],
         "title": "Goldman Sachs models AI capex scaling from roughly $765B this year toward $1.6T annually by 2031, with power as the binding constraint",
-        "why": "Hyperscale AI data-center capacity is projected to grow from about 11.5GW in 2026 to 43.6GW by 2031 \u2014 a useful long-horizon anchor for the energy-for-AI thesis, independent of any single quarter's capex headline. The consistent message across trackers this month: capital is no longer the gating factor, grid interconnection and generation are.",
+        "why": "Hyperscale AI data-center capacity is projected to grow from about 11.5GW in 2026 to 43.6GW by 2031 — a useful long-horizon anchor for the energy-for-AI thesis, independent of any single quarter's capex headline. The consistent message across trackers this month: capital is no longer the gating factor, grid interconnection and generation are.",
         "sources": [
           {
             "label": "Goldman Sachs",
@@ -471,7 +588,7 @@ const DIGESTS = [
           "Policy"
         ],
         "title": "FTC opens 30-day public comment window on a policy statement addressing AI-output accuracy and 'ideological manipulation'",
-        "why": "The proposed statement targets AI companies that steer model outputs toward undisclosed objectives in ways that could count as deceptive under FTC Act Section 5 \u2014 comments close July 31, 2026, and the commission vote to proceed was 2-0. Nothing binding yet, but it's a new front (accuracy/deception, not just safety or copyright) worth tracking if any portfolio or vendor exposure touches consumer-facing AI outputs.",
+        "why": "The proposed statement targets AI companies that steer model outputs toward undisclosed objectives in ways that could count as deceptive under FTC Act Section 5 — comments close July 31, 2026, and the commission vote to proceed was 2-0. Nothing binding yet, but it's a new front (accuracy/deception, not just safety or copyright) worth tracking if any portfolio or vendor exposure touches consumer-facing AI outputs.",
         "sources": [
           {
             "label": "FTC",
@@ -483,11 +600,11 @@ const DIGESTS = [
     ],
     "tryBox": {
       "h": "Skim Oracle's Inventory Planning Command Center demo before your next vendor call",
-      "body": "If you're evaluating supply-chain or ERP-agent vendors this quarter, Oracle's new Command Center is a useful reference point for what 'bounded autonomous action inside existing guardrails' looks like in production \u2014 a concrete bar to hold pitch decks against.",
-      "src": "<a href=\"https://www.oracle.com/news/announcement/oracle-adds-new-fusion-agentic-applications-to-help-customers-improve-supply-chain-performance-2026-06-29/\">Oracle announcement</a> \u00b7 June 29, 2026"
+      "body": "If you're evaluating supply-chain or ERP-agent vendors this quarter, Oracle's new Command Center is a useful reference point for what 'bounded autonomous action inside existing guardrails' looks like in production — a concrete bar to hold pitch decks against.",
+      "src": "<a href=\"https://www.oracle.com/news/announcement/oracle-adds-new-fusion-agentic-applications-to-help-customers-improve-supply-chain-performance-2026-06-29/\">Oracle announcement</a> · June 29, 2026"
     },
     "radar": [
-      "<b>Microsoft Frontier Company's first case studies.</b> Watch for which enterprise verticals get engaged first \u2014 that's a tell for where hyperscalers see the highest agent-deployment friction.",
+      "<b>Microsoft Frontier Company's first case studies.</b> Watch for which enterprise verticals get engaged first — that's a tell for where hyperscalers see the highest agent-deployment friction.",
       "<b>FTC's July 31 comment deadline.</b> Worth a calendar note; the resulting policy statement could shape how consumer-facing AI products present model outputs."
     ]
   },
@@ -504,7 +621,7 @@ const DIGESTS = [
           "Investing"
         ],
         "title": "MGX closes Fund I at $49B, one of the largest dedicated AI funds ever raised",
-        "why": "Abu Dhabi's MGX beat its $45B target and has already co-led rounds in Anthropic, OpenAI and xAI, plus a roughly $40B stake in Aligned Data Centres \u2014 a live example of sovereign capital moving from equity checks into owning pieces of the AI-infra stack itself (chips, data centers, power). Useful benchmark for how the biggest allocators are sizing this theme right now.",
+        "why": "Abu Dhabi's MGX beat its $45B target and has already co-led rounds in Anthropic, OpenAI and xAI, plus a roughly $40B stake in Aligned Data Centres — a live example of sovereign capital moving from equity checks into owning pieces of the AI-infra stack itself (chips, data centers, power). Useful benchmark for how the biggest allocators are sizing this theme right now.",
         "sources": [
           {
             "label": "Bloomberg",
@@ -523,8 +640,8 @@ const DIGESTS = [
           "AI-infra",
           "Investing"
         ],
-        "title": "Hyperscalers commit $690B+ to 74 new data centers \u2014 but power bottlenecks reportedly threaten nearly half of 2026's planned US builds",
-        "why": "Amazon, Google, Meta, Microsoft, Oracle and the Stargate consortium keep raising the AI-infra capex bar, but the binding constraint has clearly shifted from chip supply to megawatts and interconnection queues. That's the risk to underwrite in any energy-for-AI thesis, not just the upside \u2014 flagging this as aggregated tracker data rather than a single confirmed source, so treat the 'nearly half' delay figure as directional, not verified.",
+        "title": "Hyperscalers commit $690B+ to 74 new data centers — but power bottlenecks reportedly threaten nearly half of 2026's planned US builds",
+        "why": "Amazon, Google, Meta, Microsoft, Oracle and the Stargate consortium keep raising the AI-infra capex bar, but the binding constraint has clearly shifted from chip supply to megawatts and interconnection queues. That's the risk to underwrite in any energy-for-AI thesis, not just the upside — flagging this as aggregated tracker data rather than a single confirmed source, so treat the 'nearly half' delay figure as directional, not verified.",
         "sources": [
           {
             "label": "BloombergNEF (via Value Add VC tracker)",
@@ -543,7 +660,7 @@ const DIGESTS = [
           "Frontier models"
         ],
         "title": "Trump signs executive order creating a voluntary 30-day government pre-release review for 'covered' frontier models",
-        "why": "Signed June 2, with agencies due to finalize the review framework by August 1, this formalizes a pattern already visible in the wild \u2014 GPT-5.6 Sol's and Fable 5's releases were both reportedly gated pending government access. The catch: the capability threshold is set by a classified benchmark, so it's not yet public which future model releases (or which labs) will actually be swept in.",
+        "why": "Signed June 2, with agencies due to finalize the review framework by August 1, this formalizes a pattern already visible in the wild — GPT-5.6 Sol's and Fable 5's releases were both reportedly gated pending government access. The catch: the capability threshold is set by a classified benchmark, so it's not yet public which future model releases (or which labs) will actually be swept in.",
         "sources": [
           {
             "label": "Latham & Watkins",
@@ -563,7 +680,7 @@ const DIGESTS = [
           "Reality check"
         ],
         "title": "Fivetran's 2026 index: 60% of enterprises are investing millions in agentic AI, but only 15% have the data foundation to run it safely",
-        "why": "41% are already running agentic AI in production anyway, ahead of their own readiness \u2014 a concrete counterweight to the bigger agent-spend numbers you've seen elsewhere. If you're sizing up vendors or portfolio companies selling into this wave, data quality/lineage, governance and interoperability are the specific gaps (cited by 42%, 39% and 39% of respondents) worth probing in diligence.",
+        "why": "41% are already running agentic AI in production anyway, ahead of their own readiness — a concrete counterweight to the bigger agent-spend numbers you've seen elsewhere. If you're sizing up vendors or portfolio companies selling into this wave, data quality/lineage, governance and interoperability are the specific gaps (cited by 42%, 39% and 39% of respondents) worth probing in diligence.",
         "sources": [
           {
             "label": "Fivetran",
@@ -582,7 +699,7 @@ const DIGESTS = [
           "Agents"
         ],
         "title": "Warehouse robotics scale from pilot to production: Kawasaki/Dexterity expand humanoid trailer-loading, Amazon's DeepFleet lifts robotic fleet efficiency 10%",
-        "why": "Roughly 4.7M warehouse robots are now running across 50,000+ facilities. The Kawasaki-Dexterity tie-up targets trailer loading/unloading \u2014 one of the last manual chokepoints in a DC \u2014 but the more interesting data point for you is Amazon's DeepFleet: a generative model coordinating robot traffic at the fleet level, not just individual-unit dexterity. Fleet-level orchestration looks like where the next efficiency gains are actually coming from.",
+        "why": "Roughly 4.7M warehouse robots are now running across 50,000+ facilities. The Kawasaki-Dexterity tie-up targets trailer loading/unloading — one of the last manual chokepoints in a DC — but the more interesting data point for you is Amazon's DeepFleet: a generative model coordinating robot traffic at the fleet level, not just individual-unit dexterity. Fleet-level orchestration looks like where the next efficiency gains are actually coming from.",
         "sources": [
           {
             "label": "RoboticsTomorrow",
@@ -615,10 +732,10 @@ const DIGESTS = [
     "tryBox": {
       "h": "Prototype an agent workflow while Sonnet 5's introductory pricing lasts",
       "body": "Claude Sonnet 5's API pricing ($2/M input, $10/M output tokens) is discounted only through August 31, 2026, before reverting to $3/$15. If you've got a supply-chain-monitoring or portfolio-tracking workflow you've been meaning to prototype as an agent, this is a reasonable window to build and benchmark it before the price reverts.",
-      "src": "<a href=\"https://www.anthropic.com/news/claude-sonnet-5\">Anthropic: Introducing Claude Sonnet 5</a> \u00b7 launched June 30, 2026"
+      "src": "<a href=\"https://www.anthropic.com/news/claude-sonnet-5\">Anthropic: Introducing Claude Sonnet 5</a> · launched June 30, 2026"
     },
     "radar": [
-      "<b>August 1 frontier-model review framework.</b> Watch for the actual definition of a 'covered frontier model' \u2014 the classified benchmark behind it could reshape which labs face pre-release friction.",
+      "<b>August 1 frontier-model review framework.</b> Watch for the actual definition of a 'covered frontier model' — the classified benchmark behind it could reshape which labs face pre-release friction.",
       "<b>Data-center power bottlenecks.</b> If delays to planned 2026 builds are confirmed by more than one tracker, that's a real drag on the AI-infra capex story, not just a headline risk."
     ]
   },
@@ -634,7 +751,7 @@ const DIGESTS = [
           "AI-infra"
         ],
         "title": "National Grid pays $1.75B for 35% of Joulent to bankroll a 2.67GW gas plant feeding a Microsoft data center",
-        "why": "This is the energy-for-AI thesis turning into a specific, priced transaction: a utility taking an equity stake in merchant power generation because the interconnection queue is the real bottleneck, not chip supply. Project Kilby (West Texas, Chevron joint venture, GE Vernova turbines) targets first power by 2028 \u2014 a concrete timeline to benchmark other power-for-AI deals against.",
+        "why": "This is the energy-for-AI thesis turning into a specific, priced transaction: a utility taking an equity stake in merchant power generation because the interconnection queue is the real bottleneck, not chip supply. Project Kilby (West Texas, Chevron joint venture, GE Vernova turbines) targets first power by 2028 — a concrete timeline to benchmark other power-for-AI deals against.",
         "sources": [
           {
             "label": "PR Newswire",
@@ -671,8 +788,8 @@ const DIGESTS = [
           "AI-infra",
           "Cost"
         ],
-        "title": "OpenAI and Broadcom unveil \"Jalape\u00f1o,\" OpenAI's first custom inference chip",
-        "why": "Broadcom's CEO cites early tests showing roughly 50% lower cost and better cost-per-watt than standard GPUs for inference. Even directional, that's the clearest signal yet that the picks-and-shovels trade is bifurcating into training silicon (still Nvidia) versus inference silicon (increasingly custom) \u2014 relevant to how you frame AI-infra plays beyond Nvidia itself.",
+        "title": "OpenAI and Broadcom unveil \"Jalapeño,\" OpenAI's first custom inference chip",
+        "why": "Broadcom's CEO cites early tests showing roughly 50% lower cost and better cost-per-watt than standard GPUs for inference. Even directional, that's the clearest signal yet that the picks-and-shovels trade is bifurcating into training silicon (still Nvidia) versus inference silicon (increasingly custom) — relevant to how you frame AI-infra plays beyond Nvidia itself.",
         "sources": [
           {
             "label": "OpenAI",
@@ -692,7 +809,7 @@ const DIGESTS = [
           "Enterprise"
         ],
         "title": "Gartner: purpose-built AI agent software spend jumps 139% to $206.5B in 2026",
-        "why": "That's nearly triple the growth rate of overall AI spend (+47%), and Gartner has it stepping up again to $376.3B in 2027. This is the budget-line evidence behind the agent thesis \u2014 worth weighing against Gartner's own separate warning that 40%+ of agentic AI projects get canceled before delivering value, so the spend and the success rate are two different charts.",
+        "why": "That's nearly triple the growth rate of overall AI spend (+47%), and Gartner has it stepping up again to $376.3B in 2027. This is the budget-line evidence behind the agent thesis — worth weighing against Gartner's own separate warning that 40%+ of agentic AI projects get canceled before delivering value, so the spend and the success rate are two different charts.",
         "sources": [
           {
             "label": "Gartner",
@@ -707,7 +824,7 @@ const DIGESTS = [
           "Agents"
         ],
         "title": "Agentic AI adoption in supply chain: multi-agent systems up 327% in four months, per industry surveys",
-        "why": "Gartner separately projects 60% of supply-chain disruptions will be resolved without human involvement by 2031. Directionally consistent with what you've already seen from C.H. Robinson's Lean AI Engineer/Planner \u2014 the shift is from single chatbots assisting planners to multi-agent systems making live routing and exception calls.",
+        "why": "Gartner separately projects 60% of supply-chain disruptions will be resolved without human involvement by 2031. Directionally consistent with what you've already seen from C.H. Robinson's Lean AI Engineer/Planner — the shift is from single chatbots assisting planners to multi-agent systems making live routing and exception calls.",
         "sources": [
           {
             "label": "Supply Chain Management Review",
@@ -726,7 +843,7 @@ const DIGESTS = [
           "Reality check"
         ],
         "title": "EU set to defer high-risk AI Act obligations to December 2027, widen SME carve-outs",
-        "why": "The Omnibus amendments (formal adoption expected in the Official Journal this month, ahead of the August 2, 2026 deadline) push the high-risk compliance date back roughly 16 months and extend simplified rules to companies with up to 750 employees and \u20ac150M revenue. Same pattern as Colorado's law last week: AI regulation headlines keep front-running the actual binding dates.",
+        "why": "The Omnibus amendments (formal adoption expected in the Official Journal this month, ahead of the August 2, 2026 deadline) push the high-risk compliance date back roughly 16 months and extend simplified rules to companies with up to 750 employees and €150M revenue. Same pattern as Colorado's law last week: AI regulation headlines keep front-running the actual binding dates.",
         "sources": [
           {
             "label": "Latham & Watkins",
@@ -738,11 +855,11 @@ const DIGESTS = [
     ],
     "tryBox": {
       "h": "Kick the tires on Groq's inference cloud",
-      "body": "Groq just closed $650M to scale its LPU-based inference cloud, and the whole Jalape\u00f1o/Modular/Groq pattern this month says cheap, fast inference is where the real competition has moved. If you're pricing out always-on agent workloads, worth a quick benchmark of Groq's API against your current provider on latency and $/token for a narrow task.",
+      "body": "Groq just closed $650M to scale its LPU-based inference cloud, and the whole Jalapeño/Modular/Groq pattern this month says cheap, fast inference is where the real competition has moved. If you're pricing out always-on agent workloads, worth a quick benchmark of Groq's API against your current provider on latency and $/token for a narrow task.",
       "src": "funding reported June/July 2026"
     },
     "radar": [
-      "<b>OpenAI and Anthropic's confidential IPO filings.</b> Both filed within a week of each other \u2014 the market, not private investors, will set the valuation number for the first time. Watch for public S-1 details in the coming weeks.",
+      "<b>OpenAI and Anthropic's confidential IPO filings.</b> Both filed within a week of each other — the market, not private investors, will set the valuation number for the first time. Watch for public S-1 details in the coming weeks.",
       "<b>UN AI for Good Global Commission.</b> First meeting set for July 8 in Geneva, following a UN scientific panel warning that AI development is outpacing government oversight."
     ]
   },
@@ -750,7 +867,7 @@ const DIGESTS = [
     "date": "2026-07-01",
     "label": "Wed, Jul 1, 2026",
     "gathered": "gathered 9:00 ET",
-    "lede": "Not a quiet day: the Data Center Power Coalition launched today to tackle AI's power bottleneck, OpenAI's GPT-5.6 tiering shows how cost-conscious frontier models are getting, and C.H. Robinson's latest release is a real case study of agents <b>running</b> (not just assisting) a supply chain. Also worth noting: Colorado's flagship AI law was quietly gutted and delayed before it ever took effect \u2014 a good check on how fast AI policy headlines can go stale.",
+    "lede": "Not a quiet day: the Data Center Power Coalition launched today to tackle AI's power bottleneck, OpenAI's GPT-5.6 tiering shows how cost-conscious frontier models are getting, and C.H. Robinson's latest release is a real case study of agents <b>running</b> (not just assisting) a supply chain. Also worth noting: Colorado's flagship AI law was quietly gutted and delayed before it ever took effect — a good check on how fast AI policy headlines can go stale.",
     "items": [
       {
         "tags": [
@@ -758,7 +875,7 @@ const DIGESTS = [
           "Agents"
         ],
         "title": "C.H. Robinson's Lean AI Engineer assesses a full supply chain in 30 minutes, not 4 weeks",
-        "why": "Production-grade proof that agentic AI can run live logistics decisions, not just draft recommendations. It pairs with the existing Lean AI Planner, which already manages 92% of C.H. Robinson's global 4PL shipment volume through hundreds of interconnected agents \u2014 a solid reference architecture for the supply-chain automation you track.",
+        "why": "Production-grade proof that agentic AI can run live logistics decisions, not just draft recommendations. It pairs with the existing Lean AI Planner, which already manages 92% of C.H. Robinson's global 4PL shipment volume through hundreds of interconnected agents — a solid reference architecture for the supply-chain automation you track.",
         "sources": [
           {
             "label": "C.H. Robinson",
@@ -777,7 +894,7 @@ const DIGESTS = [
           "AI-infra"
         ],
         "title": "Data Center Power Coalition launches with 12 founding partners to standardize AI power planning",
-        "why": "Confirms your energy-for-AI thesis in real time: the constraint has moved from chips and capital to megawatts and interconnection timelines. A shared \"power playbook\" aims to shorten the multi-year queues gating new data-center capacity \u2014 worth tracking who else signs on.",
+        "why": "Confirms your energy-for-AI thesis in real time: the constraint has moved from chips and capital to megawatts and interconnection timelines. A shared \"power playbook\" aims to shorten the multi-year queues gating new data-center capacity — worth tracking who else signs on.",
         "sources": [
           {
             "label": "Data Center Knowledge",
@@ -791,8 +908,8 @@ const DIGESTS = [
           "Frontier models",
           "Cost"
         ],
-        "title": "OpenAI previews a three-tier GPT-5.6 family \u2014 Sol, Terra, Luna \u2014 built for long-horizon agent work",
-        "why": "Sol targets frontier reasoning for agentic tasks, while Terra and Luna trade capability for cost \u2014 the tiering that decides whether always-on agents are economical at scale. Access is currently gated to limited preview partners, reportedly at the direction of the US government, which is itself worth watching.",
+        "title": "OpenAI previews a three-tier GPT-5.6 family — Sol, Terra, Luna — built for long-horizon agent work",
+        "why": "Sol targets frontier reasoning for agentic tasks, while Terra and Luna trade capability for cost — the tiering that decides whether always-on agents are economical at scale. Access is currently gated to limited preview partners, reportedly at the direction of the US government, which is itself worth watching.",
         "sources": [
           {
             "label": "OpenAI",
@@ -811,7 +928,7 @@ const DIGESTS = [
           "AI-infra"
         ],
         "title": "Qualcomm nears ~$3.9B deal for AI-software startup Modular",
-        "why": "A chipmaker buying an inference-software stack, rather than raising its own model lab, is another data point for the picks-and-shovels thesis: value is migrating to whoever makes models run fast and cheap on non-Nvidia hardware. Deal expected to close in H2 2026 \u2014 watch the terms and Nvidia's competitive response.",
+        "why": "A chipmaker buying an inference-software stack, rather than raising its own model lab, is another data point for the picks-and-shovels thesis: value is migrating to whoever makes models run fast and cheap on non-Nvidia hardware. Deal expected to close in H2 2026 — watch the terms and Nvidia's competitive response.",
         "sources": [
           {
             "label": "CNBC",
@@ -842,7 +959,7 @@ const DIGESTS = [
           "Market signal"
         ],
         "title": "NVIDIA opens its Agent Toolkit as Adobe, SAP, ServiceNow, Salesforce and others build on it",
-        "why": "The adopter list for NVIDIA's open-source toolkit for self-evolving enterprise agents reads like a who's-who of the agent-orchestration land grab, alongside OpenAI and Microsoft. This layer \u2014 not any single model \u2014 will decide lock-in and switching costs for the agent tooling you're evaluating.",
+        "why": "The adopter list for NVIDIA's open-source toolkit for self-evolving enterprise agents reads like a who's-who of the agent-orchestration land grab, alongside OpenAI and Microsoft. This layer — not any single model — will decide lock-in and switching costs for the agent tooling you're evaluating.",
         "sources": [
           {
             "label": "NVIDIA Newsroom",
@@ -855,11 +972,11 @@ const DIGESTS = [
     "tryBox": {
       "h": "Prototype with NVIDIA's open-source Agent Toolkit",
       "body": "NVIDIA just open-sourced the software behind its self-evolving enterprise agents, and Adobe, SAP, ServiceNow and others are already building on it. Concrete, low-cost experiment for this week: pull the toolkit and prototype one narrow supply-chain or ops workflow as an agent, rather than waiting for a vendor platform to mature.",
-      "src": "<a href=\"https://nvidianews.nvidia.com/news/ai-agents\">NVIDIA Agent Toolkit</a> \u00b7 announced 2026"
+      "src": "<a href=\"https://nvidianews.nvidia.com/news/ai-agents\">NVIDIA Agent Toolkit</a> · announced 2026"
     },
     "radar": [
-      "<b>Qualcomm\u2013Modular deal.</b> The ~$3.9B acquisition is expected to close in H2 2026 \u2014 watch how Nvidia responds competitively in the inference-software layer.",
-      "<b>EU AI Act transparency rules.</b> Labeling/marking requirements for AI-generated content are set to take effect in August 2026 \u2014 relevant if any portfolio companies operate in the EU."
+      "<b>Qualcomm–Modular deal.</b> The ~$3.9B acquisition is expected to close in H2 2026 — watch how Nvidia responds competitively in the inference-software layer.",
+      "<b>EU AI Act transparency rules.</b> Labeling/marking requirements for AI-generated content are set to take effect in August 2026 — relevant if any portfolio companies operate in the EU."
     ]
   }
 ];
