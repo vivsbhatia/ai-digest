@@ -151,6 +151,141 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
   {
+    "date": "2026-07-10",
+    "label": "Fri, Jul 10, 2026",
+    "gathered": "gathered 7:00 local",
+    "lede": "The dust settles on the biggest 24 hours in frontier models in months: OpenAI's ChatGPT Work agent and GPT-5.6 family (with Codex folded into the desktop app) landed yesterday, and Grok 4.5's first full day in the wild produced independent benchmarks that reframe the cost math for high-volume agent workloads — intelligence-per-dollar, not raw capability, is the new battleground. Meanwhile the physical layer keeps setting records: hyperscaler 2026 capex estimates have been raised to ~$750B, the power-equipment market is being resized toward $220B/year, and a US heatwave is stress-testing both the grid and public patience with datacenter buildout. In Brussels, the EU formally delayed its high-risk AI rules by 16-24 months.",
+    "items": [
+      {
+        "tags": [
+          "Agents",
+          "Enterprise",
+          "Frontier models"
+        ],
+        "title": "OpenAI launches ChatGPT Work — an agent that gathers context across your connected apps and returns finished docs, sheets, slides and web apps — and merges Codex into the ChatGPT desktop app, all powered by the new GPT-5.6 family (Sol/Terra/Luna)",
+        "why": "This is the clearest 'agents ship finished work, not chat' productization yet from a frontier lab — directly relevant to how you evaluate enterprise-agent adoption curves and which SCM/workflow vendors get commoditized when the model layer does the orchestration itself.",
+        "sources": [
+          {
+            "label": "MacRumors",
+            "url": "https://www.macrumors.com/2026/07/09/openai-chatgpt-work/"
+          },
+          {
+            "label": "Developers Digest",
+            "url": "https://www.developersdigest.tech/blog/chatgpt-work-codex-desktop-app"
+          }
+        ],
+        "date": "launched July 9, 2026"
+      },
+      {
+        "tags": [
+          "Frontier models",
+          "Cost",
+          "Reality check"
+        ],
+        "title": "Grok 4.5's first day of independent benchmarks: #4 on Artificial Analysis Intelligence Index (54, behind Fable 5 at 60, Opus 4.8 at 56, GPT-5.5 at 55) — but it uses ~60% fewer output tokens per task than Opus 4.8, and 4.2x fewer on SWE-Bench Pro",
+        "why": "Token efficiency changes the effective cost of high-volume agentic workloads more than sticker price does — if you're modeling inference economics for any AI-infra thesis, per-task cost (tokens × price) is becoming the metric that matters. Caveat flagged by reviewers: a high hallucination-rate reading on one eval; coding results are mixed depending on whose benchmark you trust.",
+        "sources": [
+          {
+            "label": "The Decoder",
+            "url": "https://the-decoder.com/grok-4-5-is-so-cheap-compared-to-fable-5-and-gpt-5-5-that-benchmark-gaps-may-not-matter-much/"
+          },
+          {
+            "label": "SpaceXAI",
+            "url": "https://x.ai/news/grok-4-5"
+          }
+        ],
+        "date": "launched July 8; independent benchmarks landing July 9-10, 2026"
+      },
+      {
+        "tags": [
+          "AI-infra",
+          "Energy-for-AI",
+          "Investing"
+        ],
+        "title": "Hyperscaler 2026 capex estimates raised to ~$750B (from ~$670B), on track to cross $1T in 2027; Bloomberg sizes the datacenter power-equipment market toward $220B/year as ~23GW of IT capacity is under construction",
+        "why": "The capex number keeps getting revised up, and the spend is shifting down-stack into switchgear, transformers, turbines and gensets — the picks-and-shovels layer of your energy-for-AI theme. The same week, a US heatwave straining grid and water supplies is a live test of the public-acceptance risk on that thesis.",
+        "sources": [
+          {
+            "label": "Bloomberg",
+            "url": "https://www.bloomberg.com/news/articles/2026-07-03/ai-factories-create-winners-and-losers-in-power-equipment-market"
+          },
+          {
+            "label": "Al Jazeera",
+            "url": "https://www.aljazeera.com/economy/2026/7/3/us-heatwave-raises-alarms-over-ai-data-centre-energy-demands"
+          }
+        ],
+        "date": "reported July 3-10, 2026"
+      },
+      {
+        "tags": [
+          "Funding",
+          "Energy-for-AI",
+          "Market signal"
+        ],
+        "title": "Joulent closes a $1.75B strategic financing for AI-compute energy infrastructure — the week's biggest round — as H1 2026 global venture funding hits a record $510B, with OpenAI and Anthropic alone absorbing 43% of it",
+        "why": "Energy-for-AI is now producing the largest single venture rounds, not just utility capex — a signal that private capital agrees with your thesis, which cuts both ways: validation on direction, but entry valuations in the theme are getting bid up. Sizing information for your own research, not a buy signal.",
+        "sources": [
+          {
+            "label": "Crunchbase News",
+            "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-energy-biotech-joulent/"
+          },
+          {
+            "label": "Crunchbase News (H1 data)",
+            "url": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/"
+          }
+        ],
+        "date": "reported week of July 6-10, 2026"
+      },
+      {
+        "tags": [
+          "Supply chain",
+          "Agents",
+          "Enterprise"
+        ],
+        "title": "Akeneo ships 'Agentic Ziggy', an orchestration layer coordinating specialist agents for data modeling, schema mapping, enrichment and quality checks in retail supply chains — while Cisco begins rolling a personal AI agent to ~90,000 employees this month",
+        "why": "Two concrete data points that agent deployment is moving from announcements to production at scale — Akeneo's multi-agent orchestration pattern (specialist agents + coordinator) is the architecture worth studying for supply-chain automation, and Cisco's model-routing approach to cost/capability is a template for enterprise rollouts.",
+        "sources": [
+          {
+            "label": "AI Agents Directory",
+            "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+          },
+          {
+            "label": "Hector Pincheira / Tech Radar Jul 2026",
+            "url": "https://www.hectorpincheira.com/en/news/technological-radar-july-2026-ai-agents-go-into-production-and-governance-doesnt-keep-up/"
+          }
+        ],
+        "date": "Akeneo announced July 8; Cisco rollout through July 2026"
+      },
+      {
+        "tags": [
+          "Policy"
+        ],
+        "title": "EU Council gives final green light to the AI Act simplification package: high-risk AI rules delayed to Dec 2027 (stand-alone systems) and Aug 2028 (embedded in products); new ban on AI-generated non-consensual intimate imagery effective this December",
+        "why": "A 16-24 month compliance runway extension materially lowers near-term EU regulatory overhead for any AI-adjacent company you evaluate — and it's a signal the EU is trading enforcement speed for industrial competitiveness, which shifts the global regulatory center of gravity toward the US state-by-state patchwork.",
+        "sources": [
+          {
+            "label": "EU Council",
+            "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/"
+          },
+          {
+            "label": "TechPolicy.Press",
+            "url": "https://www.techpolicy.press/where-state-ai-legislation-stands-half-way-into-2026/"
+          }
+        ],
+        "date": "final approval June 29; entered force ahead of Aug 2, 2026 deadline"
+      }
+    ],
+    "tryBox": {
+      "h": "Run a token-efficiency audit on your highest-volume agent workflow",
+      "body": "Grok 4.5's headline claim isn't intelligence — it's ~60% fewer output tokens per task. Whatever model you run agents on, this week is a good moment to measure tokens-per-completed-task (not per request) across two or three models on one real workflow. Per-task cost is quickly becoming the number that decides enterprise agent economics.",
+      "src": "<a href=\"https://the-decoder.com/grok-4-5-is-so-cheap-compared-to-fable-5-and-gpt-5-5-that-benchmark-gaps-may-not-matter-much/\">The Decoder</a> · benchmarks July 9-10, 2026"
+    },
+    "radar": [
+      "<b>FTC comment period on state-mandated AI output alterations closes July 31</b> — the outcome shapes whether a federal-vs-state preemption fight lands this fall.",
+      "<b>Whether the $750B hyperscaler capex number survives Q2 earnings season</b> — guidance updates start late July; watch for the first hint of digestion versus another raise."
+    ]
+  },
+  {
     "date": "2026-07-09",
     "label": "Thu, Jul 9, 2026",
     "gathered": "gathered 7:00 local",
