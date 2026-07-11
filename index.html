@@ -151,6 +151,125 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
   {
+    "date": "2026-07-11",
+    "label": "Sat, Jul 11, 2026",
+    "gathered": "gathered 7:00 local",
+    "lede": "After Thursday's model fireworks, the weekend story is economics and plumbing: GPT-5.6 finished its global rollout with tiered pricing that resets the cost floor for agent workloads, Meta's custom 'Iris' chip reportedly heads to production in September (and Nvidia rallied anyway), and Gartner put a $234B number on how much enterprise SaaS spend agentic AI puts at risk. States keep filling the US regulatory vacuum — Illinois just signed the most comprehensive AI safety law yet.",
+    "items": [
+      {
+        "tags": [
+          "Frontier models",
+          "Cost",
+          "AI-infra"
+        ],
+        "title": "GPT-5.6 (Sol/Terra/Luna) completes general availability across ChatGPT, Codex and the API — Sol $5/$30, Terra $2.50/$15, Luna $1/$6 per 1M tokens, plus explicit prompt-cache breakpoints and Sol on Cerebras at up to 750 tokens/sec",
+        "why": "The pricing ladder and cache controls are the real news for you: Luna at $1/$6 with a 30-minute cache floor materially changes per-task economics for high-volume agent pipelines, and the Cerebras deployment is a live datapoint for the non-GPU inference leg of your AI-infra thesis.",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/previewing-gpt-5-6-sol/"
+          },
+          {
+            "label": "Simon Willison",
+            "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/"
+          },
+          {
+            "label": "Digital Applied",
+            "url": "https://www.digitalapplied.com/blog/gpt-5-6-sol-terra-luna-public-ga"
+          }
+        ],
+        "date": "GA completed July 9-10, 2026"
+      },
+      {
+        "tags": [
+          "AI-infra",
+          "Market signal",
+          "Investing"
+        ],
+        "title": "Meta's custom AI chip 'Iris' (designed with Broadcom, fabbed by TSMC) reportedly enters manufacturing in September — Nvidia still rose 4% to ~$211 on the news",
+        "why": "Custom-silicon headlines from Nvidia's largest customers are the recurring stress test of your AI-infra allocation; the market's read — complement, not replacement, while total capex keeps rising — matters more than the chip itself. Note: production timing is from press reports, not confirmed by Meta.",
+        "sources": [
+          {
+            "label": "GuruFocus",
+            "url": "https://www.gurufocus.com/news/8954375/nvidia-nvda-stock-rises-amid-client-ai-chip-developments"
+          },
+          {
+            "label": "Yahoo Finance",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/whats-going-nvidia-stock-friday-200045889.html"
+          }
+        ],
+        "date": "reported July 10, 2026"
+      },
+      {
+        "tags": [
+          "Agents",
+          "Enterprise",
+          "Market signal"
+        ],
+        "title": "Gartner: $234B of enterprise application SaaS spend is exposed to 'agentic arbitrage' through 2030, and 40% of enterprise apps will have embedded agents by end of 2026 (up from <5% in 2025)",
+        "why": "This is the cleanest quantification yet of the thesis that agents disrupt seat-based SaaS — a framework for judging which software vendors in your coverage (including supply-chain SaaS) are on the wrong side of the arbitrage.",
+        "sources": [
+          {
+            "label": "Gartner",
+            "url": "https://www.gartner.com/en/newsroom/press-releases/2026-07-01-gartner-says-us-dollars-234-billion-in-enterprise-application-software-spend-is-at-risk-from-agentic-artificial-intelligence"
+          }
+        ],
+        "date": "published July 1; circulating widely this week"
+      },
+      {
+        "tags": [
+          "Supply chain",
+          "Agents",
+          "Reality check"
+        ],
+        "title": "Supply-chain AI reality check: Gartner names agentic AI and physical AI top 2026 SC tech trends and Descartes acquires driver-safety AI firm Idelic — but a new survey finds only 10% of 200 retail/wholesale operators have AI live in supply-chain workflows",
+        "why": "The gap between trend decks and the 10% live-deployment number is your opportunity map: consolidation (Descartes/Idelic) plus a ~600K-worker labor shortage says demand is real, while the adoption gap says the implementation layer is where value accrues next.",
+        "sources": [
+          {
+            "label": "Gartner",
+            "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-30-gartner-identifies-top-supply-chain-technology-trends-for-2026"
+          },
+          {
+            "label": "First Analysis",
+            "url": "https://www.firstanalysis.com/research/supply-chain-jul-2026/"
+          },
+          {
+            "label": "Supply Chain 24/7",
+            "url": "https://www.supplychain247.com/topic/tag/Artificial_Intelligence"
+          }
+        ],
+        "date": "published June 30 - July 2026"
+      },
+      {
+        "tags": [
+          "Policy"
+        ],
+        "title": "Illinois signs the bipartisan AI Safety Measures Act (July 6) — disclosure of safety practices, incident reporting, effective Jan 1, 2027 — as states hit 109 AI laws and 28 datacenter laws enacted in 2026",
+        "why": "With the EU delaying and Congress stalled, the state patchwork is becoming the de facto US compliance regime — a cost input for every AI-adjacent company you evaluate, and the 28 datacenter laws are a direct watch-item for your energy-for-AI buildout thesis.",
+        "sources": [
+          {
+            "label": "WTTW Chicago",
+            "url": "https://news.wttw.com/2026/07/06/pritzker-signs-landmark-ai-regulation-bill-aims-mitigate-risks"
+          },
+          {
+            "label": "TechPolicy.Press",
+            "url": "https://www.techpolicy.press/where-state-ai-legislation-stands-half-way-into-2026/"
+          }
+        ],
+        "date": "signed July 6; tally as of July 1, 2026"
+      }
+    ],
+    "tryBox": {
+      "h": "Re-price one agent workflow on GPT-5.6's cache breakpoints",
+      "body": "With GA pricing out, take one high-volume workflow and model it three ways: Luna at $1/$6, Terra at $2.50/$15, and your current model — then add explicit cache breakpoints on the static prompt prefix (30-min minimum cache life). Teams are reporting the cache controls, not the headline price, drive the biggest per-task savings.",
+      "src": "<a href=\"https://simonwillison.net/2026/Jul/9/gpt-5-6/\">Simon Willison</a> · GA July 9, 2026"
+    },
+    "radar": [
+      "<b>SpaceX's $60B all-stock acquisition of Cursor-maker Anysphere is expected to close in Q3</b> — regulatory approval and SpaceX's post-IPO stock swings are the variables to watch.",
+      "<b>Meta 'Iris' production start in September</b> — if TSMC allocation shifts materially, it shows up in the supply chain before it shows up in earnings."
+    ]
+  },
+  {
     "date": "2026-07-10",
     "label": "Fri, Jul 10, 2026",
     "gathered": "gathered 7:00 local",
