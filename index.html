@@ -151,6 +151,137 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
   {
+    "date": "2026-07-13",
+    "label": "Mon, Jul 13, 2026",
+    "gathered": "gathered 7:00 local",
+    "lede": "A heavy infra week: Meta says it will double total compute by 2027 and drops a $10B, 1-GW datacenter in Alberta; Qualcomm is reportedly circling Tenstorrent; and 2026 is shaping up as the first trillion-dollar year of compute capex. On the model front, GPT-5.6 and Grok 4.5 shipped last week while Google pushed Gemini 3.5 Pro to July 17 for a full rebuild. Agents keep moving from demo to production — with the first agent-platform CVE landing on CISA's must-patch list as a reality check.",
+    "items": [
+      {
+        "tags": [
+          "AI-infra",
+          "Energy-for-AI",
+          "Market signal"
+        ],
+        "title": "Meta to double total compute by 2027; announces $10B, 1-GW datacenter in Alberta — stock jumped ~7% on Jul 10",
+        "why": "Direct read-through for your energy-for-AI and AI-infra themes: hyperscaler compute doubling plans keep demand for power, grid interconnects, and cooling suppliers on a steep curve.",
+        "sources": [
+          {
+            "label": "Unrot (Jul 12 roundup)",
+            "url": "https://unrot.co/blogs/today-top-10-ai-news-july-12-2026"
+          },
+          {
+            "label": "Crescendo AI news",
+            "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
+          }
+        ],
+        "date": "Jul 10, 2026"
+      },
+      {
+        "tags": [
+          "AI-infra",
+          "Funding",
+          "Investing",
+          "Reality check"
+        ],
+        "title": "Qualcomm reportedly in early talks to acquire RISC-V AI chip designer Tenstorrent for $8–10B",
+        "why": "If it closes, it validates the open RISC-V path against Nvidia's stack — a datapoint for your semiconductor/AI-infra research. Unverified: early talks, single-source reporting so far.",
+        "sources": [
+          {
+            "label": "Unrot (Jul 12 roundup)",
+            "url": "https://unrot.co/blogs/today-top-10-ai-news-july-12-2026"
+          }
+        ],
+        "date": "Jul 12, 2026"
+      },
+      {
+        "tags": [
+          "AI-infra",
+          "Energy-for-AI",
+          "Investing"
+        ],
+        "title": "2026 tracks as the first ~$1T year of global compute capex; top-5 US hyperscalers alone at ~$660–690B",
+        "why": "The scale (and 61% YoY jumps like Microsoft's ~$190B) frames how long the energy-and-infra demand runway is — and where the eventual digestion risk sits for your positions.",
+        "sources": [
+          {
+            "label": "Futurum",
+            "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
+          },
+          {
+            "label": "Fortune",
+            "url": "https://fortune.com/2026/06/29/ai-spending-boom-accelerates-big-tech-trillion-infrastructure-qualcomm-cfo/"
+          }
+        ],
+        "date": "Jul 2026"
+      },
+      {
+        "tags": [
+          "Agents",
+          "Enterprise",
+          "Supply chain",
+          "Market signal"
+        ],
+        "title": "Gartner: $234B of enterprise app spend at risk from agentic AI; 40% of enterprise apps to embed agents by year-end",
+        "why": "Confirms the workflow-replacement wave you work in — and Gartner's 2026 supply chain tech trends put agentic + physical AI at the top, right in your lane.",
+        "sources": [
+          {
+            "label": "Gartner (Jul 1)",
+            "url": "https://www.gartner.com/en/newsroom/press-releases/2026-07-01-gartner-says-us-dollars-234-billion-in-enterprise-application-software-spend-is-at-risk-from-agentic-artificial-intelligence"
+          },
+          {
+            "label": "Gartner supply chain trends",
+            "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-30-gartner-identifies-top-supply-chain-technology-trends-for-2026"
+          }
+        ],
+        "date": "Jul 1, 2026"
+      },
+      {
+        "tags": [
+          "Frontier models",
+          "Cost",
+          "Market signal"
+        ],
+        "title": "Frontier reshuffle: GPT-5.6 (Jul 9, three tiers incl. half-cost 'Terra') and Grok 4.5 (Jul 8) shipped; Google delayed Gemini 3.5 Pro to Jul 17 for an architectural rebuild",
+        "why": "Tiered pricing like Terra keeps driving inference cost per unit of intelligence down — good for your agent build-out economics; the delay detail on Gemini is single-source, treat as tentative.",
+        "sources": [
+          {
+            "label": "LLM-Stats releases",
+            "url": "https://llm-stats.com/llm-updates"
+          },
+          {
+            "label": "BigGo (Gemini delay)",
+            "url": "https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a"
+          }
+        ],
+        "date": "Jul 8–17, 2026"
+      },
+      {
+        "tags": [
+          "Agents",
+          "Reality check",
+          "Policy"
+        ],
+        "title": "First agent-building platform lands on CISA's Known Exploited Vulnerabilities list (Langflow, CVE-2026-55255)",
+        "why": "If you're deploying agents on open-source frameworks, patch discipline is now a board-level topic — governance is lagging production adoption.",
+        "sources": [
+          {
+            "label": "Tech Radar Jul 2026",
+            "url": "https://www.hectorpincheira.com/en/news/technological-radar-july-2026-ai-agents-go-into-production-and-governance-doesnt-keep-up/"
+          }
+        ],
+        "date": "Jul 2026"
+      }
+    ],
+    "tryBox": {
+      "h": "Try: route agent workloads to GPT-5.6 'Terra'",
+      "body": "OpenAI's mid-tier Terra claims ~5.5-level intelligence at roughly half the cost. Worth benchmarking one of your existing agent workflows against it this week — cost-per-task is the metric that matters.",
+      "src": "https://llm-stats.com/llm-updates"
+    },
+    "radar": [
+      "Gemini 3.5 Pro launch expected Jul 17 — 2M-token context, Deep Think mode.",
+      "EU AI Act becomes fully applicable Aug 2, 2026 — compliance deadline for US companies serving the EU."
+    ]
+  },
+  {
     "date": "2026-07-11",
     "label": "Sat, Jul 11, 2026",
     "gathered": "gathered 7:00 local",
@@ -1249,122 +1380,6 @@ const DIGESTS = [
     "radar": [
       "<b>OpenAI and Anthropic's confidential IPO filings.</b> Both filed within a week of each other — the market, not private investors, will set the valuation number for the first time. Watch for public S-1 details in the coming weeks.",
       "<b>UN AI for Good Global Commission.</b> First meeting set for July 8 in Geneva, following a UN scientific panel warning that AI development is outpacing government oversight."
-    ]
-  },
-  {
-    "date": "2026-07-01",
-    "label": "Wed, Jul 1, 2026",
-    "gathered": "gathered 9:00 ET",
-    "lede": "Not a quiet day: the Data Center Power Coalition launched today to tackle AI's power bottleneck, OpenAI's GPT-5.6 tiering shows how cost-conscious frontier models are getting, and C.H. Robinson's latest release is a real case study of agents <b>running</b> (not just assisting) a supply chain. Also worth noting: Colorado's flagship AI law was quietly gutted and delayed before it ever took effect — a good check on how fast AI policy headlines can go stale.",
-    "items": [
-      {
-        "tags": [
-          "Supply chain",
-          "Agents"
-        ],
-        "title": "C.H. Robinson's Lean AI Engineer assesses a full supply chain in 30 minutes, not 4 weeks",
-        "why": "Production-grade proof that agentic AI can run live logistics decisions, not just draft recommendations. It pairs with the existing Lean AI Planner, which already manages 92% of C.H. Robinson's global 4PL shipment volume through hundreds of interconnected agents — a solid reference architecture for the supply-chain automation you track.",
-        "sources": [
-          {
-            "label": "C.H. Robinson",
-            "url": "https://www.chrobinson.com/en-us/about-us/newsroom/press-releases/2026/ch-robinson-lean-ai-engineer-launch/"
-          },
-          {
-            "label": "FreightWaves",
-            "url": "https://www.freightwaves.com/news/c-h-robinsons-next-ai-step-adding-engineer-to-the-planner"
-          }
-        ],
-        "date": "June 3, 2026"
-      },
-      {
-        "tags": [
-          "Energy-for-AI",
-          "AI-infra"
-        ],
-        "title": "Data Center Power Coalition launches with 12 founding partners to standardize AI power planning",
-        "why": "Confirms your energy-for-AI thesis in real time: the constraint has moved from chips and capital to megawatts and interconnection timelines. A shared \"power playbook\" aims to shorten the multi-year queues gating new data-center capacity — worth tracking who else signs on.",
-        "sources": [
-          {
-            "label": "Data Center Knowledge",
-            "url": "https://www.datacenterknowledge.com/energy-power-supply/data-center-power-coalition-launches-to-tackle-ai-s-biggest-bottleneck"
-          }
-        ],
-        "date": "July 1, 2026"
-      },
-      {
-        "tags": [
-          "Frontier models",
-          "Cost"
-        ],
-        "title": "OpenAI previews a three-tier GPT-5.6 family — Sol, Terra, Luna — built for long-horizon agent work",
-        "why": "Sol targets frontier reasoning for agentic tasks, while Terra and Luna trade capability for cost — the tiering that decides whether always-on agents are economical at scale. Access is currently gated to limited preview partners, reportedly at the direction of the US government, which is itself worth watching.",
-        "sources": [
-          {
-            "label": "OpenAI",
-            "url": "https://openai.com/index/previewing-gpt-5-6-sol/"
-          },
-          {
-            "label": "VentureBeat",
-            "url": "https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov"
-          }
-        ],
-        "date": "June 26, 2026"
-      },
-      {
-        "tags": [
-          "Funding",
-          "AI-infra"
-        ],
-        "title": "Qualcomm nears ~$3.9B deal for AI-software startup Modular",
-        "why": "A chipmaker buying an inference-software stack, rather than raising its own model lab, is another data point for the picks-and-shovels thesis: value is migrating to whoever makes models run fast and cheap on non-Nvidia hardware. Deal expected to close in H2 2026 — watch the terms and Nvidia's competitive response.",
-        "sources": [
-          {
-            "label": "CNBC",
-            "url": "https://www.cnbc.com/2026/06/24/qualcomm-ai-chip-modular-software.html"
-          }
-        ],
-        "date": "reported June 24, 2026"
-      },
-      {
-        "tags": [
-          "Policy",
-          "Reality check"
-        ],
-        "title": "Colorado's landmark \"high-risk AI\" law gutted and delayed to 2027 before it ever took effect",
-        "why": "The law was set to become the first comprehensive US high-risk-AI statute on June 30, 2026. Instead, Governor Polis signed SB 189 on May 14, stripping the algorithmic-discrimination duty of care and impact-assessment requirements and pushing a much narrower version to January 1, 2027. A reminder not to build a compliance roadmap around a single headline.",
-        "sources": [
-          {
-            "label": "Norton Rose Fulbright",
-            "url": "https://www.nortonrosefulbright.com/en-us/knowledge/publications/18733d31/colorado-enacts-revised-ai-law"
-          }
-        ],
-        "date": "signed May 14, 2026 (original effective date was June 30, 2026)"
-      },
-      {
-        "tags": [
-          "Agents",
-          "Enterprise",
-          "Market signal"
-        ],
-        "title": "NVIDIA opens its Agent Toolkit as Adobe, SAP, ServiceNow, Salesforce and others build on it",
-        "why": "The adopter list for NVIDIA's open-source toolkit for self-evolving enterprise agents reads like a who's-who of the agent-orchestration land grab, alongside OpenAI and Microsoft. This layer — not any single model — will decide lock-in and switching costs for the agent tooling you're evaluating.",
-        "sources": [
-          {
-            "label": "NVIDIA Newsroom",
-            "url": "https://nvidianews.nvidia.com/news/ai-agents"
-          }
-        ],
-        "date": "2026"
-      }
-    ],
-    "tryBox": {
-      "h": "Prototype with NVIDIA's open-source Agent Toolkit",
-      "body": "NVIDIA just open-sourced the software behind its self-evolving enterprise agents, and Adobe, SAP, ServiceNow and others are already building on it. Concrete, low-cost experiment for this week: pull the toolkit and prototype one narrow supply-chain or ops workflow as an agent, rather than waiting for a vendor platform to mature.",
-      "src": "<a href=\"https://nvidianews.nvidia.com/news/ai-agents\">NVIDIA Agent Toolkit</a> · announced 2026"
-    },
-    "radar": [
-      "<b>Qualcomm–Modular deal.</b> The ~$3.9B acquisition is expected to close in H2 2026 — watch how Nvidia responds competitively in the inference-software layer.",
-      "<b>EU AI Act transparency rules.</b> Labeling/marking requirements for AI-generated content are set to take effect in August 2026 — relevant if any portfolio companies operate in the EU."
     ]
   }
 ];
