@@ -151,6 +151,123 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
   {
+    "date": "2026-07-16",
+    "label": "Thu, Jul 16, 2026",
+    "gathered": "gathered 7:00 local",
+    "lede": "The July frontier wave settles into a new reality: several labs now sit at near-parity, so edge comes from deployment, not model choice. OpenAI's GPT-5.6 arrives in three price tiers but stays gated to vetted partners after a government review. Meanwhile analysts keep marking up 2026 hyperscaler capex — now ~$650-750B — agent startups pulled in $1.8B this month, and the EU AI Act's full-applicability date (Aug 2) is now under three weeks out.",
+    "items": [
+      {
+        "tags": [
+          "Frontier models",
+          "Policy",
+          "Market signal"
+        ],
+        "title": "GPT-5.6 ships in three tiers (Soul / Terra / Luna) — but access limited to vetted partners after a 12-day US government pre-release review",
+        "why": "Tiered pricing (Terra: prior-flagship capability at half price) keeps compressing your per-token cost curve, while government-gated frontier access is a new variable for anyone building on top of the newest models.",
+        "sources": [
+          {
+            "label": "llm-stats AI news",
+            "url": "https://llm-stats.com/ai-news"
+          },
+          {
+            "label": "imfounder roundup",
+            "url": "https://imfounder.com/science-tech/ai/ai-updates-july-2026-gpt56-claude-ai-inflation/"
+          }
+        ],
+        "date": "Jul 15, 2026"
+      },
+      {
+        "tags": [
+          "Agents",
+          "Funding",
+          "Market signal"
+        ],
+        "title": "AI agent startups raised $1.8B in July across 12+ deals; enterprise automation took 58% of capital, and Lyzr let its own agent run its $100M Series B",
+        "why": "Capital is concentrating in exactly your lane — B2B/enterprise agent automation — with valuations up 40% QoQ; the Lyzr stunt is also a live proof point of agents executing multi-party business processes.",
+        "sources": [
+          {
+            "label": "TechCrunch (Jul 9)",
+            "url": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/"
+          },
+          {
+            "label": "AI agent funding tracker",
+            "url": "https://aifunding.me/insights/ai-agent-funding-july-2026"
+          }
+        ],
+        "date": "Jul 14, 2026"
+      },
+      {
+        "tags": [
+          "AI-infra",
+          "Energy-for-AI",
+          "Investing",
+          "Reality check"
+        ],
+        "title": "Analysts mark up 2026 hyperscaler AI capex again — estimates now range ~$650B to $750B, with $1T floated for 2027",
+        "why": "The capex staircase keeps rising under your AI-infra and energy-for-AI theses — but note the $650B vs $750B spread is analyst estimates, not company guidance; treat the $1T 2027 figure as speculative.",
+        "sources": [
+          {
+            "label": "Tech-Insider capex analysis",
+            "url": "https://tech-insider.org/big-tech-650-billion-ai-infrastructure-capex-2026/"
+          },
+          {
+            "label": "AL Capital CFA analysis",
+            "url": "https://alcapitaladvisory.com/research/intelligence/ai-infrastructure.html"
+          }
+        ],
+        "date": "Jul 15, 2026"
+      },
+      {
+        "tags": [
+          "Supply chain",
+          "Agents",
+          "Enterprise"
+        ],
+        "title": "Enterprise SCM stacks go agentic: Oracle ships four agentic Fusion SCM apps + inventory optimization; Workday DevCon adds Agent Passport and agent-ready tooling",
+        "why": "Agentic planning/replenishment is landing inside the ERP/SCM suites your industry runs on — the integration and identity layer (Agent Passport, Okta-Google agent security) is where enterprise adoption gets decided.",
+        "sources": [
+          {
+            "label": "Supply & Demand Chain Exec",
+            "url": "https://www.sdcexec.com/software-technology/ai-ar/article/22958543/abbyy-6-ai-trends-reshaping-supply-chains-in-2026"
+          },
+          {
+            "label": "AI Agents Directory (Jul 14)",
+            "url": "https://aiagentsdirectory.com/news/ai-agents-news-brief-investments-security-and-development-tools-dominate"
+          }
+        ],
+        "date": "Jul 14, 2026"
+      },
+      {
+        "tags": [
+          "Policy",
+          "Reality check"
+        ],
+        "title": "EU AI Act full applicability hits Aug 2 — GPAI enforcement powers arrive, amendments extend some deadlines and add new prohibitions",
+        "why": "If your work or portfolio companies touch the EU, high-risk obligations and AI Office enforcement start in under three weeks; the amendment package (deadline extensions, SMC pathways) changes compliance timing.",
+        "sources": [
+          {
+            "label": "Latham & Watkins",
+            "url": "https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines"
+          },
+          {
+            "label": "Collibra compliance guide",
+            "url": "https://www.collibra.com/blog/ai-regulatory-compliance-in-2026-eu-ai-act-us-orders-and-state-laws-and-how-to-operationalize"
+          }
+        ],
+        "date": "Jul 15, 2026"
+      }
+    ],
+    "tryBox": {
+      "h": "Worth trying: agent identity audit",
+      "body": "Okta's new Google Cloud partnership extends identity security to AI agents. Before rolling agents into any workflow, list every agent with credentials in your stack and what it can touch — the 'Agent Passport' pattern (scoped, auditable agent identity) is becoming the enterprise standard.",
+      "src": "https://aiagentsdirectory.com/news/ai-agents-news-brief-investments-security-and-development-tools-dominate"
+    },
+    "radar": [
+      "EU AI Act full applicability lands Aug 2 — watch for last-minute Commission guidance on GPAI enforcement.",
+      "Illinois SB 315 makes first state-mandated third-party audits of frontier models — watch whether other states copy it."
+    ]
+  },
+  {
     "date": "2026-07-14",
     "label": "Tue, Jul 14, 2026",
     "gathered": "gathered 7:00 local",
@@ -1259,140 +1376,8 @@ const DIGESTS = [
       "<b>Microsoft Frontier Company's first case studies.</b> Watch for which enterprise verticals get engaged first — that's a tell for where hyperscalers see the highest agent-deployment friction.",
       "<b>FTC's July 31 comment deadline.</b> Worth a calendar note; the resulting policy statement could shape how consumer-facing AI products present model outputs."
     ]
-  },
-  {
-    "date": "2026-07-03",
-    "label": "Fri, Jul 3, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "Today's through-line is capital formation for the AI-infra stack, with a policy shoe still to drop: MGX closed the biggest dedicated AI fund ever at $49B, hyperscaler capex keeps climbing past $690B even as power bottlenecks stall nearly half of planned 2026 US data-center builds, and Washington's voluntary pre-release review framework for frontier models is due August 1. On the agent side, two reality checks land the same week as the bull case: Fivetran's readiness data says most enterprises are running agents ahead of their data foundations, and Zuckerberg told Meta staff agent progress hasn't accelerated the way leadership hoped.",
-    "items": [
-      {
-        "tags": [
-          "Funding",
-          "AI-infra",
-          "Investing"
-        ],
-        "title": "MGX closes Fund I at $49B, one of the largest dedicated AI funds ever raised",
-        "why": "Abu Dhabi's MGX beat its $45B target and has already co-led rounds in Anthropic, OpenAI and xAI, plus a roughly $40B stake in Aligned Data Centres — a live example of sovereign capital moving from equity checks into owning pieces of the AI-infra stack itself (chips, data centers, power). Useful benchmark for how the biggest allocators are sizing this theme right now.",
-        "sources": [
-          {
-            "label": "Bloomberg",
-            "url": "https://www.bloomberg.com/news/articles/2026-07-01/uae-abu-dhabi-s-mgx-raises-49-billion-for-one-of-the-biggest-ai-funds-ever"
-          },
-          {
-            "label": "CNBC",
-            "url": "https://www.cnbc.com/2026/07/01/mgx-ai-fund-uae-49-billion.html"
-          }
-        ],
-        "date": "closed July 1, 2026"
-      },
-      {
-        "tags": [
-          "Energy-for-AI",
-          "AI-infra",
-          "Investing"
-        ],
-        "title": "Hyperscalers commit $690B+ to 74 new data centers — but power bottlenecks reportedly threaten nearly half of 2026's planned US builds",
-        "why": "Amazon, Google, Meta, Microsoft, Oracle and the Stargate consortium keep raising the AI-infra capex bar, but the binding constraint has clearly shifted from chip supply to megawatts and interconnection queues. That's the risk to underwrite in any energy-for-AI thesis, not just the upside — flagging this as aggregated tracker data rather than a single confirmed source, so treat the 'nearly half' delay figure as directional, not verified.",
-        "sources": [
-          {
-            "label": "BloombergNEF (via Value Add VC tracker)",
-            "url": "https://valueaddvc.com/ai-buildout-tracker"
-          },
-          {
-            "label": "Fortune",
-            "url": "https://fortune.com/2026/04/30/big-tech-hyperscalers-will-spend-700-billion-on-ai-infrastructure-this-year-with-no-clear-end-in-sight-eye-on-ai/"
-          }
-        ],
-        "date": "2026 capex tracking, reported through June 2026"
-      },
-      {
-        "tags": [
-          "Policy",
-          "Frontier models"
-        ],
-        "title": "Trump signs executive order creating a voluntary 30-day government pre-release review for 'covered' frontier models",
-        "why": "Signed June 2, with agencies due to finalize the review framework by August 1, this formalizes a pattern already visible in the wild — GPT-5.6 Sol's and Fable 5's releases were both reportedly gated pending government access. The catch: the capability threshold is set by a classified benchmark, so it's not yet public which future model releases (or which labs) will actually be swept in.",
-        "sources": [
-          {
-            "label": "Latham & Watkins",
-            "url": "https://www.lw.com/en/insights/president-trump-signs-executive-order-establishing-ai-cybersecurity-and-frontier-model-framework"
-          },
-          {
-            "label": "Tom's Hardware",
-            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-signs-ai-executive-order-seeking-30-day-government-access-to-frontier-models-before-release"
-          }
-        ],
-        "date": "signed June 2, 2026; framework due August 1, 2026"
-      },
-      {
-        "tags": [
-          "Agents",
-          "Enterprise",
-          "Reality check"
-        ],
-        "title": "Fivetran's 2026 index: 60% of enterprises are investing millions in agentic AI, but only 15% have the data foundation to run it safely",
-        "why": "41% are already running agentic AI in production anyway, ahead of their own readiness — a concrete counterweight to the bigger agent-spend numbers you've seen elsewhere. If you're sizing up vendors or portfolio companies selling into this wave, data quality/lineage, governance and interoperability are the specific gaps (cited by 42%, 39% and 39% of respondents) worth probing in diligence.",
-        "sources": [
-          {
-            "label": "Fivetran",
-            "url": "https://www.fivetran.com/press/fivetran-launches-2026-agentic-ai-readiness-index-revealing-gap-between-enterprise-investment-and-data-preparedness-for-agentic-ai"
-          },
-          {
-            "label": "BusinessWire",
-            "url": "https://www.businesswire.com/news/home/20260505250301/en/Fivetran-Launches-2026-Agentic-AI-Readiness-Index-Revealing-Gap-Between-Enterprise-Investment-and-Data-Preparedness-for-Agentic-AI"
-          }
-        ],
-        "date": "published May 5, 2026, resurfacing in this week's enterprise coverage"
-      },
-      {
-        "tags": [
-          "Supply chain",
-          "Agents"
-        ],
-        "title": "Warehouse robotics scale from pilot to production: Kawasaki/Dexterity expand humanoid trailer-loading, Amazon's DeepFleet lifts robotic fleet efficiency 10%",
-        "why": "Roughly 4.7M warehouse robots are now running across 50,000+ facilities. The Kawasaki-Dexterity tie-up targets trailer loading/unloading — one of the last manual chokepoints in a DC — but the more interesting data point for you is Amazon's DeepFleet: a generative model coordinating robot traffic at the fleet level, not just individual-unit dexterity. Fleet-level orchestration looks like where the next efficiency gains are actually coming from.",
-        "sources": [
-          {
-            "label": "RoboticsTomorrow",
-            "url": "https://www.roboticstomorrow.com/news/2026/06/23/kawasaki-robotics-and-dexterity-expand-collaboration-to-scale-physical-ai-for-warehouse-logistics/26767"
-          },
-          {
-            "label": "Robotics 24/7",
-            "url": "https://www.robotics247.com/article/automate-2026-dexterity-kawasaki-robotics-expand-collaboration-to-scale-physical-ai-for-warehouse-logistics"
-          }
-        ],
-        "date": "announced June 23, 2026"
-      },
-      {
-        "tags": [
-          "Agents",
-          "Reality check",
-          "Enterprise"
-        ],
-        "title": "Zuckerberg tells Meta staff AI agent progress 'hasn't accelerated' the way leadership expected",
-        "why": "Coming from someone committing up to $145B in AI infrastructure spend this year, this is a useful counterweight to the more bullish agent narratives elsewhere in today's roundup. Meta's own reorg (8,000 cut, 7,000 reassigned to an 'Agent Transformation' group) hasn't yet produced the trajectory it was betting on; Zuckerberg says he expects a turn within 3-6 months, which is worth revisiting on that timeline.",
-        "sources": [
-          {
-            "label": "TechCrunch",
-            "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/"
-          }
-        ],
-        "date": "reported July 2, 2026"
-      }
-    ],
-    "tryBox": {
-      "h": "Prototype an agent workflow while Sonnet 5's introductory pricing lasts",
-      "body": "Claude Sonnet 5's API pricing ($2/M input, $10/M output tokens) is discounted only through August 31, 2026, before reverting to $3/$15. If you've got a supply-chain-monitoring or portfolio-tracking workflow you've been meaning to prototype as an agent, this is a reasonable window to build and benchmark it before the price reverts.",
-      "src": "<a href=\"https://www.anthropic.com/news/claude-sonnet-5\">Anthropic: Introducing Claude Sonnet 5</a> · launched June 30, 2026"
-    },
-    "radar": [
-      "<b>August 1 frontier-model review framework.</b> Watch for the actual definition of a 'covered frontier model' — the classified benchmark behind it could reshape which labs face pre-release friction.",
-      "<b>Data-center power bottlenecks.</b> If delays to planned 2026 builds are confirmed by more than one tracker, that's a real drag on the AI-infra capex story, not just a headline risk."
-    ]
   }
 ];
-
 /* ---- APP ---- */
 const $ = s => document.querySelector(s);
 let state = { dayIndex:0, query:"", tag:"All" };
