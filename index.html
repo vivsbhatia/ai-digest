@@ -151,6 +151,131 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
   {
+    "date": "2026-07-17",
+    "label": "Fri, Jul 17, 2026",
+    "gathered": "gathered 7:00 local",
+    "lede": "Power and silicon dominate the tape: hyperscaler 2026 capex estimates get marked up again to ~$750B with $1T penciled in for 2027, Meta moves its custom inference chip toward production, and a cluster of early-stage chip talks (Qualcomm-Tenstorrent, Anthropic-Maia) all point the same direction — inference cost is the battleground. On the agent front, Gartner puts agentic AI atop its 2026 supply-chain trends while adoption data says most operators are still in pilot mode. And the EU AI Act's full-applicability date is now two weeks out.",
+    "items": [
+      {
+        "tags": [
+          "AI-infra",
+          "Energy-for-AI",
+          "Investing",
+          "Market signal"
+        ],
+        "title": "Hyperscaler 2026 AI capex marked up to ~$750B (from $670B), with >$1T expected in 2027 — and electricity access is now the deciding factor in where and when capacity gets built",
+        "why": "Confirms your energy-for-AI thesis: the binding constraint has shifted from chips to power, so grid, generation, and cooling suppliers sit upstream of every AI roadmap — a research lens for your infra allocation.",
+        "sources": [
+          {
+            "label": "Intellectia analysis",
+            "url": "https://intellectia.ai/blog/ai-infrastructure-investment-july-2026"
+          },
+          {
+            "label": "S&P Global 2026 datacenter trends",
+            "url": "https://www.spglobal.com/energy/en/news-research/special-reports/energy-transition/2026-trends-in-data-center-services-infrastructure"
+          },
+          {
+            "label": "Morgan Stanley: Powering AI",
+            "url": "https://www.morganstanley.com/insights/articles/powering-ai-energy-market-outlook-2026"
+          }
+        ],
+        "date": "Jul 2026"
+      },
+      {
+        "tags": [
+          "AI-infra",
+          "Cost",
+          "Market signal"
+        ],
+        "title": "Inference-silicon land grab: Meta's custom chip 'Iris' enters manufacturing in September (part of a 14 GW compute plan); Qualcomm reportedly in early talks to buy Tenstorrent for $8-10B; Anthropic reportedly exploring Claude inference on Microsoft's Maia 200",
+        "why": "Every one of these moves targets inference cost-per-token — the line item that decides which agent deployments pencil out. Note: the Qualcomm and Anthropic items are early-stage talks from media reports, not confirmed deals.",
+        "sources": [
+          {
+            "label": "AIwire on Meta Iris",
+            "url": "https://www.hpcwire.com/aiwire/2026/07/15/metas-custom-ai-chip-could-redefine-the-economics-of-ai/"
+          },
+          {
+            "label": "Crescendo AI news roundup",
+            "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
+          }
+        ],
+        "date": "Jul 15-17, 2026"
+      },
+      {
+        "tags": [
+          "Agents",
+          "Supply chain",
+          "Enterprise",
+          "Reality check"
+        ],
+        "title": "Gartner names agentic AI and physical AI top supply-chain tech trends for 2026 — but Sage's survey finds only 10% of retail/wholesale operators have AI live in supply-chain workflows; Oracle ships four new agentic Fusion SCM apps",
+        "why": "The gap between analyst enthusiasm and 10% live adoption is your opening: operators who can actually deploy agents into planning and exception management are 1-2 years ahead of the field.",
+        "sources": [
+          {
+            "label": "Gartner press release",
+            "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-30-gartner-identifies-top-supply-chain-technology-trends-for-2026"
+          },
+          {
+            "label": "Inbound Logistics 2026 outlook",
+            "url": "https://www.inboundlogistics.com/articles/ai-in-supply-chain-management-how-useful-will-it-be-in-2026/"
+          },
+          {
+            "label": "Inside Logistics on Gartner",
+            "url": "https://www.insidelogistics.ca/artificial-intelligence-ai/gartner-identifies-agentic-ai-physical-ai-among-top-supply-chain-technology-trends-for-2026/"
+          }
+        ],
+        "date": "Jun 30 - Jul 16, 2026"
+      },
+      {
+        "tags": [
+          "Policy"
+        ],
+        "title": "EU AI Act hits full applicability Aug 2 — two weeks out — but the just-approved simplification omnibus defers high-risk obligations to Dec 2027 (stand-alone) and Aug 2028 (embedded)",
+        "why": "If you deploy agents touching EU operations or supply chains, the near-term burden just lightened materially — but GPAI and governance rules already apply, so compliance posture still matters for enterprise deals.",
+        "sources": [
+          {
+            "label": "EU Council press release",
+            "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/"
+          },
+          {
+            "label": "DLA Piper omnibus analysis",
+            "url": "https://knowledge.dlapiper.com/dlapiperknowledge/globalemploymentlatestdevelopments/2026/The-Digital-AI-Omnibus-Proposed-deferral-of-high-risk-AI-obligations-under-the-AI-Act"
+          }
+        ],
+        "date": "Jun 29 - Aug 2, 2026"
+      },
+      {
+        "tags": [
+          "Frontier models",
+          "Market signal",
+          "Reality check"
+        ],
+        "title": "Frontier churn: Moonshot releases Kimi K3, a 2.8T-parameter open MoE (Jul 16); Google's Gemini 3.5 Pro misses a third launch window; reports say Anthropic is holding IPO investor meetings for an October target",
+        "why": "Open-weight releases at this scale keep pressuring closed-model pricing — good for your agent unit economics. Caveat: the Gemini timeline and Anthropic IPO items come from aggregators and unconfirmed media reports; treat as directional until primary confirmation.",
+        "sources": [
+          {
+            "label": "llm-stats updates",
+            "url": "https://llm-stats.com/llm-updates"
+          },
+          {
+            "label": "BuildFastWithAI roundup (Jul 16)",
+            "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-16-2026"
+          }
+        ],
+        "date": "Jul 16-17, 2026"
+      }
+    ],
+    "tryBox": {
+      "h": "Worth trying: Oracle's new agentic SCM apps",
+      "body": "Oracle shipped four agentic applications plus inventory-optimization tools in Fusion Cloud SCM. Even if you're not an Oracle shop, the demos are a fast way to benchmark what 'production agentic supply chain' looks like from a tier-1 vendor — useful calibration for your own automation roadmap.",
+      "src": "https://www.supplychain247.com/topic/tag/Artificial_Intelligence"
+    },
+    "radar": [
+      "Aug 2: EU AI Act full applicability — watch for last-minute guidance from the AI Office.",
+      "Anthropic IPO (reported ticker ANTH, October target) — unconfirmed; if real, it becomes the first pure-play frontier-lab listing and a repricing event for the whole AI-infra chain."
+    ]
+  },
+  {
     "date": "2026-07-16",
     "label": "Thu, Jul 16, 2026",
     "gathered": "gathered 7:00 local",
@@ -1268,113 +1393,6 @@ const DIGESTS = [
     "radar": [
       "<b>Where Microsoft Frontier Company lands its first customers.</b> Still the tell for which verticals have the most agent-deployment friction.",
       "<b>Whether other labs face export-control-style directives.</b> The Fable 5/Mythos 5 precedent means this is now a repeatable policy lever, not a one-off."
-    ]
-  },
-  {
-    "date": "2026-07-05",
-    "label": "Sun, Jul 5, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "A lighter Sunday news flow, but the through-line holds: the enterprise-agent land grab is now an infrastructure-spend story, not just a model story. Oracle shipped four new agentic apps aimed squarely at supply-chain planners, Microsoft put $2.5B and 6,000 people behind an in-house deployment arm to close the gap between agent pilots and production, and Meta is reportedly exploring selling its excess AI compute for cash — the same capital-recycling playbook SpaceX is running. On the policy side, the FTC opened a comment window on AI-output-accuracy rules that closes July 31, worth a note but not yet binding on anything.",
-    "items": [
-      {
-        "tags": [
-          "Supply chain",
-          "Agents",
-          "Enterprise"
-        ],
-        "title": "Oracle ships four new Fusion Agentic Applications targeting inventory, supplier qualification and production readiness",
-        "why": "The Inventory Planning Command Center autonomously proposes and simulates fixes for stockouts (expedite, transfer, adjust policy) inside Oracle's existing Fusion security guardrails, alongside a Supplier Qualification Workspace, Production Readiness Workspace and Kanban Administration Workspace. This is exactly the pattern to watch for your supply-chain automation thesis: agents moving from dashboards to bounded autonomous action inside an incumbent ERP, not a standalone startup.",
-        "sources": [
-          {
-            "label": "Oracle",
-            "url": "https://www.oracle.com/news/announcement/oracle-adds-new-fusion-agentic-applications-to-help-customers-improve-supply-chain-performance-2026-06-29/"
-          },
-          {
-            "label": "PR Newswire",
-            "url": "https://www.prnewswire.com/news-releases/oracle-adds-new-fusion-agentic-applications-to-help-customers-improve-supply-chain-performance-302812443.html"
-          }
-        ],
-        "date": "announced June 29, 2026"
-      },
-      {
-        "tags": [
-          "Agents",
-          "Enterprise",
-          "AI-infra"
-        ],
-        "title": "Microsoft launches Frontier Company, a $2.5B unit of 6,000 engineers built to actually deploy enterprise AI",
-        "why": "Rather than just sell tools, Microsoft is putting its own people and capital behind closing the gap between agent pilots and production deployments — an implicit admission that most enterprise agent rollouts are stalling on integration and change management, not model capability. If you're evaluating vendors selling into this wave, the existence of a hyperscaler-run 'we'll do it for you' arm is a competitive signal worth pricing in.",
-        "sources": [
-          {
-            "label": "TechCrunch",
-            "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/"
-          },
-          {
-            "label": "Microsoft",
-            "url": "https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/"
-          }
-        ],
-        "date": "announced July 2, 2026"
-      },
-      {
-        "tags": [
-          "AI-infra",
-          "Market signal",
-          "Investing"
-        ],
-        "title": "Meta reportedly exploring a cloud business to sell its excess AI compute for cash, mirroring SpaceX's Colossus playbook",
-        "why": "If a hyperscaler with ~$145B in planned 2026 AI capex is looking to monetize spare capacity, that's a tell that even well-funded buyers are managing utilization risk on their compute bet, not just chasing more of it. Relevant to how you think about compute-as-a-service names (SpaceX-style) versus pure-play hyperscalers in the AI-infra trade — treat this as a reported exploration, not a confirmed launch.",
-        "sources": [
-          {
-            "label": "TechCrunch",
-            "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/"
-          }
-        ],
-        "date": "reported July 1, 2026"
-      },
-      {
-        "tags": [
-          "AI-infra",
-          "Energy-for-AI",
-          "Investing"
-        ],
-        "title": "Goldman Sachs models AI capex scaling from roughly $765B this year toward $1.6T annually by 2031, with power as the binding constraint",
-        "why": "Hyperscale AI data-center capacity is projected to grow from about 11.5GW in 2026 to 43.6GW by 2031 — a useful long-horizon anchor for the energy-for-AI thesis, independent of any single quarter's capex headline. The consistent message across trackers this month: capital is no longer the gating factor, grid interconnection and generation are.",
-        "sources": [
-          {
-            "label": "Goldman Sachs",
-            "url": "https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out"
-          },
-          {
-            "label": "BloombergNEF",
-            "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
-          }
-        ],
-        "date": "2026 modeling, reported through early July"
-      },
-      {
-        "tags": [
-          "Policy"
-        ],
-        "title": "FTC opens 30-day public comment window on a policy statement addressing AI-output accuracy and 'ideological manipulation'",
-        "why": "The proposed statement targets AI companies that steer model outputs toward undisclosed objectives in ways that could count as deceptive under FTC Act Section 5 — comments close July 31, 2026, and the commission vote to proceed was 2-0. Nothing binding yet, but it's a new front (accuracy/deception, not just safety or copyright) worth tracking if any portfolio or vendor exposure touches consumer-facing AI outputs.",
-        "sources": [
-          {
-            "label": "FTC",
-            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-seeks-public-comment-policy-statement-addressing-ai-accuracy"
-          }
-        ],
-        "date": "opened July 1, 2026; comments due July 31, 2026"
-      }
-    ],
-    "tryBox": {
-      "h": "Skim Oracle's Inventory Planning Command Center demo before your next vendor call",
-      "body": "If you're evaluating supply-chain or ERP-agent vendors this quarter, Oracle's new Command Center is a useful reference point for what 'bounded autonomous action inside existing guardrails' looks like in production — a concrete bar to hold pitch decks against.",
-      "src": "<a href=\"https://www.oracle.com/news/announcement/oracle-adds-new-fusion-agentic-applications-to-help-customers-improve-supply-chain-performance-2026-06-29/\">Oracle announcement</a> · June 29, 2026"
-    },
-    "radar": [
-      "<b>Microsoft Frontier Company's first case studies.</b> Watch for which enterprise verticals get engaged first — that's a tell for where hyperscalers see the highest agent-deployment friction.",
-      "<b>FTC's July 31 comment deadline.</b> Worth a calendar note; the resulting policy statement could shape how consumer-facing AI products present model outputs."
     ]
   }
 ];
