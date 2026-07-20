@@ -151,6 +151,132 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
   {
+    "date": "2026-07-20",
+    "label": "Mon, Jul 20, 2026",
+    "gathered": "gathered 7:00 local",
+    "lede": "Agent platforms are hitting general availability across all three hyperscalers while the money story shifts to power: a $200B+ utility M&A wave and hyperscaler capex guidance raised to $750B. Washington's frontier-model review framework may land this week.",
+    "items": [
+      {
+        "tags": [
+          "Frontier models",
+          "Agents",
+          "Cost"
+        ],
+        "title": "OpenAI ships GPT-5.6 family (Sol/Terra/Luna) plus ChatGPT Work, a long-running work agent with multi-agent orchestration in the Responses API",
+        "why": "Terra's claim of ~5.5-level intelligence at half the cost is the number to watch for your agent unit economics; broad access expected mid-to-late July (currently limited to ~20 vetted partners).",
+        "sources": [
+          {
+            "label": "ThursdAI July releases",
+            "url": "https://thursdai.news/releases/2026-07"
+          },
+          {
+            "label": "llm-stats",
+            "url": "https://llm-stats.com/llm-updates"
+          }
+        ],
+        "date": "Jul 9–15"
+      },
+      {
+        "tags": [
+          "Agents",
+          "Enterprise"
+        ],
+        "title": "Microsoft Foundry Agent Service hits GA; Google expands Gemini Enterprise for building and governing agent fleets",
+        "why": "Enterprise agent orchestration is now an opinionated, supported stack on both Azure and GCP — the buying conversation in supply-chain IT shifts from 'pilot' to 'platform selection.'",
+        "sources": [
+          {
+            "label": "Technology Radar Jul 2026",
+            "url": "https://www.hectorpincheira.com/en/news/technological-radar-july-2026-ai-agents-go-into-production-and-governance-doesnt-keep-up/"
+          },
+          {
+            "label": "AI Agents brief Jul 18",
+            "url": "https://aiagentsdirectory.com/news/ai-agents-daily-brief-july-18-2026"
+          }
+        ],
+        "date": "early–mid Jul"
+      },
+      {
+        "tags": [
+          "Energy-for-AI",
+          "AI-infra",
+          "Investing",
+          "Market signal"
+        ],
+        "title": "Utility M&A hits $203.6B YTD — led by NextEra's proposed $66.8B Dominion acquisition — as hyperscaler 2026 capex guidance rises to ~$750B",
+        "why": "The AI trade keeps migrating into the power sector; Dominion's ~51GW of contracted datacenter capacity shows why grid-adjacent assets are being repriced. Research input for your energy-for-AI theme, not advice.",
+        "sources": [
+          {
+            "label": "BigDATAwire",
+            "url": "https://www.hpcwire.com/bigdatawire/2026/07/01/how-the-ai-data-center-boom-is-fueling-a-200b-utility-ma-wave/"
+          },
+          {
+            "label": "Futurum capex",
+            "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
+          }
+        ],
+        "date": "Jul 1–18"
+      },
+      {
+        "tags": [
+          "Supply chain",
+          "Agents"
+        ],
+        "title": "Gartner names agentic AI and physical AI the top 2026 supply-chain tech trends; automated logistics space reaches ~30% (from 20–25% five years ago)",
+        "why": "Validates the agentic-supply-chain thesis you work in — modular automation is winning on ROI (~1/3 the capital, ~1.5x throughput per dollar vs full automation).",
+        "sources": [
+          {
+            "label": "SCMR",
+            "url": "https://www.scmr.com/article/2026-the-age-of-the-ai-supply-chain"
+          },
+          {
+            "label": "Inbound Logistics",
+            "url": "https://www.inboundlogistics.com/articles/ai-in-supply-chain-management-how-useful-will-it-be-in-2026/"
+          }
+        ],
+        "date": "Jul 2026"
+      },
+      {
+        "tags": [
+          "Funding",
+          "Market signal",
+          "Reality check"
+        ],
+        "title": "AI agent startup funding reportedly at $1.8B across 12+ deals in July; average valuations +40% QoQ to ~$280M",
+        "why": "If accurate, agent-layer valuations are running hot — relevant comp data for any angel look at agent startups. Single-source figure (AI Funding tracker); treat as unverified.",
+        "sources": [
+          {
+            "label": "AI Funding (single source)",
+            "url": "https://aifunding.me/insights/ai-agent-funding-july-2026"
+          }
+        ],
+        "date": "Jul 2026"
+      },
+      {
+        "tags": [
+          "Policy"
+        ],
+        "title": "White House voluntary frontier-model standards framework expected as soon as this week, formalizing pre-release federal review",
+        "why": "Would put three of four major US labs under federal review in one release cycle — a structural gate on frontier release cadence that affects the whole AI-infra demand curve. Expected, not yet issued.",
+        "sources": [
+          {
+            "label": "AI Central landscape",
+            "url": "https://aicentral.substack.com/p/the-ai-landscape-july-2026"
+          }
+        ],
+        "date": "expected wk of Jul 20"
+      }
+    ],
+    "tryBox": {
+      "h": "Worth trying: Pinecone Nexus Engine",
+      "body": "A knowledge engine that turns enterprise data into a structured, queryable layer agents can share — aimed at cutting token costs and improving accuracy by making business context reusable across multiple agents. Directly relevant to grounding supply-chain agents in operational data.",
+      "src": "https://aiagentsdirectory.com/news/ai-agents-daily-brief-july-18-2026"
+    },
+    "radar": [
+      "Langflow agent-builder flaw (CVE-2026-55255) added to CISA's Known Exploited Vulnerabilities — credential theft via another user's flows; patch if you touch it.",
+      "Google's next flagship is in pre-release federal review talks — watch for a launch that tests the new White House framework."
+    ]
+  },
+  {
     "date": "2026-07-18",
     "label": "Sat, Jul 18, 2026",
     "gathered": "gathered 7:00 local",
@@ -1307,124 +1433,9 @@ const DIGESTS = [
       "<b>Whether Crusoe's $3B round actually closes at the reported $30B mark.</b> Still an in-talks report — worth confirming once (if) it's officially announced.",
       "<b>Whether other ERP/SCM incumbents (SAP, Blue Yonder, Infor) answer Oracle's supply-chain agent push</b> with their own vertical agentic products, or cede that ground to point solutions."
     ]
-  },
-  {
-    "date": "2026-07-07",
-    "label": "Tue, Jul 7, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "A policy-and-plumbing kind of Tuesday: the first UN Global Dialogue on AI Governance opened in Geneva just as two reality-check data points landed on how bumpy the enterprise-agent rollout actually is under the hood. On the infra side, National Grid put real capital behind the 'behind-the-meter' power model that's becoming the template for new AI data centers, and on the model side, Anthropic's cost-down agentic push (Sonnet 5) collided with the Fable 5 billing cliff that hits today.",
-    "items": [
-      {
-        "tags": [
-          "Policy"
-        ],
-        "title": "Inaugural UN Global Dialogue on AI Governance opens in Geneva, co-chaired by Yoshua Bengio and Maria Ressa, running into the ITU AI for Good Summit",
-        "why": "The first attempt at a UN-level coordination forum for AI rules, with Bengio warning capability is outpacing both scientific understanding and government adaptation. Nothing binding yet, but it's the venue to watch for whether a global governance baseline emerges that later feeds into the national rules that touch your agent deployments and portfolio.",
-        "sources": [
-          {
-            "label": "UN News",
-            "url": "https://news.un.org/en/story/2026/07/1167862"
-          }
-        ],
-        "date": "opened July 6, continuing July 7, 2026"
-      },
-      {
-        "tags": [
-          "Funding",
-          "Energy-for-AI",
-          "AI-infra",
-          "Investing"
-        ],
-        "title": "National Grid Ventures invests $1.75B for a 35% stake in Joulent, backing a 2.67 GW co-located power facility (Project Kilby) under a 20-year PPA with a Microsoft data center",
-        "why": "A regulated utility taking an equity stake in an 'across-the-meter' power developer — generation wired straight to the server rack, bypassing the public grid — is a concrete signal of where energy-for-AI capital is actually structuring itself right now, distinct from the hyperscaler-capex headline number. Chevron is the 50/50 partner on the generation side, so this also ties fossil-fuel majors directly into AI-infra economics.",
-        "sources": [
-          {
-            "label": "PR Newswire",
-            "url": "https://www.prnewswire.com/news-releases/national-grid-ventures-to-invest-1-75bn-to-accelerate-power-solutions-for-us-data-centers-and-ai-302815750.html"
-          },
-          {
-            "label": "The Globe and Mail",
-            "url": "https://www.theglobeandmail.com/investing/markets/stocks/NGG-N/pressreleases/3098318/national-grid-ventures-to-invest-1-75-billion-in-joulent-to-power-us-ai-data-centre-growth/"
-          }
-        ],
-        "date": "announced July 1-2, 2026"
-      },
-      {
-        "tags": [
-          "Frontier models",
-          "Cost",
-          "Agents"
-        ],
-        "title": "Anthropic's Claude Sonnet 5 (launched last week as the new low-cost agentic default) meets the Fable 5 billing cliff today, as included usage expires and access shifts to $10/$50-per-million usage credits from July 8",
-        "why": "Direct read on the operating economics of running agents day to day: Sonnet 5 is priced to make cheap, always-on agentic workflows more viable ($2/$10 per million introductory, rising to $3/$15 after August 31), while Fable 5 becomes markedly more expensive to reach for casually. Worth checking which model any of your own agent workflows default to before the July 8 pricing switch bites.",
-        "sources": [
-          {
-            "label": "Anthropic",
-            "url": "https://www.anthropic.com/news/claude-sonnet-5"
-          },
-          {
-            "label": "TechCrunch",
-            "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/"
-          },
-          {
-            "label": "Tech Times",
-            "url": "https://www.techtimes.com/articles/319767/20260706/fable-5-subscription-ends-tomorrow-per-token-costs-who-gets-hit-hardest.htm"
-          }
-        ],
-        "date": "Sonnet 5 launched June 30; Fable 5 cliff hits July 7-8, 2026"
-      },
-      {
-        "tags": [
-          "Agents",
-          "Enterprise",
-          "Reality check"
-        ],
-        "title": "AvePoint's 2026 State of AI report: 88.4% of organizations report at least one AI-agent-related security incident in the past year, even as ~47% of employees now use agents weekly or daily",
-        "why": "The clearest reality check yet on the enterprise-agent thesis: adoption (and the Gartner $206.5B spend number from earlier this week) is real, but governance and visibility tooling is lagging badly behind — data leakage and manipulation by untrusted inputs are the top failure modes. A concrete question to bring to any agent-tooling vendor conversation: what's their answer to this specific survey.",
-        "sources": [
-          {
-            "label": "GlobeNewswire",
-            "url": "https://www.globenewswire.com/news-release/2026/06/29/3318982/0/en/avepoint-research-reveals-ai-visibility-gaps-have-nearly-tripled-as-ai-agents-scale-and-almost-half-of-enterprise-employees-now-rely-on-agents-daily-or-weekly.html"
-          },
-          {
-            "label": "AvePoint",
-            "url": "https://www.avepoint.com/blog/manage/state-of-ai-2026-report"
-          }
-        ],
-        "date": "published June 29, 2026"
-      },
-      {
-        "tags": [
-          "Supply chain",
-          "Agents",
-          "Reality check"
-        ],
-        "title": "Warehouse robotics crosses from pilot to production scale: Locus reports 350+ live sites, Amazon runs 750,000+ robots fleet-wide, and median AMR deployment size has grown from 15 to 35 robots per facility since 2024 — but only 34% of VP/Director-level execs say they're fully satisfied with the results",
-        "why": "The scale numbers confirm the supply-chain automation thesis is past proof-of-concept, but the DHL satisfaction stat is the useful counterweight — deployment volume is outrunning realized value for a lot of buyers, which is exactly the gap agentic orchestration layers (vs. just more robots) are trying to close.",
-        "sources": [
-          {
-            "label": "TraxTech",
-            "url": "https://www.traxtech.com/ai-in-supply-chain/ai-warehouse-robots-transforming-logistics-2026"
-          },
-          {
-            "label": "Inbound Logistics",
-            "url": "https://www.inboundlogistics.com/articles/product-spotlight-ai-powered-robotics/"
-          }
-        ],
-        "date": "reported through early July 2026"
-      }
-    ],
-    "tryBox": {
-      "h": "Try benchmarking one agent workflow on Claude Sonnet 5",
-      "body": "Sonnet 5 is now positioned specifically as the cheap, always-on option for agentic work (tool use, browsing, multi-step plans) at a fraction of frontier-model pricing. If you're running anything on a pricier model by default — research summarization, supply-chain monitoring, whatever — this is a low-effort week to swap it in and see if quality holds, especially with Fable 5's per-token cost jumping today.",
-      "src": "<a href=\"https://www.anthropic.com/news/claude-sonnet-5\">Anthropic</a> · launched June 30, 2026"
-    },
-    "radar": [
-      "<b>Whether other utilities copy National Grid/Joulent's behind-the-meter co-location structure.</b> If this becomes the standard template, it reshapes how energy-for-AI capital gets deployed outside traditional grid-interconnection queues.",
-      "<b>Whether agent-governance tooling catches up to the 88.4% incident rate</b> before it becomes a real drag on the $206.5B 2026 enterprise agent-spend number flagged earlier this week."
-    ]
   }
 ];
+
 /* ---- APP ---- */
 const $ = s => document.querySelector(s);
 let state = { dayIndex:0, query:"", tag:"All" };
