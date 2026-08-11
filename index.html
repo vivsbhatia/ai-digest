@@ -151,6 +151,129 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
  {
+  "date": "2026-08-11",
+  "label": "Tue, Aug 11, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Frontier pricing keeps falling even as capex estimates climb toward $800B, nuclear power is shifting from announced deals to an operating restart, and the EU's AI Act transparency rules are now live — a day where the infra and policy stories move faster than the model stories.",
+  "items": [
+   {
+    "tags": [
+     "Frontier models",
+     "Cost",
+     "Investing"
+    ],
+    "title": "Anthropic's Claude Opus 5 landed at roughly half the price of comparable frontier models, following OpenAI's GPT-5.6 family; Google's Gemini 3.5 Pro reportedly slipped its ship date",
+    "why": "Price compression at the frontier makes agent workloads that were cost-prohibitive six months ago viable now — worth re-checking any build-vs-buy agent math you shelved earlier this year.",
+    "sources": [
+     {
+      "label": "Axios — Anthropic releases new model, Opus 5",
+      "url": "https://www.axios.com/2026/07/24/anthropic-releases-new-model-opus-5"
+     },
+     {
+      "label": "Yahoo Finance — Anthropic debuts Opus 5 model as company preps for IPO",
+      "url": "https://finance.yahoo.com/technology/article/anthropic-debuts-opus-5-model-as-company-preps-for-ipo-later-this-year-170000070.html"
+     }
+    ],
+    "date": "Jul 24, 2026"
+   },
+   {
+    "tags": [
+     "Agents",
+     "Enterprise"
+    ],
+    "title": "The Model Context Protocol shipped a major release candidate for brokering agent access to production systems, and Claude Enterprise added beta ‘inference hooks’ that route prompts through an allow/deny security check before inference",
+    "why": "This is the governance layer maturing right as agent deployment scales — the kind of control-plane primitive you'd want in place before letting an internal ops or supply-chain agent touch anything production.",
+    "sources": [
+     {
+      "label": "Releasebot — Anthropic Release Notes, August 2026",
+      "url": "https://releasebot.io/updates/anthropic"
+     }
+    ],
+    "date": "Aug 2026",
+    "note": "Single secondary source for the MCP release-candidate detail — worth confirming against Anthropic's own changelog."
+   },
+   {
+    "tags": [
+     "AI-infra",
+     "Investing",
+     "Market signal"
+    ],
+    "title": "2026 hyperscaler AI capex estimates climbed to $775–800B (from J.P. Morgan's earlier $697B call), and Morgan Stanley/J.P. Morgan now peg the tech sector's debt issuance need at ~$1.5T over three years to fund the buildout",
+    "why": "The financing mix is shifting from pure cash capex to debt-funded buildout — a signal worth watching for how leveraged the AI-infra trade is getting, and where credit spreads on that debt end up pricing the risk.",
+    "sources": [
+     {
+      "label": "Futurum — AI Capex 2026: The $690B Infrastructure Sprint",
+      "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
+     },
+     {
+      "label": "AL Capital Advisory — AI Capex Cycle 2026: $775–800B Hyperscaler Buildout",
+      "url": "https://alcapitaladvisory.com/research/intelligence/ai-infrastructure.html"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "Energy-for-AI",
+     "AI-infra",
+     "Policy"
+    ],
+    "title": "Michigan's Palisades plant returned to operational status this month backed by a $1.52B federal loan — the first US nuclear plant to reverse decommissioning — while Meta's nuclear PPAs with Vistra, Oklo, and TerraPower now total up to 6.6GW",
+    "why": "Nuclear is moving from announcement to operating asset, which is the milestone that actually matters for the energy-for-AI thesis versus press-release capacity commitments — useful marker for judging how real other nuclear-for-AI deals are.",
+    "sources": [
+     {
+      "label": "Utility Dive — AI is outpacing America's power grid",
+      "url": "https://www.utilitydive.com/news/ai-power-grid-nuclear-national-priority/811744/"
+     },
+     {
+      "label": "Carbon Credits — 2026: The Year Nuclear Power Reclaims Relevance",
+      "url": "https://carboncredits.com/2026-the-year-nuclear-power-reclaims-relevance-with-15-reactors-ai-demand-and-chinas-expansion/"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Investing"
+    ],
+    "title": "75% of companies now rank AI-driven logistics as their top investment priority and 7 in 10 already run AI in daily operations, per industry survey data, as autonomous mobile robots and automated storage/retrieval systems keep scaling in warehouses",
+    "why": "Adoption is broadening past the early-mover cohort — a good check on whether the supply-chain automation vendors you're tracking are actually converting this demand into bookings, not just riding a narrative.",
+    "sources": [
+     {
+      "label": "SmartWorkByAI — AI Logistics Automation News 2026",
+      "url": "https://smartworkbyai.com/ai-logistics-automation-news-2026/"
+     }
+    ],
+    "date": "Aug 2026",
+    "note": "Adoption percentages sourced from a single aggregator piece without a named underlying survey — treat as directional."
+   },
+   {
+    "tags": [
+     "Policy"
+    ],
+    "title": "The EU AI Act's Article 50 transparency duties took effect August 2, requiring disclosure when users interact with AI systems or content is AI-generated, with penalties up to 3% of global turnover",
+    "why": "If you or portfolio companies have EU-facing products with any agent or generative-content surface, this is a compliance deadline that already passed — worth a quick check that disclosure UX is in place.",
+    "sources": [
+     {
+      "label": "Augusto Digital — LLM News August 2026: Agent Breakthroughs & Price Cuts",
+      "url": "https://augusto.digital/insights/blogs/monthly-llm-news-august-2026/"
+     }
+    ],
+    "date": "Aug 2, 2026"
+   }
+  ],
+  "tryBox": {
+   "h": "Worth trying: Claude Enterprise inference hooks",
+   "body": "The new beta lets you route agent prompts through an allow/deny security check before they ever hit the model — a lightweight way to put a governance gate in front of any internal agent pilot before it touches production data.",
+   "src": "Releasebot — Anthropic Release Notes, August 2026"
+  },
+  "radar": [
+   "Google's Gemini 3.5 Pro delay is worth tracking — if it slips further, Anthropic's Opus 5 pricing move looks even more aggressive.",
+   "Watch whether other decommissioned nuclear plants follow Palisades' lead now that the reversal precedent and federal loan structure exist."
+  ]
+ },
+ {
   "date": "2026-08-10",
   "label": "Mon, Aug 10, 2026",
   "gathered": "gathered 7:00 local",
@@ -1142,125 +1265,6 @@ const DIGESTS = [
   "radar": [
    "White House frontier AI framework due by Aug 1 — watch whether it touches open-weight models and compute thresholds.",
    "Anthropic confidential IPO filing chatter (single-source, unverified) — if real, the first frontier-lab listing reprices the whole AI-infra chain."
-  ]
- },
- {
-  "date": "2026-07-26",
-  "label": "Sun, Jul 26, 2026",
-  "gathered": "gathered 7:00 local",
-  "lede": "A quiet summer Sunday, but the week's dust is settling into clear signals: Claude Opus 5 landed Friday to close out the July model wave, hyperscaler 2026 capex guidance has crept past $700B, Meta stacked up to 6.6GW of nuclear behind its Prometheus supercluster, and two regulatory clocks — Washington's Aug 1 and Brussels' Aug 2 — run out this week.",
-  "items": [
-   {
-    "tags": [
-     "Frontier models",
-     "Agents",
-     "Market signal"
-    ],
-    "title": "Claude Opus 5 shipped Jul 24, capping a July wave (GPT-5.6, Gemini 3.6 Flash, Muse Spark 1.1, Grok 4.5) that ends in rough frontier parity",
-    "why": "Model choice is no longer the moat — for your agent work the compounding edge is orchestration, evals, and cost engineering; worth slotting Opus 5 into your existing benchmarks this week.",
-    "sources": [
-     {
-      "label": "llm-stats",
-      "url": "https://llm-stats.com/llm-updates"
-     },
-     {
-      "label": "ThursdAI July releases",
-      "url": "https://thursdai.news/releases/2026-07"
-     }
-    ],
-    "date": "Jul 24, 2026"
-   },
-   {
-    "tags": [
-     "AI-infra",
-     "Investing",
-     "Market signal"
-    ],
-    "title": "Hyperscaler 2026 capex guidance now totals ~$710B+, with Google alone at $205B",
-    "why": "For your AI-infra thesis this is the demand base rate: capex is still accelerating, so the picks-and-shovels layer (power, cooling, networking, land) stays supply-constrained — but a number this size is also where any cycle top would first show.",
-    "sources": [
-     {
-      "label": "Tech Insider",
-      "url": "https://tech-insider.org/big-tech-650-billion-ai-infrastructure-capex-2026/"
-     },
-     {
-      "label": "AL Capital research",
-      "url": "https://alcapitaladvisory.com/research/intelligence/ai-infrastructure.html"
-     }
-    ],
-    "date": "Jul 2026"
-   },
-   {
-    "tags": [
-     "Energy-for-AI",
-     "Investing"
-    ],
-    "title": "Meta's nuclear deals with TerraPower, Oklo and Vistra total up to 6.6GW — among the sector's largest — tied directly to its Prometheus supercluster in Ohio",
-    "why": "The bottleneck has moved from chips to power; hyperscalers contracting reactors directly validates the energy-for-AI theme you track — nuclear supply chains and grid interconnect are where scarcity is sharpest.",
-    "sources": [
-     {
-      "label": "io-fund",
-      "url": "https://io-fund.com/artificial-intelligence/nuclear-energy-ai-data-centers"
-     },
-     {
-      "label": "Deseret News (Nvidia/Valar)",
-      "url": "https://www.deseret.com/u-s-world/2026/07/01/valar-atomics-nvidia-milestone/"
-     }
-    ],
-    "date": "Jul 2026"
-   },
-   {
-    "tags": [
-     "Supply chain",
-     "Reality check"
-    ],
-    "title": "Warehouse AI robots are now at production scale — vision-based zero-touch QC embedded in goods-in and returns — but humanoids remain rare on real floors",
-    "why": "Useful ground truth for your supply-chain work: budget and vendor conversations should center on proven mobile/goods-to-person systems plus AI orchestration layers, not humanoid pilots.",
-    "sources": [
-     {
-      "label": "KNAPP 2026 trends",
-      "url": "https://www.knapp.com/en/insights/blog/ai-trends-logistics-2026/"
-     },
-     {
-      "label": "FreightWaves AI awards",
-      "url": "https://www.freightwaves.com/news/2026-ai-excellence-in-supply-chain-awards-winners"
-     }
-    ],
-    "date": "Jul 2026"
-   },
-   {
-    "tags": [
-     "Policy",
-     "Market signal",
-     "Reality check"
-    ],
-    "title": "Two regulatory clocks this week: White House pre-release review framework formalizes Aug 1; EU AI Act Article 50 transparency duties bite Aug 2 (with the Digital Omnibus splitting the rest of the calendar). Meanwhile Huawei chip revenue is reportedly jumping ~60% to $12B despite export controls",
-    "why": "Compliance timing now moves markets and product roadmaps; the Huawei figure — single-source, treat as unconfirmed — would signal export controls are leaking, relevant to your semis exposure.",
-    "sources": [
-     {
-      "label": "Technology.org on Aug 2",
-      "url": "https://www.technology.org/2026/07/17/eu-ai-act-what-actually-applies-on-2-august-2026/"
-     },
-     {
-      "label": "Latham & Watkins on Omnibus",
-      "url": "https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines"
-     },
-     {
-      "label": "bzhoff daily brief",
-      "url": "https://bzhoff.substack.com/p/ai-news-for-july-24-2026-white-house"
-     }
-    ],
-    "date": "Jul 24–26, 2026"
-   }
-  ],
-  "tryBox": {
-   "h": "Re-run your agent benchmark with Claude Opus 5",
-   "body": "With frontier parity, the cheap win is a cost/quality sweep: run your standard agent workflow across Opus 5, GPT-5.6 Terra, and Gemini 3.6 Flash and compare cost-per-completed-task rather than raw eval scores.",
-   "src": "https://llm-stats.com/llm-updates"
-  },
-  "radar": [
-   "EU AI Act Article 50 transparency obligations go live Aug 2 — check exposure if anything you build touches EU users",
-   "Tencent reportedly weighing a $2B+ investment in agent startup Manus — single-source, unconfirmed; would be a major China-agents signal"
   ]
  }
 ];
