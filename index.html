@@ -151,6 +151,108 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
  {
+  "date": "2026-08-12",
+  "label": "Wed, Aug 12, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "A mega sovereign-style fund raise, a fresh hyperscaler capex marker, and Oracle pushing agentic SCM tools into general availability are the through-line today — capital keeps piling into the infra layer while agents move from pilot to production in supply chain specifically. No single dramatic model release; this is an infra-and-adoption day.",
+  "items": [
+   {
+    "tags": [
+     "Funding",
+     "AI-infra",
+     "Investing"
+    ],
+    "title": "MGX, the Abu Dhabi-backed investment vehicle, raised $49B for a new AI-focused fund, one of the largest single fund closes of the year",
+    "why": "Sovereign and quasi-sovereign capital continuing to pool specifically for AI-infra deployment is a scale signal worth tracking alongside hyperscaler capex — it's another large, patient buyer bidding up the same compute/power/data-center assets you'd be evaluating.",
+    "sources": [
+     {
+      "label": "Crunchbase News — Global Startup Investment Hit Record $510B in H1 2026",
+      "url": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/"
+     }
+    ],
+    "date": "Aug 2026",
+    "note": "Fund-size figure from secondary aggregation of the announcement — worth confirming against MGX's own release."
+   },
+   {
+    "tags": [
+     "Agents",
+     "Supply chain",
+     "Enterprise"
+    ],
+    "title": "Oracle rolled out four new agentic applications plus inventory-optimization additions to Fusion Cloud SCM, aimed at planning, sourcing and exception handling",
+    "why": "This is the exact use case Gartner flagged as 2026's top supply-chain trend — autonomous replenishment and exception management — landing in a mainstream ERP suite rather than a point-solution startup, which changes the buy-vs-build calculus for any SCM agent vendor you're tracking.",
+    "sources": [
+     {
+      "label": "Gartner — Top Supply Chain Technology Trends for 2026",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-30-gartner-identifies-top-supply-chain-technology-trends-for-2026"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "AI-infra",
+     "Energy-for-AI",
+     "Market signal"
+    ],
+    "title": "Hyperscaler AI capex estimates for 2026 are now tracking to $775–800B combined, with U.S. data-center power demand projected to nearly double to 35GW by 2030 as the interconnection queue balloons past 2,600GW",
+    "why": "The capex-to-power-delivery gap keeps widening — average interconnection wait times near five years is the bottleneck that ultimately gates how fast any of this buildout can actually convert into revenue-generating compute, a useful discipline check on infra-name valuations.",
+    "sources": [
+     {
+      "label": "AL Capital Advisory — AI Capex Cycle 2026: $775–800B Hyperscaler Buildout",
+      "url": "https://alcapitaladvisory.com/research/intelligence/ai-infrastructure.html"
+     },
+     {
+      "label": "Morgan Stanley — Energy Markets Race to Solve the AI Power Bottleneck",
+      "url": "https://www.morganstanley.com/insights/articles/powering-ai-energy-market-outlook-2026"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "Agents",
+     "Enterprise",
+     "Frontier models"
+    ],
+    "title": "OpenAI shipped GPT-5.6-Cyber and Meta released Muse Glimmer on Aug 10, while Microsoft continues pushing its Agent 365 control plane for managing fleets of enterprise agents",
+    "why": "The frontier race is now producing narrower, task-specific model variants (cyber-focused, creative-focused) rather than just bigger general models — and the control-plane layer (Agent 365, MCP servers) is where the real enterprise adoption friction is shifting, worth watching over any single model launch.",
+    "sources": [
+     {
+      "label": "AI Release Tracker — Latest AI Model Releases, August 2026",
+      "url": "https://aireleasetracker.com/latest"
+     }
+    ],
+    "date": "Aug 10, 2026",
+    "note": "Model-release specifics sourced from an aggregator tracker rather than OpenAI/Meta primary announcements — treat naming/details as provisional."
+   },
+   {
+    "tags": [
+     "Policy",
+     "Market signal"
+    ],
+    "title": "The Trump administration continued formalizing rules easing advanced AI chip exports to China, including new BIS licensing criteria alongside a 25% tariff proclamation on covered chip exports to third countries",
+    "why": "A meaningful loosening of chip export policy toward China would reshape both the competitive picture for U.S. semiconductor/AI-infra names and the geopolitical risk premium baked into that trade — worth watching for the final rule text rather than the directional signal alone.",
+    "sources": [
+     {
+      "label": "Mayer Brown — Administration Policies on Advanced AI Chips Codified",
+      "url": "https://www.mayerbrown.com/en/insights/publications/2026/01/administration-policies-on-advanced-ai-chips-codified"
+     }
+    ],
+    "date": "Aug 2026"
+   }
+  ],
+  "tryBox": {
+   "h": "Worth trying: Oracle Fusion SCM agentic apps",
+   "body": "If you're evaluating build-vs-buy for supply-chain agents, Oracle's new agentic SCM apps are a useful benchmark for what 'production-grade' autonomous replenishment and exception handling looks like from a mainstream vendor right now.",
+   "src": "Gartner — Top Supply Chain Technology Trends for 2026"
+  },
+  "radar": [
+   "Watch for MGX's actual deployment pace out of the $49B fund — announced fund size vs. deployed capital is often a multi-year gap.",
+   "The chip-export-to-China policy shift is still moving through licensing rules; the final scope will matter more than the directional headline."
+  ]
+ },
+ {
   "date": "2026-08-11",
   "label": "Tue, Aug 11, 2026",
   "gathered": "gathered 7:00 local",
@@ -1149,122 +1251,6 @@ const DIGESTS = [
   "radar": [
    "Hyperscaler Q2 earnings this week — watch for capex guidance raises and any debt-issuance signals against the ~$1.5T financing estimate.",
    "EU AI Omnibus Regulation now in force; high-risk system rules apply from Dec 2, 2027 — compliance timelines for enterprise agent deployments start now."
-  ]
- },
- {
-  "date": "2026-07-27",
-  "label": "Mon, Jul 27, 2026",
-  "gathered": "gathered 7:00 local",
-  "lede": "The week opens with the frontier race in rough parity after July's four-model wave, so the action shifts to the layers you care about: enterprise agent platforms hardening fast (Alibaba, HubSpot, Pinecone), infra money still flowing (Fireworks AI's $1.5B), and two regulatory deadlines — Washington's frontier framework by Aug 1 and the EU's Article 50 transparency rules on Aug 2 — hitting this very week.",
-  "items": [
-   {
-    "tags": [
-     "Agents",
-     "Enterprise",
-     "Market signal"
-    ],
-    "title": "Enterprise agent infrastructure consolidates: Alibaba's Agent Native Cloud (WAIC), HubSpot Agent Hub in public beta, Pinecone Nexus Engine",
-    "why": "The agent stack is standardizing into orchestration + sandboxed execution + governed data layers — the pattern to copy for your supply-chain agent designs, and the layer where enterprise spend is landing.",
-    "sources": [
-     {
-      "label": "AI Agent Store weekly",
-      "url": "https://aiagentstore.ai/ai-agent-news/this-week"
-     },
-     {
-      "label": "AI Agents Directory",
-      "url": "https://aiagentsdirectory.com/news/ai-agents-daily-brief-july-18-2026"
-     }
-    ],
-    "date": "Jul 18-25, 2026"
-   },
-   {
-    "tags": [
-     "Frontier models",
-     "Agents",
-     "Cost"
-    ],
-    "title": "Meta ships Muse Spark 1.1 — 1M-token agentic model with Meta's first-ever paid developer API",
-    "why": "A fifth serious agent-model vendor entering paid API distribution pressures per-token pricing across the board; long-context agents over large logistics datasets get cheaper to run.",
-    "sources": [
-     {
-      "label": "BuildFastWithAI Jul 27",
-      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-27-2026"
-     },
-     {
-      "label": "ThursdAI July releases",
-      "url": "https://thursdai.news/releases/2026-07"
-     }
-    ],
-    "date": "Jul 2026"
-   },
-   {
-    "tags": [
-     "Policy",
-     "Market signal"
-    ],
-    "title": "Two regulatory clocks expire this week: White House frontier AI framework expected by Aug 1; EU AI Act Article 50 transparency duties bind Aug 2",
-    "why": "Compliance scope for agent deployments (disclosure when users interact with AI, synthetic-content labeling) firms up within days — worth reading both texts before committing agent UX decisions.",
-    "sources": [
-     {
-      "label": "Stephenson Harwood Neural Network",
-      "url": "https://www.stephensonharwood.com/insights/neural-network-july-2026/"
-     },
-     {
-      "label": "BuildFastWithAI Jul 27",
-      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-27-2026"
-     }
-    ],
-    "date": "Aug 1-2, 2026"
-   },
-   {
-    "tags": [
-     "Funding",
-     "AI-infra",
-     "Investing"
-    ],
-    "title": "Fireworks AI raises $1.5B for inference infrastructure; DeepSeek reportedly suspends its funding round ahead of an IPO",
-    "why": "Inference-layer economics keep attracting mega-rounds — a signal for your AI-infra thesis — while the DeepSeek move (single-source, unconfirmed) hints China's labs are heading to public markets.",
-    "sources": [
-     {
-      "label": "Crunchbase weekly rounds",
-      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-defense-fintech-robotics/"
-     },
-     {
-      "label": "PYMNTS on DeepSeek",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/deepseek-reportedly-suspends-funding-round-ahead-of-ipo/"
-     }
-    ],
-    "date": "Week of Jul 24, 2026"
-   },
-   {
-    "tags": [
-     "Energy-for-AI",
-     "AI-infra",
-     "Reality check"
-    ],
-    "title": "Nuclear-for-AI now spans 13 projects and 9.8+ GW across all hyperscalers — but nothing comes online before ~2028, so gas fills the gap",
-    "why": "For energy-for-AI research: the near-term revenue accrues to gas turbines, grid equipment, and existing-plant operators, not SMR startups — match the investment horizon to the buildout timeline.",
-    "sources": [
-     {
-      "label": "SMR Intel deal tracker",
-      "url": "https://smrintel.com/nuclear-data-center-deals/"
-     },
-     {
-      "label": "Bulletin of the Atomic Scientists",
-      "url": "https://thebulletin.org/2026/07/data-centers-powered-by-next-gen-nuclear-dont-fall-for-big-techs-pr-hype/"
-     }
-    ],
-    "date": "Jul 2026"
-   }
-  ],
-  "tryBox": {
-   "h": "Try HubSpot Agent Hub (public beta)",
-   "body": "Free to explore on Professional/Enterprise tiers — a low-effort way to see how a mainstream vendor handles multi-agent context sharing and monitoring before you design your own agent workflows.",
-   "src": "https://aiagentstore.ai/ai-agent-news/this-week"
-  },
-  "radar": [
-   "White House frontier AI framework due by Aug 1 — watch whether it touches open-weight models and compute thresholds.",
-   "Anthropic confidential IPO filing chatter (single-source, unverified) — if real, the first frontier-lab listing reprices the whole AI-infra chain."
   ]
  }
 ];
