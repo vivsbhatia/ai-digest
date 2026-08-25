@@ -151,6 +151,129 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
   {
+    "date": "2026-08-25",
+    "label": "Tue, Aug 25, 2026",
+    "gathered": "gathered 7:00 local",
+    "lede": "The money and the math are pulling in opposite directions today. Inference-infra startups just took in $2.3B in two rounds while Gartner warns cost per agentic workflow rises ~5x through 2028 — that gap is the whole investment thesis for AI-infra and energy. Meanwhile agentic supply chain gets its first real spend forecast (a $53B TAM by 2030) and EU high-risk enforcement is live, not pending.",
+    "items": [
+      {
+        "tags": [
+          "Funding",
+          "AI-infra",
+          "Investing"
+        ],
+        "title": "Fireworks AI raises $1.505B Series D and Together AI $800M Series C — both pure-play inference infrastructure",
+        "why": "Capital is concentrating on the serving layer, not the model layer. If you hold AI-infra exposure, note the thesis these rounds are underwriting: inference volume grows faster than training, and margin accrues to whoever runs tokens cheapest. Useful as a private-market read-through for your public AI-infra names — not a signal to act on.",
+        "sources": [
+          {
+            "label": "AI Investment Roundup, Aug 2026 (ETA)",
+            "url": "https://www.joineta.org/blog/ai-investment-roundup-august-2026"
+          },
+          {
+            "label": "AI startup funding, Aug 2026",
+            "url": "https://thebusinessperspective.com/ai-startups-that-raised-funding-in-august-2026/"
+          }
+        ],
+        "date": "Aug 2026"
+      },
+      {
+        "tags": [
+          "Cost",
+          "Agents",
+          "Reality check"
+        ],
+        "title": "Gartner: AI inferencing cost per agentic workflow will rise roughly 5x through 2028",
+        "why": "This is the counterweight to every 'cost per token is collapsing' headline. Agents multiply calls per task, so unit-price declines get eaten by call-volume growth. For your supply-chain agent work, price pilots on workflow cost, not token cost — the ROI case that pencils at 2026 volumes may not at production scale.",
+        "sources": [
+          {
+            "label": "AI Weekly",
+            "url": "https://aiweekly.co/ai-news-today"
+          }
+        ],
+        "date": "2026-08-21"
+      },
+      {
+        "tags": [
+          "Supply chain",
+          "Agents",
+          "Market signal"
+        ],
+        "title": "Gartner sizes agentic-AI supply-chain software at <$2B (2025) growing to $53B by 2030; Oracle ships four agentic Fusion SCM apps",
+        "why": "A 25x TAM forecast plus a tier-1 vendor actually shipping means the buying committee conversation shifts from 'should we' to 'which vendor.' Directly relevant to how you position value-realization work — the differentiator stops being the agent and becomes the data and process readiness underneath it.",
+        "sources": [
+          {
+            "label": "Gartner: top supply chain tech trends 2026",
+            "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-30-gartner-identifies-top-supply-chain-technology-trends-for-2026"
+          },
+          {
+            "label": "BCG: how AI agents are transforming supply chains",
+            "url": "https://www.bcg.com/publications/2026/how-ai-agents-are-transforming-supply-chains"
+          }
+        ],
+        "date": "2026-08-24"
+      },
+      {
+        "tags": [
+          "Energy-for-AI",
+          "AI-infra"
+        ],
+        "title": "Bitdeer signs $4.7B / 16-year AI-HPC lease in Tydal, Norway (121 IT MW, 100% renewable, ~1.1 PUE); Axe Compute contracts 55 MW / $500M+ in the US",
+        "why": "Two datapoints on the same trend: compute is chasing cheap firm power, and Nordic hydro is winning long-duration contracts at 16-year tenors. Both are SEC-filed, so the numbers are verifiable. The tell to watch for your energy-for-AI thesis is contract duration — 16 years prices power scarcity, not compute scarcity.",
+        "sources": [
+          {
+            "label": "Bitdeer 6-K (Aug 4, 2026)",
+            "url": "https://www.sec.gov/Archives/edgar/data/0001899123/000121390026085655/ea030075201ex99-1.htm"
+          },
+          {
+            "label": "Axe Compute 8-K (Aug 17, 2026)",
+            "url": "https://www.sec.gov/Archives/edgar/data/0002065779/000182912626005456/dboralarcacq1_ex99-1.htm"
+          }
+        ],
+        "date": "2026-08-17"
+      },
+      {
+        "tags": [
+          "Policy",
+          "Enterprise"
+        ],
+        "title": "EU AI Act high-risk and deployer obligations are now fully in force with active audits; UK AI Regulation and Safety Bill clears the Commons",
+        "why": "The grace period is over — the European AI Office plus 24 national authorities are auditing now, and deployer (not just provider) obligations bite. If any client-facing supply chain agent touches EU operations, classification and documentation is a live compliance item this quarter, not a 2027 one.",
+        "sources": [
+          {
+            "label": "AI regulation update, Aug 2026",
+            "url": "https://cubbbix.com/blog/ai-regulation-august-2026-global-update/"
+          }
+        ],
+        "date": "Aug 2026"
+      },
+      {
+        "tags": [
+          "Agents",
+          "Enterprise",
+          "Reality check"
+        ],
+        "title": "Pinecone Nexus goes GA, claiming the top score on the τ-Knowledge benchmark over agents built on frontier models",
+        "why": "Signals that retrieval/knowledge quality — not raw model capability — is becoming the binding constraint on enterprise agent accuracy. Treat the benchmark claim with caution: it is vendor-reported and single-source, and τ-Knowledge is not yet a broadly adopted standard. Worth a look as an architecture pattern, not as a settled result.",
+        "sources": [
+          {
+            "label": "Agentic.ai news",
+            "url": "https://agentic.ai/news"
+          }
+        ],
+        "date": "Aug 2026"
+      }
+    ],
+    "tryBox": {
+      "h": "Price your next agent pilot in workflow-cost, not token-cost",
+      "body": "Take one supply-chain workflow you'd hand to an agent (say, exception triage on late inbound POs). Instrument a 20-run sample and log total tokens per completed workflow, not per call. Then multiply by Gartner's 5x-by-2028 curve against your projected volume. If the ROI still clears at 5x, the pilot is real; if it only clears at today's prices, you've found the actual go/no-go condition — and you found it before procurement did.",
+      "src": "Prompted by the Gartner inference-cost forecast above."
+    },
+    "radar": [
+      "Nvidia is reportedly discussing an equity investment in Perplexity above a $30B valuation — single-source and unconfirmed; watch whether it's a strategic compute deal dressed as equity.",
+      "Samsung raised SF4/SF5 foundry prices 10-15% on July orders. Foundry price increases at the leading edge eventually show up in accelerator BOM costs — a slow-burn input to the inference-cost story."
+    ]
+  },
+  {
     "date": "2026-08-24",
     "label": "Mon, Aug 24, 2026",
     "gathered": "gathered 7:00 local",
@@ -1134,108 +1257,6 @@ const DIGESTS = [
     "radar": [
       "Google's delayed Gemini 3.5 Pro and Moonshot AI's Kimi K3 (reported as the largest open-weight model yet) are worth tracking as the open-weight, cost-competitive end of the frontier race accelerates.",
       "The U.S. federal AI-preemption fight remains stalled in the House even as EU enforcement goes fully live — a widening transatlantic compliance gap worth watching for cost divergence across your AI-infra and agent-tooling names."
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "label": "Wed, Aug 12, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "A mega sovereign-style fund raise, a fresh hyperscaler capex marker, and Oracle pushing agentic SCM tools into general availability are the through-line today — capital keeps piling into the infra layer while agents move from pilot to production in supply chain specifically. No single dramatic model release; this is an infra-and-adoption day.",
-    "items": [
-      {
-        "tags": [
-          "Funding",
-          "AI-infra",
-          "Investing"
-        ],
-        "title": "MGX, the Abu Dhabi-backed investment vehicle, raised $49B for a new AI-focused fund, one of the largest single fund closes of the year",
-        "why": "Sovereign and quasi-sovereign capital continuing to pool specifically for AI-infra deployment is a scale signal worth tracking alongside hyperscaler capex — it's another large, patient buyer bidding up the same compute/power/data-center assets you'd be evaluating.",
-        "sources": [
-          {
-            "label": "Crunchbase News — Global Startup Investment Hit Record $510B in H1 2026",
-            "url": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/"
-          }
-        ],
-        "date": "Aug 2026",
-        "note": "Fund-size figure from secondary aggregation of the announcement — worth confirming against MGX's own release."
-      },
-      {
-        "tags": [
-          "Agents",
-          "Supply chain",
-          "Enterprise"
-        ],
-        "title": "Oracle rolled out four new agentic applications plus inventory-optimization additions to Fusion Cloud SCM, aimed at planning, sourcing and exception handling",
-        "why": "This is the exact use case Gartner flagged as 2026's top supply-chain trend — autonomous replenishment and exception management — landing in a mainstream ERP suite rather than a point-solution startup, which changes the buy-vs-build calculus for any SCM agent vendor you're tracking.",
-        "sources": [
-          {
-            "label": "Gartner — Top Supply Chain Technology Trends for 2026",
-            "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-30-gartner-identifies-top-supply-chain-technology-trends-for-2026"
-          }
-        ],
-        "date": "Aug 2026"
-      },
-      {
-        "tags": [
-          "AI-infra",
-          "Energy-for-AI",
-          "Market signal"
-        ],
-        "title": "Hyperscaler AI capex estimates for 2026 are now tracking to $775–800B combined, with U.S. data-center power demand projected to nearly double to 35GW by 2030 as the interconnection queue balloons past 2,600GW",
-        "why": "The capex-to-power-delivery gap keeps widening — average interconnection wait times near five years is the bottleneck that ultimately gates how fast any of this buildout can actually convert into revenue-generating compute, a useful discipline check on infra-name valuations.",
-        "sources": [
-          {
-            "label": "AL Capital Advisory — AI Capex Cycle 2026: $775–800B Hyperscaler Buildout",
-            "url": "https://alcapitaladvisory.com/research/intelligence/ai-infrastructure.html"
-          },
-          {
-            "label": "Morgan Stanley — Energy Markets Race to Solve the AI Power Bottleneck",
-            "url": "https://www.morganstanley.com/insights/articles/powering-ai-energy-market-outlook-2026"
-          }
-        ],
-        "date": "Aug 2026"
-      },
-      {
-        "tags": [
-          "Agents",
-          "Enterprise",
-          "Frontier models"
-        ],
-        "title": "OpenAI shipped GPT-5.6-Cyber and Meta released Muse Glimmer on Aug 10, while Microsoft continues pushing its Agent 365 control plane for managing fleets of enterprise agents",
-        "why": "The frontier race is now producing narrower, task-specific model variants (cyber-focused, creative-focused) rather than just bigger general models — and the control-plane layer (Agent 365, MCP servers) is where the real enterprise adoption friction is shifting, worth watching over any single model launch.",
-        "sources": [
-          {
-            "label": "AI Release Tracker — Latest AI Model Releases, August 2026",
-            "url": "https://aireleasetracker.com/latest"
-          }
-        ],
-        "date": "Aug 10, 2026",
-        "note": "Model-release specifics sourced from an aggregator tracker rather than OpenAI/Meta primary announcements — treat naming/details as provisional."
-      },
-      {
-        "tags": [
-          "Policy",
-          "Market signal"
-        ],
-        "title": "The Trump administration continued formalizing rules easing advanced AI chip exports to China, including new BIS licensing criteria alongside a 25% tariff proclamation on covered chip exports to third countries",
-        "why": "A meaningful loosening of chip export policy toward China would reshape both the competitive picture for U.S. semiconductor/AI-infra names and the geopolitical risk premium baked into that trade — worth watching for the final rule text rather than the directional signal alone.",
-        "sources": [
-          {
-            "label": "Mayer Brown — Administration Policies on Advanced AI Chips Codified",
-            "url": "https://www.mayerbrown.com/en/insights/publications/2026/01/administration-policies-on-advanced-ai-chips-codified"
-          }
-        ],
-        "date": "Aug 2026"
-      }
-    ],
-    "tryBox": {
-      "h": "Worth trying: Oracle Fusion SCM agentic apps",
-      "body": "If you're evaluating build-vs-buy for supply-chain agents, Oracle's new agentic SCM apps are a useful benchmark for what 'production-grade' autonomous replenishment and exception handling looks like from a mainstream vendor right now.",
-      "src": "Gartner — Top Supply Chain Technology Trends for 2026"
-    },
-    "radar": [
-      "Watch for MGX's actual deployment pace out of the $49B fund — announced fund size vs. deployed capital is often a multi-year gap.",
-      "The chip-export-to-China policy shift is still moving through licensing rules; the final scope will matter more than the directional headline."
     ]
   }
 ];
