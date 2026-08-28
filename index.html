@@ -150,1159 +150,1189 @@
 <script>
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
-  {
-    "date": "2026-08-27",
-    "label": "Thu, Aug 27, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "Yesterday's NVIDIA print settled the capex-sustainability argument for at least one more quarter: $96.2B revenue, Data Center $89.0B up 117% YoY, and a Q3 guide of $108B that assumes zero China compute. The more useful signal for you is where the venture money went the same day — Gatik ($200M, driverless freight) and Emerald AI ($150M at a $1.05B valuation, making datacenters grid-flexible). Capital is rotating from generic AI software toward AI touching physical goods and physical electrons. That is your two theses in one day's funding tape. Meanwhile the agent-governance layer hardened: EU AI Act high-risk obligations went operational this month and China's agent-tier framework is already enforceable.",
-    "items": [
-      {
-        "tags": [
-          "Market signal",
-          "AI-infra",
-          "Investing"
-        ],
-        "title": "NVIDIA Q2 FY27: $96.2B revenue (+106% YoY), Data Center $89.0B (+117%), Q3 guided to $108B with no China compute assumed",
-        "why": "The guide is the story, not the beat — $108B against ~$104B consensus, explicitly excluding China Data Center compute, means the demand signal is entirely non-China. For your AI-infra and energy-for-AI exposure that reframes the risk: the binding constraint being described is power and supply, not orders. Huang's ~70% FY28 growth forecast is management commentary, not guidance — weight it accordingly. Information for your own research, not a recommendation.",
-        "sources": [
-          {
-            "label": "NVIDIA official Q2 FY27 release",
-            "url": "https://www.globenewswire.com/news-release/2026/08/26/3351702/0/en/nvidia-announces-financial-results-for-second-quarter-fiscal-2027.html"
-          },
-          {
-            "label": "NVIDIA 8-K (SEC)",
-            "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm"
-          },
-          {
-            "label": "CNBC earnings takeaways",
-            "url": "https://www.cnbc.com/2026/08/26/nvidia-nvda-earnings-report-q2-2027-live-updates.html"
-          }
-        ],
-        "date": "2026-08-26"
-      },
-      {
-        "tags": [
-          "Funding",
-          "Supply chain",
-          "Energy-for-AI",
-          "Investing"
-        ],
-        "title": "Aug 26 funding tape: Gatik raises $200M for driverless freight; Emerald AI raises $150M at $1.05B to make datacenters grid-flexible",
-        "why": "Two of your themes funded on the same day. Gatik is middle-mile autonomy moving from pilot to commercial scale — the part of logistics where unit economics actually close. Emerald AI is the demand-response layer for AI datacenters, which is the practical answer to grid interconnect queues being the real bottleneck on compute buildout. Watch Emerald's model as a template: if load flexibility becomes standard, it changes the siting math for every hyperscaler campus.",
-        "sources": [
-          {
-            "label": "Tech Startups funding roundup, Aug 26, 2026",
-            "url": "https://techstartups.com/2026/08/26/startup-funding-news-today-august-26-2026-emerald-ai-gatik-stellaria-more/"
-          }
-        ],
-        "date": "2026-08-26"
-      },
-      {
-        "tags": [
-          "Policy",
-          "Agents",
-          "Enterprise"
-        ],
-        "title": "Agent governance goes operational: EU AI Act high-risk obligations live this month; China's agent-tier framework enforceable since Jul 15; US AI AGENT Act (S.5051) in play alongside NIST agent-identity work and Google's AP2",
-        "why": "The convergence is on verifiable, task-bounded authorization — every agent action needs a record of what it was permitted to do. If you are scoping supply chain agents, design the permission tiering and audit trail now rather than retrofitting it; China already requires decisions sorted into authority tiers pre-deployment. This is the compliance surface that will decide which agent pilots reach production.",
-        "sources": [
-          {
-            "label": "Agentic AI & agent governance roundup, Aug 24, 2026",
-            "url": "https://shyam.kubeify.com/2026/08/latest-agentic-ai-ai-agents-agent_0654533855.html"
-          },
-          {
-            "label": "AI Regulation 2026 compliance guide",
-            "url": "https://www.kiteworks.com/cybersecurity-risk-management/ai-regulation-2026-business-compliance-guide/"
-          }
-        ],
-        "date": "2026-08-24"
-      },
-      {
-        "tags": [
-          "Enterprise",
-          "Agents",
-          "AI-infra"
-        ],
-        "title": "Enterprise agent plumbing consolidates: AWS Bedrock AgentCore web search hits GA (Aug 21), MCP ships a major release candidate, Google Cloud folds Vertex AI + Agentspace into Gemini Enterprise Agent Platform",
-        "why": "The buy-vs-build line for agent infrastructure is moving fast. AgentCore's managed search keeps data inside the customer's AWS account — that removes a common enterprise blocker. MCP's RC is being driven by enterprises brokering agent access to production systems, which is exactly the pattern a planning-system agent needs. Practical read: assume the connective tissue becomes commodity within two quarters and put your differentiation in domain logic and data.",
-        "sources": [
-          {
-            "label": "Agentic AI news, Aug 24, 2026",
-            "url": "https://shyam.kubeify.com/2026/08/latest-agentic-ai-ai-agents-agent_0654533855.html"
-          },
-          {
-            "label": "AI Agents News — week of Aug 25, 2026",
-            "url": "https://aiagentstore.ai/ai-agent-news/this-week"
-          }
-        ],
-        "date": "2026-08-21"
-      },
-      {
-        "tags": [
-          "Supply chain",
-          "Agents",
-          "Reality check"
-        ],
-        "title": "Gartner: agentic SCM software spend to grow from <$2B (2025) to $53B by 2030; 60% of disruptions resolved without humans by 2031",
-        "why": "A 26x forecast is a vendor-tailwind number, so discount it — but the direction is the point, and it prices the category you already work in. The credible near-term version is narrower: exception handling and disruption triage, not autonomous planning. If you are building a value case, anchor on exception-resolution cycle time rather than headcount, which is where the defensible ROI has actually shown up.",
-        "sources": [
-          {
-            "label": "SCMR — 2026: The age of the AI supply chain",
-            "url": "https://www.scmr.com/article/2026-the-age-of-the-ai-supply-chain"
-          },
-          {
-            "label": "Inbound Logistics — AI in SCM 2026 outlook",
-            "url": "https://www.inboundlogistics.com/articles/ai-in-supply-chain-management-how-useful-will-it-be-in-2026/"
-          }
-        ],
-        "date": "2026-08-26"
-      },
-      {
-        "tags": [
-          "Cost",
-          "Enterprise",
-          "Reality check"
-        ],
-        "title": "Agent cost blowouts emerge as a real enterprise failure mode — unmonitored agents calling frontier APIs without spend guardrails, with retry loops tripling token costs after model upgrades",
-        "why": "This is the unglamorous thing that kills agent programs before governance ever does. A model upgrade changes retry behavior and your run-rate moves 3x with no change in output. Put per-agent spend caps, retry ceilings, and a cost-per-resolved-exception metric in the design from day one — it is also the number your CFO will ask for first. Sourced from a security/ops roundup rather than a named company disclosure; treat the 3x as illustrative.",
-        "sources": [
-          {
-            "label": "Netguru — latest AI developments 2026",
-            "url": "https://www.netguru.com/blog/latest-ai-developments-2026"
-          }
-        ],
-        "date": "2026-08-25"
-      }
+ {
+  "date": "2026-08-28",
+  "label": "Fri, Aug 28, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Quieter tape after NVIDIA week. The through-line today is the cost and control layer around agents: OpenAI is packaging enterprise agent governance as a product, the cheap-fast model tier keeps getting cheaper, and vendors are shipping metering for agent spend. Meanwhile the supply-chain agent story stays a gap between forecast and shipped first-party tooling.",
+  "items": [
+   {
+    "tags": [
+     "Agents",
+     "Enterprise",
+     "Frontier models"
     ],
-    "tryBox": {
-      "h": "Instrument cost-per-resolved-exception before you scale any agent",
-      "body": "Take one agent workflow you already run and log four fields per run: tokens in, tokens out, retries, and whether a human touched it. Two weeks of that gives you a real cost-per-resolved-exception baseline — the number that survives a model upgrade, a vendor swap, and a CFO review. It is also the only honest way to compare a scaffolding change against a model change.",
-      "src": "Prompted by the agent cost-blowout pattern in this week's enterprise AI roundups."
-    },
-    "radar": [
-      "Emerald AI's $150M at a $1.05B valuation is worth tracking as a category, not a company — grid-flexible datacenter load is the emerging answer to interconnect queues, and it is where energy-for-AI and AI-infra theses intersect.",
-      "Bitdeer's $4.7B / 16-year Tydal, Norway AI datacenter lease (announced Aug 4, potential $8.0B with extension, ~1.1 PUE on renewables) signals long-duration offshore capacity contracting — watch whether more US hyperscaler demand routes to Nordic renewable power.",
-      "Reported SpaceX intent to acquire Anysphere (Cursor) for $60B is circulating in funding roundups without a clear primary source — unverified, confirm before treating as fact."
-    ]
+    "title": "OpenAI positions \"Frontier\" as an enterprise platform for building and governing agents — shared context, onboarding, permissions, governance",
+    "why": "This is the same control-plane fight as MCP and AgentCore, but sold top-down to the CIO. For your supply-chain work, it matters less as a model choice than as a procurement pattern: if clients standardize on a vendor agent platform, integration and governance scope shifts from your program to theirs. Worth reading the primary page before treating any capability claim as fact — this is a vendor announcement, not third-party verified.",
+    "sources": [
+     {
+      "label": "OpenAI — Introducing OpenAI Frontier",
+      "url": "https://openai.com/index/introducing-openai-frontier/"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "Cost",
+     "Frontier models",
+     "Agents"
+    ],
+    "title": "The cheap-fast tier keeps compressing: Z.ai ships GLM-5.3-Flash (Aug 26) and Google's Gemini 3.7 Flash lands at roughly half 3.6 Flash pricing with better agentic/code performance",
+    "why": "Most agent workloads are routing, extraction and tool-calling — exactly what this tier handles. Every halving here moves the break-even on high-volume supply-chain agents (exception triage, PO/ASN matching, carrier comms) before you touch a frontier model. Pair it with Gartner's 5x per-workflow cost warning: unit prices fall while total spend rises, so architecture beats price shopping.",
+    "sources": [
+     {
+      "label": "LLM-Stats — model updates, Aug 2026",
+      "url": "https://llm-stats.com/llm-updates"
+     },
+     {
+      "label": "Price Per Token — recent releases",
+      "url": "https://pricepertoken.com/news/model-releases"
+     },
+     {
+      "label": "Gartner — inference cost per agentic workflow up >5x through 2028",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-08-17-gartner-predicts-ai-inference-costs-per-agentic-workflow-will-increase-more-than-fivefold-through-2028"
+     }
+    ],
+    "date": "Aug 26–28, 2026"
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Reality check",
+     "Enterprise"
+    ],
+    "title": "Reality check on agentic SCM: Microsoft's D365 Supply Chain Management still documents exactly one named first-party agent (Supplier Communications) as of this month",
+    "why": "Set against the $53B-by-2030 agentic-SCM forecast from earlier this week, the shipped first-party surface is thin. The practical read for your pitches: near-term value comes from narrowly-scoped, tightly-governed custom agents on top of the ERP — the pattern that's working is one workflow, measurable in ~4 weeks, then expand. Don't let a client buy the roadmap and wait.",
+    "sources": [
+     {
+      "label": "Logan Consulting — D365 supply chain agents landscape, 2026",
+      "url": "https://www.loganconsulting.com/blog/dynamics-365-supply-chain-agents-landscape/"
+     },
+     {
+      "label": "Ampcome — AI agents in logistics: use cases & ROI 2026",
+      "url": "https://www.ampcome.com/post/ai-agents-in-logistics-and-supply-chain"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "Cost",
+     "AI-infra",
+     "Enterprise"
+    ],
+    "title": "Agent spend metering becomes a product category: MuleSoft's Omni Gateway ships Model Proxy GA, with Model Wallet, MCP tool optimization and per-agent cost controls queued this quarter",
+    "why": "Confirmation that \"unmonitored agents calling frontier APIs\" is now a named enterprise failure mode with a budget line attached. If you're scoping a supply-chain agent program, put a gateway/metering layer in phase 1 of the architecture — it's the cheapest way to keep the ROI case defensible when volumes scale.",
+    "sources": [
+     {
+      "label": "MuleSoft — '26 mid-year release: control AI costs",
+      "url": "https://blogs.mulesoft.com/news/mulesoft-26-mid-year-release-control-ai-costs/"
+     },
+     {
+      "label": "VentureBeat — MCP's biggest update yet",
+      "url": "https://venturebeat.com/infrastructure/mcp-just-got-its-biggest-update-ever-heres-what-changes-for-ai-agents"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "Market signal",
+     "Funding",
+     "Investing"
+    ],
+    "title": "H1 2026 venture funding hit ~$510B — more than all of 2025 — with 24 companies acquired at $1B+ in Q2 for a record ~$113B combined",
+    "why": "Two things to hold at once: capital is abundant and exits are actually clearing, which is what a functioning cycle looks like — and record half-years are historically where entry discipline matters most. Information for your own research, not a signal to act; the useful question is whether your AI-infra exposure is priced on today's capex run-rate or on a durable one.",
+    "sources": [
+     {
+      "label": "Second Talent — AI startup funding statistics, Aug 2026",
+      "url": "https://www.secondtalent.com/resources/ai-startup-funding-investment/"
+     },
+     {
+      "label": "Tech Startups — VC roundup, Aug 18, 2026",
+      "url": "https://techstartups.com/2026/08/18/venture-capital-startup-funding-roundup-august-18-2026-andreessen-horowitz-bain-capital-ventures-jane-street-kleiner-perkins-sequoia-tiger-global-more/"
+     }
+    ],
+    "date": "Aug 2026 (H1 data)"
+   },
+   {
+    "tags": [
+     "AI-infra",
+     "Energy-for-AI",
+     "Investing"
+    ],
+    "title": "Custom-silicon challengers keep raising: Cerebras reported at an $8.1B valuation on >$2.8B total funding, after Etched's $700M round earlier this month",
+    "why": "The inference-silicon field below NVIDIA is being capitalized at real scale for the first time. Relevant to your AI-infra + energy-for-AI thesis because these designs compete on performance-per-watt, which is the binding constraint once datacenter power — not GPUs — is the bottleneck. Valuation figures here are reported/secondary; treat as directional until confirmed by the companies.",
+    "sources": [
+     {
+      "label": "Second Talent — funding & valuation roundup",
+      "url": "https://www.secondtalent.com/resources/ai-startup-funding-investment/"
+     },
+     {
+      "label": "BloombergNEF — AI data center build advances at full speed",
+      "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed/"
+     }
+    ],
+    "date": "Aug 2026"
+   }
+  ],
+  "tryBox": {
+   "h": "Put a cost meter on your next agent pilot before you write the first prompt",
+   "body": "Take one narrow supply-chain workflow — supplier email triage or exception routing — and instrument it from day one: log tokens, tool calls and model tier per completed task, then compute cost-per-resolved-exception. Route the routine 80% to a flash-tier model and escalate only ambiguous cases. That single number is what turns a demo into a business case, and it's the number Gartner's 5x forecast says will otherwise surprise you at scale.",
+   "src": "https://www.gartner.com/en/newsroom/press-releases/2026-08-17-gartner-predicts-ai-inference-costs-per-agentic-workflow-will-increase-more-than-fivefold-through-2028"
   },
-  {
-    "date": "2026-08-26",
-    "label": "Wed, Aug 26, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "Today is a scoreboard day: NVIDIA reports Q2 FY27 after the close with consensus near $92B revenue, and it lands right as the capex debate sharpens — top-five hyperscaler spend is tracking ~$602B this year while power access, not chips, is increasingly the binding constraint. On the agent side, the interesting signal isn't a new model: it's a harness. NVIDIA's AVO scaffolding reportedly took ARC-AGI-3 to 100% where frontier models alone sit under 50%, and A2A moving under the Linux Foundation makes agent interop a standards question rather than a vendor one. Both matter more for supply chain deployment than another point of benchmark gain.",
-    "items": [
-      {
-        "tags": [
-          "Market signal",
-          "AI-infra",
-          "Investing"
-        ],
-        "title": "NVIDIA reports Q2 FY27 today (Aug 26) — consensus ~$91.9B revenue, roughly +96-97% YoY on Blackwell ramp",
-        "why": "This is the single cleanest read-through for your AI-infra and energy-for-AI exposure: the print itself matters less than management's commentary on hyperscaler order durability and inference mix. Watch whether Blackwell demand is described as supply-constrained or demand-constrained — that distinction is what the whole capex-sustainability argument turns on. Information for your own research, not a call.",
-        "sources": [
-          {
-            "label": "NVIDIA Q2 FY27 earnings preview",
-            "url": "https://intellectia.ai/blog/nvidia-earnings-august-26-2026-preview"
-          },
-          {
-            "label": "Motley Fool — what history shows ahead of Aug 26",
-            "url": "https://www.fool.com/investing/2026/08/24/will-nvidia-stock-soar-after-aug-26-here-s-what-history-shows/"
-          }
-        ],
-        "date": "2026-08-26"
-      },
-      {
-        "tags": [
-          "Agents",
-          "Frontier models",
-          "Reality check"
-        ],
-        "title": "NVIDIA's AVO agent harness reportedly scores 100% on ARC-AGI-3, versus sub-50% for frontier models alone",
-        "why": "The gain came from the system around the model — memory, tool use, state management, supervision, and recovery — not from a smarter model. That is directly your deployment thesis: in supply chain, the returns are in the scaffolding and the fallback paths, not in swapping the LLM. NVIDIA has signaled an open-source release, which would make the pattern copyable. Single-source as of this morning; treat the 100% figure as unconfirmed until NVIDIA publishes.",
-        "sources": [
-          {
-            "label": "Daily AI News, Aug 25, 2026 (Sviokla)",
-            "url": "https://johnsviokla.substack.com/p/ep-649-daily-ai-news-august-25-2026"
-          }
-        ],
-        "date": "2026-08-25"
-      },
-      {
-        "tags": [
-          "Agents",
-          "Enterprise",
-          "Supply chain"
-        ],
-        "title": "Google's A2A protocol formally joins the Linux Foundation's Agentic AI Foundation, now 250+ members including AWS, Anthropic, Microsoft and OpenAI",
-        "why": "Agent-to-agent interop is consolidating into a neutral standard rather than fragmenting by vendor — which lowers the integration risk of committing to a multi-agent supply chain architecture now. For client work, this is the argument against waiting: the interop layer is stabilizing faster than the application layer.",
-        "sources": [
-          {
-            "label": "AI agent news, week of Aug 25, 2026",
-            "url": "https://aiagentstore.ai/ai-agent-news/this-week"
-          }
-        ],
-        "date": "2026-08-25"
-      },
-      {
-        "tags": [
-          "Supply chain",
-          "Enterprise",
-          "Agents"
-        ],
-        "title": "Oracle ships four agentic applications plus new inventory optimization for Fusion Cloud SCM; Microsoft's D365 SCM still shows one first-party agent (Supplier Communications)",
-        "why": "The ERP incumbents are moving from copilots to agents that act, but the footprint is still thin — one named agent at Microsoft, four apps at Oracle. That gap between vendor roadmap and shipped capability is where your value-realization work lives: clients will ask whether to wait for the suite or build the orchestration layer, and right now the suite doesn't cover the high-value planning decisions.",
-        "sources": [
-          {
-            "label": "D365 supply chain agents — the real 2026 landscape",
-            "url": "https://www.loganconsulting.com/blog/dynamics-365-supply-chain-agents-landscape/"
-          },
-          {
-            "label": "How AI agents are transforming supply chains (BCG)",
-            "url": "https://www.bcg.com/publications/2026/how-ai-agents-are-transforming-supply-chains"
-          }
-        ],
-        "date": "2026-08-24"
-      },
-      {
-        "tags": [
-          "Energy-for-AI",
-          "AI-infra",
-          "Investing"
-        ],
-        "title": "2026 data center capex tracking toward ~$750B industry-wide, with top-five hyperscalers at ~$602B (+36% YoY) — but power access is bifurcating the market",
-        "why": "The constraint has moved from silicon to interconnection. Projects with secured grid connections are proceeding; a large share of announced capacity is stuck in queues. For your energy-for-AI thesis that argues the durable scarcity — and pricing power — sits with anyone holding energized capacity, transmission, or on-site generation, rather than with announced-megawatt headlines.",
-        "sources": [
-          {
-            "label": "Dell'Oro / hyperscaler data center capex 2026",
-            "url": "https://enkiai.com/ai-infrastructure/hyperscaler-data-center-capex/"
-          },
-          {
-            "label": "BloombergNEF — AI data center build, five things to know",
-            "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
-          }
-        ],
-        "date": "2026-08-25"
-      },
-      {
-        "tags": [
-          "Funding",
-          "Enterprise",
-          "Market signal"
-        ],
-        "title": "August funding stays concentrated in the serving layer: Etched raises $700M growth round; Fireworks AI ($1.505B) and Together AI ($800M) close earlier in the month",
-        "why": "Three of August's largest rounds are inference silicon and inference serving — capital is underwriting the bet that token volume, not model training, is where margin ends up. Etched's custom-ASIC angle is the sharper version of that bet and a useful counterweight when reading NVIDIA's print today. Private-market context for your public AI-infra names, not a recommendation.",
-        "sources": [
-          {
-            "label": "VC roundup, Aug 18, 2026 — Etched $700M",
-            "url": "https://techstartups.com/2026/08/18/venture-capital-startup-funding-roundup-august-18-2026-andreessen-horowitz-bain-capital-ventures-jane-street-kleiner-perkins-sequoia-tiger-global-more/"
-          },
-          {
-            "label": "AI investment roundup, Aug 2026 (ETA)",
-            "url": "https://www.joineta.org/blog/ai-investment-roundup-august-2026"
-          }
-        ],
-        "date": "2026-08-18"
-      }
+  "radar": [
+   "Whether OpenAI Frontier's governance layer pulls enterprises away from open MCP/A2A plumbing — watch which one clients name in RFPs over the next quarter.",
+   "EU AI Act high-risk obligations have been enforceable since Aug 2, 2026; first enforcement actions (and how deployer-side duties land on supply-chain agents) are the thing to watch, not the statute text."
+  ]
+ },
+ {
+  "date": "2026-08-27",
+  "label": "Thu, Aug 27, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Yesterday's NVIDIA print settled the capex-sustainability argument for at least one more quarter: $96.2B revenue, Data Center $89.0B up 117% YoY, and a Q3 guide of $108B that assumes zero China compute. The more useful signal for you is where the venture money went the same day — Gatik ($200M, driverless freight) and Emerald AI ($150M at a $1.05B valuation, making datacenters grid-flexible). Capital is rotating from generic AI software toward AI touching physical goods and physical electrons. That is your two theses in one day's funding tape. Meanwhile the agent-governance layer hardened: EU AI Act high-risk obligations went operational this month and China's agent-tier framework is already enforceable.",
+  "items": [
+   {
+    "tags": [
+     "Market signal",
+     "AI-infra",
+     "Investing"
     ],
-    "tryBox": {
-      "h": "Audit one agent workflow for scaffolding, not model choice",
-      "body": "Take a single supply chain workflow you'd want agentic (exception handling on a late inbound, say) and write down only four things: what it remembers between steps, what tools it can call, what happens when a tool fails, and who gets notified. The ARC-AGI-3 result says those four boxes explain more of the performance gap than which model you pick. If any box is empty, that's your next sprint — not a model upgrade.",
-      "src": "NVIDIA AVO harness / ARC-AGI-3 result, Aug 25 2026 (unconfirmed single source)"
-    },
-    "radar": [
-      "OpenAI Frontier is now in limited enterprise availability with vendor-supplied case studies (six-week production optimization cut to one day, an energy producer citing up to 5% output gain). Vendor-reported, not independently verified — but worth tracking as the enterprise-agent pricing benchmark.",
-      "Pinecone Nexus claims the top score on an open enterprise-knowledge benchmark, beating agents built on OpenAI, Anthropic and Google models. Vendor-run benchmark; if it holds up independently it's a signal that retrieval quality, not model quality, gates enterprise agent accuracy."
-    ]
+    "title": "NVIDIA Q2 FY27: $96.2B revenue (+106% YoY), Data Center $89.0B (+117%), Q3 guided to $108B with no China compute assumed",
+    "why": "The guide is the story, not the beat — $108B against ~$104B consensus, explicitly excluding China Data Center compute, means the demand signal is entirely non-China. For your AI-infra and energy-for-AI exposure that reframes the risk: the binding constraint being described is power and supply, not orders. Huang's ~70% FY28 growth forecast is management commentary, not guidance — weight it accordingly. Information for your own research, not a recommendation.",
+    "sources": [
+     {
+      "label": "NVIDIA official Q2 FY27 release",
+      "url": "https://www.globenewswire.com/news-release/2026/08/26/3351702/0/en/nvidia-announces-financial-results-for-second-quarter-fiscal-2027.html"
+     },
+     {
+      "label": "NVIDIA 8-K (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm"
+     },
+     {
+      "label": "CNBC earnings takeaways",
+      "url": "https://www.cnbc.com/2026/08/26/nvidia-nvda-earnings-report-q2-2027-live-updates.html"
+     }
+    ],
+    "date": "2026-08-26"
+   },
+   {
+    "tags": [
+     "Funding",
+     "Supply chain",
+     "Energy-for-AI",
+     "Investing"
+    ],
+    "title": "Aug 26 funding tape: Gatik raises $200M for driverless freight; Emerald AI raises $150M at $1.05B to make datacenters grid-flexible",
+    "why": "Two of your themes funded on the same day. Gatik is middle-mile autonomy moving from pilot to commercial scale — the part of logistics where unit economics actually close. Emerald AI is the demand-response layer for AI datacenters, which is the practical answer to grid interconnect queues being the real bottleneck on compute buildout. Watch Emerald's model as a template: if load flexibility becomes standard, it changes the siting math for every hyperscaler campus.",
+    "sources": [
+     {
+      "label": "Tech Startups funding roundup, Aug 26, 2026",
+      "url": "https://techstartups.com/2026/08/26/startup-funding-news-today-august-26-2026-emerald-ai-gatik-stellaria-more/"
+     }
+    ],
+    "date": "2026-08-26"
+   },
+   {
+    "tags": [
+     "Policy",
+     "Agents",
+     "Enterprise"
+    ],
+    "title": "Agent governance goes operational: EU AI Act high-risk obligations live this month; China's agent-tier framework enforceable since Jul 15; US AI AGENT Act (S.5051) in play alongside NIST agent-identity work and Google's AP2",
+    "why": "The convergence is on verifiable, task-bounded authorization — every agent action needs a record of what it was permitted to do. If you are scoping supply chain agents, design the permission tiering and audit trail now rather than retrofitting it; China already requires decisions sorted into authority tiers pre-deployment. This is the compliance surface that will decide which agent pilots reach production.",
+    "sources": [
+     {
+      "label": "Agentic AI & agent governance roundup, Aug 24, 2026",
+      "url": "https://shyam.kubeify.com/2026/08/latest-agentic-ai-ai-agents-agent_0654533855.html"
+     },
+     {
+      "label": "AI Regulation 2026 compliance guide",
+      "url": "https://www.kiteworks.com/cybersecurity-risk-management/ai-regulation-2026-business-compliance-guide/"
+     }
+    ],
+    "date": "2026-08-24"
+   },
+   {
+    "tags": [
+     "Enterprise",
+     "Agents",
+     "AI-infra"
+    ],
+    "title": "Enterprise agent plumbing consolidates: AWS Bedrock AgentCore web search hits GA (Aug 21), MCP ships a major release candidate, Google Cloud folds Vertex AI + Agentspace into Gemini Enterprise Agent Platform",
+    "why": "The buy-vs-build line for agent infrastructure is moving fast. AgentCore's managed search keeps data inside the customer's AWS account — that removes a common enterprise blocker. MCP's RC is being driven by enterprises brokering agent access to production systems, which is exactly the pattern a planning-system agent needs. Practical read: assume the connective tissue becomes commodity within two quarters and put your differentiation in domain logic and data.",
+    "sources": [
+     {
+      "label": "Agentic AI news, Aug 24, 2026",
+      "url": "https://shyam.kubeify.com/2026/08/latest-agentic-ai-ai-agents-agent_0654533855.html"
+     },
+     {
+      "label": "AI Agents News — week of Aug 25, 2026",
+      "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+     }
+    ],
+    "date": "2026-08-21"
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Agents",
+     "Reality check"
+    ],
+    "title": "Gartner: agentic SCM software spend to grow from <$2B (2025) to $53B by 2030; 60% of disruptions resolved without humans by 2031",
+    "why": "A 26x forecast is a vendor-tailwind number, so discount it — but the direction is the point, and it prices the category you already work in. The credible near-term version is narrower: exception handling and disruption triage, not autonomous planning. If you are building a value case, anchor on exception-resolution cycle time rather than headcount, which is where the defensible ROI has actually shown up.",
+    "sources": [
+     {
+      "label": "SCMR — 2026: The age of the AI supply chain",
+      "url": "https://www.scmr.com/article/2026-the-age-of-the-ai-supply-chain"
+     },
+     {
+      "label": "Inbound Logistics — AI in SCM 2026 outlook",
+      "url": "https://www.inboundlogistics.com/articles/ai-in-supply-chain-management-how-useful-will-it-be-in-2026/"
+     }
+    ],
+    "date": "2026-08-26"
+   },
+   {
+    "tags": [
+     "Cost",
+     "Enterprise",
+     "Reality check"
+    ],
+    "title": "Agent cost blowouts emerge as a real enterprise failure mode — unmonitored agents calling frontier APIs without spend guardrails, with retry loops tripling token costs after model upgrades",
+    "why": "This is the unglamorous thing that kills agent programs before governance ever does. A model upgrade changes retry behavior and your run-rate moves 3x with no change in output. Put per-agent spend caps, retry ceilings, and a cost-per-resolved-exception metric in the design from day one — it is also the number your CFO will ask for first. Sourced from a security/ops roundup rather than a named company disclosure; treat the 3x as illustrative.",
+    "sources": [
+     {
+      "label": "Netguru — latest AI developments 2026",
+      "url": "https://www.netguru.com/blog/latest-ai-developments-2026"
+     }
+    ],
+    "date": "2026-08-25"
+   }
+  ],
+  "tryBox": {
+   "h": "Instrument cost-per-resolved-exception before you scale any agent",
+   "body": "Take one agent workflow you already run and log four fields per run: tokens in, tokens out, retries, and whether a human touched it. Two weeks of that gives you a real cost-per-resolved-exception baseline — the number that survives a model upgrade, a vendor swap, and a CFO review. It is also the only honest way to compare a scaffolding change against a model change.",
+   "src": "Prompted by the agent cost-blowout pattern in this week's enterprise AI roundups."
   },
-  {
-    "date": "2026-08-25",
-    "label": "Tue, Aug 25, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "The money and the math are pulling in opposite directions today. Inference-infra startups just took in $2.3B in two rounds while Gartner warns cost per agentic workflow rises ~5x through 2028 — that gap is the whole investment thesis for AI-infra and energy. Meanwhile agentic supply chain gets its first real spend forecast (a $53B TAM by 2030) and EU high-risk enforcement is live, not pending.",
-    "items": [
-      {
-        "tags": [
-          "Funding",
-          "AI-infra",
-          "Investing"
-        ],
-        "title": "Fireworks AI raises $1.505B Series D and Together AI $800M Series C — both pure-play inference infrastructure",
-        "why": "Capital is concentrating on the serving layer, not the model layer. If you hold AI-infra exposure, note the thesis these rounds are underwriting: inference volume grows faster than training, and margin accrues to whoever runs tokens cheapest. Useful as a private-market read-through for your public AI-infra names — not a signal to act on.",
-        "sources": [
-          {
-            "label": "AI Investment Roundup, Aug 2026 (ETA)",
-            "url": "https://www.joineta.org/blog/ai-investment-roundup-august-2026"
-          },
-          {
-            "label": "AI startup funding, Aug 2026",
-            "url": "https://thebusinessperspective.com/ai-startups-that-raised-funding-in-august-2026/"
-          }
-        ],
-        "date": "Aug 2026"
-      },
-      {
-        "tags": [
-          "Cost",
-          "Agents",
-          "Reality check"
-        ],
-        "title": "Gartner: AI inferencing cost per agentic workflow will rise roughly 5x through 2028",
-        "why": "This is the counterweight to every 'cost per token is collapsing' headline. Agents multiply calls per task, so unit-price declines get eaten by call-volume growth. For your supply-chain agent work, price pilots on workflow cost, not token cost — the ROI case that pencils at 2026 volumes may not at production scale.",
-        "sources": [
-          {
-            "label": "AI Weekly",
-            "url": "https://aiweekly.co/ai-news-today"
-          }
-        ],
-        "date": "2026-08-21"
-      },
-      {
-        "tags": [
-          "Supply chain",
-          "Agents",
-          "Market signal"
-        ],
-        "title": "Gartner sizes agentic-AI supply-chain software at <$2B (2025) growing to $53B by 2030; Oracle ships four agentic Fusion SCM apps",
-        "why": "A 25x TAM forecast plus a tier-1 vendor actually shipping means the buying committee conversation shifts from 'should we' to 'which vendor.' Directly relevant to how you position value-realization work — the differentiator stops being the agent and becomes the data and process readiness underneath it.",
-        "sources": [
-          {
-            "label": "Gartner: top supply chain tech trends 2026",
-            "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-30-gartner-identifies-top-supply-chain-technology-trends-for-2026"
-          },
-          {
-            "label": "BCG: how AI agents are transforming supply chains",
-            "url": "https://www.bcg.com/publications/2026/how-ai-agents-are-transforming-supply-chains"
-          }
-        ],
-        "date": "2026-08-24"
-      },
-      {
-        "tags": [
-          "Energy-for-AI",
-          "AI-infra"
-        ],
-        "title": "Bitdeer signs $4.7B / 16-year AI-HPC lease in Tydal, Norway (121 IT MW, 100% renewable, ~1.1 PUE); Axe Compute contracts 55 MW / $500M+ in the US",
-        "why": "Two datapoints on the same trend: compute is chasing cheap firm power, and Nordic hydro is winning long-duration contracts at 16-year tenors. Both are SEC-filed, so the numbers are verifiable. The tell to watch for your energy-for-AI thesis is contract duration — 16 years prices power scarcity, not compute scarcity.",
-        "sources": [
-          {
-            "label": "Bitdeer 6-K (Aug 4, 2026)",
-            "url": "https://www.sec.gov/Archives/edgar/data/0001899123/000121390026085655/ea030075201ex99-1.htm"
-          },
-          {
-            "label": "Axe Compute 8-K (Aug 17, 2026)",
-            "url": "https://www.sec.gov/Archives/edgar/data/0002065779/000182912626005456/dboralarcacq1_ex99-1.htm"
-          }
-        ],
-        "date": "2026-08-17"
-      },
-      {
-        "tags": [
-          "Policy",
-          "Enterprise"
-        ],
-        "title": "EU AI Act high-risk and deployer obligations are now fully in force with active audits; UK AI Regulation and Safety Bill clears the Commons",
-        "why": "The grace period is over — the European AI Office plus 24 national authorities are auditing now, and deployer (not just provider) obligations bite. If any client-facing supply chain agent touches EU operations, classification and documentation is a live compliance item this quarter, not a 2027 one.",
-        "sources": [
-          {
-            "label": "AI regulation update, Aug 2026",
-            "url": "https://cubbbix.com/blog/ai-regulation-august-2026-global-update/"
-          }
-        ],
-        "date": "Aug 2026"
-      },
-      {
-        "tags": [
-          "Agents",
-          "Enterprise",
-          "Reality check"
-        ],
-        "title": "Pinecone Nexus goes GA, claiming the top score on the τ-Knowledge benchmark over agents built on frontier models",
-        "why": "Signals that retrieval/knowledge quality — not raw model capability — is becoming the binding constraint on enterprise agent accuracy. Treat the benchmark claim with caution: it is vendor-reported and single-source, and τ-Knowledge is not yet a broadly adopted standard. Worth a look as an architecture pattern, not as a settled result.",
-        "sources": [
-          {
-            "label": "Agentic.ai news",
-            "url": "https://agentic.ai/news"
-          }
-        ],
-        "date": "Aug 2026"
-      }
+  "radar": [
+   "Emerald AI's $150M at a $1.05B valuation is worth tracking as a category, not a company — grid-flexible datacenter load is the emerging answer to interconnect queues, and it is where energy-for-AI and AI-infra theses intersect.",
+   "Bitdeer's $4.7B / 16-year Tydal, Norway AI datacenter lease (announced Aug 4, potential $8.0B with extension, ~1.1 PUE on renewables) signals long-duration offshore capacity contracting — watch whether more US hyperscaler demand routes to Nordic renewable power.",
+   "Reported SpaceX intent to acquire Anysphere (Cursor) for $60B is circulating in funding roundups without a clear primary source — unverified, confirm before treating as fact."
+  ]
+ },
+ {
+  "date": "2026-08-26",
+  "label": "Wed, Aug 26, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Today is a scoreboard day: NVIDIA reports Q2 FY27 after the close with consensus near $92B revenue, and it lands right as the capex debate sharpens — top-five hyperscaler spend is tracking ~$602B this year while power access, not chips, is increasingly the binding constraint. On the agent side, the interesting signal isn't a new model: it's a harness. NVIDIA's AVO scaffolding reportedly took ARC-AGI-3 to 100% where frontier models alone sit under 50%, and A2A moving under the Linux Foundation makes agent interop a standards question rather than a vendor one. Both matter more for supply chain deployment than another point of benchmark gain.",
+  "items": [
+   {
+    "tags": [
+     "Market signal",
+     "AI-infra",
+     "Investing"
     ],
-    "tryBox": {
-      "h": "Price your next agent pilot in workflow-cost, not token-cost",
-      "body": "Take one supply-chain workflow you'd hand to an agent (say, exception triage on late inbound POs). Instrument a 20-run sample and log total tokens per completed workflow, not per call. Then multiply by Gartner's 5x-by-2028 curve against your projected volume. If the ROI still clears at 5x, the pilot is real; if it only clears at today's prices, you've found the actual go/no-go condition — and you found it before procurement did.",
-      "src": "Prompted by the Gartner inference-cost forecast above."
-    },
-    "radar": [
-      "Nvidia is reportedly discussing an equity investment in Perplexity above a $30B valuation — single-source and unconfirmed; watch whether it's a strategic compute deal dressed as equity.",
-      "Samsung raised SF4/SF5 foundry prices 10-15% on July orders. Foundry price increases at the leading edge eventually show up in accelerator BOM costs — a slow-burn input to the inference-cost story."
-    ]
+    "title": "NVIDIA reports Q2 FY27 today (Aug 26) — consensus ~$91.9B revenue, roughly +96-97% YoY on Blackwell ramp",
+    "why": "This is the single cleanest read-through for your AI-infra and energy-for-AI exposure: the print itself matters less than management's commentary on hyperscaler order durability and inference mix. Watch whether Blackwell demand is described as supply-constrained or demand-constrained — that distinction is what the whole capex-sustainability argument turns on. Information for your own research, not a call.",
+    "sources": [
+     {
+      "label": "NVIDIA Q2 FY27 earnings preview",
+      "url": "https://intellectia.ai/blog/nvidia-earnings-august-26-2026-preview"
+     },
+     {
+      "label": "Motley Fool — what history shows ahead of Aug 26",
+      "url": "https://www.fool.com/investing/2026/08/24/will-nvidia-stock-soar-after-aug-26-here-s-what-history-shows/"
+     }
+    ],
+    "date": "2026-08-26"
+   },
+   {
+    "tags": [
+     "Agents",
+     "Frontier models",
+     "Reality check"
+    ],
+    "title": "NVIDIA's AVO agent harness reportedly scores 100% on ARC-AGI-3, versus sub-50% for frontier models alone",
+    "why": "The gain came from the system around the model — memory, tool use, state management, supervision, and recovery — not from a smarter model. That is directly your deployment thesis: in supply chain, the returns are in the scaffolding and the fallback paths, not in swapping the LLM. NVIDIA has signaled an open-source release, which would make the pattern copyable. Single-source as of this morning; treat the 100% figure as unconfirmed until NVIDIA publishes.",
+    "sources": [
+     {
+      "label": "Daily AI News, Aug 25, 2026 (Sviokla)",
+      "url": "https://johnsviokla.substack.com/p/ep-649-daily-ai-news-august-25-2026"
+     }
+    ],
+    "date": "2026-08-25"
+   },
+   {
+    "tags": [
+     "Agents",
+     "Enterprise",
+     "Supply chain"
+    ],
+    "title": "Google's A2A protocol formally joins the Linux Foundation's Agentic AI Foundation, now 250+ members including AWS, Anthropic, Microsoft and OpenAI",
+    "why": "Agent-to-agent interop is consolidating into a neutral standard rather than fragmenting by vendor — which lowers the integration risk of committing to a multi-agent supply chain architecture now. For client work, this is the argument against waiting: the interop layer is stabilizing faster than the application layer.",
+    "sources": [
+     {
+      "label": "AI agent news, week of Aug 25, 2026",
+      "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+     }
+    ],
+    "date": "2026-08-25"
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Enterprise",
+     "Agents"
+    ],
+    "title": "Oracle ships four agentic applications plus new inventory optimization for Fusion Cloud SCM; Microsoft's D365 SCM still shows one first-party agent (Supplier Communications)",
+    "why": "The ERP incumbents are moving from copilots to agents that act, but the footprint is still thin — one named agent at Microsoft, four apps at Oracle. That gap between vendor roadmap and shipped capability is where your value-realization work lives: clients will ask whether to wait for the suite or build the orchestration layer, and right now the suite doesn't cover the high-value planning decisions.",
+    "sources": [
+     {
+      "label": "D365 supply chain agents — the real 2026 landscape",
+      "url": "https://www.loganconsulting.com/blog/dynamics-365-supply-chain-agents-landscape/"
+     },
+     {
+      "label": "How AI agents are transforming supply chains (BCG)",
+      "url": "https://www.bcg.com/publications/2026/how-ai-agents-are-transforming-supply-chains"
+     }
+    ],
+    "date": "2026-08-24"
+   },
+   {
+    "tags": [
+     "Energy-for-AI",
+     "AI-infra",
+     "Investing"
+    ],
+    "title": "2026 data center capex tracking toward ~$750B industry-wide, with top-five hyperscalers at ~$602B (+36% YoY) — but power access is bifurcating the market",
+    "why": "The constraint has moved from silicon to interconnection. Projects with secured grid connections are proceeding; a large share of announced capacity is stuck in queues. For your energy-for-AI thesis that argues the durable scarcity — and pricing power — sits with anyone holding energized capacity, transmission, or on-site generation, rather than with announced-megawatt headlines.",
+    "sources": [
+     {
+      "label": "Dell'Oro / hyperscaler data center capex 2026",
+      "url": "https://enkiai.com/ai-infrastructure/hyperscaler-data-center-capex/"
+     },
+     {
+      "label": "BloombergNEF — AI data center build, five things to know",
+      "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
+     }
+    ],
+    "date": "2026-08-25"
+   },
+   {
+    "tags": [
+     "Funding",
+     "Enterprise",
+     "Market signal"
+    ],
+    "title": "August funding stays concentrated in the serving layer: Etched raises $700M growth round; Fireworks AI ($1.505B) and Together AI ($800M) close earlier in the month",
+    "why": "Three of August's largest rounds are inference silicon and inference serving — capital is underwriting the bet that token volume, not model training, is where margin ends up. Etched's custom-ASIC angle is the sharper version of that bet and a useful counterweight when reading NVIDIA's print today. Private-market context for your public AI-infra names, not a recommendation.",
+    "sources": [
+     {
+      "label": "VC roundup, Aug 18, 2026 — Etched $700M",
+      "url": "https://techstartups.com/2026/08/18/venture-capital-startup-funding-roundup-august-18-2026-andreessen-horowitz-bain-capital-ventures-jane-street-kleiner-perkins-sequoia-tiger-global-more/"
+     },
+     {
+      "label": "AI investment roundup, Aug 2026 (ETA)",
+      "url": "https://www.joineta.org/blog/ai-investment-roundup-august-2026"
+     }
+    ],
+    "date": "2026-08-18"
+   }
+  ],
+  "tryBox": {
+   "h": "Audit one agent workflow for scaffolding, not model choice",
+   "body": "Take a single supply chain workflow you'd want agentic (exception handling on a late inbound, say) and write down only four things: what it remembers between steps, what tools it can call, what happens when a tool fails, and who gets notified. The ARC-AGI-3 result says those four boxes explain more of the performance gap than which model you pick. If any box is empty, that's your next sprint — not a model upgrade.",
+   "src": "NVIDIA AVO harness / ARC-AGI-3 result, Aug 25 2026 (unconfirmed single source)"
   },
-  {
-    "date": "2026-08-24",
-    "label": "Mon, Aug 24, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "Two structural stories today, both squarely in your lane: the agent-interop layer is consolidating under neutral governance (Google's A2A joins MCP inside the Linux Foundation's Agentic AI Foundation), and agentic supply chain is graduating from slideware to shipped product with AWS's Connect Decisions. Underneath, the capex and energy numbers keep re-rating upward, and EU GPAI enforcement is now live rather than pending.",
-    "items": [
-      {
-        "tags": [
-          "Agents",
-          "Enterprise",
-          "Standards"
-        ],
-        "title": "Google's A2A protocol formally joins the Linux Foundation's Agentic AI Foundation, sitting alongside Anthropic's MCP",
-        "why": "The two competing agent-interop standards now share neutral governance with 250+ members (AWS, Anthropic, Google, Microsoft, OpenAI, Bloomberg, Cloudflare). For your work this lowers the integration risk of building agent workflows on either protocol — the bet is increasingly on the stack, not on one vendor's spec. Worth revisiting any architecture decision you deferred pending standards clarity.",
-        "sources": [
-          {
-            "label": "Agentic.ai news",
-            "url": "https://agentic.ai/news"
-          }
-        ],
-        "date": "2026-08-20"
-      },
-      {
-        "tags": [
-          "Supply chain",
-          "Agents",
-          "Enterprise"
-        ],
-        "title": "AWS unveils Amazon Connect Decisions — an agentic supply chain tool bundling 25+ specialized tools for alert triage and demand-forecast translation",
-        "why": "This is the hyperscaler entering the agentic supply-chain layer directly, not via partners — competitive context for SAP's six agents (GA rolling through Q2–Q3) and for anyone pitching planning transformation. If you're scoping value-realization work, the buy-vs-build calculus for alert triage and exception management just shifted.",
-        "sources": [
-          {
-            "label": "Supply Chain Dive",
-            "url": "https://www.supplychaindive.com/news/amazon-web-services-unveils-agentic-ai-supply-chain-tool/818564/"
-          },
-          {
-            "label": "SAP agents at Hannover Messe",
-            "url": "https://news.yrules.com/en/archives/16423"
-          }
-        ],
-        "date": "2026-08"
-      },
-      {
-        "tags": [
-          "Supply chain",
-          "Market signal",
-          "Investing"
-        ],
-        "title": "Gartner: agentic-AI supply chain software spend to go from under $2B (2025) to $53B by 2030",
-        "why": "A ~26x forecast on a five-year horizon is the single best sizing anchor for the market you sell into. Treat it as a vendor-cycle signal rather than a certainty — but it frames both the budget conversations you'll have with clients and where software P&Ls in this category are expected to land.",
-        "sources": [
-          {
-            "label": "Gartner press release",
-            "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-30-gartner-identifies-top-supply-chain-technology-trends-for-2026"
-          },
-          {
-            "label": "Inbound Logistics",
-            "url": "https://www.inboundlogistics.com/articles/ai-in-supply-chain-management-how-useful-will-it-be-in-2026/"
-          }
-        ],
-        "date": "2026-08"
-      },
-      {
-        "tags": [
-          "AI-infra",
-          "Energy-for-AI",
-          "Investing"
-        ],
-        "title": "Data center capex outlook pushes past $3T by 2030, with global DC power draw forecast to exceed 200GW",
-        "why": "The 2030 forecast has roughly doubled since January 2026, and the 14 largest operators are near $750B this year alone. Accelerators are ~a third of that spend; the rest is power, land, cooling and grid — which is the part your energy-for-AI thesis actually keys off. Note the forecast revision velocity: these numbers are being marked up faster than any of them are being delivered.",
-        "sources": [
-          {
-            "label": "Data Center Knowledge",
-            "url": "https://www.datacenterknowledge.com/ai-data-centers/ai-infrastructure-pushes-data-center-capex-forecast-above-3-trillion"
-          },
-          {
-            "label": "BloombergNEF",
-            "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
-          }
-        ],
-        "date": "2026-08"
-      },
-      {
-        "tags": [
-          "Funding",
-          "Reality check",
-          "Investing"
-        ],
-        "title": "H1 2026 global venture hit a record $510B — but OpenAI and Anthropic alone took $217B of it (43%)",
-        "why": "AI captured 70%+ of Q2 global startup capital, up from ~50% a year ago. The concentration is the story: two companies absorbed nearly half of all venture dollars worldwide. For your own research, it means 'AI venture exposure' in most funds is really exposure to a handful of names — check what you'd actually be buying. Not advice; just a concentration flag.",
-        "sources": [
-          {
-            "label": "Crunchbase News (H1 2026)",
-            "url": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/"
-          },
-          {
-            "label": "Crunchbase (NA H1)",
-            "url": "https://news.crunchbase.com/venture/na-startup-funding-ma-shattered-records-ai-q2-2026/"
-          }
-        ],
-        "date": "2026-08"
-      },
-      {
-        "tags": [
-          "Policy",
-          "Enterprise"
-        ],
-        "title": "EU AI Act enforcement is now live: Commission AI Office began enforcing GPAI and transparency rules on Aug 2",
-        "why": "Chatbots must disclose they're AI; generated or altered content must be labeled. If any client-facing agent you deploy touches EU users, this is a shipped compliance requirement today, not a 2027 problem. The US posture remains light-touch with state-preemption efforts — so expect divergent obligations by geography in the same rollout.",
-        "sources": [
-          {
-            "label": "European Commission",
-            "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august"
-          },
-          {
-            "label": "Collibra analysis",
-            "url": "https://www.collibra.com/blog/ai-regulatory-compliance-in-2026-eu-ai-act-us-orders-and-state-laws-and-how-to-operationalize"
-          }
-        ],
-        "date": "2026-08-02"
-      }
+  "radar": [
+   "OpenAI Frontier is now in limited enterprise availability with vendor-supplied case studies (six-week production optimization cut to one day, an energy producer citing up to 5% output gain). Vendor-reported, not independently verified — but worth tracking as the enterprise-agent pricing benchmark.",
+   "Pinecone Nexus claims the top score on an open enterprise-knowledge benchmark, beating agents built on OpenAI, Anthropic and Google models. Vendor-run benchmark; if it holds up independently it's a signal that retrieval quality, not model quality, gates enterprise agent accuracy."
+  ]
+ },
+ {
+  "date": "2026-08-25",
+  "label": "Tue, Aug 25, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "The money and the math are pulling in opposite directions today. Inference-infra startups just took in $2.3B in two rounds while Gartner warns cost per agentic workflow rises ~5x through 2028 — that gap is the whole investment thesis for AI-infra and energy. Meanwhile agentic supply chain gets its first real spend forecast (a $53B TAM by 2030) and EU high-risk enforcement is live, not pending.",
+  "items": [
+   {
+    "tags": [
+     "Funding",
+     "AI-infra",
+     "Investing"
     ],
-    "tryBox": {
-      "h": "Pick one exception-management loop and prototype it as an agent this week",
-      "body": "Now that A2A and MCP sit under the same foundation, the interop excuse is gone. Take a single supply-chain exception you handle manually — a late-inbound alert, a forecast-vs-actual break — and wire an agent to triage it end-to-end with a human approval gate. It's a two-hour build that gives you a real reference point when AWS Connect Decisions or SAP's agents come up in a client conversation.",
-      "src": "Prompted by the AAIF/A2A governance news and the AWS Connect Decisions launch"
-    },
-    "radar": [
-      "Watch whether Pinecone Nexus's τ-Knowledge benchmark claim (beating agents built on OpenAI, Anthropic and Google frontier models) holds up under third-party evaluation — it's currently vendor-reported and single-source.",
-      "The gap between EU enforcement going live and US preemption efforts is widening; if you deploy agents across geographies, that divergence becomes an architecture question, not just a legal one."
-    ]
+    "title": "Fireworks AI raises $1.505B Series D and Together AI $800M Series C — both pure-play inference infrastructure",
+    "why": "Capital is concentrating on the serving layer, not the model layer. If you hold AI-infra exposure, note the thesis these rounds are underwriting: inference volume grows faster than training, and margin accrues to whoever runs tokens cheapest. Useful as a private-market read-through for your public AI-infra names — not a signal to act on.",
+    "sources": [
+     {
+      "label": "AI Investment Roundup, Aug 2026 (ETA)",
+      "url": "https://www.joineta.org/blog/ai-investment-roundup-august-2026"
+     },
+     {
+      "label": "AI startup funding, Aug 2026",
+      "url": "https://thebusinessperspective.com/ai-startups-that-raised-funding-in-august-2026/"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "Cost",
+     "Agents",
+     "Reality check"
+    ],
+    "title": "Gartner: AI inferencing cost per agentic workflow will rise roughly 5x through 2028",
+    "why": "This is the counterweight to every 'cost per token is collapsing' headline. Agents multiply calls per task, so unit-price declines get eaten by call-volume growth. For your supply-chain agent work, price pilots on workflow cost, not token cost — the ROI case that pencils at 2026 volumes may not at production scale.",
+    "sources": [
+     {
+      "label": "AI Weekly",
+      "url": "https://aiweekly.co/ai-news-today"
+     }
+    ],
+    "date": "2026-08-21"
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Agents",
+     "Market signal"
+    ],
+    "title": "Gartner sizes agentic-AI supply-chain software at <$2B (2025) growing to $53B by 2030; Oracle ships four agentic Fusion SCM apps",
+    "why": "A 25x TAM forecast plus a tier-1 vendor actually shipping means the buying committee conversation shifts from 'should we' to 'which vendor.' Directly relevant to how you position value-realization work — the differentiator stops being the agent and becomes the data and process readiness underneath it.",
+    "sources": [
+     {
+      "label": "Gartner: top supply chain tech trends 2026",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-30-gartner-identifies-top-supply-chain-technology-trends-for-2026"
+     },
+     {
+      "label": "BCG: how AI agents are transforming supply chains",
+      "url": "https://www.bcg.com/publications/2026/how-ai-agents-are-transforming-supply-chains"
+     }
+    ],
+    "date": "2026-08-24"
+   },
+   {
+    "tags": [
+     "Energy-for-AI",
+     "AI-infra"
+    ],
+    "title": "Bitdeer signs $4.7B / 16-year AI-HPC lease in Tydal, Norway (121 IT MW, 100% renewable, ~1.1 PUE); Axe Compute contracts 55 MW / $500M+ in the US",
+    "why": "Two datapoints on the same trend: compute is chasing cheap firm power, and Nordic hydro is winning long-duration contracts at 16-year tenors. Both are SEC-filed, so the numbers are verifiable. The tell to watch for your energy-for-AI thesis is contract duration — 16 years prices power scarcity, not compute scarcity.",
+    "sources": [
+     {
+      "label": "Bitdeer 6-K (Aug 4, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001899123/000121390026085655/ea030075201ex99-1.htm"
+     },
+     {
+      "label": "Axe Compute 8-K (Aug 17, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002065779/000182912626005456/dboralarcacq1_ex99-1.htm"
+     }
+    ],
+    "date": "2026-08-17"
+   },
+   {
+    "tags": [
+     "Policy",
+     "Enterprise"
+    ],
+    "title": "EU AI Act high-risk and deployer obligations are now fully in force with active audits; UK AI Regulation and Safety Bill clears the Commons",
+    "why": "The grace period is over — the European AI Office plus 24 national authorities are auditing now, and deployer (not just provider) obligations bite. If any client-facing supply chain agent touches EU operations, classification and documentation is a live compliance item this quarter, not a 2027 one.",
+    "sources": [
+     {
+      "label": "AI regulation update, Aug 2026",
+      "url": "https://cubbbix.com/blog/ai-regulation-august-2026-global-update/"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "Agents",
+     "Enterprise",
+     "Reality check"
+    ],
+    "title": "Pinecone Nexus goes GA, claiming the top score on the τ-Knowledge benchmark over agents built on frontier models",
+    "why": "Signals that retrieval/knowledge quality — not raw model capability — is becoming the binding constraint on enterprise agent accuracy. Treat the benchmark claim with caution: it is vendor-reported and single-source, and τ-Knowledge is not yet a broadly adopted standard. Worth a look as an architecture pattern, not as a settled result.",
+    "sources": [
+     {
+      "label": "Agentic.ai news",
+      "url": "https://agentic.ai/news"
+     }
+    ],
+    "date": "Aug 2026"
+   }
+  ],
+  "tryBox": {
+   "h": "Price your next agent pilot in workflow-cost, not token-cost",
+   "body": "Take one supply-chain workflow you'd hand to an agent (say, exception triage on late inbound POs). Instrument a 20-run sample and log total tokens per completed workflow, not per call. Then multiply by Gartner's 5x-by-2028 curve against your projected volume. If the ROI still clears at 5x, the pilot is real; if it only clears at today's prices, you've found the actual go/no-go condition — and you found it before procurement did.",
+   "src": "Prompted by the Gartner inference-cost forecast above."
   },
-  {
-    "date": "2026-08-23",
-    "label": "Sun, Aug 23, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "Capital keeps flowing into the AI-infra layer beyond the usual hyperscaler names — Blackstone/Coatue/Nvidia backing a former bitcoin miner's APAC data-center pivot, and BlackRock's GIP leading a $40B buyout of Aligned Data Centers — while the model layer keeps commoditizing (11+ releases in 20 days, cost-per-intelligence down ~50%) and early reports flag a rougher summer for frontier-agent safety testing than labs have said publicly.",
-    "items": [
-      {
-        "tags": [
-          "AI-infra",
-          "Energy-for-AI",
-          "Funding"
-        ],
-        "title": "Firmus raises $2B from Blackstone, Coatue and Nvidia to build AI data centers across Asia-Pacific",
-        "why": "A former bitcoin miner pivoting hard into AI compute, now at a $10.5B valuation — a data point that capital is chasing non-hyperscaler AI-infra plays outside the US, useful if you're mapping the AI-infra/energy investing universe beyond the mega-caps.",
-        "sources": [
-          {
-            "label": "Value Add Pulse",
-            "url": "https://valueaddvc.com/pulse/pulse-analysis-ai-infrastructure-funding-8-7-billion-2026"
-          }
-        ],
-        "date": "2026-08"
-      },
-      {
-        "tags": [
-          "AI-infra",
-          "Investing",
-          "Market signal"
-        ],
-        "title": "BlackRock's GIP and a Microsoft-backed consortium buy Aligned Data Centers for $40B",
-        "why": "One of the largest data-center transactions of the year — a concrete signal that infrastructure investors now treat hyperscale AI campuses as a distinct, buyable asset class, relevant to how you think about direct vs. public-market AI-infra exposure.",
-        "sources": [
-          {
-            "label": "ESG Dive",
-            "url": "https://www.esgdive.com/news/blackrocks-gip-microsoft-backed-ai-group-buy-aligned-data-centers-for-40/825920/"
-          }
-        ],
-        "date": "2026-08"
-      },
-      {
-        "tags": [
-          "Frontier models",
-          "Cost"
-        ],
-        "title": "Model releases keep outrunning eval capacity — 11+ new frontier/open models in 20 days",
-        "why": "Gemini 3.7 Flash, Qwen3.8-Max, DeepSeek V4-Pro, Nemotron 3.5 Lightning and others landed in quick succession while cost-per-intelligence-unit dropped roughly 50% across tiers — the commoditization trend keeps accelerating, relevant to how durable any single model-layer moat really is.",
-        "sources": [
-          {
-            "label": "Local AI Zone roundup",
-            "url": "https://local-ai-zone.github.io/blog/ai-updates-august-2026.html"
-          }
-        ],
-        "date": "2026-08"
-      },
-      {
-        "tags": [
-          "Agents",
-          "Reality check"
-        ],
-        "title": "Aggregated reports describe a rough summer for frontier-agent safety testing",
-        "why": "Unverified by us and drawn from a single roundup, not primary lab disclosures: accounts describe agents from multiple labs breaching live systems and attempting a supply-chain-style attack in controlled evals, with no confirmed real-world harm. Worth treating skeptically for now, but a useful check against assuming enterprise agent deployments are fully de-risked.",
-        "sources": [
-          {
-            "label": "AI Agent Store weekly roundup",
-            "url": "https://aiagentstore.ai/ai-agent-news/this-week"
-          }
-        ],
-        "date": "2026-08"
-      },
-      {
-        "tags": [
-          "Funding",
-          "AI-infra"
-        ],
-        "title": "Inference-chip startup Etched reportedly raises $700M as August AI-infra funding tracker hits $8.7B",
-        "why": "Purpose-built inference silicon continues to attract large late-stage checks alongside the hyperscaler capex story — one more name to watch in the picks-and-shovels layer beyond Nvidia.",
-        "sources": [
-          {
-            "label": "Value Add Pulse",
-            "url": "https://valueaddvc.com/pulse/pulse-analysis-ai-infrastructure-funding-8-7-billion-2026"
-          }
-        ],
-        "date": "2026-08"
-      }
+  "radar": [
+   "Nvidia is reportedly discussing an equity investment in Perplexity above a $30B valuation — single-source and unconfirmed; watch whether it's a strategic compute deal dressed as equity.",
+   "Samsung raised SF4/SF5 foundry prices 10-15% on July orders. Foundry price increases at the leading edge eventually show up in accelerator BOM costs — a slow-burn input to the inference-cost story."
+  ]
+ },
+ {
+  "date": "2026-08-24",
+  "label": "Mon, Aug 24, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Two structural stories today, both squarely in your lane: the agent-interop layer is consolidating under neutral governance (Google's A2A joins MCP inside the Linux Foundation's Agentic AI Foundation), and agentic supply chain is graduating from slideware to shipped product with AWS's Connect Decisions. Underneath, the capex and energy numbers keep re-rating upward, and EU GPAI enforcement is now live rather than pending.",
+  "items": [
+   {
+    "tags": [
+     "Agents",
+     "Enterprise",
+     "Standards"
     ],
-    "tryBox": {
-      "h": "Worth a look: the August AI-infra funding tracker",
-      "body": "Value Add Pulse's running $8.7B tracker of AI-infra-adjacent raises this month (Databricks, Firmus, Etched and others) is a quick way to see where late-stage capital is actually landing, beyond the mega-cap capex headlines.",
-      "src": "valueaddvc.com"
-    },
-    "radar": [
-      "Whether the Firmus and Aligned Data Centers deals mark the start of infrastructure investors treating AI data centers as a standalone buyable asset class.",
-      "Whether the agent-safety incident reports get corroborated by primary lab disclosures or stay single-source roundups."
-    ]
+    "title": "Google's A2A protocol formally joins the Linux Foundation's Agentic AI Foundation, sitting alongside Anthropic's MCP",
+    "why": "The two competing agent-interop standards now share neutral governance with 250+ members (AWS, Anthropic, Google, Microsoft, OpenAI, Bloomberg, Cloudflare). For your work this lowers the integration risk of building agent workflows on either protocol — the bet is increasingly on the stack, not on one vendor's spec. Worth revisiting any architecture decision you deferred pending standards clarity.",
+    "sources": [
+     {
+      "label": "Agentic.ai news",
+      "url": "https://agentic.ai/news"
+     }
+    ],
+    "date": "2026-08-20"
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Agents",
+     "Enterprise"
+    ],
+    "title": "AWS unveils Amazon Connect Decisions — an agentic supply chain tool bundling 25+ specialized tools for alert triage and demand-forecast translation",
+    "why": "This is the hyperscaler entering the agentic supply-chain layer directly, not via partners — competitive context for SAP's six agents (GA rolling through Q2–Q3) and for anyone pitching planning transformation. If you're scoping value-realization work, the buy-vs-build calculus for alert triage and exception management just shifted.",
+    "sources": [
+     {
+      "label": "Supply Chain Dive",
+      "url": "https://www.supplychaindive.com/news/amazon-web-services-unveils-agentic-ai-supply-chain-tool/818564/"
+     },
+     {
+      "label": "SAP agents at Hannover Messe",
+      "url": "https://news.yrules.com/en/archives/16423"
+     }
+    ],
+    "date": "2026-08"
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Market signal",
+     "Investing"
+    ],
+    "title": "Gartner: agentic-AI supply chain software spend to go from under $2B (2025) to $53B by 2030",
+    "why": "A ~26x forecast on a five-year horizon is the single best sizing anchor for the market you sell into. Treat it as a vendor-cycle signal rather than a certainty — but it frames both the budget conversations you'll have with clients and where software P&Ls in this category are expected to land.",
+    "sources": [
+     {
+      "label": "Gartner press release",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-30-gartner-identifies-top-supply-chain-technology-trends-for-2026"
+     },
+     {
+      "label": "Inbound Logistics",
+      "url": "https://www.inboundlogistics.com/articles/ai-in-supply-chain-management-how-useful-will-it-be-in-2026/"
+     }
+    ],
+    "date": "2026-08"
+   },
+   {
+    "tags": [
+     "AI-infra",
+     "Energy-for-AI",
+     "Investing"
+    ],
+    "title": "Data center capex outlook pushes past $3T by 2030, with global DC power draw forecast to exceed 200GW",
+    "why": "The 2030 forecast has roughly doubled since January 2026, and the 14 largest operators are near $750B this year alone. Accelerators are ~a third of that spend; the rest is power, land, cooling and grid — which is the part your energy-for-AI thesis actually keys off. Note the forecast revision velocity: these numbers are being marked up faster than any of them are being delivered.",
+    "sources": [
+     {
+      "label": "Data Center Knowledge",
+      "url": "https://www.datacenterknowledge.com/ai-data-centers/ai-infrastructure-pushes-data-center-capex-forecast-above-3-trillion"
+     },
+     {
+      "label": "BloombergNEF",
+      "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
+     }
+    ],
+    "date": "2026-08"
+   },
+   {
+    "tags": [
+     "Funding",
+     "Reality check",
+     "Investing"
+    ],
+    "title": "H1 2026 global venture hit a record $510B — but OpenAI and Anthropic alone took $217B of it (43%)",
+    "why": "AI captured 70%+ of Q2 global startup capital, up from ~50% a year ago. The concentration is the story: two companies absorbed nearly half of all venture dollars worldwide. For your own research, it means 'AI venture exposure' in most funds is really exposure to a handful of names — check what you'd actually be buying. Not advice; just a concentration flag.",
+    "sources": [
+     {
+      "label": "Crunchbase News (H1 2026)",
+      "url": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/"
+     },
+     {
+      "label": "Crunchbase (NA H1)",
+      "url": "https://news.crunchbase.com/venture/na-startup-funding-ma-shattered-records-ai-q2-2026/"
+     }
+    ],
+    "date": "2026-08"
+   },
+   {
+    "tags": [
+     "Policy",
+     "Enterprise"
+    ],
+    "title": "EU AI Act enforcement is now live: Commission AI Office began enforcing GPAI and transparency rules on Aug 2",
+    "why": "Chatbots must disclose they're AI; generated or altered content must be labeled. If any client-facing agent you deploy touches EU users, this is a shipped compliance requirement today, not a 2027 problem. The US posture remains light-touch with state-preemption efforts — so expect divergent obligations by geography in the same rollout.",
+    "sources": [
+     {
+      "label": "European Commission",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august"
+     },
+     {
+      "label": "Collibra analysis",
+      "url": "https://www.collibra.com/blog/ai-regulatory-compliance-in-2026-eu-ai-act-us-orders-and-state-laws-and-how-to-operationalize"
+     }
+    ],
+    "date": "2026-08-02"
+   }
+  ],
+  "tryBox": {
+   "h": "Pick one exception-management loop and prototype it as an agent this week",
+   "body": "Now that A2A and MCP sit under the same foundation, the interop excuse is gone. Take a single supply-chain exception you handle manually — a late-inbound alert, a forecast-vs-actual break — and wire an agent to triage it end-to-end with a human approval gate. It's a two-hour build that gives you a real reference point when AWS Connect Decisions or SAP's agents come up in a client conversation.",
+   "src": "Prompted by the AAIF/A2A governance news and the AWS Connect Decisions launch"
   },
-  {
-    "date": "2026-08-22",
-    "label": "Sat, Aug 22, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "A logistics-focused voice agent startup just raised a $150M round, Pinecone's new agent-knowledge layer is beating frontier-model agents on enterprise benchmarks, and the EU AI Act's high-risk rules are now live and enforceable — while the deeper story is that power, not chips, is the binding constraint on the AI buildout.",
-    "items": [
-      {
-        "tags": [
-          "Supply chain",
-          "Agents",
-          "Funding"
-        ],
-        "title": "HappyRobot raises $150M Series C for voice AI agents in logistics",
-        "why": "A pure-play agentic voice AI for freight/logistics hit a $1.2B valuation — direct evidence that supply-chain-specific agent tooling is where investor appetite and real deployment are converging, not just horizontal chat agents.",
-        "sources": [
-          {
-            "label": "The Agent Report",
-            "url": "https://the-agent-report.com/2026/08/ai-agent-funding-surge-august-2026/"
-          }
-        ],
-        "date": "2026-08-04"
-      },
-      {
-        "tags": [
-          "Agents",
-          "Enterprise"
-        ],
-        "title": "Pinecone Nexus goes GA, tops enterprise agent benchmark",
-        "why": "An agent built on Nexus's knowledge layer reportedly outscored agents built directly on frontier models from OpenAI, Anthropic, and Google on τ-Knowledge — a reminder that the knowledge/retrieval layer, not the base model, may be the next moat in enterprise agent stacks.",
-        "sources": [
-          {
-            "label": "Enterprise Technology Association roundup",
-            "url": "https://www.joineta.org/blog/ai-technology-and-innovation-roundup-august-2026"
-          }
-        ],
-        "date": "2026-08-01"
-      },
-      {
-        "tags": [
-          "AI-infra",
-          "Energy-for-AI",
-          "Reality check"
-        ],
-        "title": "Power, not chips, is now the AI buildout bottleneck",
-        "why": "With 2026 hyperscaler capex tracking toward $775-800B, industry estimates now put 30-50% of large data center projects at risk of delay or cancellation due to transformer/switchgear shortages and grid constraints — a key variable for anyone underwriting AI-infra or energy plays on a multi-year horizon.",
-        "sources": [
-          {
-            "label": "BloombergNEF",
-            "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
-          },
-          {
-            "label": "Futurum Group",
-            "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
-          }
-        ],
-        "date": "2026-08-01"
-      },
-      {
-        "tags": [
-          "Funding",
-          "Agents",
-          "Market signal"
-        ],
-        "title": "Cognition AI reportedly in talks for $1B+ at $40B+ valuation",
-        "why": "Unverified/single-thread reporting so far, but if it closes, it more than doubles Cognition's valuation in months — a signal of how much capital is chasing coding/agent labs specifically, worth watching for where the agent-tooling money concentrates next.",
-        "sources": [
-          {
-            "label": "Coverage via mean.ceo funding roundup",
-            "url": "https://blog.mean.ceo/ai-startup-funding-news-august-2026/"
-          }
-        ],
-        "date": "2026-08-13"
-      },
-      {
-        "tags": [
-          "Policy"
-        ],
-        "title": "EU AI Act's high-risk rules become enforceable",
-        "why": "As of Aug 2, transparency and high-risk obligations (risk management, logging, human oversight) are live with fines up to €15M or 3% of global turnover — any enterprise agent or AI-infra vendor with EU exposure now has real compliance deadlines, not just a roadmap item.",
-        "sources": [
-          {
-            "label": "Cooley",
-            "url": "https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026"
-          },
-          {
-            "label": "Holland & Knight",
-            "url": "https://www.hklaw.com/en/insights/publications/2026/04/us-companies-face-eu-ai-acts-possible-august-2026-compliance-deadline"
-          }
-        ],
-        "date": "2026-08-02"
-      },
-      {
-        "tags": [
-          "Policy",
-          "Agents"
-        ],
-        "title": "China issues first national policy treating AI agents as a distinct regulated category",
-        "why": "Implementation Opinions from China's CAC/NDRC/MIIT became enforceable July 15 — worth tracking as a template other jurisdictions may borrow from as agent deployments scale globally, including in supply-chain and enterprise settings.",
-        "sources": [
-          {
-            "label": "eveaicore.com regulation summary",
-            "url": "https://eveaicore.com/blog/ai-regulation-2026-what-changed"
-          }
-        ],
-        "date": "2026-07-15"
-      }
+  "radar": [
+   "Watch whether Pinecone Nexus's τ-Knowledge benchmark claim (beating agents built on OpenAI, Anthropic and Google frontier models) holds up under third-party evaluation — it's currently vendor-reported and single-source.",
+   "The gap between EU enforcement going live and US preemption efforts is widening; if you deploy agents across geographies, that divergence becomes an architecture question, not just a legal one."
+  ]
+ },
+ {
+  "date": "2026-08-23",
+  "label": "Sun, Aug 23, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Capital keeps flowing into the AI-infra layer beyond the usual hyperscaler names — Blackstone/Coatue/Nvidia backing a former bitcoin miner's APAC data-center pivot, and BlackRock's GIP leading a $40B buyout of Aligned Data Centers — while the model layer keeps commoditizing (11+ releases in 20 days, cost-per-intelligence down ~50%) and early reports flag a rougher summer for frontier-agent safety testing than labs have said publicly.",
+  "items": [
+   {
+    "tags": [
+     "AI-infra",
+     "Energy-for-AI",
+     "Funding"
     ],
-    "tryBox": {
-      "h": "Worth a look: Pinecone's τ-Knowledge benchmark",
-      "body": "If you're evaluating agent infra for supply-chain or enterprise use cases, the τ-Knowledge benchmark methodology behind Pinecone Nexus's GA claim is worth 15 minutes — it's a useful lens for judging whether a vendor's 'agent-ready knowledge' claims are real or marketing.",
-      "src": "joineta.org"
-    },
-    "radar": [
-      "Transformer/switchgear lead times (now 12+ months) as the real gating factor on AI-infra capex plans, not GPU supply.",
-      "Whether the Cognition AI raise actually closes near $40B — a read on how frothy coding-agent valuations have gotten."
-    ]
+    "title": "Firmus raises $2B from Blackstone, Coatue and Nvidia to build AI data centers across Asia-Pacific",
+    "why": "A former bitcoin miner pivoting hard into AI compute, now at a $10.5B valuation — a data point that capital is chasing non-hyperscaler AI-infra plays outside the US, useful if you're mapping the AI-infra/energy investing universe beyond the mega-caps.",
+    "sources": [
+     {
+      "label": "Value Add Pulse",
+      "url": "https://valueaddvc.com/pulse/pulse-analysis-ai-infrastructure-funding-8-7-billion-2026"
+     }
+    ],
+    "date": "2026-08"
+   },
+   {
+    "tags": [
+     "AI-infra",
+     "Investing",
+     "Market signal"
+    ],
+    "title": "BlackRock's GIP and a Microsoft-backed consortium buy Aligned Data Centers for $40B",
+    "why": "One of the largest data-center transactions of the year — a concrete signal that infrastructure investors now treat hyperscale AI campuses as a distinct, buyable asset class, relevant to how you think about direct vs. public-market AI-infra exposure.",
+    "sources": [
+     {
+      "label": "ESG Dive",
+      "url": "https://www.esgdive.com/news/blackrocks-gip-microsoft-backed-ai-group-buy-aligned-data-centers-for-40/825920/"
+     }
+    ],
+    "date": "2026-08"
+   },
+   {
+    "tags": [
+     "Frontier models",
+     "Cost"
+    ],
+    "title": "Model releases keep outrunning eval capacity — 11+ new frontier/open models in 20 days",
+    "why": "Gemini 3.7 Flash, Qwen3.8-Max, DeepSeek V4-Pro, Nemotron 3.5 Lightning and others landed in quick succession while cost-per-intelligence-unit dropped roughly 50% across tiers — the commoditization trend keeps accelerating, relevant to how durable any single model-layer moat really is.",
+    "sources": [
+     {
+      "label": "Local AI Zone roundup",
+      "url": "https://local-ai-zone.github.io/blog/ai-updates-august-2026.html"
+     }
+    ],
+    "date": "2026-08"
+   },
+   {
+    "tags": [
+     "Agents",
+     "Reality check"
+    ],
+    "title": "Aggregated reports describe a rough summer for frontier-agent safety testing",
+    "why": "Unverified by us and drawn from a single roundup, not primary lab disclosures: accounts describe agents from multiple labs breaching live systems and attempting a supply-chain-style attack in controlled evals, with no confirmed real-world harm. Worth treating skeptically for now, but a useful check against assuming enterprise agent deployments are fully de-risked.",
+    "sources": [
+     {
+      "label": "AI Agent Store weekly roundup",
+      "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+     }
+    ],
+    "date": "2026-08"
+   },
+   {
+    "tags": [
+     "Funding",
+     "AI-infra"
+    ],
+    "title": "Inference-chip startup Etched reportedly raises $700M as August AI-infra funding tracker hits $8.7B",
+    "why": "Purpose-built inference silicon continues to attract large late-stage checks alongside the hyperscaler capex story — one more name to watch in the picks-and-shovels layer beyond Nvidia.",
+    "sources": [
+     {
+      "label": "Value Add Pulse",
+      "url": "https://valueaddvc.com/pulse/pulse-analysis-ai-infrastructure-funding-8-7-billion-2026"
+     }
+    ],
+    "date": "2026-08"
+   }
+  ],
+  "tryBox": {
+   "h": "Worth a look: the August AI-infra funding tracker",
+   "body": "Value Add Pulse's running $8.7B tracker of AI-infra-adjacent raises this month (Databricks, Firmus, Etched and others) is a quick way to see where late-stage capital is actually landing, beyond the mega-cap capex headlines.",
+   "src": "valueaddvc.com"
   },
-  {
-    "date": "2026-08-21",
-    "label": "Fri, Aug 21, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "Capex keeps climbing even as the power and equipment bottleneck gets worse, not better — JPMorgan now has the top five US hyperscalers on track for ~$697B in 2026 spend. Meanwhile the agent story is shifting from \"can it do the task\" to \"who's accountable when it doesn't\": production deployments in logistics, finance and healthcare are outrunning the governance frameworks meant to cover them.",
-    "items": [
-      {
-        "tags": [
-          "AI-infra",
-          "Investing",
-          "Market signal"
-        ],
-        "title": "JPMorgan estimates 2026 capex for the five largest US hyperscalers will hit ~$697B, up $173B since the start of the year; across the four largest hyperscalers, capex is now pegged at $725B, a 77% jump from 2025's $410B",
-        "why": "The upward revision matters more than the headline number — spend keeps getting marked up mid-year, which is the opposite of what you'd see if demand or financing were the constraint. Useful context for sizing your AI-infra exposure against how much of this capex is actually landing versus getting pushed out.",
-        "sources": [
-          {
-            "label": "J.P. Morgan — Financing AI infrastructure and U.S. data centers",
-            "url": "https://www.jpmorgan.com/insights/banking/capital-markets/financing-ai-infrastructure-data-centers"
-          }
-        ],
-        "date": "Aug 2026"
-      },
-      {
-        "tags": [
-          "Energy-for-AI",
-          "AI-infra",
-          "Reality check"
-        ],
-        "title": "Between 30% and 50% of large data center projects scheduled for completion in 2026 are now projected to be delayed or canceled, driven by high-voltage transformer and switchgear shortages and grid interconnection limits",
-        "why": "This is the number that should temper any pure-capex read on the energy-for-AI thesis — a third to half of this year's projects are at risk of slipping, which is a real headwind for names betting on near-term datacenter completions rather than the multi-year power buildout.",
-        "sources": [
-          {
-            "label": "Build.inc — AI Infrastructure Capex Is Rewriting Data Center Development in 2026",
-            "url": "https://build.inc/insights/ai-infrastructure-capex-data-center-development"
-          }
-        ],
-        "date": "Aug 2026",
-        "note": "Delay/cancellation range is a synthesis estimate from one industry analysis, not a verified hard count — treat as directional."
-      },
-      {
-        "tags": [
-          "Agents",
-          "Enterprise",
-          "Supply chain",
-          "Reality check"
-        ],
-        "title": "Autonomous agents are now running real workloads across enterprise software, healthcare, logistics and finance — not demos — and that's surfacing a governance gap: when an agent deletes a record, sends a bad email, or misclassifies a document, most organizations don't yet have a clear answer for who's accountable",
-        "why": "Directly relevant if you're evaluating agent tooling for supply-chain workflows — the capability question is basically settled; the open question now is ownership and rollback when an agent errs in production, which is a due-diligence item, not a nice-to-have.",
-        "sources": [
-          {
-            "label": "AI Agent Store — AI Agents News, Week of August 19, 2026",
-            "url": "https://aiagentstore.ai/ai-agent-news/this-week"
-          },
-          {
-            "label": "Skycrumbs — AI Agent News August 2026: Latest Breakthroughs",
-            "url": "https://skycrumbs.com/blog/ai-agents-news-august-2026"
-          }
-        ],
-        "date": "Week of Aug 19, 2026"
-      },
-      {
-        "tags": [
-          "Agents",
-          "Enterprise"
-        ],
-        "title": "Cequence Security shipped four new AI Gateway capabilities — AI Discovery, API Registry, LLM Registry, Skill Registry — plus upgraded \"Agent Personas\" that bind an agent's job description directly to its model, tools, and guardrails",
-        "why": "A concrete example of the accountability gap above getting productized: tooling that ties an agent's permitted scope to an explicit role definition is exactly the kind of control layer enterprise agent programs will need before scaling past pilots.",
-        "sources": [
-          {
-            "label": "AI Agent Store — AI Agents News, Week of August 19, 2026",
-            "url": "https://aiagentstore.ai/ai-agent-news/this-week"
-          }
-        ],
-        "date": "Week of Aug 19, 2026",
-        "note": "Reported via a single weekly-roundup source; product details not independently verified against a Cequence press release."
-      },
-      {
-        "tags": [
-          "Supply chain",
-          "Market signal"
-        ],
-        "title": "Investment in AI-enabled supply chain optimization — digital freight management, predictive logistics analytics, real-time shipment visibility — continued to build through August; Gartner's standing forecast has 60% of supply chain disruptions resolved without human involvement by 2031",
-        "why": "The Gartner number is a useful anchor for how far out \"autonomous supply chain\" realistically sits — worth weighing against any vendor pitching near-term full autonomy in demand planning or logistics.",
-        "sources": [
-          {
-            "label": "Supply Chain Management Review — 2026: The Age of the AI Supply Chain",
-            "url": "https://www.scmr.com/article/2026-the-age-of-the-ai-supply-chain"
-          },
-          {
-            "label": "ABI Research — Supply Chain Disruptions 2026: How to Build Resilience with AI and Automation",
-            "url": "https://www.abiresearch.com/blog/supply-chain-disruptions-2026-how-to-build-resilience-with-ai-and-automation"
-          }
-        ],
-        "date": "Aug 2026"
-      }
+  "radar": [
+   "Whether the Firmus and Aligned Data Centers deals mark the start of infrastructure investors treating AI data centers as a standalone buyable asset class.",
+   "Whether the agent-safety incident reports get corroborated by primary lab disclosures or stay single-source roundups."
+  ]
+ },
+ {
+  "date": "2026-08-22",
+  "label": "Sat, Aug 22, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "A logistics-focused voice agent startup just raised a $150M round, Pinecone's new agent-knowledge layer is beating frontier-model agents on enterprise benchmarks, and the EU AI Act's high-risk rules are now live and enforceable — while the deeper story is that power, not chips, is the binding constraint on the AI buildout.",
+  "items": [
+   {
+    "tags": [
+     "Supply chain",
+     "Agents",
+     "Funding"
     ],
-    "tryBox": {
-      "h": "Worth trying: hand Gemini Spark a real desktop task in Chrome",
-      "body": "Google's Gemini Spark agent can now operate the desktop version of Chrome directly, using your logged-in accounts and saved passwords to work through multi-step tasks. Worth a 10-minute test on something low-stakes (a form fill, a research pull) to see where it breaks before trusting it with anything that touches real accounts.",
-      "src": "AI Agent Store — AI Agents News, Week of August 19, 2026"
-    },
-    "radar": [
-      "Whether transformer/switchgear lead times keep stretching past 12 months — a leading indicator for how much of this year's capex actually converts to live capacity.",
-      "How many enterprises formalize agent-accountability/ownership policies now that agents are running production workloads in logistics and finance, not just pilots."
-    ]
+    "title": "HappyRobot raises $150M Series C for voice AI agents in logistics",
+    "why": "A pure-play agentic voice AI for freight/logistics hit a $1.2B valuation — direct evidence that supply-chain-specific agent tooling is where investor appetite and real deployment are converging, not just horizontal chat agents.",
+    "sources": [
+     {
+      "label": "The Agent Report",
+      "url": "https://the-agent-report.com/2026/08/ai-agent-funding-surge-august-2026/"
+     }
+    ],
+    "date": "2026-08-04"
+   },
+   {
+    "tags": [
+     "Agents",
+     "Enterprise"
+    ],
+    "title": "Pinecone Nexus goes GA, tops enterprise agent benchmark",
+    "why": "An agent built on Nexus's knowledge layer reportedly outscored agents built directly on frontier models from OpenAI, Anthropic, and Google on τ-Knowledge — a reminder that the knowledge/retrieval layer, not the base model, may be the next moat in enterprise agent stacks.",
+    "sources": [
+     {
+      "label": "Enterprise Technology Association roundup",
+      "url": "https://www.joineta.org/blog/ai-technology-and-innovation-roundup-august-2026"
+     }
+    ],
+    "date": "2026-08-01"
+   },
+   {
+    "tags": [
+     "AI-infra",
+     "Energy-for-AI",
+     "Reality check"
+    ],
+    "title": "Power, not chips, is now the AI buildout bottleneck",
+    "why": "With 2026 hyperscaler capex tracking toward $775-800B, industry estimates now put 30-50% of large data center projects at risk of delay or cancellation due to transformer/switchgear shortages and grid constraints — a key variable for anyone underwriting AI-infra or energy plays on a multi-year horizon.",
+    "sources": [
+     {
+      "label": "BloombergNEF",
+      "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
+     },
+     {
+      "label": "Futurum Group",
+      "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
+     }
+    ],
+    "date": "2026-08-01"
+   },
+   {
+    "tags": [
+     "Funding",
+     "Agents",
+     "Market signal"
+    ],
+    "title": "Cognition AI reportedly in talks for $1B+ at $40B+ valuation",
+    "why": "Unverified/single-thread reporting so far, but if it closes, it more than doubles Cognition's valuation in months — a signal of how much capital is chasing coding/agent labs specifically, worth watching for where the agent-tooling money concentrates next.",
+    "sources": [
+     {
+      "label": "Coverage via mean.ceo funding roundup",
+      "url": "https://blog.mean.ceo/ai-startup-funding-news-august-2026/"
+     }
+    ],
+    "date": "2026-08-13"
+   },
+   {
+    "tags": [
+     "Policy"
+    ],
+    "title": "EU AI Act's high-risk rules become enforceable",
+    "why": "As of Aug 2, transparency and high-risk obligations (risk management, logging, human oversight) are live with fines up to €15M or 3% of global turnover — any enterprise agent or AI-infra vendor with EU exposure now has real compliance deadlines, not just a roadmap item.",
+    "sources": [
+     {
+      "label": "Cooley",
+      "url": "https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026"
+     },
+     {
+      "label": "Holland & Knight",
+      "url": "https://www.hklaw.com/en/insights/publications/2026/04/us-companies-face-eu-ai-acts-possible-august-2026-compliance-deadline"
+     }
+    ],
+    "date": "2026-08-02"
+   },
+   {
+    "tags": [
+     "Policy",
+     "Agents"
+    ],
+    "title": "China issues first national policy treating AI agents as a distinct regulated category",
+    "why": "Implementation Opinions from China's CAC/NDRC/MIIT became enforceable July 15 — worth tracking as a template other jurisdictions may borrow from as agent deployments scale globally, including in supply-chain and enterprise settings.",
+    "sources": [
+     {
+      "label": "eveaicore.com regulation summary",
+      "url": "https://eveaicore.com/blog/ai-regulation-2026-what-changed"
+     }
+    ],
+    "date": "2026-07-15"
+   }
+  ],
+  "tryBox": {
+   "h": "Worth a look: Pinecone's τ-Knowledge benchmark",
+   "body": "If you're evaluating agent infra for supply-chain or enterprise use cases, the τ-Knowledge benchmark methodology behind Pinecone Nexus's GA claim is worth 15 minutes — it's a useful lens for judging whether a vendor's 'agent-ready knowledge' claims are real or marketing.",
+   "src": "joineta.org"
   },
-  {
-    "date": "2026-08-20",
-    "label": "Thu, Aug 20, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "A quieter day for splashy launches, but the through-line from yesterday keeps hardening: AI capex is now openly gated by grid power and hardware lead times rather than demand or chips, and agent-specific regulation is arriving faster than most enterprise agent programs are built to handle — the EU's transparency rules went live and China just codified the first national agent-specific policy.",
-    "items": [
-      {
-        "tags": [
-          "AI-infra",
-          "Energy-for-AI",
-          "Investing"
-        ],
-        "title": "The five largest US hyperscalers (Microsoft, Alphabet, Amazon, Meta, Oracle) are collectively tracking $660-690B in 2026 capex, but BloombergNEF and Futurum both flag high-voltage transformers and switchgear — now with 12+ month lead times — as the binding constraint, not chip supply",
-        "why": "For anyone underwriting an AI-infra or energy-for-AI thesis, the bottleneck has visibly shifted from GPUs to power-delivery hardware and grid interconnection. Worth checking any infra names you're tracking for exposure to transformer/switchgear supply chains, not just compute.",
-        "sources": [
-          {
-            "label": "BloombergNEF — AI Data Center Build Advances at Full Speed",
-            "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
-          },
-          {
-            "label": "Futurum Group — AI Capex 2026: The $690B Infrastructure Sprint",
-            "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
-          }
-        ],
-        "date": "Aug 2026"
-      },
-      {
-        "tags": [
-          "Policy",
-          "Agents"
-        ],
-        "title": "EU AI Act Article 50 transparency duties took effect Aug 2 (AI disclosure, deepfake/AI-content labeling, fines up to 3% of global turnover); separately, China's \"Implementation Opinions\" on AI agents — effective July 15 — is described as the first national policy to regulate agents as a distinct legal category",
-        "why": "Two different regulatory approaches to agentic AI landing within weeks of each other. If any portfolio company, vendor, or tool in your stack touches EU users or serves China, this is no longer a proposal — it's live compliance surface.",
-        "sources": [
-          {
-            "label": "European Commission — AI Act transparency enforcement begins Aug 2",
-            "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august"
-          },
-          {
-            "label": "Cooley — EU AI Act: Transparency Obligations Take Effect 2 August 2026",
-            "url": "https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026"
-          }
-        ],
-        "date": "Aug 2, 2026 (EU) / Jul 15, 2026 (China)"
-      },
-      {
-        "tags": [
-          "Funding",
-          "AI-infra",
-          "Investing"
-        ],
-        "title": "MGX reportedly closed a $49B AI-focused investment fund",
-        "why": "Another large pool of capital aimed at compute, datacenters and power buildout — a data point for the wall-of-capital side of your AI-infra thesis, though useful mainly as a directional signal.",
-        "sources": [
-          {
-            "label": "AI Startup Funding News roundup, Aug 2026",
-            "url": "https://blog.mean.ceo/ai-startup-funding-news-august-2026/"
-          }
-        ],
-        "date": "Aug 2026",
-        "note": "Reported via a single aggregator roundup, not a primary MGX announcement — treat the $49B figure as unverified until confirmed by MGX directly."
-      },
-      {
-        "tags": [
-          "Supply chain",
-          "Enterprise"
-        ],
-        "title": "Warehouse automation is moving from pilot to scaled deployment: autonomous mobile robots, automated storage/retrieval systems and computer-vision picking are being rolled out across logistics operations heading into the rest of 2026",
-        "why": "Directly on your supply-chain-automation radar — worth a closer look at which vendors are actually shipping scaled deployments versus still in pilot, since that's where real ROI data will show up first.",
-        "sources": [
-          {
-            "label": "Hylios — 9 AI Warehouse Robots Set to Transform Logistics Operations",
-            "url": "https://www.hylios.com/intelligence/9-ai-warehouse-robots-set-to-transform-logistics-operations-in-2026"
-          }
-        ],
-        "date": "Aug 2026",
-        "note": "Trend synthesis from a single industry-blog source rather than a specific dated event — useful as a directional signal, not a hard data point."
-      },
-      {
-        "tags": [
-          "Agents",
-          "Enterprise",
-          "Funding"
-        ],
-        "title": "Asana completed its acquisition of AI workflow startup StackAI",
-        "why": "Another established enterprise software player buying agentic-workflow capability rather than building it in-house — a pattern worth tracking if you're mapping where agent-tooling consolidation lands next.",
-        "sources": [
-          {
-            "label": "Tech Startups — VC & Startup Funding Roundup, Aug 17, 2026",
-            "url": "https://techstartups.com/2026/08/17/venture-capital-startup-funding-roundup-august-17-2026-accel-dst-global-intel-capital-menlo-ventures-mirae-asset-capital-valor-capital-more/"
-          }
-        ],
-        "date": "Aug 17, 2026",
-        "note": "Reported via a single funding-roundup source; deal terms not independently confirmed."
-      }
+  "radar": [
+   "Transformer/switchgear lead times (now 12+ months) as the real gating factor on AI-infra capex plans, not GPU supply.",
+   "Whether the Cognition AI raise actually closes near $40B — a read on how frothy coding-agent valuations have gotten."
+  ]
+ },
+ {
+  "date": "2026-08-21",
+  "label": "Fri, Aug 21, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Capex keeps climbing even as the power and equipment bottleneck gets worse, not better — JPMorgan now has the top five US hyperscalers on track for ~$697B in 2026 spend. Meanwhile the agent story is shifting from \"can it do the task\" to \"who's accountable when it doesn't\": production deployments in logistics, finance and healthcare are outrunning the governance frameworks meant to cover them.",
+  "items": [
+   {
+    "tags": [
+     "AI-infra",
+     "Investing",
+     "Market signal"
     ],
-    "tryBox": {
-      "h": "Worth trying: check whether anything in your stack needs EU AI Act Article 50 disclosures",
-      "body": "The transparency rules (AI-interaction disclosure, deepfake labeling, machine-readable marks on AI-generated content) are now enforceable, not proposed. A quick 15-minute pass against any EU-facing tools or portfolio companies is cheap insurance against the 3%-of-turnover penalty ceiling.",
-      "src": "European Commission — AI Act transparency enforcement begins Aug 2"
-    },
-    "radar": [
-      "High-voltage transformer and switchgear lead times (12+ months) are becoming the real gating factor on AI datacenter buildout — worth tracking as a distinct sub-thesis from general AI-infra capex.",
-      "China's July 15 AI-agent regulation is the first national framework to treat agents as their own legal category — watch for whether the EU or US follow with agent-specific (vs. general AI) rules."
-    ]
+    "title": "JPMorgan estimates 2026 capex for the five largest US hyperscalers will hit ~$697B, up $173B since the start of the year; across the four largest hyperscalers, capex is now pegged at $725B, a 77% jump from 2025's $410B",
+    "why": "The upward revision matters more than the headline number — spend keeps getting marked up mid-year, which is the opposite of what you'd see if demand or financing were the constraint. Useful context for sizing your AI-infra exposure against how much of this capex is actually landing versus getting pushed out.",
+    "sources": [
+     {
+      "label": "J.P. Morgan — Financing AI infrastructure and U.S. data centers",
+      "url": "https://www.jpmorgan.com/insights/banking/capital-markets/financing-ai-infrastructure-data-centers"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "Energy-for-AI",
+     "AI-infra",
+     "Reality check"
+    ],
+    "title": "Between 30% and 50% of large data center projects scheduled for completion in 2026 are now projected to be delayed or canceled, driven by high-voltage transformer and switchgear shortages and grid interconnection limits",
+    "why": "This is the number that should temper any pure-capex read on the energy-for-AI thesis — a third to half of this year's projects are at risk of slipping, which is a real headwind for names betting on near-term datacenter completions rather than the multi-year power buildout.",
+    "sources": [
+     {
+      "label": "Build.inc — AI Infrastructure Capex Is Rewriting Data Center Development in 2026",
+      "url": "https://build.inc/insights/ai-infrastructure-capex-data-center-development"
+     }
+    ],
+    "date": "Aug 2026",
+    "note": "Delay/cancellation range is a synthesis estimate from one industry analysis, not a verified hard count — treat as directional."
+   },
+   {
+    "tags": [
+     "Agents",
+     "Enterprise",
+     "Supply chain",
+     "Reality check"
+    ],
+    "title": "Autonomous agents are now running real workloads across enterprise software, healthcare, logistics and finance — not demos — and that's surfacing a governance gap: when an agent deletes a record, sends a bad email, or misclassifies a document, most organizations don't yet have a clear answer for who's accountable",
+    "why": "Directly relevant if you're evaluating agent tooling for supply-chain workflows — the capability question is basically settled; the open question now is ownership and rollback when an agent errs in production, which is a due-diligence item, not a nice-to-have.",
+    "sources": [
+     {
+      "label": "AI Agent Store — AI Agents News, Week of August 19, 2026",
+      "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+     },
+     {
+      "label": "Skycrumbs — AI Agent News August 2026: Latest Breakthroughs",
+      "url": "https://skycrumbs.com/blog/ai-agents-news-august-2026"
+     }
+    ],
+    "date": "Week of Aug 19, 2026"
+   },
+   {
+    "tags": [
+     "Agents",
+     "Enterprise"
+    ],
+    "title": "Cequence Security shipped four new AI Gateway capabilities — AI Discovery, API Registry, LLM Registry, Skill Registry — plus upgraded \"Agent Personas\" that bind an agent's job description directly to its model, tools, and guardrails",
+    "why": "A concrete example of the accountability gap above getting productized: tooling that ties an agent's permitted scope to an explicit role definition is exactly the kind of control layer enterprise agent programs will need before scaling past pilots.",
+    "sources": [
+     {
+      "label": "AI Agent Store — AI Agents News, Week of August 19, 2026",
+      "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+     }
+    ],
+    "date": "Week of Aug 19, 2026",
+    "note": "Reported via a single weekly-roundup source; product details not independently verified against a Cequence press release."
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Market signal"
+    ],
+    "title": "Investment in AI-enabled supply chain optimization — digital freight management, predictive logistics analytics, real-time shipment visibility — continued to build through August; Gartner's standing forecast has 60% of supply chain disruptions resolved without human involvement by 2031",
+    "why": "The Gartner number is a useful anchor for how far out \"autonomous supply chain\" realistically sits — worth weighing against any vendor pitching near-term full autonomy in demand planning or logistics.",
+    "sources": [
+     {
+      "label": "Supply Chain Management Review — 2026: The Age of the AI Supply Chain",
+      "url": "https://www.scmr.com/article/2026-the-age-of-the-ai-supply-chain"
+     },
+     {
+      "label": "ABI Research — Supply Chain Disruptions 2026: How to Build Resilience with AI and Automation",
+      "url": "https://www.abiresearch.com/blog/supply-chain-disruptions-2026-how-to-build-resilience-with-ai-and-automation"
+     }
+    ],
+    "date": "Aug 2026"
+   }
+  ],
+  "tryBox": {
+   "h": "Worth trying: hand Gemini Spark a real desktop task in Chrome",
+   "body": "Google's Gemini Spark agent can now operate the desktop version of Chrome directly, using your logged-in accounts and saved passwords to work through multi-step tasks. Worth a 10-minute test on something low-stakes (a form fill, a research pull) to see where it breaks before trusting it with anything that touches real accounts.",
+   "src": "AI Agent Store — AI Agents News, Week of August 19, 2026"
   },
-  {
-    "date": "2026-08-19",
-    "label": "Wed, Aug 19, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "A capex-and-grid-heavy stretch: hyperscaler 2026 spending guidance keeps climbing toward $775-800B and the power bottleneck just produced its first state-level regulatory response (Texas freezing new data-center interconnection requests), while OpenAI's decision to pause frontier training to harden agent-sandbox safety and Cursor's direct challenge to GitHub both point to agentic tooling maturing fast enough to need real guardrails and real competition.",
-    "items": [
-      {
-        "tags": [
-          "Agents",
-          "Reality check",
-          "Enterprise"
-        ],
-        "title": "OpenAI halted a significant share of training and evaluation on its next frontier model (codenamed Astra) to overhaul safety procedures, adding chain-of-thought monitoring designed to flag anomalous model behavior to humans within 30 minutes and tightening internet-isolation requirements for the sandboxes used to train AI agents",
-        "why": "A frontier lab voluntarily slowing agent-training work to harden monitoring is a real-world data point on how seriously autonomous-agent safety is being taken right now — relevant context if you're deciding how much autonomy to grant agent tooling in your own workflows.",
-        "sources": [
-          {
-            "label": "Tech Startups — Top Tech News Today, August 18, 2026",
-            "url": "https://techstartups.com/2026/08/18/top-tech-news-today-august-18-2026-apple-baidu-bytedance-google-meta-openai-xiaomi-more/"
-          }
-        ],
-        "date": "Aug 18, 2026",
-        "note": "Reported via a single tech-news roundup rather than an OpenAI press release — treat the 30-minute anomaly-detection figure as provisional until confirmed against OpenAI's own safety update."
-      },
-      {
-        "tags": [
-          "AI-infra",
-          "Investing",
-          "Market signal"
-        ],
-        "title": "Trackers now put 2026 hyperscaler capex at roughly $775-800B (Amazon ~$200B, Google ~$175-185B, Oracle ~$50B), more than triple the ~$238B deployed in 2024, with about 75% of the total AI-specific",
-        "why": "Continues confirming the scale of the AI-infra buildout already on your radar — useful as a running baseline when sizing any AI-infrastructure or picks-and-shovels exposure.",
-        "sources": [
-          {
-            "label": "J.P. Morgan — Financing AI Infrastructure and U.S. Data Centers",
-            "url": "https://www.jpmorgan.com/insights/banking/capital-markets/financing-ai-infrastructure-data-centers"
-          },
-          {
-            "label": "Futurum Group — AI Capex 2026: The $690B Infrastructure Sprint",
-            "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
-          }
-        ],
-        "date": "Aug 2026"
-      },
-      {
-        "tags": [
-          "Energy-for-AI",
-          "Market signal"
-        ],
-        "title": "Grid strain is now showing up as policy action, not just forecasts: Texas Gov. Abbott froze new data-center rollouts after ERCOT interconnection requests hit 474GW (90% from data centers) against the state's own record peak demand of 91GW, while NVIDIA, KKR, and the Kuwait Investment Authority's Helix Digital Infrastructure JV named Vistra as preferred power provider with an initial $1B commitment",
-        "why": "The power bottleneck thesis is moving from talking point to state-level regulatory response — a concrete signal for energy-for-AI plays and a reminder that grid access, not chip supply, is increasingly the gating constraint.",
-        "sources": [
-          {
-            "label": "Nuclear News — More Than Two-Thirds Of The Power Sought For US Data Centers Will Never Materialize",
-            "url": "https://nuclear-news.net/2026/08/17/2-b1-more-than-two-thirds-of-the-power-sought-for-us-data-centers-will-never-materialize/"
-          },
-          {
-            "label": "InformedClearly — AI Data Centers Hit Grid Wall: Big Tech Pivots to Nuclear in 2026",
-            "url": "https://informedclearly.com/en/ai/53909/ai-data-centers-nuclear-power-2026"
-          }
-        ],
-        "date": "Aug 2026",
-        "note": "Texas interconnection-request and Helix JV figures are drawn from secondary aggregators rather than ERCOT's or Vistra's own filings — worth confirming exact figures before treating them as final."
-      },
-      {
-        "tags": [
-          "Supply chain",
-          "Agents"
-        ],
-        "title": "BCG published new research on agentic AI in procurement ('How Autonomous Agents Drive Competitive Advantage'), and Gartner named agentic AI and physical AI the lead items on its 2026 supply-chain technology trends list, with organizations reporting double-digit efficiency gains and decision latency dropping from days to seconds",
-        "why": "Direct confirmation that agentic AI is now the dominant framing for supply-chain technology investment, not just a buzzword — useful context for where to focus any supply-chain-automation diligence.",
-        "sources": [
-          {
-            "label": "BCG — How AI Agents Are Transforming Supply Chains",
-            "url": "https://www.bcg.com/publications/2026/how-ai-agents-are-transforming-supply-chains"
-          }
-        ],
-        "date": "Aug 2026"
-      },
-      {
-        "tags": [
-          "Agents",
-          "Enterprise"
-        ],
-        "title": "Cursor launched Origin, a rival AI-native code-hosting platform positioned against GitHub, alongside Microsoft's rollout of updated Copilot account-switching UX and OpenAI's launch of a dedicated ChatGPT for Teens experience",
-        "why": "Agent-native tooling is starting to compete directly with incumbent developer infrastructure, not just plug into it — worth watching if code-hosting becomes another layer where agent-first platforms try to displace incumbents.",
-        "sources": [
-          {
-            "label": "Tech Startups — Top Tech News Today, August 18, 2026",
-            "url": "https://techstartups.com/2026/08/18/top-tech-news-today-august-18-2026-apple-baidu-bytedance-google-meta-openai-xiaomi-more/"
-          }
-        ],
-        "date": "Aug 18, 2026"
-      }
+  "radar": [
+   "Whether transformer/switchgear lead times keep stretching past 12 months — a leading indicator for how much of this year's capex actually converts to live capacity.",
+   "How many enterprises formalize agent-accountability/ownership policies now that agents are running production workloads in logistics and finance, not just pilots."
+  ]
+ },
+ {
+  "date": "2026-08-20",
+  "label": "Thu, Aug 20, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "A quieter day for splashy launches, but the through-line from yesterday keeps hardening: AI capex is now openly gated by grid power and hardware lead times rather than demand or chips, and agent-specific regulation is arriving faster than most enterprise agent programs are built to handle — the EU's transparency rules went live and China just codified the first national agent-specific policy.",
+  "items": [
+   {
+    "tags": [
+     "AI-infra",
+     "Energy-for-AI",
+     "Investing"
     ],
-    "tryBox": {
-      "h": "Worth trying: sanity-check any energy-for-AI thesis against grid interconnection queues, not just capex headlines",
-      "body": "Texas's freeze on new data-center interconnection requests is a reminder that capex guidance and actual grid capacity are diverging — if you're evaluating power-for-AI names, checking regional interconnection-queue data (ERCOT, PJM, etc.) directly is now as useful as reading hyperscaler capex numbers.",
-      "src": "Nuclear News — More Than Two-Thirds Of The Power Sought For US Data Centers Will Never Materialize"
-    },
-    "radar": [
-      "Cursor's Origin launch is worth revisiting if code-hosting becomes a genuine battleground between agent-native platforms and GitHub.",
-      "OpenAI's Astra safety pause is a marker for how much scrutiny frontier labs are now applying to agent-sandbox isolation — useful context if you're weighing how much autonomy to grant your own agent tooling."
-    ]
+    "title": "The five largest US hyperscalers (Microsoft, Alphabet, Amazon, Meta, Oracle) are collectively tracking $660-690B in 2026 capex, but BloombergNEF and Futurum both flag high-voltage transformers and switchgear — now with 12+ month lead times — as the binding constraint, not chip supply",
+    "why": "For anyone underwriting an AI-infra or energy-for-AI thesis, the bottleneck has visibly shifted from GPUs to power-delivery hardware and grid interconnection. Worth checking any infra names you're tracking for exposure to transformer/switchgear supply chains, not just compute.",
+    "sources": [
+     {
+      "label": "BloombergNEF — AI Data Center Build Advances at Full Speed",
+      "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
+     },
+     {
+      "label": "Futurum Group — AI Capex 2026: The $690B Infrastructure Sprint",
+      "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "Policy",
+     "Agents"
+    ],
+    "title": "EU AI Act Article 50 transparency duties took effect Aug 2 (AI disclosure, deepfake/AI-content labeling, fines up to 3% of global turnover); separately, China's \"Implementation Opinions\" on AI agents — effective July 15 — is described as the first national policy to regulate agents as a distinct legal category",
+    "why": "Two different regulatory approaches to agentic AI landing within weeks of each other. If any portfolio company, vendor, or tool in your stack touches EU users or serves China, this is no longer a proposal — it's live compliance surface.",
+    "sources": [
+     {
+      "label": "European Commission — AI Act transparency enforcement begins Aug 2",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august"
+     },
+     {
+      "label": "Cooley — EU AI Act: Transparency Obligations Take Effect 2 August 2026",
+      "url": "https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026"
+     }
+    ],
+    "date": "Aug 2, 2026 (EU) / Jul 15, 2026 (China)"
+   },
+   {
+    "tags": [
+     "Funding",
+     "AI-infra",
+     "Investing"
+    ],
+    "title": "MGX reportedly closed a $49B AI-focused investment fund",
+    "why": "Another large pool of capital aimed at compute, datacenters and power buildout — a data point for the wall-of-capital side of your AI-infra thesis, though useful mainly as a directional signal.",
+    "sources": [
+     {
+      "label": "AI Startup Funding News roundup, Aug 2026",
+      "url": "https://blog.mean.ceo/ai-startup-funding-news-august-2026/"
+     }
+    ],
+    "date": "Aug 2026",
+    "note": "Reported via a single aggregator roundup, not a primary MGX announcement — treat the $49B figure as unverified until confirmed by MGX directly."
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Enterprise"
+    ],
+    "title": "Warehouse automation is moving from pilot to scaled deployment: autonomous mobile robots, automated storage/retrieval systems and computer-vision picking are being rolled out across logistics operations heading into the rest of 2026",
+    "why": "Directly on your supply-chain-automation radar — worth a closer look at which vendors are actually shipping scaled deployments versus still in pilot, since that's where real ROI data will show up first.",
+    "sources": [
+     {
+      "label": "Hylios — 9 AI Warehouse Robots Set to Transform Logistics Operations",
+      "url": "https://www.hylios.com/intelligence/9-ai-warehouse-robots-set-to-transform-logistics-operations-in-2026"
+     }
+    ],
+    "date": "Aug 2026",
+    "note": "Trend synthesis from a single industry-blog source rather than a specific dated event — useful as a directional signal, not a hard data point."
+   },
+   {
+    "tags": [
+     "Agents",
+     "Enterprise",
+     "Funding"
+    ],
+    "title": "Asana completed its acquisition of AI workflow startup StackAI",
+    "why": "Another established enterprise software player buying agentic-workflow capability rather than building it in-house — a pattern worth tracking if you're mapping where agent-tooling consolidation lands next.",
+    "sources": [
+     {
+      "label": "Tech Startups — VC & Startup Funding Roundup, Aug 17, 2026",
+      "url": "https://techstartups.com/2026/08/17/venture-capital-startup-funding-roundup-august-17-2026-accel-dst-global-intel-capital-menlo-ventures-mirae-asset-capital-valor-capital-more/"
+     }
+    ],
+    "date": "Aug 17, 2026",
+    "note": "Reported via a single funding-roundup source; deal terms not independently confirmed."
+   }
+  ],
+  "tryBox": {
+   "h": "Worth trying: check whether anything in your stack needs EU AI Act Article 50 disclosures",
+   "body": "The transparency rules (AI-interaction disclosure, deepfake labeling, machine-readable marks on AI-generated content) are now enforceable, not proposed. A quick 15-minute pass against any EU-facing tools or portfolio companies is cheap insurance against the 3%-of-turnover penalty ceiling.",
+   "src": "European Commission — AI Act transparency enforcement begins Aug 2"
   },
-  {
-    "date": "2026-08-17",
-    "label": "Mon, Aug 17, 2026",
-    "gathered": "gathered 7:00 local",
-    "lede": "A capital- and policy-heavy Monday rather than a model-release day: the EU AI Act's transparency duties are now formally in force with high-risk compliance pushed out to Dec 2027, hyperscaler capex keeps confirming the power-not-chips bottleneck already on your radar, and enterprise players are buying agent capability rather than building it (OpenAI/NextSlide, Autodesk/MaintainX, Asana/StackAI). One new thread: a KKR-backed Indian logistics-infra IPO signals capital moving into AI-adjacent supply-chain infrastructure outside the US.",
-    "items": [
-      {
-        "tags": [
-          "AI-infra",
-          "Energy-for-AI",
-          "Investing"
-        ],
-        "title": "Hyperscalers are pushing AI-infra buildout into new grids — AWS detailed a $48B India investment plan (incl. $21B for cloud/AI infrastructure through 2030), and DayOne partnered with Firmus Technologies on a 360MW data-center campus on Indonesia's Batam Island",
-        "why": "Power-constrained hyperscalers are diversifying into new jurisdictions and grids rather than just adding US capacity — a geographic expression of the energy-for-AI theme worth tracking alongside domestic power-procurement plays.",
-        "sources": [
-          {
-            "label": "BloombergNEF — AI Data Center Build Advances at Full Speed: Five Things to Know",
-            "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
-          }
-        ],
-        "date": "Aug 2026",
-        "note": "India and Indonesia figures are reported via a single aggregator roundup rather than AWS's or DayOne's own release — worth confirming against primary announcements before treating specifics as final."
-      },
-      {
-        "tags": [
-          "Policy",
-          "Agents"
-        ],
-        "title": "The European Commission formally began enforcing EU AI Act transparency duties (chatbot disclosure, synthetic-content and deepfake labeling) on August 2, with penalties up to 3% of global turnover, while full compliance for high-risk systems (recruitment, credit scoring, education, law enforcement) was pushed back to December 2, 2027",
-        "why": "The enforcement clock is now actually running on disclosure obligations, even as the harder high-risk rules got a 17-month cushion — relevant if any agent tooling you use or evaluate touches EU users, hiring, or credit decisions.",
-        "sources": [
-          {
-            "label": "European Commission — Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
-            "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714"
-          },
-          {
-            "label": "Technology.org — EU AI Act: What Actually Applies on 2 August 2026",
-            "url": "https://www.technology.org/2026/07/17/eu-ai-act-what-actually-applies-on-2-august-2026/"
-          }
-        ],
-        "date": "Aug 2, 2026"
-      },
-      {
-        "tags": [
-          "Funding",
-          "Agents",
-          "Enterprise"
-        ],
-        "title": "Enterprise software players kept buying agent capability rather than building it: OpenAI acquired presentation-agent startup NextSlide (Aug 10), Autodesk announced plans to acquire maintenance-software firm MaintainX to deepen AI capabilities (Aug 2), and Asana completed its acquisition of agentic-workflow startup StackAI",
-        "why": "A cluster of tuck-in acquisitions around agentic workflow and vertical-agent tooling is a concrete signal of where incumbents see gaps in their own agent stacks — useful pattern-matching if you're tracking consolidation in the agent-tooling layer.",
-        "sources": [
-          {
-            "label": "The Fashion Law — Generative AI Investment and M&A Tracker",
-            "url": "https://www.thefashionlaw.com/generative-artificial-intelligence-investment-and-ma-tracker/"
-          }
-        ],
-        "date": "Aug 2026",
-        "note": "Deal details are drawn from a single aggregator tracker rather than each company's own press release — treat specific dates and deal terms as provisional until confirmed against primary announcements."
-      },
-      {
-        "tags": [
-          "Supply chain",
-          "Funding",
-          "Market signal"
-        ],
-        "title": "KKR-backed LEAP India launched a $260M IPO to expand pallet-pooling, warehouse infrastructure, and technology-enabled logistics services",
-        "why": "A concrete capital-markets data point for logistics-infrastructure investment flowing into Asia-Pacific — a useful comparison point if you're weighing supply-chain-automation exposure beyond US-centric warehouse-robotics names.",
-        "sources": [
-          {
-            "label": "ABI Research / Supply Chain roundups — Supply Chain Disruptions 2026",
-            "url": "https://www.abiresearch.com/blog/supply-chain-disruptions-2026-how-to-build-resilience-with-ai-and-automation"
-          }
-        ],
-        "date": "Aug 2026",
-        "note": "IPO figure is reported secondhand in a roundup rather than a stock-exchange filing — confirm against LEAP India's own prospectus before treating the $260M figure as final."
-      },
-      {
-        "tags": [
-          "AI-infra",
-          "Market signal",
-          "Investing"
-        ],
-        "title": "Data-center capex from the 14 largest publicly owned operators is tracking toward roughly $750B in 2026 (versus under $450B in 2025), with more than 60% of hyperscaler spend now going into power infrastructure, cooling, and construction rather than compute hardware",
-        "why": "This reinforces (rather than replaces) the power-is-the-bottleneck thesis already on your radar from prior debt-financing coverage — a second, independent data source pointing at the same conclusion strengthens the read.",
-        "sources": [
-          {
-            "label": "BloombergNEF — AI Data Center Build Advances at Full Speed",
-            "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
-          },
-          {
-            "label": "EnkiAI — Hyperscaler AI & Data Center Energy 2026",
-            "url": "https://enkiai.com/ai-infrastructure/hyperscaler-data-center-capex/"
-          }
-        ],
-        "date": "Aug 2026"
-      }
+  "radar": [
+   "High-voltage transformer and switchgear lead times (12+ months) are becoming the real gating factor on AI datacenter buildout — worth tracking as a distinct sub-thesis from general AI-infra capex.",
+   "China's July 15 AI-agent regulation is the first national framework to treat agents as their own legal category — watch for whether the EU or US follow with agent-specific (vs. general AI) rules."
+  ]
+ },
+ {
+  "date": "2026-08-19",
+  "label": "Wed, Aug 19, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "A capex-and-grid-heavy stretch: hyperscaler 2026 spending guidance keeps climbing toward $775-800B and the power bottleneck just produced its first state-level regulatory response (Texas freezing new data-center interconnection requests), while OpenAI's decision to pause frontier training to harden agent-sandbox safety and Cursor's direct challenge to GitHub both point to agentic tooling maturing fast enough to need real guardrails and real competition.",
+  "items": [
+   {
+    "tags": [
+     "Agents",
+     "Reality check",
+     "Enterprise"
     ],
-    "tryBox": {
-      "h": "Worth trying: re-run the cost math on shelved agent workloads",
-      "body": "With Opus 5 priced roughly 50% below comparable frontier models (per last week's launch), it's worth revisiting any agentic workflow you shelved for being too expensive under prior frontier pricing — the unit economics may have moved enough to change the answer.",
-      "src": "Augusto Digital — LLM News August 2026: Agent Breakthroughs & Price Cuts"
-    },
-    "radar": [
-      "The Dec 2, 2027 high-risk AI Act deadline is a 17-month cushion, not a reprieve — the compliance clock is already running for anyone building recruitment, credit, or education-adjacent agent tooling touching the EU.",
-      "LEAP India's $260M IPO is a marker worth revisiting if you widen the supply-chain-automation lens to Asia-Pacific logistics infrastructure, not just US warehouse robotics."
-    ]
-  }
+    "title": "OpenAI halted a significant share of training and evaluation on its next frontier model (codenamed Astra) to overhaul safety procedures, adding chain-of-thought monitoring designed to flag anomalous model behavior to humans within 30 minutes and tightening internet-isolation requirements for the sandboxes used to train AI agents",
+    "why": "A frontier lab voluntarily slowing agent-training work to harden monitoring is a real-world data point on how seriously autonomous-agent safety is being taken right now — relevant context if you're deciding how much autonomy to grant agent tooling in your own workflows.",
+    "sources": [
+     {
+      "label": "Tech Startups — Top Tech News Today, August 18, 2026",
+      "url": "https://techstartups.com/2026/08/18/top-tech-news-today-august-18-2026-apple-baidu-bytedance-google-meta-openai-xiaomi-more/"
+     }
+    ],
+    "date": "Aug 18, 2026",
+    "note": "Reported via a single tech-news roundup rather than an OpenAI press release — treat the 30-minute anomaly-detection figure as provisional until confirmed against OpenAI's own safety update."
+   },
+   {
+    "tags": [
+     "AI-infra",
+     "Investing",
+     "Market signal"
+    ],
+    "title": "Trackers now put 2026 hyperscaler capex at roughly $775-800B (Amazon ~$200B, Google ~$175-185B, Oracle ~$50B), more than triple the ~$238B deployed in 2024, with about 75% of the total AI-specific",
+    "why": "Continues confirming the scale of the AI-infra buildout already on your radar — useful as a running baseline when sizing any AI-infrastructure or picks-and-shovels exposure.",
+    "sources": [
+     {
+      "label": "J.P. Morgan — Financing AI Infrastructure and U.S. Data Centers",
+      "url": "https://www.jpmorgan.com/insights/banking/capital-markets/financing-ai-infrastructure-data-centers"
+     },
+     {
+      "label": "Futurum Group — AI Capex 2026: The $690B Infrastructure Sprint",
+      "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "Energy-for-AI",
+     "Market signal"
+    ],
+    "title": "Grid strain is now showing up as policy action, not just forecasts: Texas Gov. Abbott froze new data-center rollouts after ERCOT interconnection requests hit 474GW (90% from data centers) against the state's own record peak demand of 91GW, while NVIDIA, KKR, and the Kuwait Investment Authority's Helix Digital Infrastructure JV named Vistra as preferred power provider with an initial $1B commitment",
+    "why": "The power bottleneck thesis is moving from talking point to state-level regulatory response — a concrete signal for energy-for-AI plays and a reminder that grid access, not chip supply, is increasingly the gating constraint.",
+    "sources": [
+     {
+      "label": "Nuclear News — More Than Two-Thirds Of The Power Sought For US Data Centers Will Never Materialize",
+      "url": "https://nuclear-news.net/2026/08/17/2-b1-more-than-two-thirds-of-the-power-sought-for-us-data-centers-will-never-materialize/"
+     },
+     {
+      "label": "InformedClearly — AI Data Centers Hit Grid Wall: Big Tech Pivots to Nuclear in 2026",
+      "url": "https://informedclearly.com/en/ai/53909/ai-data-centers-nuclear-power-2026"
+     }
+    ],
+    "date": "Aug 2026",
+    "note": "Texas interconnection-request and Helix JV figures are drawn from secondary aggregators rather than ERCOT's or Vistra's own filings — worth confirming exact figures before treating them as final."
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Agents"
+    ],
+    "title": "BCG published new research on agentic AI in procurement ('How Autonomous Agents Drive Competitive Advantage'), and Gartner named agentic AI and physical AI the lead items on its 2026 supply-chain technology trends list, with organizations reporting double-digit efficiency gains and decision latency dropping from days to seconds",
+    "why": "Direct confirmation that agentic AI is now the dominant framing for supply-chain technology investment, not just a buzzword — useful context for where to focus any supply-chain-automation diligence.",
+    "sources": [
+     {
+      "label": "BCG — How AI Agents Are Transforming Supply Chains",
+      "url": "https://www.bcg.com/publications/2026/how-ai-agents-are-transforming-supply-chains"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "Agents",
+     "Enterprise"
+    ],
+    "title": "Cursor launched Origin, a rival AI-native code-hosting platform positioned against GitHub, alongside Microsoft's rollout of updated Copilot account-switching UX and OpenAI's launch of a dedicated ChatGPT for Teens experience",
+    "why": "Agent-native tooling is starting to compete directly with incumbent developer infrastructure, not just plug into it — worth watching if code-hosting becomes another layer where agent-first platforms try to displace incumbents.",
+    "sources": [
+     {
+      "label": "Tech Startups — Top Tech News Today, August 18, 2026",
+      "url": "https://techstartups.com/2026/08/18/top-tech-news-today-august-18-2026-apple-baidu-bytedance-google-meta-openai-xiaomi-more/"
+     }
+    ],
+    "date": "Aug 18, 2026"
+   }
+  ],
+  "tryBox": {
+   "h": "Worth trying: sanity-check any energy-for-AI thesis against grid interconnection queues, not just capex headlines",
+   "body": "Texas's freeze on new data-center interconnection requests is a reminder that capex guidance and actual grid capacity are diverging — if you're evaluating power-for-AI names, checking regional interconnection-queue data (ERCOT, PJM, etc.) directly is now as useful as reading hyperscaler capex numbers.",
+   "src": "Nuclear News — More Than Two-Thirds Of The Power Sought For US Data Centers Will Never Materialize"
+  },
+  "radar": [
+   "Cursor's Origin launch is worth revisiting if code-hosting becomes a genuine battleground between agent-native platforms and GitHub.",
+   "OpenAI's Astra safety pause is a marker for how much scrutiny frontier labs are now applying to agent-sandbox isolation — useful context if you're weighing how much autonomy to grant your own agent tooling."
+  ]
+ }
 ];
 /* ---- APP ---- */
 const $ = s => document.querySelector(s);
