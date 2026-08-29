@@ -151,6 +151,123 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
  {
+  "date": "2026-08-29",
+  "label": "Sat, Aug 29, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Saturday tape, so light on hard launches — but the week closed with an unusually clean signal: agent usage is now near-universal among developers while the unit cost of running those agents is forecast to climb, and vendors are racing to sell the governance layer that sits between the two. That squeeze (adoption up, cost per workflow up, control immature) is the thing to watch in both your client work and the infra trade.",
+  "items": [
+   {
+    "tags": [
+     "Agents",
+     "Enterprise",
+     "Reality check"
+    ],
+    "title": "Temporal's 2026 State of Development report puts daily AI-agent use at 80.8% of developers, up from 47.3% a year ago",
+    "why": "If real, agents crossed from pilot to default in twelve months — which is the assumption underneath every supply-chain agent proposal you'd write. Caveat hard: this is a single vendor-run developer survey with obvious selection bias, so treat the direction as signal and the number as marketing.",
+    "sources": [
+     {
+      "label": "Temporal (via AI Agent News)",
+      "url": "https://aiagentstore.ai/ai-agent-news/today"
+     }
+    ],
+    "date": "Aug 28, 2026"
+   },
+   {
+    "tags": [
+     "Cost",
+     "Agents",
+     "Market signal"
+    ],
+    "title": "Gartner: inference cost per agentic workflow to rise more than fivefold through 2028, even as per-token prices fall",
+    "why": "The counterintuitive one for planning budgets: token prices keep dropping, but agents burn far more tokens per task, so the cost curve per *workflow* goes the wrong way. Any S&OP or planning-agent business case you build should model cost per decision, not cost per million tokens — and it makes the inference-efficiency and power story a durable investment theme rather than a one-quarter trade.",
+    "sources": [
+     {
+      "label": "Gartner press release (Aug 17, 2026)",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-08-17-gartner-predicts-ai-inference-costs-per-agentic-workflow-will-increase-more-than-fivefold-through-2028"
+     }
+    ],
+    "date": "Aug 17, 2026"
+   },
+   {
+    "tags": [
+     "AI-infra",
+     "Cost",
+     "Energy-for-AI"
+    ],
+    "title": "OpenAI's custom inference silicon (\"Jalapeño\") is being described as shipping higher throughput and lower power per token",
+    "why": "Hyperscaler-designed inference chips are the direct answer to the cost curve above, and they compress merchant-silicon pricing power over time. Worth tracking for your AI-infra and energy-for-AI exposure — but note this is reported via a cost-tracking aggregator rather than a primary OpenAI announcement I could verify today, so hold it as unconfirmed.",
+    "sources": [
+     {
+      "label": "FinOps Weekly AI provider cost update (Aug 28, 2026)",
+      "url": "https://finopsweekly.com/news/ai-economics-provider-updates-2026-08-28/"
+     }
+    ],
+    "date": "Aug 28, 2026"
+   },
+   {
+    "tags": [
+     "Agents",
+     "Enterprise",
+     "Market signal"
+    ],
+    "title": "AccuKnox launches AgentZ, another single-stack \"build, run, govern\" agent platform — agent, runtime, tools, permissions, governance in one",
+    "why": "Third consecutive week where the launch is the control plane, not the model. The pattern is now unmistakable: security and infra vendors are all converging on the same product shape as Bedrock AgentCore, Gemini Enterprise, and OpenAI Frontier. For you, this is a buy-vs-build fork — clients will soon expect a governance layer as table stakes in any agent proposal.",
+    "sources": [
+     {
+      "label": "AI Agent News (Aug 27, 2026)",
+      "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+     }
+    ],
+    "date": "Aug 27, 2026"
+   },
+   {
+    "tags": [
+     "Frontier models",
+     "Cost",
+     "Investing"
+    ],
+    "title": "August closes with 24 confirmed model releases from 18 providers; the newest is Z.ai's GLM-5.3-Flash on the cheap-fast tier",
+    "why": "The release cadence itself is the story: no single frontier drop dominated August, and the open-weight cheap tier keeps compressing the floor. That's margin pressure on model vendors and a tailwind for anyone whose economics depend on inference getting cheaper — i.e. the application and agent layer, not the labs.",
+    "sources": [
+     {
+      "label": "BenchLM August 2026 release tracker",
+      "url": "https://benchlm.ai/model-updates/releases/august-2026"
+     },
+     {
+      "label": "AI Release Tracker",
+      "url": "https://aireleasetracker.com/latest"
+     }
+    ],
+    "date": "Aug 26-28, 2026"
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Enterprise",
+     "Reality check"
+    ],
+    "title": "BCG: logistics firms have over-invested in AI relative to workflow redesign; returns concentrate where the operating model changes",
+    "why": "This is the argument to lead with in client conversations — the constraint is not model access, it's process and data ownership. It also usefully caps your own enthusiasm: the Gartner $53B-by-2030 SCM-agent forecast and the shipped first-party tooling (still a thin list) remain far apart.",
+    "sources": [
+     {
+      "label": "BCG — How AI Agents Are Transforming Supply Chains",
+      "url": "https://www.bcg.com/publications/2026/how-ai-agents-are-transforming-supply-chains"
+     }
+    ],
+    "date": "Aug 24, 2026"
+   }
+  ],
+  "tryBox": {
+   "h": "Instrument cost per decision, not cost per token",
+   "body": "Take one agent workflow you already run and log tokens, tool calls, and retries per completed task for a week. Divide by tasks finished. That single number is what the Gartner forecast is actually about, and it's the number that survives contact with a CFO — per-token pricing won't.",
+   "src": "https://www.gartner.com/en/newsroom/press-releases/2026-08-17-gartner-predicts-ai-inference-costs-per-agentic-workflow-will-increase-more-than-fivefold-through-2028"
+  },
+  "radar": [
+   "Whether the OpenAI custom-inference-chip report gets a primary confirmation next week — if it does, it changes the merchant-silicon pricing conversation for 2027.",
+   "Convergence risk in agent control planes: AgentCore, Gemini Enterprise, OpenAI Frontier and now AgentZ are all selling the same shape. Expect consolidation and at least one acquisition in this layer within two quarters."
+  ]
+ },
+ {
   "date": "2026-08-28",
   "label": "Fri, Aug 28, 2026",
   "gathered": "gathered 7:00 local",
@@ -1228,112 +1345,9 @@ const DIGESTS = [
    "High-voltage transformer and switchgear lead times (12+ months) are becoming the real gating factor on AI datacenter buildout — worth tracking as a distinct sub-thesis from general AI-infra capex.",
    "China's July 15 AI-agent regulation is the first national framework to treat agents as their own legal category — watch for whether the EU or US follow with agent-specific (vs. general AI) rules."
   ]
- },
- {
-  "date": "2026-08-19",
-  "label": "Wed, Aug 19, 2026",
-  "gathered": "gathered 7:00 local",
-  "lede": "A capex-and-grid-heavy stretch: hyperscaler 2026 spending guidance keeps climbing toward $775-800B and the power bottleneck just produced its first state-level regulatory response (Texas freezing new data-center interconnection requests), while OpenAI's decision to pause frontier training to harden agent-sandbox safety and Cursor's direct challenge to GitHub both point to agentic tooling maturing fast enough to need real guardrails and real competition.",
-  "items": [
-   {
-    "tags": [
-     "Agents",
-     "Reality check",
-     "Enterprise"
-    ],
-    "title": "OpenAI halted a significant share of training and evaluation on its next frontier model (codenamed Astra) to overhaul safety procedures, adding chain-of-thought monitoring designed to flag anomalous model behavior to humans within 30 minutes and tightening internet-isolation requirements for the sandboxes used to train AI agents",
-    "why": "A frontier lab voluntarily slowing agent-training work to harden monitoring is a real-world data point on how seriously autonomous-agent safety is being taken right now — relevant context if you're deciding how much autonomy to grant agent tooling in your own workflows.",
-    "sources": [
-     {
-      "label": "Tech Startups — Top Tech News Today, August 18, 2026",
-      "url": "https://techstartups.com/2026/08/18/top-tech-news-today-august-18-2026-apple-baidu-bytedance-google-meta-openai-xiaomi-more/"
-     }
-    ],
-    "date": "Aug 18, 2026",
-    "note": "Reported via a single tech-news roundup rather than an OpenAI press release — treat the 30-minute anomaly-detection figure as provisional until confirmed against OpenAI's own safety update."
-   },
-   {
-    "tags": [
-     "AI-infra",
-     "Investing",
-     "Market signal"
-    ],
-    "title": "Trackers now put 2026 hyperscaler capex at roughly $775-800B (Amazon ~$200B, Google ~$175-185B, Oracle ~$50B), more than triple the ~$238B deployed in 2024, with about 75% of the total AI-specific",
-    "why": "Continues confirming the scale of the AI-infra buildout already on your radar — useful as a running baseline when sizing any AI-infrastructure or picks-and-shovels exposure.",
-    "sources": [
-     {
-      "label": "J.P. Morgan — Financing AI Infrastructure and U.S. Data Centers",
-      "url": "https://www.jpmorgan.com/insights/banking/capital-markets/financing-ai-infrastructure-data-centers"
-     },
-     {
-      "label": "Futurum Group — AI Capex 2026: The $690B Infrastructure Sprint",
-      "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
-     }
-    ],
-    "date": "Aug 2026"
-   },
-   {
-    "tags": [
-     "Energy-for-AI",
-     "Market signal"
-    ],
-    "title": "Grid strain is now showing up as policy action, not just forecasts: Texas Gov. Abbott froze new data-center rollouts after ERCOT interconnection requests hit 474GW (90% from data centers) against the state's own record peak demand of 91GW, while NVIDIA, KKR, and the Kuwait Investment Authority's Helix Digital Infrastructure JV named Vistra as preferred power provider with an initial $1B commitment",
-    "why": "The power bottleneck thesis is moving from talking point to state-level regulatory response — a concrete signal for energy-for-AI plays and a reminder that grid access, not chip supply, is increasingly the gating constraint.",
-    "sources": [
-     {
-      "label": "Nuclear News — More Than Two-Thirds Of The Power Sought For US Data Centers Will Never Materialize",
-      "url": "https://nuclear-news.net/2026/08/17/2-b1-more-than-two-thirds-of-the-power-sought-for-us-data-centers-will-never-materialize/"
-     },
-     {
-      "label": "InformedClearly — AI Data Centers Hit Grid Wall: Big Tech Pivots to Nuclear in 2026",
-      "url": "https://informedclearly.com/en/ai/53909/ai-data-centers-nuclear-power-2026"
-     }
-    ],
-    "date": "Aug 2026",
-    "note": "Texas interconnection-request and Helix JV figures are drawn from secondary aggregators rather than ERCOT's or Vistra's own filings — worth confirming exact figures before treating them as final."
-   },
-   {
-    "tags": [
-     "Supply chain",
-     "Agents"
-    ],
-    "title": "BCG published new research on agentic AI in procurement ('How Autonomous Agents Drive Competitive Advantage'), and Gartner named agentic AI and physical AI the lead items on its 2026 supply-chain technology trends list, with organizations reporting double-digit efficiency gains and decision latency dropping from days to seconds",
-    "why": "Direct confirmation that agentic AI is now the dominant framing for supply-chain technology investment, not just a buzzword — useful context for where to focus any supply-chain-automation diligence.",
-    "sources": [
-     {
-      "label": "BCG — How AI Agents Are Transforming Supply Chains",
-      "url": "https://www.bcg.com/publications/2026/how-ai-agents-are-transforming-supply-chains"
-     }
-    ],
-    "date": "Aug 2026"
-   },
-   {
-    "tags": [
-     "Agents",
-     "Enterprise"
-    ],
-    "title": "Cursor launched Origin, a rival AI-native code-hosting platform positioned against GitHub, alongside Microsoft's rollout of updated Copilot account-switching UX and OpenAI's launch of a dedicated ChatGPT for Teens experience",
-    "why": "Agent-native tooling is starting to compete directly with incumbent developer infrastructure, not just plug into it — worth watching if code-hosting becomes another layer where agent-first platforms try to displace incumbents.",
-    "sources": [
-     {
-      "label": "Tech Startups — Top Tech News Today, August 18, 2026",
-      "url": "https://techstartups.com/2026/08/18/top-tech-news-today-august-18-2026-apple-baidu-bytedance-google-meta-openai-xiaomi-more/"
-     }
-    ],
-    "date": "Aug 18, 2026"
-   }
-  ],
-  "tryBox": {
-   "h": "Worth trying: sanity-check any energy-for-AI thesis against grid interconnection queues, not just capex headlines",
-   "body": "Texas's freeze on new data-center interconnection requests is a reminder that capex guidance and actual grid capacity are diverging — if you're evaluating power-for-AI names, checking regional interconnection-queue data (ERCOT, PJM, etc.) directly is now as useful as reading hyperscaler capex numbers.",
-   "src": "Nuclear News — More Than Two-Thirds Of The Power Sought For US Data Centers Will Never Materialize"
-  },
-  "radar": [
-   "Cursor's Origin launch is worth revisiting if code-hosting becomes a genuine battleground between agent-native platforms and GitHub.",
-   "OpenAI's Astra safety pause is a marker for how much scrutiny frontier labs are now applying to agent-sandbox isolation — useful context if you're weighing how much autonomy to grant your own agent tooling."
-  ]
  }
 ];
+
 /* ---- APP ---- */
 const $ = s => document.querySelector(s);
 let state = { dayIndex:0, query:"", tag:"All" };
