@@ -151,6 +151,149 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
  {
+  "date": "2026-08-30",
+  "label": "Sun, Aug 30, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Sunday, so almost nothing shipped in the last 24 hours — this is a synthesis of the week rather than a news day. Three threads worth carrying into Monday: the EU's transparency regime is now live while the high-risk tier slid to 2027-28; token pricing has visibly split into a cheap mid-tier and an expensive frontier; and the money in AI kept rotating out of apps and into compute, silicon and power.",
+  "items": [
+   {
+    "tags": [
+     "Policy",
+     "Enterprise"
+    ],
+    "title": "EU AI Act transparency duties (Art. 50) have been in force since Aug 2; the Digital Omnibus pushed the high-risk tier to Dec 2027 / Aug 2028",
+    "why": "The near-term compliance ask on your client work is disclosure and labeling, not the heavy Annex III conformity machinery — that's been deferred by roughly 18 months. Worth resetting any 2026 roadmap that budgeted high-risk assessment work this year, and worth noting penalties on the live duties run to 3% of global turnover.",
+    "sources": [
+     {
+      "label": "EU AI Act implementation timeline",
+      "url": "https://artificialintelligenceact.eu/implementation-timeline/"
+     },
+     {
+      "label": "Al Jazeera — what came into force Aug 2",
+      "url": "https://www.aljazeera.com/news/2026/8/6/what-came-into-force-with-the-eus-ai-act-this-week-and-what-didnt"
+     },
+     {
+      "label": "Council press release on simplification",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+     }
+    ],
+    "date": "in force Aug 2, 2026"
+   },
+   {
+    "tags": [
+     "Cost",
+     "AI-infra",
+     "Market signal"
+    ],
+    "title": "Token pricing has bifurcated: mid-tier down ~36% YoY while frontier pricing rose ~36% YoY through July",
+    "why": "The economics of an agent stack now depend heavily on routing — cheap models for the 90% of steps that are retrieval, extraction and tool calls, frontier only for the judgment step. If you're sizing a supply-chain agent business case, model tiered routing explicitly; assuming one flat frontier price will make the ROI look far worse than it is.",
+    "sources": [
+     {
+      "label": "LLM inference cost pricing guide 2026",
+      "url": "https://aisuperior.com/llm-token-cost/"
+     },
+     {
+      "label": "Inference cost statistics 2026",
+      "url": "https://voxbooster.com/blog/ai-inference-cost-statistics-2026/"
+     }
+    ],
+    "date": "data through Jul 2026"
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Agents",
+     "Enterprise"
+    ],
+    "title": "Agentic SCM software spend is forecast to go from under $2B (2025) to $53B by 2030, with Oracle and Microsoft both shipping first-party supply-chain agents",
+    "why": "This is the single most relevant number to your day job — a ~27x forecast means the incumbent ERP vendors will bundle agents into the platform, so the defensible consulting value moves to data readiness, decision rights and change management rather than agent-building itself. Oracle Fusion SCM added four agentic apps plus inventory optimization; Microsoft's D365 first-party experience is still narrow (Supplier Communications / Procurement Agent).",
+    "sources": [
+     {
+      "label": "Dataiku — supply chain AI trends 2026",
+      "url": "https://www.dataiku.com/stories/blog/supply-chain-ai-trends-2026"
+     },
+     {
+      "label": "D365 supply chain agents: the real 2026 landscape",
+      "url": "https://www.loganconsulting.com/blog/dynamics-365-supply-chain-agents-landscape/"
+     }
+    ],
+    "date": "Gartner forecast, cited Aug 2026"
+   },
+   {
+    "tags": [
+     "Energy-for-AI",
+     "AI-infra",
+     "Investing"
+    ],
+    "title": "Datacenter capex tracking toward roughly $690-750B in 2026, with new long-dated leases like Bitdeer's $4.7B / 16-year Norway AI-HPC campus",
+    "why": "The interesting detail for your energy-for-AI thesis isn't the headline capex, it's the terms: 16-year leases at ~1.1 PUE on 100% renewable power mean operators are underwriting power access for a decade-plus. Cheap, firm, low-carbon power is becoming the scarce input — that's where pricing power sits, more than in the compute itself.",
+    "sources": [
+     {
+      "label": "Bitdeer 6-K (Norway lease)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001899123/000121390026085655/ea030075201ex99-1.htm"
+     },
+     {
+      "label": "Futurum — AI capex 2026",
+      "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
+     },
+     {
+      "label": "BloombergNEF — AI data center build",
+      "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
+     }
+    ],
+    "date": "Aug 2026"
+   },
+   {
+    "tags": [
+     "Funding",
+     "Investing",
+     "Energy-for-AI"
+    ],
+    "title": "Week of Aug 18-24: ~$7.7B across 31 US rounds, led by Gatik ($200M, autonomous freight), Auradine ($110M, AI compute silicon) and Apollo Atomics ($31M seed, compact reactors for datacenters)",
+    "why": "The composition matters more than the total — freight autonomy, inference silicon and on-site nuclear are all picks-and-shovels bets, not app bets. It's the private-market version of the same rotation you've been tracking in public AI-infra and power names. Information for your own research, not a recommendation.",
+    "sources": [
+     {
+      "label": "Crunchbase News — biggest rounds",
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-defense-fintech-robotics/"
+     },
+     {
+      "label": "Weekly funding rounds report",
+      "url": "https://parsers.substack.com/p/funding-rounds-report-weekly-of-august-f45"
+     }
+    ],
+    "date": "week of Aug 18-24, 2026"
+   },
+   {
+    "tags": [
+     "Reality check",
+     "Agents"
+    ],
+    "title": "Reported ~37% gap between agent benchmark scores and real-world enterprise deployment, with up to 50x cost variation for similar accuracy",
+    "why": "Directly usable when a vendor walks into a client meeting with a leaderboard slide. The gap number comes from a vendor-authored analysis, so treat the magnitude as unverified — but the underlying point (public benchmarks are saturating and gameable; every frontier model clears 88% MMLU) is well established and is the right thing to say out loud in a diligence conversation.",
+    "sources": [
+     {
+      "label": "Automation Anywhere — agent benchmarks",
+      "url": "https://www.automationanywhere.com/company/blog/ai-agent-benchmarks"
+     },
+     {
+      "label": "Kili — AI benchmarks and their limits",
+      "url": "https://kili-technology.com/blog/ai-benchmarks-guide-the-top-evaluations-in-2026-and-why-theyre-not-enough"
+     }
+    ],
+    "date": "Aug 2026"
+   }
+  ],
+  "tryBox": {
+   "h": "Price your next agent workflow at two tiers before you price it at one",
+   "body": "Take one supply-chain workflow you'd normally quote as a single-model agent — say supplier email triage plus exception routing. Split the steps into 'extraction and lookup' versus 'judgment', price the first at mid-tier token rates and only the second at frontier rates, and compare against the flat-frontier number. Given mid-tier fell ~36% YoY while frontier rose ~36%, that split is usually the difference between a business case that clears and one that doesn't.",
+   "src": "https://aisuperior.com/llm-token-cost/"
+  },
+  "radar": [
+   "Whether the deferred EU high-risk tier (Dec 2027) causes enterprises to slow-walk governance investment this year — that would create a compressed scramble in 2027 and a real consulting window.",
+   "Power procurement terms in new datacenter leases (duration, PUE, source) as the cleanest leading indicator for the energy-for-AI trade — more informative than headline capex numbers."
+  ]
+ },
+ {
   "date": "2026-08-29",
   "label": "Sat, Aug 29, 2026",
   "gathered": "gathered 7:00 local",
@@ -1238,112 +1381,6 @@ const DIGESTS = [
   "radar": [
    "Whether transformer/switchgear lead times keep stretching past 12 months — a leading indicator for how much of this year's capex actually converts to live capacity.",
    "How many enterprises formalize agent-accountability/ownership policies now that agents are running production workloads in logistics and finance, not just pilots."
-  ]
- },
- {
-  "date": "2026-08-20",
-  "label": "Thu, Aug 20, 2026",
-  "gathered": "gathered 7:00 local",
-  "lede": "A quieter day for splashy launches, but the through-line from yesterday keeps hardening: AI capex is now openly gated by grid power and hardware lead times rather than demand or chips, and agent-specific regulation is arriving faster than most enterprise agent programs are built to handle — the EU's transparency rules went live and China just codified the first national agent-specific policy.",
-  "items": [
-   {
-    "tags": [
-     "AI-infra",
-     "Energy-for-AI",
-     "Investing"
-    ],
-    "title": "The five largest US hyperscalers (Microsoft, Alphabet, Amazon, Meta, Oracle) are collectively tracking $660-690B in 2026 capex, but BloombergNEF and Futurum both flag high-voltage transformers and switchgear — now with 12+ month lead times — as the binding constraint, not chip supply",
-    "why": "For anyone underwriting an AI-infra or energy-for-AI thesis, the bottleneck has visibly shifted from GPUs to power-delivery hardware and grid interconnection. Worth checking any infra names you're tracking for exposure to transformer/switchgear supply chains, not just compute.",
-    "sources": [
-     {
-      "label": "BloombergNEF — AI Data Center Build Advances at Full Speed",
-      "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
-     },
-     {
-      "label": "Futurum Group — AI Capex 2026: The $690B Infrastructure Sprint",
-      "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
-     }
-    ],
-    "date": "Aug 2026"
-   },
-   {
-    "tags": [
-     "Policy",
-     "Agents"
-    ],
-    "title": "EU AI Act Article 50 transparency duties took effect Aug 2 (AI disclosure, deepfake/AI-content labeling, fines up to 3% of global turnover); separately, China's \"Implementation Opinions\" on AI agents — effective July 15 — is described as the first national policy to regulate agents as a distinct legal category",
-    "why": "Two different regulatory approaches to agentic AI landing within weeks of each other. If any portfolio company, vendor, or tool in your stack touches EU users or serves China, this is no longer a proposal — it's live compliance surface.",
-    "sources": [
-     {
-      "label": "European Commission — AI Act transparency enforcement begins Aug 2",
-      "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august"
-     },
-     {
-      "label": "Cooley — EU AI Act: Transparency Obligations Take Effect 2 August 2026",
-      "url": "https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026"
-     }
-    ],
-    "date": "Aug 2, 2026 (EU) / Jul 15, 2026 (China)"
-   },
-   {
-    "tags": [
-     "Funding",
-     "AI-infra",
-     "Investing"
-    ],
-    "title": "MGX reportedly closed a $49B AI-focused investment fund",
-    "why": "Another large pool of capital aimed at compute, datacenters and power buildout — a data point for the wall-of-capital side of your AI-infra thesis, though useful mainly as a directional signal.",
-    "sources": [
-     {
-      "label": "AI Startup Funding News roundup, Aug 2026",
-      "url": "https://blog.mean.ceo/ai-startup-funding-news-august-2026/"
-     }
-    ],
-    "date": "Aug 2026",
-    "note": "Reported via a single aggregator roundup, not a primary MGX announcement — treat the $49B figure as unverified until confirmed by MGX directly."
-   },
-   {
-    "tags": [
-     "Supply chain",
-     "Enterprise"
-    ],
-    "title": "Warehouse automation is moving from pilot to scaled deployment: autonomous mobile robots, automated storage/retrieval systems and computer-vision picking are being rolled out across logistics operations heading into the rest of 2026",
-    "why": "Directly on your supply-chain-automation radar — worth a closer look at which vendors are actually shipping scaled deployments versus still in pilot, since that's where real ROI data will show up first.",
-    "sources": [
-     {
-      "label": "Hylios — 9 AI Warehouse Robots Set to Transform Logistics Operations",
-      "url": "https://www.hylios.com/intelligence/9-ai-warehouse-robots-set-to-transform-logistics-operations-in-2026"
-     }
-    ],
-    "date": "Aug 2026",
-    "note": "Trend synthesis from a single industry-blog source rather than a specific dated event — useful as a directional signal, not a hard data point."
-   },
-   {
-    "tags": [
-     "Agents",
-     "Enterprise",
-     "Funding"
-    ],
-    "title": "Asana completed its acquisition of AI workflow startup StackAI",
-    "why": "Another established enterprise software player buying agentic-workflow capability rather than building it in-house — a pattern worth tracking if you're mapping where agent-tooling consolidation lands next.",
-    "sources": [
-     {
-      "label": "Tech Startups — VC & Startup Funding Roundup, Aug 17, 2026",
-      "url": "https://techstartups.com/2026/08/17/venture-capital-startup-funding-roundup-august-17-2026-accel-dst-global-intel-capital-menlo-ventures-mirae-asset-capital-valor-capital-more/"
-     }
-    ],
-    "date": "Aug 17, 2026",
-    "note": "Reported via a single funding-roundup source; deal terms not independently confirmed."
-   }
-  ],
-  "tryBox": {
-   "h": "Worth trying: check whether anything in your stack needs EU AI Act Article 50 disclosures",
-   "body": "The transparency rules (AI-interaction disclosure, deepfake labeling, machine-readable marks on AI-generated content) are now enforceable, not proposed. A quick 15-minute pass against any EU-facing tools or portfolio companies is cheap insurance against the 3%-of-turnover penalty ceiling.",
-   "src": "European Commission — AI Act transparency enforcement begins Aug 2"
-  },
-  "radar": [
-   "High-voltage transformer and switchgear lead times (12+ months) are becoming the real gating factor on AI datacenter buildout — worth tracking as a distinct sub-thesis from general AI-infra capex.",
-   "China's July 15 AI-agent regulation is the first national framework to treat agents as their own legal category — watch for whether the EU or US follow with agent-specific (vs. general AI) rules."
   ]
  }
 ];
