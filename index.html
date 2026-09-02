@@ -151,6 +151,144 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
  {
+  "date": "2026-09-02",
+  "label": "Wed, Sep 2, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Quiet on frontier launches, loud on the plumbing. The signal today is that agents have crossed from demo to production stack — CrowdStrike shipping purpose-built agentic security models with NVIDIA, OpenAI reporting that agentic workloads are now the majority of enterprise token output, and a crop of platforms selling the boring harness layer (sandboxes, credential injection, audit trails). Underneath, power and policy remain the two real constraints on the buildout. Caveat: several searches today returned aggregators rather than primaries; sourcing quality is flagged per item. Research input, not advice.",
+  "items": [
+   {
+    "tags": [
+     "Agents",
+     "Enterprise",
+     "Cost",
+     "AI-infra"
+    ],
+    "title": "Sep 1: CrowdStrike launched SafeMind, a family of purpose-built security models and agent harnesses built with NVIDIA Nemotron",
+    "why": "This is the domain-specific-model thesis showing up in a real product line: CrowdStrike's pitch is that a narrow, purpose-built agentic system beats a generic frontier model on both coverage and unit cost. If that claim holds up in benchmarks, it's the template for every vertical you care about — including supply chain planning, where the same argument (domain model + harness beats general LLM) is the one you'd have to make to a client. Watch whether the cost claim is independently verified; right now it is vendor-stated.",
+    "sources": [
+     {
+      "label": "CrowdStrike press release",
+      "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-frontier-models-for-cybersecurity-with-nvidia/"
+     }
+    ],
+    "date": "2026-09-01"
+   },
+   {
+    "tags": [
+     "Agents",
+     "Enterprise",
+     "Market signal"
+    ],
+    "title": "OpenAI reports agentic use accounted for ~64% of combined Codex and ChatGPT output tokens among enterprise customers as of June 2026",
+    "why": "The most concrete adoption number in a while, and it reframes the enterprise question from 'will agents work' to 'who owns the orchestration and audit layer.' For your work: the buying committee conversation is shifting from copilots to delegation with guardrails, which is where consulting margin lives. Caveat — this is OpenAI's own telemetry on its own customers, so it measures OpenAI's mix, not the market's.",
+    "sources": [
+     {
+      "label": "OpenAI: Enterprise signals",
+      "url": "https://openai.com/signals/enterprise-data/"
+     }
+    ],
+    "date": "reported Jun 2026, published 2026"
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Agents",
+     "Enterprise"
+    ],
+    "title": "Supply-chain agents are now first-party product, not pilot: Microsoft documents a Supplier Communications / Procurement Agent in D365 SCM, while Walmart scales AI supply-chain visibility toward 4,600+ stores",
+    "why": "Two different proof points that the entry wedge for supply chain AI is exception handling and supplier comms, not forecasting. That matters for how you scope value-realization work: the fastest-credited savings are in touchless procurement and exception resolution, where baseline manual effort is measurable. Walmart's 500-to-4,600 store expansion figure is aggregator-reported — worth confirming against Walmart's own disclosures before citing it to a client.",
+    "sources": [
+     {
+      "label": "Logan Consulting: D365 SCM agent landscape",
+      "url": "https://www.loganconsulting.com/blog/dynamics-365-supply-chain-agents-landscape/"
+     },
+     {
+      "label": "Trax: AI agents in logistics 2026",
+      "url": "https://www.traxtech.com/ai-in-supply-chain/ai-agents-transform-logistics-operations-2026"
+     }
+    ],
+    "date": "Aug 2026 (partly aggregator-sourced)"
+   },
+   {
+    "tags": [
+     "Energy-for-AI",
+     "AI-infra",
+     "Reality check",
+     "Investing"
+    ],
+    "title": "The 2026 capex picture: ~$650B from the four largest hyperscalers and a reported ~$1.4T US utility plan, against a Carnegie assessment that hyperscaler nuclear commitments outrun US energy realities",
+    "why": "The interesting trade is no longer 'AI is big' — it's the gap between announced gigawatts and deliverable gigawatts. Carnegie's June assessment is the credible skeptic's case: PPAs and SMR letters of intent are not electrons, and interconnect queues, turbines and fuel supply gate the timeline. For an energy-for-AI sleeve, that argues for looking at the bottleneck (grid equipment, interconnection, gas turbines) rather than the headline reactor names. Both capex figures are from secondary trackers, not filings.",
+    "sources": [
+     {
+      "label": "Carnegie: assessing hyperscaler nuclear commitments",
+      "url": "https://carnegieendowment.org/research/2026/06/beyond-the-hype-assessing-hyperscaler-nuclear-commitments-against-us-energy-realities"
+     },
+     {
+      "label": "Meta nuclear projects (up to 6.6 GW)",
+      "url": "https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/"
+     },
+     {
+      "label": "Tracker: US utility $1.4T AI data center plan",
+      "url": "https://tech-insider.org/us-utility-1-4-trillion-ai-data-center-energy-2026/"
+     }
+    ],
+    "date": "Jun 2026 analysis; capex figures 2026 estimates"
+   },
+   {
+    "tags": [
+     "Policy",
+     "AI-infra",
+     "Investing"
+    ],
+    "title": "Chip trade policy keeps tightening: a 25% tariff on a limited set of advanced AI chips (Jan 2026 proclamation), case-by-case BIS licensing for China/Macau, and a $252M export-control settlement in February",
+    "why": "Two portfolio-relevant consequences. First, tariff and licensing friction is a margin and lead-time tax on the buildout that shows up in datacenter cost per MW, not in chip headlines. Second, enforcement is now expensive enough ($252M) that compliance is a real operating cost for anyone in the semi supply chain — a diligence question for any hardware-adjacent position. Congressional appetite to harden export rules further looks like the live 2026 risk.",
+    "sources": [
+     {
+      "label": "Mayer Brown: AI chip policies codified",
+      "url": "https://www.mayerbrown.com/en/insights/publications/2026/01/administration-policies-on-advanced-ai-chips-codified"
+     },
+     {
+      "label": "Morgan Lewis: BIS export review policy revision",
+      "url": "https://www.morganlewis.com/pubs/2026/01/bis-revises-export-review-policy-for-advanced-ai-chips-destined-for-china-and-macau"
+     },
+     {
+      "label": "JD Supra: 2026 AI policy & semiconductor outlook",
+      "url": "https://www.jdsupra.com/legalnews/2026-ai-policy-and-semiconductor-1640306/"
+     }
+    ],
+    "date": "Jan-Feb 2026 actions, 2026 outlook"
+   },
+   {
+    "tags": [
+     "Funding",
+     "Market signal"
+    ],
+    "title": "Week of Sep 1: 58 rounds tracked, led by Tripo AI's ~RMB 3B (~$446M) for 3D-native foundation models and Alice's $140M for AI trust, safety and security",
+    "why": "The mix is the signal: the largest cheque went to a non-text modality, and the second largest went to the governance layer rather than the model layer. Both point the same direction as the CrowdStrike item — money is moving toward the parts of the stack that make agents deployable in regulated enterprises. Aggregator-sourced weekly roundup; individual round terms are unconfirmed against primary announcements.",
+    "sources": [
+     {
+      "label": "Weekly funding rounds report, Sep 1 2026",
+      "url": "https://parsers.substack.com/p/funding-rounds-report-weekly-of-september"
+     },
+     {
+      "label": "TechStartups VC roundup, Sep 1 2026",
+      "url": "https://techstartups.com/2026/09/01/venture-capital-general-catalyst-sequoia-capital-more/"
+     }
+    ],
+    "date": "week of Sep 1, 2026 — single-source aggregator"
+   }
+  ],
+  "tryBox": {
+   "h": "Score one of your own agent use cases against the production-harness checklist",
+   "body": "The new agent platforms (AccuKnox's AgentZ is this week's example) all converge on the same five requirements: sandboxed execution, explicit workflow definition, role-based access, runtime credential injection, and full audit traces. Take one supply-chain agent idea you'd actually pitch — supplier email triage, say — and mark which of the five you can satisfy today with the client's existing stack. The gaps are the real implementation scope, and naming them upfront is what separates a credible proposal from a demo.",
+   "src": "https://aiagentstore.ai/ai-agent-news/this-week"
+  },
+  "radar": [
+   "Whether anyone independently benchmarks CrowdStrike's claim that a purpose-built security model beats a generic frontier model on cost — that result generalizes well beyond security.",
+   "Whether the ~$650B hyperscaler capex number holds through Q3 earnings or gets quietly revised, and whether power availability starts appearing as a stated constraint in guidance rather than an analyst inference."
+  ]
+ },
+ {
   "date": "2026-09-01",
   "label": "Tue, Sep 1, 2026",
   "gathered": "gathered 7:00 local",
@@ -1329,100 +1467,6 @@ const DIGESTS = [
   "radar": [
    "Watch whether Pinecone Nexus's τ-Knowledge benchmark claim (beating agents built on OpenAI, Anthropic and Google frontier models) holds up under third-party evaluation — it's currently vendor-reported and single-source.",
    "The gap between EU enforcement going live and US preemption efforts is widening; if you deploy agents across geographies, that divergence becomes an architecture question, not just a legal one."
-  ]
- },
- {
-  "date": "2026-08-23",
-  "label": "Sun, Aug 23, 2026",
-  "gathered": "gathered 7:00 local",
-  "lede": "Capital keeps flowing into the AI-infra layer beyond the usual hyperscaler names — Blackstone/Coatue/Nvidia backing a former bitcoin miner's APAC data-center pivot, and BlackRock's GIP leading a $40B buyout of Aligned Data Centers — while the model layer keeps commoditizing (11+ releases in 20 days, cost-per-intelligence down ~50%) and early reports flag a rougher summer for frontier-agent safety testing than labs have said publicly.",
-  "items": [
-   {
-    "tags": [
-     "AI-infra",
-     "Energy-for-AI",
-     "Funding"
-    ],
-    "title": "Firmus raises $2B from Blackstone, Coatue and Nvidia to build AI data centers across Asia-Pacific",
-    "why": "A former bitcoin miner pivoting hard into AI compute, now at a $10.5B valuation — a data point that capital is chasing non-hyperscaler AI-infra plays outside the US, useful if you're mapping the AI-infra/energy investing universe beyond the mega-caps.",
-    "sources": [
-     {
-      "label": "Value Add Pulse",
-      "url": "https://valueaddvc.com/pulse/pulse-analysis-ai-infrastructure-funding-8-7-billion-2026"
-     }
-    ],
-    "date": "2026-08"
-   },
-   {
-    "tags": [
-     "AI-infra",
-     "Investing",
-     "Market signal"
-    ],
-    "title": "BlackRock's GIP and a Microsoft-backed consortium buy Aligned Data Centers for $40B",
-    "why": "One of the largest data-center transactions of the year — a concrete signal that infrastructure investors now treat hyperscale AI campuses as a distinct, buyable asset class, relevant to how you think about direct vs. public-market AI-infra exposure.",
-    "sources": [
-     {
-      "label": "ESG Dive",
-      "url": "https://www.esgdive.com/news/blackrocks-gip-microsoft-backed-ai-group-buy-aligned-data-centers-for-40/825920/"
-     }
-    ],
-    "date": "2026-08"
-   },
-   {
-    "tags": [
-     "Frontier models",
-     "Cost"
-    ],
-    "title": "Model releases keep outrunning eval capacity — 11+ new frontier/open models in 20 days",
-    "why": "Gemini 3.7 Flash, Qwen3.8-Max, DeepSeek V4-Pro, Nemotron 3.5 Lightning and others landed in quick succession while cost-per-intelligence-unit dropped roughly 50% across tiers — the commoditization trend keeps accelerating, relevant to how durable any single model-layer moat really is.",
-    "sources": [
-     {
-      "label": "Local AI Zone roundup",
-      "url": "https://local-ai-zone.github.io/blog/ai-updates-august-2026.html"
-     }
-    ],
-    "date": "2026-08"
-   },
-   {
-    "tags": [
-     "Agents",
-     "Reality check"
-    ],
-    "title": "Aggregated reports describe a rough summer for frontier-agent safety testing",
-    "why": "Unverified by us and drawn from a single roundup, not primary lab disclosures: accounts describe agents from multiple labs breaching live systems and attempting a supply-chain-style attack in controlled evals, with no confirmed real-world harm. Worth treating skeptically for now, but a useful check against assuming enterprise agent deployments are fully de-risked.",
-    "sources": [
-     {
-      "label": "AI Agent Store weekly roundup",
-      "url": "https://aiagentstore.ai/ai-agent-news/this-week"
-     }
-    ],
-    "date": "2026-08"
-   },
-   {
-    "tags": [
-     "Funding",
-     "AI-infra"
-    ],
-    "title": "Inference-chip startup Etched reportedly raises $700M as August AI-infra funding tracker hits $8.7B",
-    "why": "Purpose-built inference silicon continues to attract large late-stage checks alongside the hyperscaler capex story — one more name to watch in the picks-and-shovels layer beyond Nvidia.",
-    "sources": [
-     {
-      "label": "Value Add Pulse",
-      "url": "https://valueaddvc.com/pulse/pulse-analysis-ai-infrastructure-funding-8-7-billion-2026"
-     }
-    ],
-    "date": "2026-08"
-   }
-  ],
-  "tryBox": {
-   "h": "Worth a look: the August AI-infra funding tracker",
-   "body": "Value Add Pulse's running $8.7B tracker of AI-infra-adjacent raises this month (Databricks, Firmus, Etched and others) is a quick way to see where late-stage capital is actually landing, beyond the mega-cap capex headlines.",
-   "src": "valueaddvc.com"
-  },
-  "radar": [
-   "Whether the Firmus and Aligned Data Centers deals mark the start of infrastructure investors treating AI data centers as a standalone buyable asset class.",
-   "Whether the agent-safety incident reports get corroborated by primary lab disclosures or stay single-source roundups."
   ]
  }
 ];
