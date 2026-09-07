@@ -151,6 +151,145 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
  {
+  "date": "2026-09-07",
+  "label": "Mon, Sep 7, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Monday, and the picture that matters this week is the gap between capability and the physical plant. The early-September release cluster (Astra, Gemini 3.8 Flash, Fable 5.1, Muse Spark 1.3) is already priced in; what is not is that hyperscaler capex is now tracking $600B+ for the year while the power to run it is stuck in interconnection queues until 2028. Meanwhile Gartner's number for agentic SCM software - under $2B in 2025 to $53B by 2030 - is the single most useful figure for sizing your own value-realization pitches, and Cognition's ~$47B mark shows where the agentic-coding money is going. Sourcing note: capex and valuation figures are analyst estimates and pre-close reporting, not filings; the Gartner projection is a forecast. Flagged per item. Research input for your own work, not investment advice.",
+  "items": [
+   {
+    "tags": [
+     "Supply chain",
+     "Agents",
+     "Enterprise",
+     "Market signal"
+    ],
+    "title": "Gartner projects agentic-AI supply-chain software spend goes from under $2B (2025) to $53B by 2030, with ~15% of daily logistics decisions made autonomously",
+    "why": "This is the number to put on the first slide of any value-realization pitch, because it reframes the buy from 'AI pilot' to 'category the client will be spending on regardless.' The operative shift inside it is autonomous end-to-end replenishment - the agent decides and acts, then reports, instead of queuing a recommendation for a planner. That collapses your value case from 'better forecast accuracy' to 'decision latency from days to seconds,' which is a far easier CFO conversation. Practical move: for your telecom and life-sciences accounts, pick the two decision types with the worst latency today and size them that way. Caveat: a 2030 forecast, not a booked market - use it for direction and framing, not for a business case denominator.",
+    "sources": [
+     {
+      "label": "SCMR - 2026: The age of the AI supply chain",
+      "url": "https://www.scmr.com/article/2026-the-age-of-the-ai-supply-chain"
+     },
+     {
+      "label": "Dataiku - Supply Chain AI Trends 2026",
+      "url": "https://www.dataiku.com/stories/blog/supply-chain-ai-trends-2026"
+     },
+     {
+      "label": "ABI Research - Supply chain disruptions 2026",
+      "url": "https://www.abiresearch.com/blog/supply-chain-disruptions-2026-how-to-build-resilience-with-ai-and-automation"
+     }
+    ],
+    "date": "Week of Sep 7, 2026"
+   },
+   {
+    "tags": [
+     "AI-infra",
+     "Energy-for-AI",
+     "Investing",
+     "Reality check"
+    ],
+    "title": "2026 hyperscaler capex tracking ~$600-650B (CreditSights puts the top five at ~$602B, +36% YoY) while the nuclear capacity signed to serve it does not come online until 2028+",
+    "why": "The investable asymmetry right now is timing, not direction. Compute demand is being committed today; the generation to serve it - Meta's up-to-6.6 GW nuclear program, Microsoft/Constellation at Three Mile Island, Amazon at Susquehanna, Google/Kairos SMRs - lands 2028 and later. That leaves a multi-year window where the binding constraint is grid interconnection and on-site generation, which is why hyperscalers are turning into vertically integrated energy developers. For your energy-for-AI thesis, the read is that the near-term value accrues to what closes the gap now (turbines, transformers, gas peakers, grid equipment, interconnection-ready land) rather than to the SMR headlines. Figures are analyst estimates (Dell'Oro, CreditSights) and vendor announcements, not audited disclosures. Not a recommendation.",
+    "sources": [
+     {
+      "label": "Carnegie - Assessing hyperscaler nuclear commitments",
+      "url": "https://carnegieendowment.org/research/2026/06/beyond-the-hype-assessing-hyperscaler-nuclear-commitments-against-us-energy-realities"
+     },
+     {
+      "label": "Build.inc - Nuclear power for data centers",
+      "url": "https://build.inc/insights/nuclear-power-data-center-development-2026"
+     },
+     {
+      "label": "Dell'Oro via EnkiAI - hyperscaler data center capex",
+      "url": "https://enkiai.com/ai-infrastructure/hyperscaler-data-center-capex/"
+     }
+    ],
+    "date": "Sep 2026"
+   },
+   {
+    "tags": [
+     "Frontier models",
+     "Agents",
+     "Cost"
+    ],
+    "title": "The early-September release cluster is settling: Gemini 3.8 Flash puts stronger reasoning and coding at Flash-class prices, alongside Astra, Claude Fable 5.1 and Meta's Muse Spark 1.3",
+    "why": "The signal is not the capability jump, it is the price point. A Flash-tier model doing credible reasoning and long-horizon coding is what makes high-volume agentic workloads - the exception-handling and data-reconciliation loops in a supply chain, where you run thousands of small decisions a day - pencil out. Frontier-tier pricing never worked for that shape of work. If you have an agent design shelved on unit economics, this is the month to re-run the math. Second-order point for your stack decisions: the market is fragmenting into specialized model classes (coding, reasoning, speech, edge), so 'which model' is becoming a per-workload routing question rather than a vendor standard.",
+    "sources": [
+     {
+      "label": "LLM-Stats - AI updates today (Sep 2026)",
+      "url": "https://llm-stats.com/llm-updates"
+     },
+     {
+      "label": "DigitalApplied - AI model releases Sep 2026 tracker",
+      "url": "https://www.digitalapplied.com/blog/ai-model-releases-september-2026-tracker"
+     },
+     {
+      "label": "Local AI Zone - Sep 2026 model updates, price moves",
+      "url": "https://local-ai-zone.github.io/blog/September_2026_AI_Model_Updates.html"
+     }
+    ],
+    "date": "Sep 1-4, 2026"
+   },
+   {
+    "tags": [
+     "Funding",
+     "Agents",
+     "Market signal"
+    ],
+    "title": "Cognition set to raise ~$1B at a ~$47B valuation, reportedly against ~$10B of investor interest",
+    "why": "Agentic coding is where private capital is concentrating hardest, and the oversubscription tells you the scarcity is in access to the deal, not in capital. Two things worth carrying into your own dealflow screen: first, at this stage you are underwriting distribution and enterprise contracts, not model quality - the models underneath are commoditizing on the exact price curve in the item above. Second, when 80%+ of global venture dollars route to a handful of names, the interesting private opportunities for someone your size are one layer down - the eval, observability, data-plumbing and governance tools every one of these agent deployments needs. Pre-close reporting (Bloomberg), terms may change. Information, not advice.",
+    "sources": [
+     {
+      "label": "Bloomberg - Cognition set to raise ~$1B at $47B value",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-02/ai-startup-cognition-set-to-raise-around-1-billion-at-a-47-billion-value"
+     },
+     {
+      "label": "Seoul Economic Daily - Cognition nears round at $47B",
+      "url": "https://en.sedaily.com/finance/2026/09/03/cognition-ai-nears-funding-round-at-47-billion-valuation"
+     },
+     {
+      "label": "Crunchbase News - NA startup funding records H1 2026",
+      "url": "https://news.crunchbase.com/venture/na-startup-funding-ma-shattered-records-ai-q2-2026/"
+     }
+    ],
+    "date": "Sep 2-3, 2026"
+   },
+   {
+    "tags": [
+     "Policy",
+     "AI-infra",
+     "Supply chain"
+    ],
+    "title": "US chip-export policy is hardening into a supply-chain compliance problem: 25% tariff on advanced AI chips outside the US supply chain, a possible investment-for-access framework on 200k+ chip orders, and record enforcement",
+    "why": "This has moved from a geopolitics story to something that shows up in your clients' cost of goods and lead times. A tariff on advanced chips not destined for the US supply chain plus an enforcement posture that now reaches individuals means anyone shipping AI-bearing hardware needs country-of-destination and end-use controls in their planning systems - a concrete, near-term supply-chain design problem you can scope. The proposed condition that foreign buyers invest in US data centers to unlock large chip allocations would also reroute where AI capacity physically gets built, which matters to the energy item above. Policy in flux: some of this is proposal-stage, not final rule. Verify current status before it goes in a client deck.",
+    "sources": [
+     {
+      "label": "Mayer Brown - Advanced AI chip policies codified",
+      "url": "https://www.mayerbrown.com/en/insights/publications/2026/01/administration-policies-on-advanced-ai-chips-codified"
+     },
+     {
+      "label": "Taipei Times - US mulls framework for AI chip exports",
+      "url": "https://www.taipeitimes.com/News/biz/archives/2026/03/07/2003853386"
+     },
+     {
+      "label": "Alvarez & Marsal - AI export enforcement signals",
+      "url": "https://www.alvarezandmarsal.com/thought-leadership/ai-technology-export-enforcement-5-signals-companies-cannot-afford-to-miss"
+     }
+    ],
+    "date": "2026 YTD, active"
+   }
+  ],
+  "tryBox": {
+   "h": "Re-run the unit economics on one shelved agent idea at Flash-tier pricing",
+   "body": "Take the agentic workflow you priced out earlier this year and killed on cost - exception handling, data reconciliation, a planner co-pilot, whatever it was. Rebuild the estimate with three columns: calls per day, tokens per call, and cost at frontier-tier versus Flash-tier rates. The interesting cases are the high-volume, low-stakes loops, because that is exactly where a 5-10x price drop flips a no into a yes. Thirty minutes with a spreadsheet. If it now clears, you have a differentiated pitch this quarter while most people are still quoting last year's model prices.",
+   "src": "Based on the Sep 2026 model pricing moves - see the LLM-Stats and Local AI Zone trackers above."
+  },
+  "radar": [
+   "Interconnection queues, not chips, as the 2026-2027 bottleneck - watch for the first hyperscaler to publicly pull forward on-site gas generation rather than wait for grid connection. It would confirm the near-term energy trade and put a date on it.",
+   "Whether any ERP or SCM vendor publishes audited outcome data (not case-study anecdotes) on autonomous replenishment agents this quarter. The first credible before/after numbers will reset what clients expect you to promise."
+  ]
+ },
+ {
   "date": "2026-09-06",
   "label": "Sun, Sep 6, 2026",
   "gathered": "gathered 7:00 local",
@@ -1336,143 +1475,6 @@ const DIGESTS = [
   "radar": [
    "Whether the OpenAI custom-inference-chip report gets a primary confirmation next week — if it does, it changes the merchant-silicon pricing conversation for 2027.",
    "Convergence risk in agent control planes: AgentCore, Gemini Enterprise, OpenAI Frontier and now AgentZ are all selling the same shape. Expect consolidation and at least one acquisition in this layer within two quarters."
-  ]
- },
- {
-  "date": "2026-08-28",
-  "label": "Fri, Aug 28, 2026",
-  "gathered": "gathered 7:00 local",
-  "lede": "Quieter tape after NVIDIA week. The through-line today is the cost and control layer around agents: OpenAI is packaging enterprise agent governance as a product, the cheap-fast model tier keeps getting cheaper, and vendors are shipping metering for agent spend. Meanwhile the supply-chain agent story stays a gap between forecast and shipped first-party tooling.",
-  "items": [
-   {
-    "tags": [
-     "Agents",
-     "Enterprise",
-     "Frontier models"
-    ],
-    "title": "OpenAI positions \"Frontier\" as an enterprise platform for building and governing agents — shared context, onboarding, permissions, governance",
-    "why": "This is the same control-plane fight as MCP and AgentCore, but sold top-down to the CIO. For your supply-chain work, it matters less as a model choice than as a procurement pattern: if clients standardize on a vendor agent platform, integration and governance scope shifts from your program to theirs. Worth reading the primary page before treating any capability claim as fact — this is a vendor announcement, not third-party verified.",
-    "sources": [
-     {
-      "label": "OpenAI — Introducing OpenAI Frontier",
-      "url": "https://openai.com/index/introducing-openai-frontier/"
-     }
-    ],
-    "date": "Aug 2026"
-   },
-   {
-    "tags": [
-     "Cost",
-     "Frontier models",
-     "Agents"
-    ],
-    "title": "The cheap-fast tier keeps compressing: Z.ai ships GLM-5.3-Flash (Aug 26) and Google's Gemini 3.7 Flash lands at roughly half 3.6 Flash pricing with better agentic/code performance",
-    "why": "Most agent workloads are routing, extraction and tool-calling — exactly what this tier handles. Every halving here moves the break-even on high-volume supply-chain agents (exception triage, PO/ASN matching, carrier comms) before you touch a frontier model. Pair it with Gartner's 5x per-workflow cost warning: unit prices fall while total spend rises, so architecture beats price shopping.",
-    "sources": [
-     {
-      "label": "LLM-Stats — model updates, Aug 2026",
-      "url": "https://llm-stats.com/llm-updates"
-     },
-     {
-      "label": "Price Per Token — recent releases",
-      "url": "https://pricepertoken.com/news/model-releases"
-     },
-     {
-      "label": "Gartner — inference cost per agentic workflow up >5x through 2028",
-      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-08-17-gartner-predicts-ai-inference-costs-per-agentic-workflow-will-increase-more-than-fivefold-through-2028"
-     }
-    ],
-    "date": "Aug 26–28, 2026"
-   },
-   {
-    "tags": [
-     "Supply chain",
-     "Reality check",
-     "Enterprise"
-    ],
-    "title": "Reality check on agentic SCM: Microsoft's D365 Supply Chain Management still documents exactly one named first-party agent (Supplier Communications) as of this month",
-    "why": "Set against the $53B-by-2030 agentic-SCM forecast from earlier this week, the shipped first-party surface is thin. The practical read for your pitches: near-term value comes from narrowly-scoped, tightly-governed custom agents on top of the ERP — the pattern that's working is one workflow, measurable in ~4 weeks, then expand. Don't let a client buy the roadmap and wait.",
-    "sources": [
-     {
-      "label": "Logan Consulting — D365 supply chain agents landscape, 2026",
-      "url": "https://www.loganconsulting.com/blog/dynamics-365-supply-chain-agents-landscape/"
-     },
-     {
-      "label": "Ampcome — AI agents in logistics: use cases & ROI 2026",
-      "url": "https://www.ampcome.com/post/ai-agents-in-logistics-and-supply-chain"
-     }
-    ],
-    "date": "Aug 2026"
-   },
-   {
-    "tags": [
-     "Cost",
-     "AI-infra",
-     "Enterprise"
-    ],
-    "title": "Agent spend metering becomes a product category: MuleSoft's Omni Gateway ships Model Proxy GA, with Model Wallet, MCP tool optimization and per-agent cost controls queued this quarter",
-    "why": "Confirmation that \"unmonitored agents calling frontier APIs\" is now a named enterprise failure mode with a budget line attached. If you're scoping a supply-chain agent program, put a gateway/metering layer in phase 1 of the architecture — it's the cheapest way to keep the ROI case defensible when volumes scale.",
-    "sources": [
-     {
-      "label": "MuleSoft — '26 mid-year release: control AI costs",
-      "url": "https://blogs.mulesoft.com/news/mulesoft-26-mid-year-release-control-ai-costs/"
-     },
-     {
-      "label": "VentureBeat — MCP's biggest update yet",
-      "url": "https://venturebeat.com/infrastructure/mcp-just-got-its-biggest-update-ever-heres-what-changes-for-ai-agents"
-     }
-    ],
-    "date": "Aug 2026"
-   },
-   {
-    "tags": [
-     "Market signal",
-     "Funding",
-     "Investing"
-    ],
-    "title": "H1 2026 venture funding hit ~$510B — more than all of 2025 — with 24 companies acquired at $1B+ in Q2 for a record ~$113B combined",
-    "why": "Two things to hold at once: capital is abundant and exits are actually clearing, which is what a functioning cycle looks like — and record half-years are historically where entry discipline matters most. Information for your own research, not a signal to act; the useful question is whether your AI-infra exposure is priced on today's capex run-rate or on a durable one.",
-    "sources": [
-     {
-      "label": "Second Talent — AI startup funding statistics, Aug 2026",
-      "url": "https://www.secondtalent.com/resources/ai-startup-funding-investment/"
-     },
-     {
-      "label": "Tech Startups — VC roundup, Aug 18, 2026",
-      "url": "https://techstartups.com/2026/08/18/venture-capital-startup-funding-roundup-august-18-2026-andreessen-horowitz-bain-capital-ventures-jane-street-kleiner-perkins-sequoia-tiger-global-more/"
-     }
-    ],
-    "date": "Aug 2026 (H1 data)"
-   },
-   {
-    "tags": [
-     "AI-infra",
-     "Energy-for-AI",
-     "Investing"
-    ],
-    "title": "Custom-silicon challengers keep raising: Cerebras reported at an $8.1B valuation on >$2.8B total funding, after Etched's $700M round earlier this month",
-    "why": "The inference-silicon field below NVIDIA is being capitalized at real scale for the first time. Relevant to your AI-infra + energy-for-AI thesis because these designs compete on performance-per-watt, which is the binding constraint once datacenter power — not GPUs — is the bottleneck. Valuation figures here are reported/secondary; treat as directional until confirmed by the companies.",
-    "sources": [
-     {
-      "label": "Second Talent — funding & valuation roundup",
-      "url": "https://www.secondtalent.com/resources/ai-startup-funding-investment/"
-     },
-     {
-      "label": "BloombergNEF — AI data center build advances at full speed",
-      "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed/"
-     }
-    ],
-    "date": "Aug 2026"
-   }
-  ],
-  "tryBox": {
-   "h": "Put a cost meter on your next agent pilot before you write the first prompt",
-   "body": "Take one narrow supply-chain workflow — supplier email triage or exception routing — and instrument it from day one: log tokens, tool calls and model tier per completed task, then compute cost-per-resolved-exception. Route the routine 80% to a flash-tier model and escalate only ambiguous cases. That single number is what turns a demo into a business case, and it's the number Gartner's 5x forecast says will otherwise surprise you at scale.",
-   "src": "https://www.gartner.com/en/newsroom/press-releases/2026-08-17-gartner-predicts-ai-inference-costs-per-agentic-workflow-will-increase-more-than-fivefold-through-2028"
-  },
-  "radar": [
-   "Whether OpenAI Frontier's governance layer pulls enterprises away from open MCP/A2A plumbing — watch which one clients name in RFPs over the next quarter.",
-   "EU AI Act high-risk obligations have been enforceable since Aug 2, 2026; first enforcement actions (and how deployer-side duties land on supply-chain agents) are the thing to watch, not the statute text."
   ]
  }
 ];
