@@ -151,6 +151,148 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
  {
+  "date": "2026-09-09",
+  "label": "Wed, Sep 9, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Wednesday. The week-36 model cluster has settled and the read-through is clearer: the frontier is now competing on long-horizon agentic work, not chat quality, and the price floor keeps dropping at the Flash/mini tier where most enterprise volume actually lives. Two things matter more for you than the launches themselves. First, Microsoft standing up a reported $2.5B, ~6,000-engineer unit to sit inside enterprise AI deployments is an admission that the bottleneck is implementation, not capability - that is your market. Second, Gartner's projection of SCM agentic-AI software going from under $2B to $53B by 2030 is the number to put in front of clients, with the caveat that it is a vendor-adjacent forecast, not observed spend. Sourcing note: the Microsoft unit figure and several model-launch details come from single-source aggregator coverage and are flagged below. Research for your own work; nothing here is investment advice.",
+  "items": [
+   {
+    "tags": [
+     "Frontier models",
+     "Agents",
+     "Cost"
+    ],
+    "title": "Three frontier launches inside 72 hours - Claude Fable 5.1/Mythos 5.1, Gemini 3.8 Flash, and Meta Muse Spark 1.3 - all pitched on long-horizon agentic work rather than chat",
+    "why": "The competitive axis has moved to exactly the capability your supply-chain agent work depends on: multi-step execution that holds up over hours, not a good single answer. Gemini 3.8 Flash matters most commercially - frontier-adjacent reasoning at Flash-class pricing is what makes per-transaction agent economics work for planning and exception handling, where you need thousands of cheap decisions rather than a few expensive ones. Practical move: if you scoped an agent pilot on last quarter's cost-per-task assumptions, re-run the math before the client sees it, because the denominator moved. Caveat - capability claims here are vendor benchmarks and aggregator summaries, not independent evaluation; treat the agentic scores as directional until third parties replicate.",
+    "sources": [
+     {
+      "label": "Neomanex AI Changelog - Three frontier launches in 72 hours (Issue 22, week 36)",
+      "url": "https://neomanex.com/changelog/2026-w36"
+     },
+     {
+      "label": "Digital Applied - AI model releases: September 2026 tracker",
+      "url": "https://www.digitalapplied.com/blog/ai-model-releases-september-2026-tracker"
+     }
+    ],
+    "date": "Sep 1-8, 2026"
+   },
+   {
+    "tags": [
+     "Enterprise",
+     "Agents",
+     "Market signal"
+    ],
+    "title": "Microsoft reportedly stands up a $2.5B unit with ~6,000 engineers to embed with enterprise clients designing and running AI systems",
+    "why": "Read this as the largest software vendor in the world concluding that the margin has moved from the model to the deployment. That is a direct signal about your own market: enterprises are not short on capability, they are short on people who can wire agents into planning processes, data, and controls without breaking them. It also cuts both ways - the same unit competes with the consulting layer on the accounts you serve. The defensible position is domain depth (demand planning, S&OP, inventory logic) that a platform engineering org cannot staff at scale. Flag: this figure comes from single-source aggregator coverage, not a Microsoft filing or press release I could verify - treat the specific dollar and headcount numbers as unconfirmed while the directional move is well supported.",
+    "sources": [
+     {
+      "label": "Neomanex AI Changelog - week 36 enterprise roundup",
+      "url": "https://neomanex.com/changelog/2026-w36"
+     },
+     {
+      "label": "Netguru - Latest AI developments 2026: models, agentic AI, infrastructure",
+      "url": "https://www.netguru.com/blog/latest-ai-developments-2026"
+     }
+    ],
+    "date": "Sep 2026"
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Agents",
+     "Market signal"
+    ],
+    "title": "Gartner projects agentic-AI supply-chain software spend rising from under $2B (2025) to $53B by 2030, with ~15% of daily logistics decisions made autonomously",
+    "why": "This is the slide for your next client conversation, and also the one to interrogate. A 25x in five years is an analyst's bet on autonomy crossing from recommendation to execution - the difference between a planner accepting a suggestion and an agent committing a replenishment order without a human in the loop. The 15%-of-daily-decisions figure is the more useful one operationally: it implies the winning deployments are narrow, high-frequency, low-blast-radius decisions (expediting, allocation exceptions, carrier selection), not the strategic calls. If you are sizing a value case, anchor on decision volume x cycle-time saved, not on the market number. Caveat: analyst forecast, not observed spend, and vendor marketing recycles it heavily.",
+    "sources": [
+     {
+      "label": "SCMR - 2026: The age of the AI supply chain",
+      "url": "https://www.scmr.com/article/2026-the-age-of-the-ai-supply-chain"
+     },
+     {
+      "label": "Inbound Logistics - AI in supply chain management: 2026 outlook",
+      "url": "https://www.inboundlogistics.com/articles/ai-in-supply-chain-management-how-useful-will-it-be-in-2026/"
+     }
+    ],
+    "date": "Sep 2026"
+   },
+   {
+    "tags": [
+     "Energy-for-AI",
+     "AI-infra",
+     "Investing"
+    ],
+    "title": "2026 hyperscaler capex tracking toward $600-690B, with roughly 75% (~$450B) aimed at AI infrastructure - and power access now the binding constraint",
+    "why": "The number that matters is not the headline capex, it is the bifurcation underneath it: projects with secured interconnection and hardware allocation are proceeding while a meaningful share of announced capacity sits stalled in queues. That is why hyperscalers are turning into vertically integrated energy developers, and it is the same pattern as yesterday's Vistra/NVIDIA JV rather than a new one. For the energy-for-AI thesis you have been building, the tradeable variable is time-to-power - transformers, turbines, switchgear, interconnection rights - not announced megawatts, which are close to free to announce. Ranges differ by source ($630B Dell'Oro-derived, $690B Futurum) because of what each counts as AI infrastructure; use the range, not a point estimate. Information for your own research, not a recommendation.",
+    "sources": [
+     {
+      "label": "Futurum - AI capex 2026: the $690B infrastructure sprint",
+      "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
+     },
+     {
+      "label": "BloombergNEF - AI data center build advances at full speed",
+      "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
+     },
+     {
+      "label": "Data Center Richness - Hyperscalers plan $630B in 2026 capex",
+      "url": "https://datacenterrichness.substack.com/p/hyperscalers-plan-630-billion-in"
+     }
+    ],
+    "date": "Sep 2026"
+   },
+   {
+    "tags": [
+     "Policy",
+     "Enterprise",
+     "Reality check"
+    ],
+    "title": "EU AI Act enforcement is live post-Aug 2: transparency duties now carry fines up to EUR 15M or 3% of turnover; high-risk obligations up to EUR 35M or 7%",
+    "why": "Governance stopped being a slide and became a liability line, and the practical consequence for agent deployments is disclosure plumbing: any agent that talks to a customer or counterparty has to say it is an agent, and any generated content needs machine-readable marking. That is trivial to build and easy to forget in a pilot that quietly went to production. In supply-chain terms, the exposure sits in customer-facing exception comms, supplier negotiation agents, and anything generating documentation. If you are running EU-touching pilots, the cheap insurance is an inventory of every agent-to-human touchpoint and who owns the disclosure. The transparency tier is enforceable now; the fuller high-risk tier phases in later, which is why some enterprises are slow-walking - a mistake that compresses the work into 2027.",
+    "sources": [
+     {
+      "label": "European Commission - Commission starts enforcing AI Act rules and new transparency requirements",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august"
+     },
+     {
+      "label": "Cooley - EU AI Act transparency obligations take effect 2 August 2026",
+      "url": "https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026"
+     }
+    ],
+    "date": "Aug 2 - Sep 2026"
+   },
+   {
+    "tags": [
+     "Funding",
+     "Investing",
+     "Market signal"
+    ],
+    "title": "AI capital concentration deepens - $392B into US/Canada startups in H1 2026, with an extreme share going to a handful of frontier-model, compute, chip and robotics names",
+    "why": "The signal is concentration, not volume. When a few names absorb most of the money, the venture layer stops being a diversified bet on AI and becomes a levered bet on a small number of outcomes - which is worth knowing if you have any private or fund exposure that markets itself as 'AI diversified.' The more interesting sub-thread for you is the application/infrastructure split: deals like Qualcomm-Modular ($4B) and Salesforce-Fin show incumbents buying capability rather than building it, which is the same implementation-bottleneck story as the Microsoft item. Concentration figures are from Crunchbase's H1 tally; single-deal terms are as reported and not independently verified. Information for your own research, not investment advice.",
+    "sources": [
+     {
+      "label": "Crunchbase News - North American startup funding shattered records in H1 2026, driven by AI",
+      "url": "https://news.crunchbase.com/venture/na-startup-funding-ma-shattered-records-ai-q2-2026/"
+     },
+     {
+      "label": "Crescendo AI - Latest AI startup funding and VC investment deals 2026",
+      "url": "https://www.crescendo.ai/news/latest-vc-investment-deals-in-ai-startups"
+     }
+    ],
+    "date": "H1 2026, reported Sep 2026"
+   }
+  ],
+  "tryBox": {
+   "h": "Re-price one agent pilot against Flash-class economics",
+   "body": "Take a single supply-chain decision you already automate or want to (carrier exception, allocation override, PO discrepancy triage). Count the decisions per day, multiply by tokens per decision, and price it at Flash-tier rather than frontier-tier rates. In most planning workflows the cost per decision now lands well under the fully loaded minute of planner time it replaces - and the resulting number is a far better opening slide than any market forecast, because it is the client's own volume. Thirty minutes of work, and it converts an abstract agentic-AI pitch into a payback period.",
+   "src": "Prompted by the Gemini 3.8 Flash pricing move and the Gartner SCM autonomy projection above."
+  },
+  "radar": [
+   "Whether independent evaluations replicate the long-horizon agentic claims from the week-36 launches - if they hold, four-week agent pilots get materially easier to sell; if they do not, expect a round of quiet pilot cancellations.",
+   "Whether Microsoft's enterprise deployment unit starts competing directly on supply-chain planning engagements, or stays platform-adjacent - that determines whether it is a partner or a competitor on your accounts.",
+   "Time-to-power indicators (turbine and transformer lead times, interconnection queue movement) as the real constraint on the ~$450B AI-infra spend, versus the announced-megawatt headlines."
+  ]
+ },
+ {
   "date": "2026-09-08",
   "label": "Tue, Sep 8, 2026",
   "gathered": "gathered 7:00 local",
@@ -1333,149 +1475,6 @@ const DIGESTS = [
   "radar": [
    "Whether the AI Office's RFIs produce published findings or quiet remediation — the first outcome sets the template for every GPAI provider's enterprise disclosure package.",
    "Gartner's <$2B to $53B agentic SCM curve implies roughly 90% CAGR; watch Q3 vendor bookings for whether real spend is bending toward that line or the forecast is doing the work."
-  ]
- },
- {
-  "date": "2026-08-30",
-  "label": "Sun, Aug 30, 2026",
-  "gathered": "gathered 7:00 local",
-  "lede": "Sunday, so almost nothing shipped in the last 24 hours — this is a synthesis of the week rather than a news day. Three threads worth carrying into Monday: the EU's transparency regime is now live while the high-risk tier slid to 2027-28; token pricing has visibly split into a cheap mid-tier and an expensive frontier; and the money in AI kept rotating out of apps and into compute, silicon and power.",
-  "items": [
-   {
-    "tags": [
-     "Policy",
-     "Enterprise"
-    ],
-    "title": "EU AI Act transparency duties (Art. 50) have been in force since Aug 2; the Digital Omnibus pushed the high-risk tier to Dec 2027 / Aug 2028",
-    "why": "The near-term compliance ask on your client work is disclosure and labeling, not the heavy Annex III conformity machinery — that's been deferred by roughly 18 months. Worth resetting any 2026 roadmap that budgeted high-risk assessment work this year, and worth noting penalties on the live duties run to 3% of global turnover.",
-    "sources": [
-     {
-      "label": "EU AI Act implementation timeline",
-      "url": "https://artificialintelligenceact.eu/implementation-timeline/"
-     },
-     {
-      "label": "Al Jazeera — what came into force Aug 2",
-      "url": "https://www.aljazeera.com/news/2026/8/6/what-came-into-force-with-the-eus-ai-act-this-week-and-what-didnt"
-     },
-     {
-      "label": "Council press release on simplification",
-      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
-     }
-    ],
-    "date": "in force Aug 2, 2026"
-   },
-   {
-    "tags": [
-     "Cost",
-     "AI-infra",
-     "Market signal"
-    ],
-    "title": "Token pricing has bifurcated: mid-tier down ~36% YoY while frontier pricing rose ~36% YoY through July",
-    "why": "The economics of an agent stack now depend heavily on routing — cheap models for the 90% of steps that are retrieval, extraction and tool calls, frontier only for the judgment step. If you're sizing a supply-chain agent business case, model tiered routing explicitly; assuming one flat frontier price will make the ROI look far worse than it is.",
-    "sources": [
-     {
-      "label": "LLM inference cost pricing guide 2026",
-      "url": "https://aisuperior.com/llm-token-cost/"
-     },
-     {
-      "label": "Inference cost statistics 2026",
-      "url": "https://voxbooster.com/blog/ai-inference-cost-statistics-2026/"
-     }
-    ],
-    "date": "data through Jul 2026"
-   },
-   {
-    "tags": [
-     "Supply chain",
-     "Agents",
-     "Enterprise"
-    ],
-    "title": "Agentic SCM software spend is forecast to go from under $2B (2025) to $53B by 2030, with Oracle and Microsoft both shipping first-party supply-chain agents",
-    "why": "This is the single most relevant number to your day job — a ~27x forecast means the incumbent ERP vendors will bundle agents into the platform, so the defensible consulting value moves to data readiness, decision rights and change management rather than agent-building itself. Oracle Fusion SCM added four agentic apps plus inventory optimization; Microsoft's D365 first-party experience is still narrow (Supplier Communications / Procurement Agent).",
-    "sources": [
-     {
-      "label": "Dataiku — supply chain AI trends 2026",
-      "url": "https://www.dataiku.com/stories/blog/supply-chain-ai-trends-2026"
-     },
-     {
-      "label": "D365 supply chain agents: the real 2026 landscape",
-      "url": "https://www.loganconsulting.com/blog/dynamics-365-supply-chain-agents-landscape/"
-     }
-    ],
-    "date": "Gartner forecast, cited Aug 2026"
-   },
-   {
-    "tags": [
-     "Energy-for-AI",
-     "AI-infra",
-     "Investing"
-    ],
-    "title": "Datacenter capex tracking toward roughly $690-750B in 2026, with new long-dated leases like Bitdeer's $4.7B / 16-year Norway AI-HPC campus",
-    "why": "The interesting detail for your energy-for-AI thesis isn't the headline capex, it's the terms: 16-year leases at ~1.1 PUE on 100% renewable power mean operators are underwriting power access for a decade-plus. Cheap, firm, low-carbon power is becoming the scarce input — that's where pricing power sits, more than in the compute itself.",
-    "sources": [
-     {
-      "label": "Bitdeer 6-K (Norway lease)",
-      "url": "https://www.sec.gov/Archives/edgar/data/0001899123/000121390026085655/ea030075201ex99-1.htm"
-     },
-     {
-      "label": "Futurum — AI capex 2026",
-      "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
-     },
-     {
-      "label": "BloombergNEF — AI data center build",
-      "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
-     }
-    ],
-    "date": "Aug 2026"
-   },
-   {
-    "tags": [
-     "Funding",
-     "Investing",
-     "Energy-for-AI"
-    ],
-    "title": "Week of Aug 18-24: ~$7.7B across 31 US rounds, led by Gatik ($200M, autonomous freight), Auradine ($110M, AI compute silicon) and Apollo Atomics ($31M seed, compact reactors for datacenters)",
-    "why": "The composition matters more than the total — freight autonomy, inference silicon and on-site nuclear are all picks-and-shovels bets, not app bets. It's the private-market version of the same rotation you've been tracking in public AI-infra and power names. Information for your own research, not a recommendation.",
-    "sources": [
-     {
-      "label": "Crunchbase News — biggest rounds",
-      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-defense-fintech-robotics/"
-     },
-     {
-      "label": "Weekly funding rounds report",
-      "url": "https://parsers.substack.com/p/funding-rounds-report-weekly-of-august-f45"
-     }
-    ],
-    "date": "week of Aug 18-24, 2026"
-   },
-   {
-    "tags": [
-     "Reality check",
-     "Agents"
-    ],
-    "title": "Reported ~37% gap between agent benchmark scores and real-world enterprise deployment, with up to 50x cost variation for similar accuracy",
-    "why": "Directly usable when a vendor walks into a client meeting with a leaderboard slide. The gap number comes from a vendor-authored analysis, so treat the magnitude as unverified — but the underlying point (public benchmarks are saturating and gameable; every frontier model clears 88% MMLU) is well established and is the right thing to say out loud in a diligence conversation.",
-    "sources": [
-     {
-      "label": "Automation Anywhere — agent benchmarks",
-      "url": "https://www.automationanywhere.com/company/blog/ai-agent-benchmarks"
-     },
-     {
-      "label": "Kili — AI benchmarks and their limits",
-      "url": "https://kili-technology.com/blog/ai-benchmarks-guide-the-top-evaluations-in-2026-and-why-theyre-not-enough"
-     }
-    ],
-    "date": "Aug 2026"
-   }
-  ],
-  "tryBox": {
-   "h": "Price your next agent workflow at two tiers before you price it at one",
-   "body": "Take one supply-chain workflow you'd normally quote as a single-model agent — say supplier email triage plus exception routing. Split the steps into 'extraction and lookup' versus 'judgment', price the first at mid-tier token rates and only the second at frontier rates, and compare against the flat-frontier number. Given mid-tier fell ~36% YoY while frontier rose ~36%, that split is usually the difference between a business case that clears and one that doesn't.",
-   "src": "https://aisuperior.com/llm-token-cost/"
-  },
-  "radar": [
-   "Whether the deferred EU high-risk tier (Dec 2027) causes enterprises to slow-walk governance investment this year — that would create a compressed scramble in 2027 and a real consulting window.",
-   "Power procurement terms in new datacenter leases (duration, PUE, source) as the cleanest leading indicator for the energy-for-AI trade — more informative than headline capex numbers."
   ]
  }
 ];
