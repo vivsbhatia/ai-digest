@@ -151,6 +151,151 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
  {
+  "date": "2026-09-10",
+  "label": "Thu, Sep 10, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Thursday, and the story rotates from model launches to the two constraints that actually decide who captures the value: power and policy. The capex numbers keep ratcheting - roughly $775-800B of hyperscaler spend this year and a 2030 data-center capex outlook that has nearly doubled since January - while the gating factor is stated plainly by the people building it: power, not chips. On the policy side the US and EU visibly split this month, with Washington arguing against AI-specific rules at a G20 ministerial while Brussels enforces the AI Act's transparency regime. For your supply-chain work, the substantive shift is agents moving from insight to execution, with autonomous replenishment as the flagship use case - which is also where the governance question lands hardest. Several figures below come from forecaster or vendor-adjacent sources and are flagged. Research for your own decisions; nothing here is investment advice.",
+  "items": [
+   {
+    "tags": [
+     "AI-infra",
+     "Energy-for-AI",
+     "Investing",
+     "Market signal"
+    ],
+    "title": "2026 hyperscaler AI capex tracking ~$775-800B, with the 2030 data-center capex outlook now above $3T - nearly double the January 2026 forecast",
+    "why": "The revision, not the level, is the signal: forecasters roughly doubled the 2030 number in eight months, which means the market has been repricing the duration of this buildout, not just its size. That flows to the picks-and-shovels layer you already watch - power generation and interconnect, transformers and switchgear, cooling, and the utilities carrying the load. The constraint everyone building states is power, not accelerators, and >23GW of IT capacity under construction is the concrete version of that. Caveat: these are forecaster and sell-side aggregations of guidance, not booked spend; hyperscaler capex guidance has historically been revised in both directions, and a single guidance cut resets the whole curve.",
+    "sources": [
+     {
+      "label": "Data Center Knowledge - Data center capex forecast to hit $3 trillion",
+      "url": "https://www.datacenterknowledge.com/ai-data-centers/ai-infrastructure-pushes-data-center-capex-forecast-above-3-trillion"
+     },
+     {
+      "label": "BloombergNEF - AI data center build advances at full speed: five things to know",
+      "url": "https://about.bnef.com/insights/data-centers/ai-data-centers/"
+     },
+     {
+      "label": "AL Capital Advisory - AI capex cycle 2026: $775-800B hyperscaler buildout",
+      "url": "https://alcapitaladvisory.com/research/intelligence/ai-infrastructure.html"
+     }
+    ],
+    "date": "2026-09-10"
+   },
+   {
+    "tags": [
+     "Policy",
+     "Enterprise",
+     "Market signal"
+    ],
+    "title": "US and EU pull openly apart: Washington argued against AI-specific regulation at a G20 innovation ministerial while Brussels enforces AI Act transparency rules that began applying Aug 2",
+    "why": "You now have to price regulatory divergence into any multi-region deployment, because the same agent architecture faces documentation and transparency obligations in the EU that have no US federal analogue - and a US state patchwork instead. Practically: build the EU disclosure package as the default and treat lighter regimes as a subset, rather than retrofitting later. For clients in life sciences and telecom this is not abstract - both sit close to the high-risk classifications where the 2026 Omnibus deferred some deadlines but did not remove the obligations. Caveat: reporting on the G20 session is thin and the durability of the US posture is a political question, not a settled one.",
+    "sources": [
+     {
+      "label": "Al Jazeera - US pushes looser approach to AI regulation, while EU pushes new law (Sep 2, 2026)",
+      "url": "https://www.aljazeera.com/news/2026/9/2/us-pushes-looser-approach-to-ai-regulation-while-eu-pushes-new-law"
+     },
+     {
+      "label": "European Commission - AI Act regulatory framework",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+     },
+     {
+      "label": "Collibra - AI regulatory compliance in 2026: EU AI Act, US orders, state laws",
+      "url": "https://www.collibra.com/blog/ai-regulatory-compliance-in-2026-eu-ai-act-us-orders-and-state-laws-and-how-to-operationalize"
+     }
+    ],
+    "date": "2026-09-10"
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Agents",
+     "Reality check"
+    ],
+    "title": "Agentic supply chain crosses from insight to execution - autonomous end-to-end replenishment emerges as the flagship 2026 use case in Gartner's supply chain tech trends",
+    "why": "This is the exact boundary your value-realization work has to negotiate: an agent that recommends is a decision-support project, an agent that executes a replenishment or a supplier action is an operating-model change with audit, liability and change-management attached. The claimed payoff - double-digit efficiency gains and decision latency from days to seconds - is real in narrow loops like exception triage and expedite decisions, and much shakier end-to-end. The consulting wedge is the guardrail design, not the model: value bands, auto-approve thresholds, human escalation, and a rollback path. Reality check: these are analyst and vendor claims about a category where deployed, audited results are still scarce.",
+    "sources": [
+     {
+      "label": "Gartner - Top supply chain technology trends for 2026",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-30-gartner-identifies-top-supply-chain-technology-trends-for-2026"
+     },
+     {
+      "label": "SAP - Supply chain trends for 2026: from agentic AI to orchestration",
+      "url": "https://www.sap.com/blogs/supply-chain-trends-for-2026-from-agentic-ai-to-orchestration"
+     },
+     {
+      "label": "Inbound Logistics - AI in supply chain management: 2026 outlook",
+      "url": "https://www.inboundlogistics.com/articles/ai-in-supply-chain-management-how-useful-will-it-be-in-2026/"
+     }
+    ],
+    "date": "2026-09-10"
+   },
+   {
+    "tags": [
+     "Agents",
+     "Enterprise"
+    ],
+    "title": "Agents move into the security stack: Proofpoint's SOC Analyst Agent turns natural-language questions into traceable investigations, private preview with GA targeted end of Q3",
+    "why": "Worth watching less for the product than for the design pattern - traceable, citable investigation output is what makes an agent acceptable in a function where every conclusion has to survive review. That is the same bar a planning agent has to clear before a planner will let it touch a replenishment order, and most supply-chain agent demos do not clear it. Steal the pattern: every agent action carries its evidence chain. The security angle cuts both ways - any architecture granting tooling, file access, or long-running execution to frontier models should assume interruptions, stricter vendor vetting and added monitoring as the default posture, not a hardening phase later.",
+    "sources": [
+     {
+      "label": "AI Agent News - week of September 9, 2026",
+      "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+     }
+    ],
+    "date": "2026-09-10"
+   },
+   {
+    "tags": [
+     "Funding",
+     "Investing",
+     "Market signal"
+    ],
+    "title": "H1 2026 global startup investment hit a record ~$510B, with AI-infrastructure funding concentrated in megadeals - 31 of 37 tracked rounds above $50M, 29 above $100M",
+    "why": "Concentration is the thing to read here, not the headline total: capital is clustering into a small number of very large infrastructure financings, which is what a capex-led cycle looks like rather than a broad software cycle. Two implications for you. In public-market terms it reinforces that the near-term earnings are accruing to the build layer. In private terms, seed and Series A in AI applications are competing against a gravity well - valuation discipline at the application layer matters more, not less, when the infrastructure round next door is 50x the size. Caveat: round-count denominators vary by tracker, so treat the 31-of-37 ratio as indicative of a pattern rather than a precise statistic.",
+    "sources": [
+     {
+      "label": "Crunchbase News - Global startup investment hit record $510B in H1 2026",
+      "url": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/"
+     },
+     {
+      "label": "New Market Pitch - AI infrastructure startup funding analysis 2025-2026",
+      "url": "https://newmarketpitch.com/blogs/news/ai-infrastructure-funding-analysis"
+     }
+    ],
+    "date": "2026-09-10"
+   },
+   {
+    "tags": [
+     "Policy",
+     "AI-infra",
+     "Market signal"
+    ],
+    "title": "US advanced-chip export policy codified into a Commerce licensing rule that eases approvals for advanced AI chips to China under defined criteria",
+    "why": "A licensing regime with published criteria is a different animal from case-by-case discretion - it lets vendors and buyers plan, and it changes the demand map for accelerators outside the US hyperscalers. For your infrastructure thesis it introduces a second-order question: does incremental China demand tighten global accelerator supply and extend pricing power at the silicon layer, or does it mostly reroute existing allocation? Both are arguable and the honest answer is that the rule is too new to tell. Watch order books and lead times rather than statements. Caveat: export policy in this area has reversed repeatedly; treat any thesis built on it as reversible.",
+    "sources": [
+     {
+      "label": "Mayer Brown - Administration policies on advanced AI chips codified",
+      "url": "https://www.mayerbrown.com/en/insights/publications/2026/01/administration-policies-on-advanced-ai-chips-codified"
+     },
+     {
+      "label": "JD Supra - BIS news and analysis",
+      "url": "https://www.jdsupra.com/topics/artificial-intelligence/compliance/bureau-of-industry-and-security-bis"
+     }
+    ],
+    "date": "2026-09-10"
+   }
+  ],
+  "tryBox": {
+   "h": "Draft the evidence-chain spec before the agent spec",
+   "body": "Pick one supply-chain decision you would want an agent to execute - a replenishment approval, an expedite call, a supplier substitution. Before writing anything about models or tooling, write the one page a planner or auditor would need after the fact: what inputs the agent saw, which rule or threshold it applied, what it would have done differently at the next value band, and who gets paged when it is wrong. If you cannot write that page, the pilot is not blocked on capability. This is also, not coincidentally, most of the EU AI Act documentation package.",
+   "src": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+  },
+  "radar": [
+   "Whether Q3 hyperscaler guidance holds the $775-800B run rate - a single trimmed number resets a 2030 forecast that has already doubled once this year.",
+   "Aggregator coverage continues to circulate a claim that SpaceX agreed to acquire Anysphere (Cursor) for ~$60B alongside a 2026 IPO. Treat as unverified - it has not been confirmed in primary filings or major-outlet reporting seen here, and it is exactly the kind of number that propagates through trackers unchecked."
+  ]
+ },
+ {
   "date": "2026-09-09",
   "label": "Wed, Sep 9, 2026",
   "gathered": "gathered 7:00 local",
@@ -1346,135 +1491,6 @@ const DIGESTS = [
    "Whether any of the EU AI Office's Aug 29 RFI recipients respond publicly — the first published response will set the disclosure norm for GPAI security and post-market monitoring.",
    "Grid interconnect queues and turbine/transformer lead times as the practical cap on 2027–28 capex; this is where capex guidance gets quietly cut first.",
    "Anthropic's confidential S-1 (filed June) — an IPO would be the first real public-market mark on a frontier lab."
-  ]
- },
- {
-  "date": "2026-08-31",
-  "label": "Mon, Aug 31, 2026",
-  "gathered": "gathered 7:00 local",
-  "lede": "Quiet Monday tape after a holiday-flat weekend, but one item genuinely matters: the EU AI Office stopped publishing timelines and started sending letters. Everything else today is second-derivative — the model tier keeps splitting on price, the buildout keeps eating grid and components, and the agent-training-data layer is trying to become a standard. Several of today's items are aggregator-sourced; flagged inline where I could not reach a primary source.",
-  "items": [
-   {
-    "tags": [
-     "Policy",
-     "Enterprise",
-     "Market signal"
-    ],
-    "title": "Aug 29: the European Commission's AI Office sent formal requests for information to general-purpose model providers on security, external evaluations and post-market monitoring",
-    "why": "This is the shift from calendar risk to live regulatory contact — the first concrete GPAI enforcement step since transparency duties went live Aug 2. For your client work it changes the ask: model vendors will now be asked for evaluation and monitoring artifacts, and enterprise buyers should expect to inherit those questions in procurement and vendor diligence within a quarter. Exposure on the live duties runs to €15M or 3% of global turnover.",
-    "sources": [
-     {
-      "label": "EU AI Act first enforcement RFIs",
-      "url": "https://tokenstead.ai/guides/eu-ai-act-first-enforcement-security-rfis"
-     },
-     {
-      "label": "EU begins enforcing AI Act (Help Net Security)",
-      "url": "https://www.helpnetsecurity.com/2026/08/04/eu-ai-act-enforcement-ai-models/"
-     },
-     {
-      "label": "European Commission — AI Act framework",
-      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
-     }
-    ],
-    "date": "Aug 29, 2026"
-   },
-   {
-    "tags": [
-     "Frontier models",
-     "Cost",
-     "Agents"
-    ],
-    "title": "August closes with the frontier split intact: GPT-5.6 ships with a ChatGPT Work agent, Claude Opus 5 lands at roughly half comparable frontier pricing, Kimi K3 is the largest open-weight model to date, and Gemini 3.5 Pro slipped",
-    "why": "The practical read for anyone architecting agents: capability is no longer the scarce input — unit economics and routing are. A near-frontier tier at half price makes the default agent loop meaningfully cheaper, which is exactly where your supply-chain agent pilots die today. Worth re-running any 2026 pilot business case that assumed frontier pricing.",
-    "sources": [
-     {
-      "label": "LLM Stats — model updates (Aug 2026)",
-      "url": "https://llm-stats.com/llm-updates"
-     },
-     {
-      "label": "LLM news August 2026: agents & price cuts",
-      "url": "https://augusto.digital/insights/blogs/monthly-llm-news-august-2026/"
-     },
-     {
-      "label": "Frontier model comparison",
-      "url": "https://mungomash.com/ai/models/"
-     }
-    ],
-    "date": "Aug 2026"
-   },
-   {
-    "tags": [
-     "Agents",
-     "Enterprise",
-     "Reality check"
-    ],
-    "title": "Hugging Face and NVIDIA are reported to have released \"Open Data for Agents\" — 50,000+ curated agent task trajectories, with a claimed 40% benchmark improvement",
-    "why": "If real, this is the agent equivalent of ImageNet: shared trajectory data is the missing input for training agents that act rather than answer, and it lowers the cost of building domain agents on top of open weights. Treat the 40% number as marketing until a primary source confirms it — I could only reach aggregator coverage, and benchmark deltas from curated trajectory sets historically do not survive contact with production workflows.",
-    "sources": [
-     {
-      "label": "Agentic AI news — August 2026",
-      "url": "https://agentic.ai/news"
-     },
-     {
-      "label": "Latest AI developments, August 2026",
-      "url": "https://local-ai-zone.github.io/blog/ai-updates-august-2026.html"
-     }
-    ],
-    "date": "Aug 2026 — single-source, unverified"
-   },
-   {
-    "tags": [
-     "AI-infra",
-     "Energy-for-AI",
-     "Investing"
-    ],
-    "title": "BloombergNEF: over 23 GW of datacenter IT capacity is now under construction; Goldman puts 2025-27 hyperscaler capex at ~$1.15T, more than double the 2022-24 total",
-    "why": "The gigawatt figure is the number to track, not the dollar figure — dollars can be re-phased quarter to quarter, but concrete, turbines and interconnect queues cannot. 23 GW under construction is the hard commitment behind the capex headlines, and it is what makes power generation, grid equipment and cooling the durable end of the AI-infra theme rather than the speculative end. Information for your own research, not a recommendation.",
-    "sources": [
-     {
-      "label": "BloombergNEF — AI datacenter build",
-      "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
-     },
-     {
-      "label": "Goldman Sachs — tracking trillions",
-      "url": "https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out"
-     },
-     {
-      "label": "Futurum — AI capex 2026",
-      "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
-     }
-    ],
-    "date": "Aug 2026"
-   },
-   {
-    "tags": [
-     "Supply chain",
-     "AI-infra",
-     "Market signal"
-    ],
-    "title": "The AI buildout is now a component-supply story: datacenter demand is reshaping lead times and allocation across power electronics, connectors, passives and thermal parts",
-    "why": "This is the crossover between your two domains and the most under-priced one. Every non-AI manufacturer buying the same power electronics and passives is now competing with hyperscaler allocation — which shows up as lead-time drift and expedite cost in clients' plans long before it shows up in a headline. A concrete diagnostic angle for your next assessment: screen the BOM for AI-datacenter-adjacent commodity families and re-baseline lead times.",
-    "sources": [
-     {
-      "label": "Accuris — AI datacenters and component supply",
-      "url": "https://accuristech.com/blog/ai-data-center-electronic-component-supply/"
-     },
-     {
-      "label": "AJOT — 2026 logistics tech trends",
-      "url": "https://www.ajot.com/premium/ajot-2026-logistics-tech-trends"
-     }
-    ],
-    "date": "Aug 2026"
-   }
-  ],
-  "tryBox": {
-   "h": "Re-run one dead pilot business case at the new mid-tier price",
-   "body": "Take a supply-chain agent pilot you shelved on cost — exception triage, supplier comms, replenishment approvals — and re-cost the loop at near-frontier pricing rather than frontier. Count tokens per completed task, not per call, and include retries. Half the pilots killed in the last year were killed at a price point that no longer exists; the ones that stay dead at the new price were never economics problems, they were workflow problems.",
-   "src": "https://augusto.digital/insights/blogs/monthly-llm-news-august-2026/"
-  },
-  "radar": [
-   "Whether the AI Office's RFIs produce published findings or quiet remediation — the first outcome sets the template for every GPAI provider's enterprise disclosure package.",
-   "Gartner's <$2B to $53B agentic SCM curve implies roughly 90% CAGR; watch Q3 vendor bookings for whether real spend is bending toward that line or the forecast is doing the work."
   ]
  }
 ];
