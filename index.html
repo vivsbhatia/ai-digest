@@ -151,6 +151,135 @@
 /* ---- DATA: add a new object to the top of this array each day ---- */
 const DIGESTS = [
  {
+  "date": "2026-09-11",
+  "label": "Fri, Sep 11, 2026",
+  "gathered": "gathered 7:00 local",
+  "lede": "Friday's signal is a rotation of capital, not a new model. The money in AI silicon has moved decisively from training to inference - inference-oriented chip companies took roughly $3.62B across eight deals, about 67% of all disclosed AI-chip funding, led by Positron's $875M at a $5B post-money. Read alongside DeepSeek's V4.1-Flash drop yesterday and Gimlet Labs' $300M with Arm and Microsoft's M12 on the cap table, the theme is the same one that decides whether your agent projects pencil out: cost per task, not capability per benchmark. On the physical side, ~23 GW of data-center capacity is under construction and power access - not chips - is what splits the winners from the stalled. Supply-chain agent ROI numbers are circulating widely this week; most are vendor and consultant surveys, so treat them as direction, not proof.",
+  "items": [
+   {
+    "tags": [
+     "AI-infra",
+     "Cost",
+     "Funding",
+     "Investing",
+     "Market signal"
+    ],
+    "title": "Capital rotates from training to inference silicon: ~$3.62B across eight deals (~67% of disclosed AI-chip funding), with Positron raising $875M at a $5B post-money",
+    "why": "This is the clearest read yet that the market now prices inference economics over training scale - the same shift that determines whether your agentic workflows survive a CFO review. For the AI-infra sleeve of your research list, it argues for watching the memory-and-inference layer (and its incumbents' pricing response) rather than only GPU names. Positron's Asimov is only taping out on TSMC N3P at end-2026 for H2 2027 production, so this is capital formation, not shipped competition.",
+    "sources": [
+     {
+      "label": "New Market Pitch - AI chip funding news (Sep 2026)",
+      "url": "https://newmarketpitch.com/blogs/news/ai-chip-funding-news"
+     },
+     {
+      "label": "New Market Pitch - AI infrastructure funding analysis",
+      "url": "https://newmarketpitch.com/blogs/news/ai-infrastructure-funding-analysis"
+     }
+    ],
+    "date": "Sep 2026"
+   },
+   {
+    "tags": [
+     "Frontier models",
+     "Cost",
+     "Reality check"
+    ],
+    "title": "DeepSeek-V4.1-Flash released Sep 10, extending the cheap-fast open-weight tier just days after the Fable 5.1 / Gemini 3.8 Flash / Muse Spark cluster",
+    "why": "The Flash-class tier is where most agent step-volume actually runs, and every release here pushes your blended cost per workflow down without you changing anything. Practical move: re-benchmark your agent's low-stakes steps against the current cheap tier quarterly - the price floor is moving faster than most internal cost models assume. Caveat: capability claims here come from release trackers, not independent evals, so verify on your own tasks before switching.",
+    "sources": [
+     {
+      "label": "LLM-Stats - AI updates (Sep 2026)",
+      "url": "https://llm-stats.com/llm-updates"
+     },
+     {
+      "label": "Digital Applied - Sep 2026 model release tracker",
+      "url": "https://www.digitalapplied.com/blog/ai-model-releases-september-2026-tracker"
+     }
+    ],
+    "date": "Sep 10, 2026"
+   },
+   {
+    "tags": [
+     "Funding",
+     "AI-infra",
+     "Investing"
+    ],
+    "title": "Gimlet Labs raises $300M led by a16z at a $3B valuation, with Arm Holdings and Microsoft's M12 joining",
+    "why": "Strategic money from Arm and Microsoft in the same round is the tell: the buyers of inference efficiency are funding the tooling that produces it, which is how a layer gets standardized early. Worth tracking as a proxy for where the inference-optimization stack consolidates - and for who ends up owning margin between the model and the metal. Single-source reporting on round mechanics; treat the valuation figure as reported, not confirmed.",
+    "sources": [
+     {
+      "label": "AI startup funding news, Sep 2026",
+      "url": "https://blog.mean.ceo/ai-startup-funding-news-september-2026-2/"
+     },
+     {
+      "label": "Crunchbase - record H1 2026 global investment",
+      "url": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/"
+     }
+    ],
+    "date": "Sep 2026"
+   },
+   {
+    "tags": [
+     "Supply chain",
+     "Agents",
+     "Enterprise",
+     "Reality check"
+    ],
+    "title": "AI now absorbs ~67% of supply-chain digital budgets, with adopters reporting ~25% faster disruption response and ~30% fewer manual interventions - but the numbers are mostly vendor and consultant surveys",
+    "why": "These are exactly the figures that will show up in client steering-committee decks this quarter, so you want to be the person in the room who knows their provenance. The defensible version for a proposal is narrower: decision latency compressed from days to seconds on a single bounded workflow, with a 6-12 month payback claim you can actually instrument. Self-reported adopter surveys have obvious selection bias - no control group, no failed-deployment denominator.",
+    "sources": [
+     {
+      "label": "Dataiku - supply chain AI trends 2026",
+      "url": "https://www.dataiku.com/blog/supply-chain-ai-trends-2026"
+     },
+     {
+      "label": "Prolifics - agentic AI in supply chain, 7 trends",
+      "url": "https://prolifics.ai/resource-center/blog/agentic-ai-in-supply-chain"
+     },
+     {
+      "label": "Olimp - AI in supply chain: hype vs results",
+      "url": "https://olimpwarehousing.com/blog/ai-in-supply-chain-hype-vs-results-2026/"
+     }
+    ],
+    "date": "Sep 2026"
+   },
+   {
+    "tags": [
+     "Energy-for-AI",
+     "AI-infra",
+     "Investing"
+    ],
+    "title": "~23 GW of data-center IT capacity now under construction, ~75% of spend (~$545B) AI-specific - and interconnection queues, not chip supply, are what bifurcate the build",
+    "why": "The investable consequence of this is that 'announced capacity' and 'energized capacity' are diverging, and only the second one produces revenue. That pushes attention toward the entities that control grid access - utilities, IPPs, transformer and turbine supply, and the hyperscalers vertically integrating into energy development - rather than the headline capex number. It also sets up the first real test of the March 2026 White House pledge to help fund grid upgrades.",
+    "sources": [
+     {
+      "label": "BloombergNEF - AI data center build, five things to know",
+      "url": "https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/"
+     },
+     {
+      "label": "Build.inc - AI capex and data center development 2026",
+      "url": "https://build.inc/insights/ai-infrastructure-capex-data-center-development"
+     },
+     {
+      "label": "Futurum - AI capex 2026",
+      "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
+     }
+    ],
+    "date": "Sep 2026"
+   }
+  ],
+  "tryBox": {
+   "h": "Run a cheap-tier cost-per-task audit on one agent workflow",
+   "body": "Pick one agentic workflow you already trust and split it: keep the judgment steps on your frontier model, route the mechanical steps (extraction, classification, reformatting, retries) to the current Flash-class tier. Measure three things over a week - cost per completed task, task success rate, and human interventions per 100 runs. With a new cheap tier landing every few weeks, a 30-minute re-route is often worth more than a month of prompt tuning, and the number you get is the one that wins the budget conversation.",
+   "src": "https://llm-stats.com/llm-updates"
+  },
+  "radar": [
+   "Whether inference-chip funding share holds above 60% next quarter - if it does, the training-vs-inference capital rotation is structural, not a one-quarter artifact.",
+   "Positron's Asimov tape-out on TSMC N3P at end-2026 (H2 2027 production) as the first real ship-or-slip test for the memory-first inference challengers.",
+   "The gap between announced and energized data-center capacity - the earliest place a capex guidance cut would show up."
+  ]
+ },
+ {
   "date": "2026-09-10",
   "label": "Thu, Sep 10, 2026",
   "gathered": "gathered 7:00 local",
@@ -1355,142 +1484,6 @@ const DIGESTS = [
   "radar": [
    "Whether anyone independently benchmarks CrowdStrike's claim that a purpose-built security model beats a generic frontier model on cost — that result generalizes well beyond security.",
    "Whether the ~$650B hyperscaler capex number holds through Q3 earnings or gets quietly revised, and whether power availability starts appearing as a stated constraint in guidance rather than an analyst inference."
-  ]
- },
- {
-  "date": "2026-09-01",
-  "label": "Tue, Sep 1, 2026",
-  "gathered": "gathered 7:00 local",
-  "lede": "Thin first-of-month tape — no frontier model launched overnight and no fresh policy action since Saturday's AI Office letters. So today is a capital-flows day: the through-line is that the financing layer of the buildout has become the story, with Nvidia now organizing private credit rather than just selling chips, and power — not silicon — increasingly the binding constraint. Several items below are aggregator-sourced or carry mid-August dates; flagged inline. Treat all of it as research input, not a recommendation.",
-  "items": [
-   {
-    "tags": [
-     "AI-infra",
-     "Funding",
-     "Market signal",
-     "Investing"
-    ],
-    "title": "Nvidia signed MOUs with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize $500B+ of third-party capital for AI infrastructure",
-    "why": "This is the clearest sign yet that AI-infra returns are migrating from equity to private credit and infrastructure funds — the vehicles you can actually access are increasingly infra/credit sleeves, not just semis equity. It also means Nvidia's demand signal is now partly self-organized, which is a reason to discount order-book strength as an independent indicator. Aggregator-sourced; I could not reach an Nvidia primary release, so treat the exact figure as approximate.",
-    "sources": [
-     {
-      "label": "Axios: why Nvidia finances its rivals",
-      "url": "https://www.axios.com/2026/08/05/nvidias-ai-chips-financing"
-     },
-     {
-      "label": "AI circular economy tracker",
-      "url": "https://ai-circular-economy.com/"
-     }
-    ],
-    "date": "Aug 2026 (reported)"
-   },
-   {
-    "tags": [
-     "AI-infra",
-     "Energy-for-AI",
-     "Reality check"
-    ],
-    "title": "Aug 17: Nvidia is backing roughly $105B of financing for OpenAI's Ohio data center, with capacity phasing in from 2028",
-    "why": "Two things to hold at once: the demand is real and contracted, and the structure is circular — the chip vendor is underwriting the buyer's balance sheet. For your investing frame the useful question isn't whether AI demand is real but who holds the duration risk if 2028 capacity lands into softer pricing. The 2028 start date is also a reminder that today's capex headlines don't convert to revenue for years.",
-    "sources": [
-     {
-      "label": "CNBC: Nvidia financing OpenAI Ohio data center",
-      "url": "https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html"
-     },
-     {
-      "label": "Stratechery analysis",
-      "url": "https://stratechery.com/2026/nvidia-backs-openai-data-center-anthropic-news-google-buys-spirit-airlines-data/"
-     }
-    ],
-    "date": "2026-08-17"
-   },
-   {
-    "tags": [
-     "Energy-for-AI",
-     "AI-infra",
-     "Reality check",
-     "Investing"
-    ],
-    "title": "2026 hyperscaler capex estimates now cluster at $690B–$800B, with power availability, permitting and grid interconnect — not GPUs — named as the gating factor",
-    "why": "The bottleneck has moved down the stack, which is where the less-crowded exposure sits: interconnect queues, turbines, transformers, switchgear, on-site generation. Oracle's reported ~7 GW gap with PJM is the concrete version of the problem. Estimates vary widely by source ($690B J.P. Morgan vs $775–800B sell-side), so the spread itself is the signal — nobody actually knows the denominator.",
-    "sources": [
-     {
-      "label": "J.P. Morgan: financing AI infrastructure",
-      "url": "https://www.jpmorgan.com/insights/banking/capital-markets/financing-ai-infrastructure-data-centers"
-     },
-     {
-      "label": "Futurum: AI capex 2026",
-      "url": "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/"
-     }
-    ],
-    "date": "2026-08 (estimates)"
-   },
-   {
-    "tags": [
-     "Agents",
-     "Supply chain",
-     "Enterprise"
-    ],
-    "title": "Agentic supply-chain tooling is shipping as product, not pilot: Trimble launched Arc Agent (Aug 14) for automating manual global supply-chain workflows; Kinaxis Maestro lets planners delegate scenario testing and supply-demand balancing",
-    "why": "This is directly in your lane. The vendor land-grab is happening at the planning-execution seam — scenario generation, exception triage, supply-demand rebalancing — which is exactly where your value-realization cases get sized. Worth building a point of view now on which of these are genuinely autonomous vs. a chat wrapper over existing solvers, because clients will ask within two quarters.",
-    "sources": [
-     {
-      "label": "Trimble Arc Agent (Talking Logistics roundup)",
-      "url": "https://talkinglogistics.com/2026/08/07/above-the-fold-supply-chain-logistics-news-august-7-2026/"
-     },
-     {
-      "label": "SAP: agentic AI to orchestration",
-      "url": "https://www.sap.com/blogs/supply-chain-trends-for-2026-from-agentic-ai-to-orchestration"
-     }
-    ],
-    "date": "2026-08-14"
-   },
-   {
-    "tags": [
-     "Agents",
-     "Reality check",
-     "Enterprise"
-    ],
-    "title": "Adoption reality check: 40%+ of surveyed logistics leaders are not actively exploring agentic AI, and ~25% plan a first pilot within a year",
-    "why": "Useful counterweight to the vendor noise above — the addressable near-term work is still change management and first-pilot design, not scaled autonomy. That's an argument for framing engagements around a narrow, measurable agent use case with hard guardrails rather than an E2E autonomy narrative. Survey is vendor-adjacent; sample and methodology aren't disclosed in the coverage I could reach.",
-    "sources": [
-     {
-      "label": "SDC Exec / ORTEC: 2026 decides AI in logistics",
-      "url": "https://www.sdcexec.com/software-technology/ai-ar/article/22961151/ortec-why-2026-will-decide-the-future-of-ai-in-logistics"
-     },
-     {
-      "label": "Gartner: top supply chain tech trends 2026",
-      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-30-gartner-identifies-top-supply-chain-technology-trends-for-2026"
-     }
-    ],
-    "date": "2026-08"
-   },
-   {
-    "tags": [
-     "Funding",
-     "AI-infra",
-     "Market signal"
-    ],
-    "title": "Week of Aug 25–31: ~21 disclosed AI rounds totaling ~$2.4B, led by neoclouds — including Lambda Labs' $1B debt facility raised specifically to buy Nvidia chips",
-    "why": "Debt raised to buy GPUs is the leveraged end of the same circular trade as the OpenAI item — worth watching as the first place stress would show if inference pricing compresses. $2.4B across 21 rounds is also a cooler week than the spring pace, which is a data point on where private AI valuations are heading. Single aggregator source; totals are disclosed-rounds only.",
-    "sources": [
-     {
-      "label": "StartupHub: AI funding week of Aug 25–31",
-      "url": "https://www.startuphub.ai/ai-news/ai-news/2026/ai-startup-trends-aug-25-2026"
-     }
-    ],
-    "date": "2026-08-31"
-   }
-  ],
-  "tryBox": {
-   "h": "Worth trying: an agent-vs-solver teardown template",
-   "body": "Take one agentic supply-chain product (Trimble Arc Agent or Kinaxis Maestro) and write a one-pager separating what the agent actually decides from what a deterministic solver decides underneath. Do it once and you have a reusable screen for every vendor pitch this year — and a strong opening artifact in any client diligence conversation.",
-   "src": "sap.com / talkinglogistics.com"
-  },
-  "radar": [
-   "Whether any of the EU AI Office's Aug 29 RFI recipients respond publicly — the first published response will set the disclosure norm for GPAI security and post-market monitoring.",
-   "Grid interconnect queues and turbine/transformer lead times as the practical cap on 2027–28 capex; this is where capex guidance gets quietly cut first.",
-   "Anthropic's confidential S-1 (filed June) — an IPO would be the first real public-market mark on a frontier lab."
   ]
  }
 ];
